@@ -138,6 +138,21 @@ A collection of HTML head elements.
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
+### OS Protocol
+
+```html
+<link rel="profile" href="http://osprotocol.com" />
+<meta property="os:repo" content="https://github.com/YourName/example-repo" />
+<meta property="os:rcs_type" content="git" />
+<meta property="os:src" content="git@github.com:YourName/example-repo.git" />
+<!-- optional -->
+<meta property="os:issue" content="https://github.com/YourName/example-repo/issues" />
+<meta property="os:commit" content="commit-hash" />
+<meta property="os:branch" content="gh-pages" />
+```
+
+[Open Source Protocol](http://osprotocol.com)
+
 ## Browser/Platform
 
 #### Apple iOS

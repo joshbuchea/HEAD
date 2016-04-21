@@ -8,7 +8,7 @@ A collection of HTML head elements.
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
-<meta name="description" content="150 words">
+<meta name="description" content="150 chars">
 <meta name="subject" content="your website's subject">
 <meta name="language" content="en">
 <meta name="robots" content="index,follow">
@@ -68,13 +68,13 @@ A collection of HTML head elements.
 ### Favicons
 
 ``` html
-<!-- For IE 10 and below -->  
+<!-- For IE 10 and below -->
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
-<!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
-<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">  
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">  
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">  
+<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
 <link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
 <!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
@@ -153,7 +153,7 @@ A collection of HTML head elements.
 
 <!-- Pinned Site -->
 <!-- IE 10 / Windows 8 -->
-<meta name="msapplication-TileImage" content="pinned-tile-144.png">  
+<meta name="msapplication-TileImage" content="pinned-tile-144.png">
 <meta name="msapplication-TileColor" content="#009900">
 <!-- IE 11 / Windows 9.1 -->
 <meta name="msapplication-config" content="ieconfig.xml">

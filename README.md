@@ -19,7 +19,7 @@ A collection of HTML head elements.
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
-<meta name="description" content="150 words">
+<meta name="description" content="150 chars">
 <meta name="subject" content="your website's subject">
 <meta name="language" content="en">
 <meta name="robots" content="index,follow">

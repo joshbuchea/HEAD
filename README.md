@@ -41,7 +41,7 @@ A collection of HTML head elements.
 ## Link Tags
 
 ``` html
-<link rel="copyright" href="copyright.html">
+<link rel="copyright" href="/copyright.html">
 <link rel="stylesheet" href="https://example.com/styles.css">
 <link rel="alternate" href="https://feeds.feedburner.com/martini" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
@@ -60,7 +60,7 @@ A collection of HTML head elements.
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 <link rel="pingback" href="https://example.com/xmlrpc.php">
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="/manifest.json">
 
 
 ```
@@ -72,10 +72,10 @@ A collection of HTML head elements.
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
-<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">  
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">  
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">  
-<link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
+<link rel="icon" href="/path/to/favicon-16.png" sizes="16x16" type="image/png">  
+<link rel="icon" href="/path/to/favicon-32.png" sizes="32x32" type="image/png">  
+<link rel="icon" href="/path/to/favicon-48.png" sizes="48x48" type="image/png">  
+<link rel="icon" href="/path/to/favicon-62.png" sizes="62x62" type="image/png">
 <!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
 
@@ -137,9 +137,9 @@ A collection of HTML head elements.
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-touch-fullscreen" content="yes">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-startup-image" href="/startup.png">
 <!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
 ```
 
@@ -171,7 +171,7 @@ A collection of HTML head elements.
 ##### Safari 9: Pinned tabs in El Capitan
 
 ```html
-<link rel="mask-icon" href="icon.svg" color="red">
+<link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
 
 ## Other Resources

@@ -2,7 +2,7 @@
 
 A collection of HTML head elements.
 
-## Meta Tags
+## Meta Element
 
 ``` html
 <meta charset="utf-8">
@@ -38,7 +38,7 @@ A collection of HTML head elements.
 <meta http-equiv="Cache-Control" content="no-cache">
 ```
 
-## Link Tags
+## Link Element
 
 ``` html
 <link rel="copyright" href="copyright.html">
@@ -129,7 +129,7 @@ A collection of HTML head elements.
 
 ## Browser/Platform
 
-#### Apple iOS Tags
+#### Apple iOS
 
 ``` html
 <meta name="format-detection" content="telephone=no">
@@ -145,7 +145,7 @@ A collection of HTML head elements.
 
 [Apple Meta Tags](https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html)
 
-#### Internet Explorer Meta Tags
+#### Internet Explorer
 
 ``` html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -159,7 +159,7 @@ A collection of HTML head elements.
 <meta name="msapplication-config" content="ieconfig.xml">
 ```
 
-#### Internet Explorer Meta Tags (LEGACY DO NOT USE)
+#### Internet Explorer (LEGACY DO NOT USE)
 
 ``` html
 <!-- Legacy Tags (DO NOT USE) -->

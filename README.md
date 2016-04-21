@@ -16,7 +16,7 @@ A collection of HTML head elements.
 <meta name="abstract" content="">
 <meta name="topic" content="">
 <meta name="summary" content="">
-<meta name="Classification" content="Business">
+<meta name="classification" content="business">
 <meta name="author" content="name, email@example.com">
 <meta name="designer" content="">
 <meta name="reply-to" content="email@example.com">

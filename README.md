@@ -59,6 +59,7 @@ A collection of HTML head elements.
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 <link rel="pingback" href="https://example.com/xmlrpc.php">
+<link rel="manifest" href="manifest.json">
 
 
 ```

@@ -2,6 +2,17 @@
 
 A collection of HTML head elements.
 
+## Elements
+
+``` html
+<title>Page Title</title>
+<base href="https://example.com/page.html">
+<style>
+  body { color: red; }
+</style>
+<script src="script.js"></script>
+```
+
 ## Meta Element
 
 ``` html

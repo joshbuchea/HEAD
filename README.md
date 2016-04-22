@@ -56,7 +56,7 @@ A collection of HTML head elements.
 <link rel="stylesheet" href="https://example.com/styles.css">
 <link rel="alternate" href="https://feeds.feedburner.com/martini" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
-<link rel="alternate" href="http://es.example.com/" hreflang="es" />
+<link rel="alternate" href="https://es.example.com/" hreflang="es">
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">

@@ -168,6 +168,7 @@ A collection of HTML head elements.
 ``` html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta http-equiv="cleartype" content="on">
+<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
 <!-- Pinned Site -->
 <!-- IE 10 / Windows 8 -->

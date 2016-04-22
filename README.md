@@ -68,6 +68,7 @@ A collection of HTML head elements.
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
 <link rel="shortlink" href="https://example.com/?p=43625">
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+<link rel="amphtml" href="https://www.example.com/url/to/amp-version.html">
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 <link rel="webmention" href="https://example.com/webmention">
@@ -172,7 +173,7 @@ A collection of HTML head elements.
 
 <!-- Pinned Site -->
 <!-- IE 10 / Windows 8 -->
-<meta name="msapplication-TileImage" content="pinned-tile-144.png">  
+<meta name="msapplication-TileImage" content="pinned-tile-144.png">
 <meta name="msapplication-TileColor" content="#009900">
 <!-- IE 11 / Windows 9.1 -->
 <meta name="msapplication-config" content="ieconfig.xml">

@@ -41,7 +41,6 @@ A collection of HTML head elements.
 <meta name="rating" content="General">
 <meta name="revisit-after" content="7 days">
 <meta http-equiv="refresh" content="300;url=https://example.com/">
-<meta name="theme-color" content="#E64545">
 
 <!-- Cache Control -->
 <meta http-equiv="Expires" content="0">
@@ -156,6 +155,18 @@ A collection of HTML head elements.
 ```
 
 [Apple Meta Tags](https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html)
+
+#### Android
+
+``` html
+<meta name="theme-color" content="#E64545">
+```
+
+#### Windows Phone
+
+``` html
+<meta name="msapplication-navbutton-color" content="#E64545">
+```
 
 #### Internet Explorer
 

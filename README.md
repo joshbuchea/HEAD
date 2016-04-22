@@ -64,17 +64,16 @@ A collection of HTML head elements.
 <link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="Viatropos">
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
 <link rel="first" href="https://example.com/atomFeed.php">
-<link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="previous" href="https://example.com/atomFeed.php?page=2">
+<link rel="next" href="https://example.com/atomFeed.php?page=4"> <!-- http://microformats.org/wiki/rel-next -->
+<link rel="previous" href="https://example.com/atomFeed.php?page=2"> <!-- http://microformats.org/wiki/rel-prev -->
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
-<link rel="shortlink" href="https://example.com/?p=43625">
-<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+<link rel="shortlink" href="https://example.com/?p=43625"> <!-- http://microformats.org/wiki/rel-shortlink -->
+<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html"> <!-- http://microformats.org/wiki/rel-canonical -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
-<link rel="pingback" href="https://example.com/xmlrpc.php">
-<link rel="webmention" href="https://example.com/webmention">
-<link rel="manifest" href="manifest.json">
-
-
+<link rel="pingback" href="https://example.com/xmlrpc.php"> <!-- http://www.hixie.ch/specs/pingback/pingback -->
+<link rel="webmention" href="https://example.com/webmention"> <!-- https://www.w3.org/TR/webmention/ -->
+<link rel="manifest" href="manifest.json"> <!-- https://www.w3.org/TR/appmanifest/ -->
+<!-- More info: http://microformats.org/wiki/existing-rel-values -->
 ```
 
 ### Favicons

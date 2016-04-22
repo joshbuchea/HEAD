@@ -141,7 +141,7 @@ A collection of HTML head elements.
 
 ## Browser/Platform
 
-#### Apple iOS
+### Apple iOS
 
 ``` html
 <meta name="format-detection" content="telephone=no">
@@ -157,7 +157,7 @@ A collection of HTML head elements.
 
 [Apple Meta Tags](https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html)
 
-#### Internet Explorer
+### Internet Explorer
 
 ``` html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -171,7 +171,7 @@ A collection of HTML head elements.
 <meta name="msapplication-config" content="ieconfig.xml">
 ```
 
-#### Internet Explorer (LEGACY DO NOT USE)
+### Internet Explorer (LEGACY DO NOT USE)
 
 ``` html
 <!-- Legacy Tags (DO NOT USE) -->
@@ -180,7 +180,7 @@ A collection of HTML head elements.
 <meta http-equiv="page-exit" content="revealtrans(duration=3,transition=12)">
 ```
 
-##### Safari 9: Pinned tabs in El Capitan
+### Safari 9: Pinned tabs in El Capitan
 
 ```html
 <link rel="mask-icon" href="icon.svg" color="red">

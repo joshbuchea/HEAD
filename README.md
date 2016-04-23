@@ -150,11 +150,12 @@ A collection of HTML head elements.
 ### Apple iOS
 
 ``` html
-<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
 <meta name="apple-mobile-web-app-title" content="My App">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 <meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 <link rel="apple-touch-startup-image" href="startup.png">
@@ -191,6 +192,17 @@ A collection of HTML head elements.
 
 ```html
 <link rel="mask-icon" href="icon.svg" color="red">
+```
+
+### 360: the browser kernel control
+```html
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<!--
+The value of content is WebKit, ie-comp, ie-stand, case sensitive, representing the WebKit kernel, IE compatible kernel, IE kernel. 
+If the default page required by extreme nuclear, add tags: <meta name="renderer" content="webkit"> 
+If the page should be the default ie compatible kernel, add tags: <meta name="renderer" content="ie-comp"> 
+If the page should be the default standard IE kernel, add tags: <meta name="renderer" content="ie-stand">
+-->
 ```
 
 ## Other Resources

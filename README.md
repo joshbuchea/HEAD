@@ -74,6 +74,8 @@ A collection of HTML head elements.
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 <link rel="webmention" href="https://example.com/webmention">
 <link rel="manifest" href="manifest.json">
+<link rel="import" href="component.html">
+<link rel="dns-prefetch" href="//example.com">
 ```
 
 ### Favicons

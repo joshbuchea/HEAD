@@ -85,9 +85,9 @@ A collection of HTML head elements.
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
-<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">  
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">  
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">  
+<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
 <link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
 <!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
@@ -174,7 +174,7 @@ A collection of HTML head elements.
 
 <!-- Pinned Site -->
 <!-- IE 10 / Windows 8 -->
-<meta name="msapplication-TileImage" content="pinned-tile-144.png">  
+<meta name="msapplication-TileImage" content="pinned-tile-144.png">
 <meta name="msapplication-TileColor" content="#009900">
 <!-- IE 11 / Windows 9.1 -->
 <meta name="msapplication-config" content="ieconfig.xml">

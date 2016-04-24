@@ -182,6 +182,12 @@ A collection of HTML head elements.
 <meta name="theme-color" content="#E64545">
 ```
 
+### Google Chrome
+
+``` html
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+```
+
 ### Microsoft Internet Explorer
 
 ``` html

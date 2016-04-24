@@ -191,6 +191,9 @@ A collection of HTML head elements.
 
 ``` html
 <meta name="theme-color" content="#E64545">
+
+<!-- Add to homescreen -->
+<meta name="mobile-web-app-capable" content="yes">
 ```
 
 ### Google Chrome

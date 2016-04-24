@@ -194,6 +194,7 @@ A collection of HTML head elements.
 
 <!-- Add to homescreen -->
 <meta name="mobile-web-app-capable" content="yes">
+<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
 ```
 
 ### Google Chrome

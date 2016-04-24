@@ -75,6 +75,14 @@ A collection of HTML head elements.
 <link rel="webmention" href="https://example.com/webmention">
 <link rel="manifest" href="manifest.json">
 <link rel="author" href="humans.txt">
+
+<!-- Prefetching, preloading, prebrowsing -->
+<link rel="dns-prefetch" href="//example.com/">
+<link rel="preconnect" href="https://www.example.com/">
+<link rel="prefetch" href="https://www.example.com/">
+<link rel="prerender" href="https://example.com/">
+<link rel="subresource" href="styles.css">
+<link rel="preload" href="image.png">
 ```
 
 ### Favicons

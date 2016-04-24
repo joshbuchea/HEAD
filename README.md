@@ -201,6 +201,9 @@ A collection of HTML head elements.
 
 ``` html
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+
+<!-- Disable translation prompt -->
+<meta name="google" value="notranslate">
 ```
 
 ### Microsoft Internet Explorer

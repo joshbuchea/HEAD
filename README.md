@@ -127,13 +127,13 @@ A collection of HTML head elements.
 ### Twitter
 
 ``` html
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@publisher_handle">
-<meta name="twitter:creator" content="@author_handle">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@site_account">
+<meta name="twitter:creator" content="@individual_account">
+<meta name="twitter:url" content="https://example.com/path/to/page.html">
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
 <meta name="twitter:image" content="https://example.com/image.jpg">
-<!-- Twitter summary card with large image must be at least 280x150px -->
 <!-- More info: https://dev.twitter.com/cards/getting-started -->
 <!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
 ```

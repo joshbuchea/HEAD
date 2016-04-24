@@ -152,12 +152,6 @@ A collection of HTML head elements.
 ## Browser/Platform
 
 
-### Android
-
-``` html
-<meta name="theme-color" content="#E64545">
-```
-
 ### Apple iOS
 
 ``` html
@@ -175,7 +169,20 @@ A collection of HTML head elements.
 
 [Apple Meta Tags](https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html)
 
-### Internet Explorer
+### Apple Safari
+
+```html
+<!-- Pinned Site -->
+<link rel="mask-icon" href="icon.svg" color="red">
+```
+
+### Google Android
+
+``` html
+<meta name="theme-color" content="#E64545">
+```
+
+### Microsoft Internet Explorer
 
 ``` html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -190,19 +197,13 @@ A collection of HTML head elements.
 <meta name="msapplication-config" content="ieconfig.xml">
 ```
 
-### Internet Explorer (LEGACY DO NOT USE)
+### Microsoft Internet Explorer (LEGACY DO NOT USE)
 
 ``` html
 <!-- Legacy Tags (DO NOT USE) -->
 <meta name="mssmarttagspreventparsing" content="true">
 <meta http-equiv="page-enter" content="revealtrans(duration=2,transition=2)">
 <meta http-equiv="page-exit" content="revealtrans(duration=3,transition=12)">
-```
-
-### Safari 9: Pinned tabs in El Capitan
-
-```html
-<link rel="mask-icon" href="icon.svg" color="red">
 ```
 
 ## Other Resources

@@ -39,6 +39,7 @@ A collection of HTML head elements.
 <meta name="coverage" content="Worldwide">
 <meta name="distribution" content="Global">
 <meta name="rating" content="General">
+<meta name="referrer" content="never">
 <meta name="revisit-after" content="7 days">
 <meta http-equiv="refresh" content="300;url=https://example.com/">
 

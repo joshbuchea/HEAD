@@ -155,15 +155,26 @@ A collection of HTML head elements.
 ### Apple iOS
 
 ``` html
+<!-- Smart App Banner -->
+<meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
-<meta name="apple-mobile-web-app-title" content="My App">
+
+<!-- Add to Home Screen -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-touch-fullscreen" content="yes">
-<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+<meta name="apple-mobile-web-app-title" content="App Title">
+
+<!-- Touch Icons -->
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<!-- In most cases, one 180×180px touch icon in the head is enough -->
+<!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons -->
+
+<!-- Startup Image -->
 <link rel="apple-touch-startup-image" href="startup.png">
+
 <!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
 ```
 

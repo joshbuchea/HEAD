@@ -83,6 +83,7 @@ A collection of HTML head elements.
 <link rel="prerender" href="https://example.com/">
 <link rel="subresource" href="styles.css">
 <link rel="preload" href="image.png">
+<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
 ### Favicons

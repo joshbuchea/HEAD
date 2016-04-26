@@ -81,6 +81,7 @@ A collection of HTML head elements.
 <link rel="webmention" href="https://example.com/webmention">
 <link rel="manifest" href="manifest.json">
 <link rel="author" href="humans.txt">
+<link rel="import" href="component.html">
 
 <!-- Prefetching, preloading, prebrowsing -->
 <link rel="dns-prefetch" href="//example.com/">

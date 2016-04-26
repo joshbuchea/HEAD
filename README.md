@@ -107,7 +107,7 @@ A collection of HTML head elements.
 <!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
 
-[All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 
 ## Social
 
@@ -127,8 +127,8 @@ A collection of HTML head elements.
 <!-- Open Graph: http://ogp.me/ -->
 ```
 
-[Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-[Open Graph protocol](http://ogp.me/)
+- [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
+- [Open Graph protocol](http://ogp.me/)
 
 ### Twitter
 
@@ -144,8 +144,8 @@ A collection of HTML head elements.
 <!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
 ```
 
-[Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
-[Twitter Card Validator](https://dev.twitter.com/docs/cards/validation/validator)
+- [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
+- [Twitter Card Validator](https://dev.twitter.com/docs/cards/validation/validator)
 
 ### Google+ / Schema.org
 
@@ -184,7 +184,7 @@ A collection of HTML head elements.
 <!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
 ```
 
-[Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 ### Apple Safari
 

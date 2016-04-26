@@ -244,6 +244,12 @@ A collection of HTML head elements.
 
 Open an issue or a pull request to suggest changes or additions.
 
+## Author
+
+**Josh Buchea**
+- <https://github.com/joshbuchea>
+- <https://twitter.com/joshbuchea>
+
 ## License
 
 [MIT License](LICENSE)

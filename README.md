@@ -236,6 +236,24 @@ A collection of HTML head elements.
 <meta http-equiv="page-exit" content="revealtrans(duration=3,transition=12)">
 ```
 
+## App Links
+
+``` html
+<!-- iOS -->
+<meta property="al:ios:url" content="applinks://docs">
+<meta property="al:ios:app_store_id" content="12345">
+<meta property="al:ios:app_name" content="App Links">
+<!-- Android -->
+<meta property="al:android:url" content="applinks://docs">
+<meta property="al:android:app_name" content="App Links">
+<meta property="al:android:package" content="org.applinks">
+<!-- Web Fallback -->
+<meta property="al:web:url" content="http://applinks.org/documentation">
+<!-- More info: http://applinks.org/documentation/ -->
+```
+
+- [App Links Docs](http://applinks.org/documentation/)
+
 ## Other Resources
 
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)

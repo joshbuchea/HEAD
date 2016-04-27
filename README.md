@@ -1,6 +1,6 @@
 # HEAD
 
-A collection of HTML head elements.
+A collection of HTML head elements for [Pug](https://www.npmjs.com/package/pug) (previously [Jade](http://jade-lang.com/)) files.
 
 ## Elements
 

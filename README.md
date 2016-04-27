@@ -236,6 +236,13 @@ A collection of HTML head elements.
 <meta http-equiv="page-exit" content="revealtrans(duration=3,transition=12)">
 ```
 
+### 360 Browser
+
+``` html
+<!-- select rendering engine in order -->
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+```
+
 ## App Links
 
 ``` html

@@ -20,14 +20,21 @@ A collection of HTML head elements.
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<meta name="application-name" content="Application Name">
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <meta name="description" content="150 chars">
 <meta name="subject" content="your website's subject">
 <meta name="language" content="en">
 <meta name="robots" content="index,follow">
+<meta name="robots" content="NOODP,NOYDIR">
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
+<meta name="yandex-verification" content="verification_token">
+<meta name="msvalidate.01" content="verification_token">
+<meta name="alexaVerifyID" content="verification_token">
+<meta name="p:domain_verify" content="code from pinterest">
+<meta name="norton-safeweb-site-verification" content="Norton Code">
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 <meta name="abstract" content="">
 <meta name="topic" content="">
@@ -47,11 +54,15 @@ A collection of HTML head elements.
 <meta name="referrer" content="never">
 <meta name="revisit-after" content="7 days">
 <meta http-equiv="refresh" content="300;url=https://example.com/">
+<meta content="origin" name="referrer" />
+<meta name="google-signin-scope" content="profile email">
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 
 <!-- Cache Control -->
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
+
 ```
 
 ## Link Element
@@ -80,7 +91,8 @@ A collection of HTML head elements.
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 <link rel="webmention" href="https://example.com/webmention">
 <link rel="manifest" href="manifest.json">
-<link rel="author" href="humans.txt">
+<link rel="author" href="Google+ Profile URL"> 
+<link rel="publisher" href="Google+ Page URL">
 <link rel="import" href="component.html">
 
 <!-- Prefetching, preloading, prebrowsing -->
@@ -99,6 +111,10 @@ A collection of HTML head elements.
 <!-- For IE 10 and below -->  
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
+<!-- Desktop Browsers Only  -->
+<link rel="shortcut icon" href="path/to/favicon.ico">
+
+
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
 <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
@@ -114,7 +130,9 @@ A collection of HTML head elements.
 ### Facebook / Open Graph
 
 ``` html
-<meta property="fb:app_id" content="123456789">
+<meta property="fb:app_id" content="your_app_id" />
+<meta property="fb:admins" content="user_id" />
+<meta property="fb:page_id" content="your_page_id" />
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Content Title">
@@ -140,6 +158,7 @@ A collection of HTML head elements.
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
 <meta name="twitter:image" content="https://example.com/image.jpg">
+<meta name="twitter:domain" content="URL">
 <!-- More info: https://dev.twitter.com/cards/getting-started -->
 <!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
 ```
@@ -265,6 +284,10 @@ A collection of HTML head elements.
 
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+- [Meta Robots Tag](http://beginnersbook.com/2013/01/meta-robots-tag-noindex-nofollow-noarchive-noodp-noydir)
+- [Meta Referrer Tag](https://moz.com/blog/meta-referrer-tag)
+- [Add Google Sign-In to Your Website](https://developers.google.com/identity/sign-in/web/)
+- [How to Setup Facebook Insights for your Website](https://www.seoinc.com/seo-blog/how-to-add-facebook-insights-to-your-website/)
 
 ## Contributing
 

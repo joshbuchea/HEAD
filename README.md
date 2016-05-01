@@ -243,6 +243,38 @@ A collection of HTML head elements.
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
+### UC Mobile Browser
+
+``` html
+<!-- Locks the screen into the specified orientation -->
+<meta name="screen-orientation" content="landscape/portrait">
+<!-- Display this page in fullscreen -->
+<meta name="full-screen" content="yes">
+<!-- UC browser will display images even if in "text mode" -->
+<meta name="imagemode" content="force">
+<!-- Page will be displayed in "application mode"(fullsreen,forbiding gesture, etc.) -->
+<meta name="browsermode" content="application">
+<!-- Disabled the UC browser's "night mode" in this page -->
+<meta name="nightmode" content="disable">
+<!-- Simplify the page to reduce data transfer -->
+<meta name="layoutmode" content="fitscreen">
+<!-- Disable the UC browser's feature of "scaling font up when there are many words in this page" -->
+<meta name="wap-font-scale" content="no"> 
+```
+
+- [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+
+### QQ Mobile Browser
+
+``` html
+<!-- Locks the screen into the specified orientation -->
+<meta name="x5-orientation" content="landscape/portrait">
+<!-- Display this page in fullscreen -->
+<meta name="x5-fullscreen" content="true">
+<!-- Page will be displayed in "application mode"(fullsreen,etc.) -->
+<meta name="x5-page-mode" content="app">
+```
+
 ## App Links
 
 ``` html

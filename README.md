@@ -25,6 +25,7 @@ A collection of HTML head elements.
 <meta name="subject" content="your website's subject">
 <meta name="language" content="en">
 <meta name="robots" content="index,follow">
+<meta name="robots" content="NOODP,NOYDIR">
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">

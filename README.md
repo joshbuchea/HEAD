@@ -67,7 +67,7 @@ A collection of HTML head elements.
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
 <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
 <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
-<link rel="search" href="/search.xml" type="application/opensearchdescription+xml" title="Viatropos">
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">

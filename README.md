@@ -47,6 +47,7 @@ A collection of HTML head elements.
 <meta name="referrer" content="never">
 <meta name="revisit-after" content="7 days">
 <meta http-equiv="refresh" content="300;url=https://example.com/">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'"> 
 
 <!-- Cache Control -->
 <meta http-equiv="Expires" content="0">

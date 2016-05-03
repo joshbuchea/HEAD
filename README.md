@@ -259,7 +259,7 @@ A collection of HTML head elements.
 <!-- Simplify the page to reduce data transfer -->
 <meta name="layoutmode" content="fitscreen">
 <!-- Disable the UC browser's feature of "scaling font up when there are many words in this page" -->
-<meta name="wap-font-scale" content="no"> 
+<meta name="wap-font-scale" content="no">
 ```
 
 - [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)

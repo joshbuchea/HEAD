@@ -64,6 +64,8 @@ A collection of HTML head elements.
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
+<link rel="me" href="mailto:name@example.com">
+<link rel="me" href="sms:+18005550123">
 <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
 <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">

@@ -102,6 +102,10 @@ A collection of HTML head elements.
 <!-- For IE 10 and below -->  
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
+<!-- Desktop Browsers Only  -->
+<link rel="shortcut icon" href="path/to/favicon.ico">
+
+
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
 <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">

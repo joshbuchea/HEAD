@@ -54,6 +54,13 @@ A collection of HTML head elements.
 <meta http-equiv="Cache-Control" content="no-cache">
 ```
 
+### Deprecated/Legacy
+Below are the meta tags which are either deprecated or not supported anymore:
+
+```
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
+```
+
 ## Link Element
 
 ``` html

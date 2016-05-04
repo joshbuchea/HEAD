@@ -28,7 +28,6 @@ A collection of HTML head elements.
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 <meta name="abstract" content="">
 <meta name="topic" content="">
 <meta name="summary" content="">

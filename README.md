@@ -28,7 +28,6 @@ A collection of HTML head elements.
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 <meta name="abstract" content="">
 <meta name="topic" content="">
 <meta name="summary" content="">
@@ -53,6 +52,13 @@ A collection of HTML head elements.
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
+```
+
+### Deprecated/Legacy
+Below are the meta tags which are either deprecated or not supported anymore:
+
+```
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 ```
 
 ## Link Element

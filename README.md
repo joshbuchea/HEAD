@@ -23,8 +23,6 @@ A collection of HTML head elements.
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <meta name="description" content="150 chars">
 <meta name="subject" content="your website's subject">
-<meta name="language" content="en">
-<meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
@@ -32,10 +30,6 @@ A collection of HTML head elements.
 <meta name="topic" content="">
 <meta name="summary" content="">
 <meta name="classification" content="business">
-<meta name="author" content="name, email@example.com">
-<meta name="designer" content="">
-<meta name="reply-to" content="email@example.com">
-<meta name="owner" content="">
 <meta name="url" content="https://example.com/">
 <meta name="identifier-URL" content="https://example.com/">
 <meta name="directory" content="submission">
@@ -44,21 +38,27 @@ A collection of HTML head elements.
 <meta name="distribution" content="Global">
 <meta name="rating" content="General">
 <meta name="referrer" content="never">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+```
+
+### Deprecated/Legacy
+Below are the meta elements which are either deprecated or not supported anymore:
+
+```html
+<meta name="language" content="en">
+<meta name="robots" content="index,follow">
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
+<meta name="reply-to" content="email@example.com">
+<meta name="author" content="name, email@example.com">
+<meta name="designer" content="">
+<meta name="owner" content="">
 <meta name="revisit-after" content="7 days">
 <meta http-equiv="refresh" content="300;url=https://example.com/">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
 <!-- Cache Control -->
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
-```
-
-### Deprecated/Legacy
-Below are the meta tags which are either deprecated or not supported anymore:
-
-```
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 ```
 
 ## Link Element
@@ -105,10 +105,10 @@ Below are the meta tags which are either deprecated or not supported anymore:
 ### Favicons
 
 ``` html
-<!-- For IE 10 and below -->  
+<!-- For IE 10 and below -->
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
-<!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
+<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
 <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
 <link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">

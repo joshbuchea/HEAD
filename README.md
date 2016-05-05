@@ -1,38 +1,19 @@
-# HEAD
+Call center service solahart Call: 081218067443
+CV.FIKRI MANDIRI JAYA melayani jasa perbaikan / service solahart pemanas air tenaga matahari,dan
+penjualan segala merk solar water heater.jasa kami sebagai berikut:
+1.service solahart air panas, Rp:200.000.
+2.service wika,swh,Rp:200.000.
+3.service edward,servis ariston tenaga matahari Rp:200.000.
+4.JUAL spare part solar water heater merk solahart,handal,wika swh
+5.JUAL unit solar water heater merk solahart,handal,wika swh,
+6.JUAL pipa air panas,pipa tembaga,pipa ripeng,dll Rp:75.000/meter
+Untuk Layanan Jasa dan keterangan lebih lanjut silahkan hubunggi kami :
+CV FIKRI MANDIRI JAYA
+hp.. 082113812149
+telp; 021-71231659
+Website:www.solahartcenter.com
 
-A collection of HTML head elements.
-
-## Elements
-
-``` html
-<title>Page Title</title>
-<base href="https://example.com/page.html">
-<style>
-  body { color: red; }
-</style>
-<script src="script.js"></script>
-```
-
-## Meta Element
-
-``` html
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
-<meta name="description" content="150 chars">
-<meta name="subject" content="your website's subject">
-<meta name="googlebot" content="index,follow">
-<meta name="google" content="nositelinkssearchbox">
-<meta name="google-site-verification" content="verification_token">
-<meta name="abstract" content="">
-<meta name="topic" content="">
-<meta name="summary" content="">
-<meta name="classification" content="business">
-<meta name="url" content="https://example.com/">
-<meta name="identifier-URL" content="https://example.com/">
-<meta name="directory" content="submission">
+directory" content="submission">
 <meta name="category" content="">
 <meta name="coverage" content="Worldwide">
 <meta name="distribution" content="Global">

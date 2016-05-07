@@ -42,7 +42,7 @@ A collection of HTML head elements.
 ```
 
 ### Deprecated/Legacy
-Below are the meta elements which are either deprecated or not supported anymore:
+Below are the meta attributes which are either deprecated or not supported anymore:
 
 ```html
 <meta name="language" content="en">

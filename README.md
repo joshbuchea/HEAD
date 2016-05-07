@@ -102,6 +102,13 @@ Below are the meta attributes which are either deprecated or not supported anymo
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
+### Deprecated/Legacy
+Below are the link relations which are either deprecated or not supported anymore:
+
+```html
+<link rel="shortcut icon" href="path/to/favicon.ico">
+```
+
 ### Favicons
 
 ``` html

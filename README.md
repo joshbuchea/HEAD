@@ -45,17 +45,35 @@ A collection of HTML head elements.
 Below are the meta attributes which are either deprecated or not supported anymore:
 
 ```html
+<!-- Deprecated because: Used to declare the document language, but not well suported. Better use <html lang=""> -->
 <meta name="language" content="en">
+
+<!-- Deprecated because: Ignored by search engines. Better use robots.txt or modify .htaccess -->
 <meta name="robots" content="index,follow">
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
-<meta name="reply-to" content="email@example.com">
+
+<!-- Deprecated because: No evidence of use in any search engines -->
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm"> 
+
+<!-- Deprecated because: Provides a easy way for bots to get emails from websites -->
+<meta name="reply-to" content="email@example.com"> 
+
+<!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
 <meta name="author" content="name, email@example.com">
+
+<!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
 <meta name="designer" content="">
+
+<!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
 <meta name="owner" content="">
+
+<!-- Deprecated because: Telling the search bots to revisit the page after a period. This is not supported because most of the Search Engines nowadays have random intervals for recrawling a webpage -->
 <meta name="revisit-after" content="7 days">
-<meta http-equiv="refresh" content="300;url=https://example.com/">
+
+<!-- Google strongly advises not to use this. Better to set up Apache redirects instead -->
+<meta http-equiv="refresh" content="300;url=https://example.com/"> 
 
 <!-- Cache Control -->
+<!-- Deprecated because: There's no point in doing cache control on client side. It is better to configure it on server side than in meta data -->
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">

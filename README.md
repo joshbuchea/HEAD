@@ -45,7 +45,7 @@ A collection of HTML head elements.
 Below are the meta attributes which are either deprecated or not supported anymore:
 
 ```html
-<!-- Deprecated because: Used to declare the document language, but not well suported. Better use <html lang=""> -->
+<!-- Deprecated because: Used to declare the document language, but not well supported. Better use <html lang=""> -->
 <meta name="language" content="en">
 
 <!-- Deprecated because: Ignored by search engines. Better use robots.txt or modify .htaccess -->

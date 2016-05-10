@@ -18,7 +18,7 @@ A collection of HTML head elements.
 ``` html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <meta name="description" content="150 chars">
@@ -45,7 +45,7 @@ A collection of HTML head elements.
 Below are the meta attributes which are either deprecated or not supported anymore:
 
 ```html
-<!-- Deprecated because: Used to declare the document language, but not well suported. Better use <html lang=""> -->
+<!-- Deprecated because: Used to declare the document language, but not well supported. Better use <html lang=""> -->
 <meta name="language" content="en">
 
 <!-- Deprecated because: Ignored by search engines. Better use robots.txt or modify .htaccess -->

@@ -286,7 +286,7 @@ Below are the link relations which are either deprecated or not supported anymor
 <meta name="full-screen" content="yes">
 <!-- UC browser will display images even if in "text mode" -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(fullsreen,forbiding gesture, etc.) -->
+<!-- Page will be displayed in "application mode"(fullscreen,forbiding gesture, etc.) -->
 <meta name="browsermode" content="application">
 <!-- Disabled the UC browser's "night mode" in this page -->
 <meta name="nightmode" content="disable">
@@ -305,7 +305,7 @@ Below are the link relations which are either deprecated or not supported anymor
 <meta name="x5-orientation" content="landscape/portrait">
 <!-- Display this page in fullscreen -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullsreen,etc.) -->
+<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 

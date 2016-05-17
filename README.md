@@ -264,14 +264,14 @@ Below are the link relations which are either deprecated or not supported anymor
 
 <!-- Windows 8 / Windows 10 -->
 <!-- The default name displayed with the pinned sites tile (or icon) -->
-  <meta name="application-name" content=" Contoso" />
+<meta name="application-name" content=" Contoso" />
   <!-- Sets the background color for a live tile. -->
-  <meta name="msapplication-TileColor" content=" #009900" />
+<meta name="msapplication-TileColor" content=" #009900" />
   <!-- Tiles -->
-  <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
-  <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
-  <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
-  <meta name="msapplication-square310x310logo" content="images/largetile.png" />
+<meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+<meta name="msapplication-square310x310logo" content="images/largetile.png" />
 ```
 
 ### Microsoft Internet Explorer (LEGACY DO NOT USE)

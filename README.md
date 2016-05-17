@@ -52,10 +52,10 @@ Below are the meta attributes which are either deprecated or not supported anymo
 <meta name="robots" content="index,follow">
 
 <!-- Deprecated because: No evidence of use in any search engines -->
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm"> 
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 
 <!-- Deprecated because: Provides a easy way for bots to get emails from websites -->
-<meta name="reply-to" content="email@example.com"> 
+<meta name="reply-to" content="email@example.com">
 
 <!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
 <meta name="author" content="name, email@example.com">
@@ -70,7 +70,7 @@ Below are the meta attributes which are either deprecated or not supported anymo
 <meta name="revisit-after" content="7 days">
 
 <!-- Google strongly advises not to use this. Better to set up Apache redirects instead -->
-<meta http-equiv="refresh" content="300;url=https://example.com/"> 
+<meta http-equiv="refresh" content="300;url=https://example.com/">
 
 <!-- Cache Control -->
 <!-- Deprecated because: There's no point in doing cache control on client side. It is better to configure it on server side than in meta data -->
@@ -207,10 +207,12 @@ Below are the link relations which are either deprecated or not supported anymor
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+<link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+<link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
+<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix -->
 <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons -->
 
 <!-- Startup Image -->
 <link rel="apple-touch-startup-image" href="startup.png">
@@ -259,6 +261,17 @@ Below are the link relations which are either deprecated or not supported anymor
 <meta name="msapplication-TileColor" content="#009900">
 <!-- IE 11 / Windows 9.1 -->
 <meta name="msapplication-config" content="ieconfig.xml">
+
+<!-- Windows 8 / Windows 10 -->
+<!-- The default name displayed with the pinned sites tile (or icon) -->
+  <meta name="application-name" content=" Contoso" />
+  <!-- Sets the background color for a live tile. -->
+  <meta name="msapplication-TileColor" content=" #009900" />
+  <!-- Tiles -->
+  <meta name="msapplication-square70x70logo" content="images/smalltile.png" />
+  <meta name="msapplication-square150x150logo" content="images/mediumtile.png" />
+  <meta name="msapplication-wide310x150logo" content="images/widetile.png" />
+  <meta name="msapplication-square310x310logo" content="images/largetile.png" />
 ```
 
 ### Microsoft Internet Explorer (LEGACY DO NOT USE)

@@ -253,21 +253,49 @@ Below are the link relations which are either deprecated or not supported anymor
 <meta http-equiv="cleartype" content="on">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- Pinned Site -->
-<!-- IE 10 / Windows 8 -->
-<meta name="msapplication-TileImage" content="pinned-tile-144.png">
-<meta name="msapplication-TileColor" content="#009900">
-<!-- IE 11 / Windows 9.1 -->
-<meta name="msapplication-config" content="ieconfig.xml">
+<!-- Disable link highlighting on IE 10 on Windows Phone (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+<meta name="msapplication-tap-highlight" content="no">
+
+<!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
+<meta name="application-name" content="Contoso Pinned Site Caption">
+<meta name="msapplication-tooltip" content="Example Tooltip Text">
+<meta name="msapplication-starturl" content="/">
+
+<meta name="msapplication-config" content="http://example.com/browserconfig.xml">
+
+<meta name="msapplication-allowDomainApiCalls" content="true">
+<meta name="msapplication-allowDomainMetaTags" content="true">
+<meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
+<meta name="msapplication-navbutton-color" content="#FF3300">
+<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile">
+<meta name="msapplication-square150x150logo" content="images/logo.png">
+<meta name="msapplication-square310x310logo" content="images/largelogo.png">
+<meta name="msapplication-square70x70logo" content="images/tinylogo.png">
+<meta name="msapplication-wide310x150logo" content="images/widelogo.png">
+<meta name="msapplication-task" content="name=Check Order Status;action-uri=./orderStatus.aspx?src=IE9;icon-uri=./favicon.ico">
+<meta name="msapplication-task-seperator" content="1">
+<meta name="msapplication-TileColor" content="#FF3300">
+<meta name="msapplication-TileImage" content="images/tileimage.jpg">
+<meta name="msapplication-window" content="width=1024;height=768">
 ```
 
 ### Microsoft Internet Explorer (LEGACY DO NOT USE)
 
 ``` html
-<!-- Legacy Tags (DO NOT USE) -->
-<meta name="mssmarttagspreventparsing" content="true">
-<meta http-equiv="page-enter" content="revealtrans(duration=2,transition=2)">
-<meta http-equiv="page-exit" content="revealtrans(duration=3,transition=12)">
+<!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
+<meta http-equiv="imagetoolbar" content="no">
+
+<!-- Disable Windows theming to form inputs/buttons (https://support.microsoft.com/en-us/kb/322240) -->
+<meta name="MSThemeCompatible" content="no">
+
+<!-- Disable a feature that only appeared on IE 6 beta (https://stackoverflow.com/q/2167301) -->
+<meta name="MSSmartTagsPreventParsing" content="true">
+
+<!-- Interpage Transitions (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
+<meta http-equiv="Page-Enter" content="revealtrans(duration=2,transition=2)">
+<meta http-equiv="Page-Exit" content="revealtrans(duration=3,transition=12)">
+<meta http-equiv="Site-Enter" content="revealtrans(duration=2,transition=2)">
+<meta http-equiv="Site-Exit" content="revealtrans(duration=3,transition=12)">
 ```
 
 ### 360 Browser

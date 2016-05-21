@@ -164,6 +164,22 @@ Below are the link relations which are either deprecated or not supported anymor
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
+### Facebook / Instant Articles
+
+``` html 
+<meta charset="utf-8">
+<meta property="op:markup_version" content="v1.0">
+
+<!-- The URL of the web version of your article --> 
+<link rel="canonical" href="http://example.com/article.html">
+  
+<!-- The style to be used for this article --> 
+<meta property="fb:article_style" content="myarticlestyle">
+```
+
+- [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)  
+
 ### Twitter
 
 ``` html

@@ -23,6 +23,7 @@ A collection of HTML head elements.
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <meta name="description" content="150 chars">
 <meta name="subject" content="your website's subject">
+<meta name="robots" content="index,follow">
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
@@ -41,39 +42,32 @@ A collection of HTML head elements.
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 ```
 
-### Deprecated/Legacy
-Below are the meta attributes which are either deprecated or not supported anymore:
+### Not Recommended
+Below are the meta attributes which are not recommended for use:
 
 ```html
-<!-- Deprecated because: Used to declare the document language, but not well supported. Better use <html lang=""> -->
+<!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
 <meta name="language" content="en">
 
-<!-- Deprecated because: Ignored by search engines. Better use robots.txt or modify .htaccess -->
-<meta name="robots" content="index,follow">
+<!-- No evidence of current use in any search engines -->
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 
-<!-- Deprecated because: No evidence of use in any search engines -->
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm"> 
+<!-- Provides an easy way for spam bots to harvest email addresses -->
+<meta name="reply-to" content="email@example.com">
 
-<!-- Deprecated because: Provides a easy way for bots to get emails from websites -->
-<meta name="reply-to" content="email@example.com"> 
-
-<!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
+<!-- Better to use <link rel="author"> or humans.txt file -->
 <meta name="author" content="name, email@example.com">
-
-<!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
 <meta name="designer" content="">
-
-<!-- Deprecated because: Better to use <link rel="author"> or humans.txt file -->
 <meta name="owner" content="">
 
-<!-- Deprecated because: Telling the search bots to revisit the page after a period. This is not supported because most of the Search Engines nowadays have random intervals for recrawling a webpage -->
+<!-- Tells search bots to revisit the page after a period. This is not supported because most Search Engines now use random intervals for re-crawling a webpage -->
 <meta name="revisit-after" content="7 days">
 
 <!-- Google strongly advises not to use this. Better to set up Apache redirects instead -->
-<meta http-equiv="refresh" content="300;url=https://example.com/"> 
+<meta http-equiv="refresh" content="300;url=https://example.com/">
 
 <!-- Cache Control -->
-<!-- Deprecated because: There's no point in doing cache control on client side. It is better to configure it on server side than in meta data -->
+<!-- Better to configure cache control server side -->
 <meta http-equiv="Expires" content="0">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -120,8 +114,8 @@ Below are the meta attributes which are either deprecated or not supported anymo
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-### Deprecated/Legacy
-Below are the link relations which are either deprecated or not supported anymore:
+### Not Recommended
+Below are the link relations which are not recommended for use:
 
 ```html
 <link rel="shortcut icon" href="path/to/favicon.ico">

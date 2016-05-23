@@ -360,9 +360,7 @@ Open an issue or a pull request to suggest changes or additions.
 
 ## Author
 
-**Josh Buchea**
-- <https://github.com/joshbuchea>
-- <https://twitter.com/joshbuchea>
+**[Josh Buchea](http://joshbuchea.com/)**
 
 ## License
 

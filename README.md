@@ -82,41 +82,41 @@ Below are the meta attributes which are either deprecated or not supported anymo
 ## Link Element
 
 ``` html
-<link rel="copyright" href="copyright.html">
-<link rel="stylesheet" href="https://example.com/styles.css">
-<link rel="alternate" href="https://feeds.feedburner.com/martini" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
-<link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
-<link rel="me" href="mailto:name@example.com">
-<link rel="me" href="sms:+15035550125">
-<link rel="archives" href="https://example.com/2003/05/" title="May 2003">
-<link rel="index" href="https://example.com/" title="DeWitt Clinton">
-<link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
-<link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
-<link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
-<link rel="first" href="https://example.com/atomFeed.php">
-<link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="previous" href="https://example.com/atomFeed.php?page=2">
-<link rel="last" href="https://example.com/atomFeed.php?page=147">
-<link rel="shortlink" href="https://example.com/?p=43625">
-<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
-<link rel="amphtml" href="https://www.example.com/url/to/amp-version.html">
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
-<link rel="pingback" href="https://example.com/xmlrpc.php">
-<link rel="webmention" href="https://example.com/webmention">
-<link rel="manifest" href="manifest.json">
-<link rel="author" href="humans.txt">
-<link rel="import" href="component.html">
+<link href="copyright.html" rel="copyright">
+<link href="https://example.com/styles.css" rel="stylesheet">
+<link href="https://feeds.feedburner.com/martini" type="application/rss+xml" title="RSS" rel="alternate">
+<link href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3" rel="alternate">
+<link href="https://es.example.com/" hreflang="es" rel="alternate">
+<link href="https://google.com/profiles/thenextweb" type="text/html" rel="me">
+<link href="mailto:name@example.com" rel="me">
+<link href="sms:+15035550125" rel="me">
+<link href="https://example.com/2003/05/" title="May 2003" rel="archives">
+<link href="https://example.com/" title="DeWitt Clinton" rel="index">
+<link href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1" rel="start">
+<link href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention." rel="prev">
+<link href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title" rel="search">
+<link href="https://example.com/atomFeed.php?page=3" rel="self" type="application/atom+xml">
+<link href="https://example.com/atomFeed.php" rel="first">
+<link href="https://example.com/atomFeed.php?page=4" rel="next">
+<link href="https://example.com/atomFeed.php?page=2" rel="previous">
+<link href="https://example.com/atomFeed.php?page=147" rel="last">
+<link href="https://example.com/?p=43625" rel="shortlink">
+<link href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html" rel="canonical">
+<link href="https://www.example.com/url/to/amp-version.html" rel="amphtml">
+<link href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD" rel="EditURI">
+<link href="https://example.com/xmlrpc.php" rel="pingback">
+<link href="https://example.com/webmention" rel="webmention">
+<link href="manifest.json" rel="manifest">
+<link href="humans.txt" rel="author">
+<link href="component.html" rel="import">
 
 <!-- Prefetching, preloading, prebrowsing -->
-<link rel="dns-prefetch" href="//example.com/">
-<link rel="preconnect" href="https://www.example.com/">
-<link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
-<link rel="subresource" href="styles.css">
-<link rel="preload" href="image.png">
+<link href="//example.com/" rel="dns-prefetch">
+<link href="https://www.example.com/" rel="preconnect">
+<link href="https://www.example.com/" rel="prefetch">
+<link href="https://example.com/" rel="prerender">
+<link href="styles.css" rel="subresource">
+<link href="image.png" rel="preload">
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
@@ -124,7 +124,7 @@ Below are the meta attributes which are either deprecated or not supported anymo
 Below are the link relations which are either deprecated or not supported anymore:
 
 ```html
-<link rel="shortcut icon" href="path/to/favicon.ico">
+<link href="path/to/favicon.ico" rel="shortcut icon">
 ```
 
 ### Favicons
@@ -134,10 +134,10 @@ Below are the link relations which are either deprecated or not supported anymor
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
-<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
-<link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
+<link href="path/to/favicon-16.png" sizes="16x16" type="image/png" rel="icon">
+<link href="path/to/favicon-32.png" sizes="32x32" type="image/png" rel="icon">
+<link href="path/to/favicon-48.png" sizes="48x48" type="image/png" rel="icon">
+<link href="path/to/favicon-62.png" sizes="62x62" type="image/png" rel="icon">
 <!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
 
@@ -207,13 +207,13 @@ Below are the link relations which are either deprecated or not supported anymor
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<link href="apple-touch-icon.png" rel="apple-touch-icon">
+<link href="apple-touch-icon-precomposed.png" rel="apple-touch-icon-precomposed">
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons -->
 
 <!-- Startup Image -->
-<link rel="apple-touch-startup-image" href="startup.png">
+<link href="startup.png" rel="apple-touch-startup-image">
 
 <!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
 ```
@@ -224,7 +224,7 @@ Below are the link relations which are either deprecated or not supported anymor
 
 ```html
 <!-- Pinned Site -->
-<link rel="mask-icon" href="icon.svg" color="red">
+<link href="icon.svg" rel="mask-icon" color="red">
 ```
 
 ### Google Android
@@ -240,7 +240,7 @@ Below are the link relations which are either deprecated or not supported anymor
 ### Google Chrome
 
 ``` html
-<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+<link href="https://chrome.google.com/webstore/detail/APP_ID" rel="chrome-webstore-item">
 
 <!-- Disable translation prompt -->
 <meta name="google" value="notranslate">

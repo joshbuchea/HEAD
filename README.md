@@ -6,6 +6,7 @@ A collection of HTML head elements.
 
 ``` html
 <title>Page Title</title>
+<!-- The <base> tag defines a base URL for all relative links in the document --> 
 <base href="https://example.com/page.html">
 <style>
   body { color: red; }

@@ -352,14 +352,22 @@ Below are the link relations which are not recommended for use:
 ## App Links
 
 ``` html
+<!-- iOS app deep linking -->
+<meta name="apple-itunes-app" content="app-id=APP-ID"/>
+
+<!-- Android app deep linking -->
+<meta name="google-play-app" content="app-id=package-name">
+
 <!-- iOS -->
 <meta property="al:ios:url" content="applinks://docs">
 <meta property="al:ios:app_store_id" content="12345">
 <meta property="al:ios:app_name" content="App Links">
+
 <!-- Android -->
 <meta property="al:android:url" content="applinks://docs">
 <meta property="al:android:app_name" content="App Links">
 <meta property="al:android:package" content="org.applinks">
+
 <!-- Web Fallback -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
 <!-- More info: http://applinks.org/documentation/ -->

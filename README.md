@@ -151,6 +151,8 @@ Below are the link relations which are not recommended for use:
   title="oEmbed Profile: XML">
 ```
 
+- [oEmbed format](http://oembed.com/)
+
 ### Facebook / Open Graph
 
 ``` html

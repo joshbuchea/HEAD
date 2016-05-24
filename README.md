@@ -353,10 +353,11 @@ Below are the link relations which are not recommended for use:
 
 ``` html
 <!-- iOS app deep linking -->
-<meta name="apple-itunes-app" content="app-id=APP-ID"/>
+<meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com"/>
+<link rel="alternate" href="ios-app://APP-ID/http/url-sample.com" />
 
 <!-- Android app deep linking -->
-<meta name="google-play-app" content="app-id=package-name">
+<link rel="alternate" href="android-app://package-name/http/url-sample.com" />
 
 <!-- iOS -->
 <meta property="al:ios:url" content="applinks://docs">

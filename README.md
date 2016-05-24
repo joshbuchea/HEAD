@@ -140,6 +140,17 @@ Below are the link relations which are not recommended for use:
 
 ## Social
 
+### OEmbed
+
+``` html
+<link rel="alternate" type="application/json+oembed"
+  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
+  title="oEmbed Profile: JSON">
+<link rel="alternate" type="text/xml+oembed"
+  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
+  title="oEmbed Profile: XML">
+```
+
 ### Facebook / Open Graph
 
 ``` html

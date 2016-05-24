@@ -64,7 +64,7 @@ Below are the meta attributes which are not recommended for use:
 <!-- Tells search bots to revisit the page after a period. This is not supported because most Search Engines now use random intervals for re-crawling a webpage -->
 <meta name="revisit-after" content="7 days">
 
-<!-- Google strongly advises not to use this. Better to set up Apache redirects instead -->
+<!-- Google strongly advises not to use this. Better to set up server-side (e.g. Apache, nginx) redirects instead -->
 <meta http-equiv="refresh" content="300;url=https://example.com/">
 
 <!-- Cache Control -->

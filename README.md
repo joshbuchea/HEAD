@@ -3,7 +3,7 @@
 A collection of HTML head elements.
 
 ## Recommended Minimum
-The essential tags for basic, minimalist websites. 
+Below are the essential tags for basic, minimalist websites:
 
 ```
 <meta charset="utf-8">

@@ -6,11 +6,10 @@ A collection of HTML head elements.
 The essential tags for basic, minimalist websites. 
 
 ```
-<title>Page Title</title>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="https://example.com/page.html">
+<title>Page Title</title>
 ```
 
 ## Elements

@@ -17,7 +17,7 @@ Below are the essential tags for basic, minimalist websites:
 
 ``` html
 <title>Page Title</title>
-<!-- The <base> tag defines a base URL for all relative links in the document --> 
+<!-- The <base> tag defines a base URL for all relative links in the document -->
 <base href="https://example.com/page.html">
 <style>
   body { color: red; }
@@ -53,7 +53,15 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="rating" content="General">
 <meta name="referrer" content="never">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<!-- Geo tags -->
+<meta name="ICBM" content="latitude, longitude" />
+<meta name="geo.position" content="latitude, longitude" />
+<meta name="geo.region" content="country[-state]" /><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<meta name="geo.placename" content="city/town" /><!-- eg. content="New York City" -->
 ```
+
+- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
+- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
 ### Not Recommended
 Below are the meta attributes which are not recommended for use:
@@ -198,7 +206,7 @@ Below are the link relations which are not recommended for use:
 ```
 
 - [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)  
+- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### Twitter
 

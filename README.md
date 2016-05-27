@@ -114,7 +114,8 @@ Below are the meta attributes which are not recommended for use:
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 <link rel="webmention" href="https://example.com/webmention">
 <link rel="manifest" href="manifest.json">
-<link rel="author" href="humans.txt">
+<link rel="author" href="Google+ Profile URL"> 
+<link rel="publisher" href="Google+ Page URL">
 <link rel="import" href="component.html">
 
 <!-- Prefetching, preloading, prebrowsing -->

@@ -290,6 +290,30 @@ If you publish a FOAF self-description (eg. using [foaf-a-matic](http://www.ldod
 
 - [FOAF Vocabulary Specification 0.99](http://xmlns.com/foaf/spec/)
 
+### Tabular Metadata
+
+Tabular metadata can be embedded into the HTML document or linked to a [tabular data file](https://www.w3.org/TR/tabular-data-model/#dfn-tabular-data-file).
+
+#### Embedded Tabular Metadata
+
+``` html
+<script type="application/csvm+json">
+    {
+        "@context": "http://www.w3.org/ns/csvw",
+        "tables": [{
+            ....
+        }]
+    }
+</script>
+```
+    
+#### Linked Tabular Metadata
+
+``` html
+<link rel="describedby" type="application/csvm+json" href="metadata.json"/>
+```
+
+- [Embedding Tabular Metadata in HTML](https://www.w3.org/TR/csvw-html/#bib-tabular-data-model)
 ## Browser/Platform
 
 ### Apple iOS
@@ -382,13 +406,13 @@ If you publish a FOAF self-description (eg. using [foaf-a-matic](http://www.ldod
 ### Microsoft Internet Explorer (LEGACY DO NOT USE)
 
 ``` html
-<!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
+<!-- IE 6.0 introduced a feature called the "My Pictures tool bar". Whenever an IE user mouses over an image file, the tool bar appears, providing quick access to some basic features like saving images to disk.  Placing this META tag in a document (with content set to false or no) will instruct IE to not display the tool bar for images on that page. (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) (http://msdn.microsoft.com/library/default.asp?url=/workshop/misc/mypictures/mypictures_ovw.asp) -->
 <meta http-equiv="imagetoolbar" content="no">
 
 <!-- Disable Windows theming to form inputs/buttons (https://support.microsoft.com/en-us/kb/322240) -->
 <meta name="MSThemeCompatible" content="no">
 
-<!-- Disable a feature that only appeared on IE 6 beta (https://stackoverflow.com/q/2167301) -->
+<!-- Smart Tags were a controversial form of web annotation introduced by Microsoft in early versions of Windows XP. Smart Tags are a form of third-party hyperlink: they allowed Microsoft (or any entity using the format) to introduce their own hyperlinks into any page viewed in Internet Explorer.  Internet Explorer will not display Smart Tags on the page containing this META tag if this is set to true (https://stackoverflow.com/q/2167301) -->
 <meta name="MSSmartTagsPreventParsing" content="true">
 
 <!-- Interpage Transitions (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
@@ -435,6 +459,15 @@ If you publish a FOAF self-description (eg. using [foaf-a-matic](http://www.ldod
 <meta name="x5-fullscreen" content="true">
 <!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
 <meta name="x5-page-mode" content="app">
+```
+
+### Netscape Navigator
+
+``` html
+<!-- Defines the name of an alternate cache to Netscape Navigator. -->
+<meta http-equiv="Ext-cache" content="name=/some/path/index.db; instructions=User Instructions">
+<!-- Sets a "cookie" in Netscape Navigator. Values with an expiry date are considered "permanent" and will be saved to disk on exit. E.g. -->
+<meta http-equiv="Set-Cookie" content="cookievalue=xxx;expires=Friday, 31-Dec-99 23:59:59 GMT; path=/">
 ```
 
 ## App Links

@@ -52,6 +52,8 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="distribution" content="Global">
 <meta name="rating" content="General">
 <meta name="referrer" content="never">
+<!--  MicroID allows users to claim ownership of content on a website.  The content value is a hash of two other hash values:  a communication URI such as an email address or OpenID; the URI of the website your content is published on.  MicroID Generator: http://www.xposition.co.uk/microID.asp -->
+<meta name="microid" content="mailto:http:sha1:7d245f0f5b4478098edfec8b99c6657119c92980">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 ```
 

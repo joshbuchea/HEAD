@@ -158,7 +158,7 @@ Below are the link relations which are not recommended for use:
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 
-## Rails
+## Cross Site Request Forgery
 
 ``` html
 <!-- If you use the jquery-ujs library the content of these meta tags is automatically added (as a request header) to any ajax requests made. -->
@@ -167,6 +167,7 @@ Below are the link relations which are not recommended for use:
 ```
 
 - [CSRF Demystified](http://www.gnucitizen.org/blog/csrf-demystified/)
+- [When to use CSRF Protection](http://docs.spring.io/spring-security/site/docs/current/reference/html/csrf.html)
 
 ## Social
 

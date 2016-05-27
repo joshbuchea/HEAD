@@ -234,8 +234,71 @@ Below are the link relations which are not recommended for use:
 
 - [oEmbed format](http://oembed.com/)
 
-## Browser/Platform
+## Ontologies
 
+### Dublin Core
+
+``` html
+<!-- In order to give recipient software applications an indication of the XHTML profile that was used to encode the DCMI metadata, the 'profile' attribute of the <head> element must be used to provide the URI of this DCMI recommendation. -->
+<head profile="http://dublincore.org/documents/dcq-html/">
+<!-- The 'DC.' and 'DCTERMS.' prefixes are used to indicate the namespace [DCNS] from which the property is taken. -->
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://dublincore.org/documents/dcq-html/" />
+
+<!-- Title will be a name by which the resource is formally known. -->
+<meta name="DC.title" lang="en" content="HTML elements - HTMLHeadElement">
+<!-- An entity primarily responsible for making the content of the resource.  Examples include a person, an organization, or a service. -->
+<meta name="DC.creator" content="J. Buchea">
+<!-- Expressed as keywords, key phrases or classification codes that describe a topic of the resource from a controlled vocabulary or formal classification scheme. -->
+<meta name="DC.subject" lang="en" content="DCMI; Dublin Core Metadata Initiative; DC META Tags">
+<!-- An account of the content of the resource represented by an abstract, table of contents, reference to a graphical representation of content or some other account of the content. -->
+<meta name="DC.description" lang="en" content="A collection of HTML head elements.">
+<!-- An entity responsible for making the resource available  Examples include a person, an organization, or a service. -->
+<meta name="DC.publisher" content="Github, Inc.">
+<!-- An entity responsible for making contributions to the content of the resource.  Examples include a person, an organization, or a service. -->
+<meta name="DC.contributor" content="D. Condrey">
+<!-- The creation or availability of the resource encoded in ISO8601[W3CDTF] format in the form of YYYY-MM-DD. -->
+<meta name="DC.date" scheme="W3CDTF" content="2016-05-26">
+<!-- Terms describing general categories, functions, genres, or aggregation levels for content from a controlled vocabulary (for example, the DCMI Type Vocabulary [DCT1]). -->
+<meta name="DC.type" scheme="DCMIType" content="Text">
+<!-- The media-type or dimensions of the resource. Format may be used to identify the software, hardware, or other equipment needed to display or operate the resource. Examples of dimensions include size and duration. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [MIME] defining computer media formats). -->
+<meta name="DC.format" scheme="IMT" content="text/html">
+<!-- An unambiguous reference to the resource within a given context by means of a string or number conforming to a formal identification system. Formal identification systems include but are not limited to the Uniform Resource Identifier (URI) (including the Uniform Resource Locator (URL)), the Digital Object Identifier (DOI) and the International Standard Book Number (ISBN). -->
+<meta name="DC.identifier" content="/meta-tags/dublin/">
+<!-- A Reference to a resource from which the present resource is derived by means of a string or number conforming to a formal identification system. -->
+<meta name="DC.source" content="/meta-tags/">
+<!-- A language of the intellectual content of the resource represented by the two or three letter language tags defined by RFC 3066 and ISO639. -->
+<meta name="DC.language" scheme="RFC1766" content="en">
+<!-- A reference to a related resource. -->
+<meta name="DC.relation" content="https://github.com/joshbuchea/HEAD/">
+<!-- The extent or scope of the content of the resource. -->
+<meta name="DC.coverage" content="World">
+<!-- Information about rights held in and over the resource. -->
+<meta name="DC.rights" content="/blob/master/LICENSE">
+```
+
+### OWL
+
+``` html
+<script type="text/turtle">
+  // Turtle ontology content
+</script>
+```
+
+- [RDF 1.1 Turtle](https://www.w3.org/TR/turtle/#in-html)
+
+### FOAF
+
+If you publish a FOAF self-description (eg. using [foaf-a-matic](http://www.ldodds.com/foaf/foaf-a-matic.html)) you can make it easier for tools to find your FOAF by putting markup in the head of your HTML homepage. It doesn't really matter what filename you choose for your FOAF document, although foaf.rdf is a common choice. The linking markup is as follows:
+
+``` html
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://example.com/~you/foaf.rdf"/>
+```
+
+- [FOAF Vocabulary Specification 0.99](http://xmlns.com/foaf/spec/)
+
+## Browser/Platform
 
 ### Apple iOS
 

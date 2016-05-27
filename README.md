@@ -55,7 +55,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude" />
-<meta name="geo.position" content="latitude, longitude" />
+<meta name="geo.position" content="latitude;longitude" />
 <meta name="geo.region" content="country[-state]" /><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
 <meta name="geo.placename" content="city/town" /><!-- eg. content="New York City" -->
 ```

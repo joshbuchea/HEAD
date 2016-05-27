@@ -160,19 +160,6 @@ Below are the link relations which are not recommended for use:
 
 ## Social
 
-### OEmbed
-
-``` html
-<link rel="alternate" type="application/json+oembed"
-  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
-  title="oEmbed Profile: JSON">
-<link rel="alternate" type="text/xml+oembed"
-  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
-  title="oEmbed Profile: XML">
-```
-
-- [oEmbed format](http://oembed.com/)
-
 ### Facebook / Open Graph
 
 ``` html
@@ -233,6 +220,19 @@ Below are the link relations which are not recommended for use:
 <meta itemprop="description" content="Content description less than 200 characters">
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
+
+### OEmbed
+
+``` html
+<link rel="alternate" type="application/json+oembed"
+  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
+  title="oEmbed Profile: JSON">
+<link rel="alternate" type="text/xml+oembed"
+  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
+  title="oEmbed Profile: XML">
+```
+
+- [oEmbed format](http://oembed.com/)
 
 ## Browser/Platform
 

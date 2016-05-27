@@ -150,6 +150,16 @@ Below are the link relations which are not recommended for use:
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 
+## Rails
+
+``` html
+<!-- If you use the jquery-ujs library the content of these meta tags is automatically added (as a request header) to any ajax requests made. -->
+<meta name='csrf-param' content='authenticity_token'>
+<meta name='csrf-token' content='/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc='>
+```
+
+- [CSRF Demystified](http://www.gnucitizen.org/blog/csrf-demystified/)
+
 ## Social
 
 ### OEmbed

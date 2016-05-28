@@ -292,6 +292,53 @@ Below are the link relations which are not recommended for use:
 <meta name="DC.rights" content="/blob/master/LICENSE">
 ```
 
+### AGLS
+
+The AGLS Jurisdiction Vocabulary Encoding Scheme is a controlled list of terms for providing Australian jurisdiction values in AGLS metadata records.
+
+``` html
+<!--  A specific piece of legislation which requires or drives the creation or provision of the resource -->
+<meta name="AGLSTERMS.allow-search" content="">
+<!--  A specific piece of legislation which requires or drives the creation or provision of the resource. -->
+<meta name="AGLSTERMS.act" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  A statement indicating the accessibility characteristics of the resource. -->
+<meta name=" AGLSTERMS.accessibility " scheme="AGLSTERMS.AglsJuri" content="">
+<!--  Perceptual mode for the resource. -->
+<meta name=" AGLSTERMS.accessMode " scheme="AGLSTERMS.AglsJuri" content="">
+<!--  The level of aggregation of the described resource - an 'item' or a 'collection'. -->
+<meta name="AGLSTERMS.aggregationLevel" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  How the resource can be obtained or accessed, or contact information. Primarily used for offline resources to provide information on how to obtain physical access to the resource. -->
+<meta name="AGLSTERMS.availability" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  A specific piece of case law which requires or drives the creation or provision of the resource. -->
+<meta name="AGLSTERMS.case" scheme="AGLSTERMS.AglsJuri" content="">  
+<!--  The generic type of the resource being described - a 'service', 'document' or 'agency'. -->
+<meta name="AGLSTERMS.category" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  Date a license was applied or became effective.  -->
+<meta name="AGLSTERMS.dateLicensed" scheme="AGLSTERMS.AglsJuri" content="">  
+<!--  The form of the described resource where the value of category is‘document’. Document is used in its widest sense and includes resources such as text, images, sound files and software.  -->
+<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  The business function to which the resource relates. Functions are the major units of activity which organisations pursue in order to meet the mission and goals of the organisation. -->
+<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A related resource that is a performance, production, derivation, translation or interpretation of the described resource. -->
+<meta name="AGLSTERMS.isBasisFor" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A related resource of which the described resource is a performance, production, derivation, translation or interpretation.  -->
+<meta name="AGLSTERMS.isBasedOn" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  The name of the political/administrative entity covered by the described resource. Possible values are defined here: http://www.agls.gov.au/documents/AglsJuri/ using the Jurisdiction name or abbreviation -->
+<meta name="AGLSTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A specific legal instrument which requires or drives the creation or provision of the resource.  -->
+<meta name="AGLSTERMS.mandate" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A protective marking applied to the described resource.  -->
+<meta name="AGLSTERMS.protectiveMarking" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A specific regulation which requires or drives the creation or provision of the resource.  -->
+<meta name="AGLSTERMS.regulation" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  The form of the described resource where the value of category is ‘service'.  -->
+<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.AglsJuri" content="">
+
+- [AGLS metadata terms](http://www.agls.gov.au/documents/aglsterms/)
+- [AGLS Jurisdiction Vocabulary Encoding Scheme](http://www.agls.gov.au/documents/AglsJuri/)
+- [AGLS Namespace](http://www.agls.gov.au/schemas/rdfs/2010/06/30/aglsterms.rdf)
+- [MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
+
 ### OWL
 
 ``` html

@@ -52,6 +52,10 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="rating" content="General">
 <meta name="referrer" content="never">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no">
+
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude" />
 <meta name="geo.position" content="latitude;longitude" />

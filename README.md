@@ -165,8 +165,8 @@ Below are the link relations which are not recommended for use:
 
 ``` html
 <!-- If you use the jquery-ujs library the content of these meta tags is automatically added (as a request header) to any ajax requests made. -->
-<meta name='csrf-param' content='authenticity_token'>
-<meta name='csrf-token' content='/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc='>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc=">
 ```
 
 - [CSRF Demystified](http://www.gnucitizen.org/blog/csrf-demystified/)
@@ -253,9 +253,9 @@ Below are the link relations which are not recommended for use:
 ### Dublin Core
 
 ``` html
-<!-- In order to give recipient software applications an indication of the XHTML profile that was used to encode the DCMI metadata, the 'profile' attribute of the <head> element must be used to provide the URI of this DCMI recommendation. -->
+<!-- In order to give recipient software applications an indication of the XHTML profile that was used to encode the DCMI metadata, the  "profile" attribute of the <head> element must be used to provide the URI of this DCMI recommendation. -->
 <head profile="http://dublincore.org/documents/dcq-html/">
-<!-- The 'DC.' and 'DCTERMS.' prefixes are used to indicate the namespace [DCNS] from which the property is taken. -->
+<!-- The "DC." and "DCTERMS." prefixes are used to indicate the namespace [DCNS] from which the property is taken. -->
 <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
 <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
 <meta name="DC.identifier" scheme="DCTERMS.URI" content="http://dublincore.org/documents/dcq-html/" />

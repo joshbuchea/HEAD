@@ -66,6 +66,7 @@ Below are the essential tags for basic, minimalist websites:
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
 ### Not Recommended
+
 Below are the meta attributes which are not recommended for use:
 
 ```html
@@ -335,6 +336,7 @@ Tabular metadata can be embedded into the HTML document or linked to a [tabular 
 ```
 
 - [Embedding Tabular Metadata in HTML](https://www.w3.org/TR/csvw-html/#bib-tabular-data-model)
+
 ## Browser/Platform
 
 ### Apple iOS

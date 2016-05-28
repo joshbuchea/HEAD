@@ -40,6 +40,10 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
+<!--  Used to verify ownership of Alexa Search -->
+<meta name="alexaverifyid" content="">
+<!--  A bitcoin-address -->
+<meta name="bitcoin" content="">
 <meta name="abstract" content="">
 <meta name="topic" content="">
 <meta name="summary" content="">
@@ -52,18 +56,21 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="distribution" content="Global">
 <meta name="rating" content="General">
 <meta name="referrer" content="never">
+<!--  MicroID allows users to claim ownership of content on a website.  The content value is a hash of two other hash values:  a communication URI such as an email address or OpenID; the URI of the website your content is published on.  MicroID Generator: http://www.xposition.co.uk/microID.asp -->
+<meta name="microid" content="mailto:http:sha1:7d245f0f5b4478098edfec8b99c6657119c92980">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 <!-- Geo tags -->
-<meta name="ICBM" content="latitude, longitude" />
-<meta name="geo.position" content="latitude;longitude" />
-<meta name="geo.region" content="country[-state]" /><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town" /><!-- eg. content="New York City" -->
+<meta name="ICBM" content="latitude, longitude">
+<meta name="geo.position" content="latitude;longitude">
+<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
 ```
 
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
 ### Not Recommended
+
 Below are the meta attributes which are not recommended for use:
 
 ```html
@@ -158,6 +165,17 @@ Below are the link relations which are not recommended for use:
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 
+## Cross Site Request Forgery
+
+``` html
+<!-- If you use the jquery-ujs library the content of these meta tags is automatically added (as a request header) to any ajax requests made. -->
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="/bZVwvomkAnwAI1Qd37lFeewvpOIiackk9121fFwWwc=">
+```
+
+- [CSRF Demystified](http://www.gnucitizen.org/blog/csrf-demystified/)
+- [When to use CSRF Protection](http://docs.spring.io/spring-security/site/docs/current/reference/html/csrf.html)
+
 ## Social
 
 ### Facebook / Open Graph
@@ -234,8 +252,143 @@ Below are the link relations which are not recommended for use:
 
 - [oEmbed format](http://oembed.com/)
 
-## Browser/Platform
+## Ontologies
 
+### Dublin Core
+
+``` html
+<!-- In order to give recipient software applications an indication of the XHTML profile that was used to encode the DCMI metadata, the  "profile" attribute of the <head> element must be used to provide the URI of this DCMI recommendation. -->
+<head profile="http://dublincore.org/documents/dcq-html/">
+<!-- The "DC." and "DCTERMS." prefixes are used to indicate the namespace [DCNS] from which the property is taken. -->
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://dublincore.org/documents/dcq-html/">
+
+<!-- Title will be a name by which the resource is formally known. -->
+<meta name="DC.title" lang="en" content="HTML elements - HTMLHeadElement">
+<!-- An entity primarily responsible for making the content of the resource.  Examples include a person, an organization, or a service. -->
+<meta name="DC.creator" content="J. Buchea">
+<!-- Expressed as keywords, key phrases or classification codes that describe a topic of the resource from a controlled vocabulary or formal classification scheme. -->
+<meta name="DC.subject" lang="en" content="DCMI; Dublin Core Metadata Initiative; DC META Tags">
+<!-- An account of the content of the resource represented by an abstract, table of contents, reference to a graphical representation of content or some other account of the content. -->
+<meta name="DC.description" lang="en" content="A collection of HTML head elements.">
+<!-- An entity responsible for making the resource available  Examples include a person, an organization, or a service. -->
+<meta name="DC.publisher" content="Github, Inc.">
+<!-- An entity responsible for making contributions to the content of the resource.  Examples include a person, an organization, or a service. -->
+<meta name="DC.contributor" content="D. Condrey">
+<!-- The creation or availability of the resource encoded in ISO8601[W3CDTF] format in the form of YYYY-MM-DD. -->
+<meta name="DC.date" scheme="W3CDTF" content="2016-05-26">
+<!-- Terms describing general categories, functions, genres, or aggregation levels for content from a controlled vocabulary (for example, the DCMI Type Vocabulary [DCT1]). -->
+<meta name="DC.type" scheme="DCMIType" content="Text">
+<!-- The media-type or dimensions of the resource. Format may be used to identify the software, hardware, or other equipment needed to display or operate the resource. Examples of dimensions include size and duration. Recommended best practice is to select a value from a controlled vocabulary (for example, the list of Internet Media Types [MIME] defining computer media formats). -->
+<meta name="DC.format" scheme="IMT" content="text/html">
+<!-- An unambiguous reference to the resource within a given context by means of a string or number conforming to a formal identification system. Formal identification systems include but are not limited to the Uniform Resource Identifier (URI) (including the Uniform Resource Locator (URL)), the Digital Object Identifier (DOI) and the International Standard Book Number (ISBN). -->
+<meta name="DC.identifier" content="/meta-tags/dublin/">
+<!-- A Reference to a resource from which the present resource is derived by means of a string or number conforming to a formal identification system. -->
+<meta name="DC.source" content="/meta-tags/">
+<!-- A language of the intellectual content of the resource represented by the two or three letter language tags defined by RFC 3066 and ISO639. -->
+<meta name="DC.language" scheme="RFC1766" content="en">
+<!-- A reference to a related resource. -->
+<meta name="DC.relation" content="https://github.com/joshbuchea/HEAD/">
+<!-- The extent or scope of the content of the resource. -->
+<meta name="DC.coverage" content="World">
+<!-- Information about rights held in and over the resource. -->
+<meta name="DC.rights" content="/blob/master/LICENSE">
+```
+
+### AGLS
+
+The AGLS Jurisdiction Vocabulary Encoding Scheme is a controlled list of terms for providing Australian jurisdiction values in AGLS metadata records.
+
+``` html
+<!--  A specific piece of legislation which requires or drives the creation or provision of the resource -->
+<meta name="AGLSTERMS.allow-search" content="">
+<!--  A specific piece of legislation which requires or drives the creation or provision of the resource. -->
+<meta name="AGLSTERMS.act" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  A statement indicating the accessibility characteristics of the resource. -->
+<meta name=" AGLSTERMS.accessibility " scheme="AGLSTERMS.AglsJuri" content="">
+<!--  Perceptual mode for the resource. -->
+<meta name=" AGLSTERMS.accessMode " scheme="AGLSTERMS.AglsJuri" content="">
+<!--  The level of aggregation of the described resource - an 'item' or a 'collection'. -->
+<meta name="AGLSTERMS.aggregationLevel" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  How the resource can be obtained or accessed, or contact information. Primarily used for offline resources to provide information on how to obtain physical access to the resource. -->
+<meta name="AGLSTERMS.availability" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  A specific piece of case law which requires or drives the creation or provision of the resource. -->
+<meta name="AGLSTERMS.case" scheme="AGLSTERMS.AglsJuri" content="">  
+<!--  The generic type of the resource being described - a 'service', 'document' or 'agency'. -->
+<meta name="AGLSTERMS.category" scheme="AGLSTERMS.AglsJuri" content="">
+<!--  Date a license was applied or became effective.  -->
+<meta name="AGLSTERMS.dateLicensed" scheme="AGLSTERMS.AglsJuri" content="">  
+<!--  The form of the described resource where the value of category is‘document’. Document is used in its widest sense and includes resources such as text, images, sound files and software.  -->
+<meta name="AGLSTERMS.documentType" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  The business function to which the resource relates. Functions are the major units of activity which organisations pursue in order to meet the mission and goals of the organisation. -->
+<meta name="AGLSTERMS.function" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A related resource that is a performance, production, derivation, translation or interpretation of the described resource. -->
+<meta name="AGLSTERMS.isBasisFor" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A related resource of which the described resource is a performance, production, derivation, translation or interpretation.  -->
+<meta name="AGLSTERMS.isBasedOn" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  The name of the political/administrative entity covered by the described resource. Possible values are defined here: http://www.agls.gov.au/documents/AglsJuri/ using the Jurisdiction name or abbreviation -->
+<meta name="AGLSTERMS.jurisdiction" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A specific legal instrument which requires or drives the creation or provision of the resource.  -->
+<meta name="AGLSTERMS.mandate" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A protective marking applied to the described resource.  -->
+<meta name="AGLSTERMS.protectiveMarking" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  A specific regulation which requires or drives the creation or provision of the resource.  -->
+<meta name="AGLSTERMS.regulation" scheme="AGLSTERMS.AglsJuri" content=""> 
+<!--  The form of the described resource where the value of category is ‘service'.  -->
+<meta name="AGLSTERMS.serviceType" scheme="AGLSTERMS.AglsJuri" content="">
+
+- [AGLS metadata terms](http://www.agls.gov.au/documents/aglsterms/)
+- [AGLS Jurisdiction Vocabulary Encoding Scheme](http://www.agls.gov.au/documents/AglsJuri/)
+- [AGLS Namespace](http://www.agls.gov.au/schemas/rdfs/2010/06/30/aglsterms.rdf)
+- [MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
+
+### OWL
+
+``` html
+<script type="text/turtle">
+  // Turtle ontology content
+</script>
+```
+
+- [RDF 1.1 Turtle](https://www.w3.org/TR/turtle/#in-html)
+
+### FOAF
+
+If you publish a FOAF self-description (eg. using [foaf-a-matic](http://www.ldodds.com/foaf/foaf-a-matic.html)) you can make it easier for tools to find your FOAF by putting markup in the head of your HTML homepage. It doesn't really matter what filename you choose for your FOAF document, although foaf.rdf is a common choice. The linking markup is as follows:
+
+``` html
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://example.com/~you/foaf.rdf"/>
+```
+
+- [FOAF Vocabulary Specification 0.99](http://xmlns.com/foaf/spec/)
+
+### Tabular Metadata
+
+Tabular metadata can be embedded into the HTML document or linked to a [tabular data file](https://www.w3.org/TR/tabular-data-model/#dfn-tabular-data-file).
+
+#### Embedded Tabular Metadata
+
+``` html
+<script type="application/csvm+json">
+    {
+        "@context": "http://www.w3.org/ns/csvw",
+        "tables": [{
+            ....
+        }]
+    }
+</script>
+```
+    
+#### Linked Tabular Metadata
+
+``` html
+<link rel="describedby" type="application/csvm+json" href="metadata.json"/>
+```
+
+- [Embedding Tabular Metadata in HTML](https://www.w3.org/TR/csvw-html/#bib-tabular-data-model)
+
+## Browser/Platform
 
 ### Apple iOS
 
@@ -327,13 +480,13 @@ Below are the link relations which are not recommended for use:
 ### Microsoft Internet Explorer (LEGACY DO NOT USE)
 
 ``` html
-<!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
+<!-- IE 6.0 introduced a feature called the "My Pictures tool bar". Whenever an IE user mouses over an image file, the tool bar appears, providing quick access to some basic features like saving images to disk.  Placing this META tag in a document (with content set to false or no) will instruct IE to not display the tool bar for images on that page. (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) (http://msdn.microsoft.com/library/default.asp?url=/workshop/misc/mypictures/mypictures_ovw.asp) -->
 <meta http-equiv="imagetoolbar" content="no">
 
 <!-- Disable Windows theming to form inputs/buttons (https://support.microsoft.com/en-us/kb/322240) -->
 <meta name="MSThemeCompatible" content="no">
 
-<!-- Disable a feature that only appeared on IE 6 beta (https://stackoverflow.com/q/2167301) -->
+<!-- Smart Tags were a controversial form of web annotation introduced by Microsoft in early versions of Windows XP. Smart Tags are a form of third-party hyperlink: they allowed Microsoft (or any entity using the format) to introduce their own hyperlinks into any page viewed in Internet Explorer.  Internet Explorer will not display Smart Tags on the page containing this META tag if this is set to true (https://stackoverflow.com/q/2167301) -->
 <meta name="MSSmartTagsPreventParsing" content="true">
 
 <!-- Interpage Transitions (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
@@ -380,6 +533,15 @@ Below are the link relations which are not recommended for use:
 <meta name="x5-fullscreen" content="true">
 <!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
 <meta name="x5-page-mode" content="app">
+```
+
+### Netscape Navigator
+
+``` html
+<!-- Defines the name of an alternate cache to Netscape Navigator. -->
+<meta http-equiv="Ext-cache" content="name=/some/path/index.db; instructions=User Instructions">
+<!-- Sets a "cookie" in Netscape Navigator. Values with an expiry date are considered "permanent" and will be saved to disk on exit. E.g. -->
+<meta http-equiv="Set-Cookie" content="cookievalue=xxx;expires=Friday, 31-Dec-99 23:59:59 GMT; path=/">
 ```
 
 ## App Links

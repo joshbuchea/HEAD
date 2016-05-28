@@ -33,7 +33,6 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <meta name="application-name" content="Application Name">
-<meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <meta name="description" content="150 chars">
 <meta name="subject" content="your website's subject">
 <meta name="robots" content="index,follow,noodp">
@@ -69,6 +68,9 @@ Below are the meta attributes which are not recommended for use:
 ```html
 <!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
 <meta name="language" content="en">
+
+<!-- Google disregards & Bing considers it an indicator of spam -->
+<meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 
 <!-- No evidence of current use in any search engines -->
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">

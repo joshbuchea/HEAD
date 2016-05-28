@@ -56,10 +56,10 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="microid" content="mailto:http:sha1:7d245f0f5b4478098edfec8b99c6657119c92980">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 <!-- Geo tags -->
-<meta name="ICBM" content="latitude, longitude" />
-<meta name="geo.position" content="latitude;longitude" />
-<meta name="geo.region" content="country[-state]" /><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town" /><!-- eg. content="New York City" -->
+<meta name="ICBM" content="latitude, longitude">
+<meta name="geo.position" content="latitude;longitude">
+<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
+<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
 ```
 
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
@@ -256,9 +256,9 @@ Below are the link relations which are not recommended for use:
 <!-- In order to give recipient software applications an indication of the XHTML profile that was used to encode the DCMI metadata, the  "profile" attribute of the <head> element must be used to provide the URI of this DCMI recommendation. -->
 <head profile="http://dublincore.org/documents/dcq-html/">
 <!-- The "DC." and "DCTERMS." prefixes are used to indicate the namespace [DCNS] from which the property is taken. -->
-<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://dublincore.org/documents/dcq-html/" />
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/">
+<meta name="DC.identifier" scheme="DCTERMS.URI" content="http://dublincore.org/documents/dcq-html/">
 
 <!-- Title will be a name by which the resource is formally known. -->
 <meta name="DC.title" lang="en" content="HTML elements - HTMLHeadElement">

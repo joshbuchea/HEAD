@@ -25,7 +25,7 @@ Below are the essential tags for basic, minimalist websites:
 <script src="script.js"></script>
 ```
 
-## Meta Element
+## Meta Elements
 
 ``` html
 <meta charset="utf-8">
@@ -63,7 +63,7 @@ Below are the essential tags for basic, minimalist websites:
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-### Not Recommended
+### Meta Elements Not Recommended
 Below are the meta attributes which are not recommended for use:
 
 ```html
@@ -94,7 +94,7 @@ Below are the meta attributes which are not recommended for use:
 <meta http-equiv="Cache-Control" content="no-cache">
 ```
 
-## Link Element
+## Link Elements
 
 ``` html
 <link rel="copyright" href="copyright.html">
@@ -135,7 +135,7 @@ Below are the meta attributes which are not recommended for use:
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-### Not Recommended
+### Link Elements Not Recommended
 Below are the link relations which are not recommended for use:
 
 ```html

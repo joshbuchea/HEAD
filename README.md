@@ -406,6 +406,16 @@ Below are the link relations which are not recommended for use:
 
 - [App Links Docs](http://applinks.org/documentation/)
 
+## Notes
+
+### Performance
+Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
+
+Example:
+```
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+```
+
 ## Other Resources
 
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)

@@ -16,12 +16,21 @@ Below are the essential tags for basic, minimalist websites:
 ## Elements
 
 ``` html
+<!-- Document Title -->
 <title>Page Title</title>
-<!-- The <base> tag defines a base URL for all relative links in the document -->
+
+<!-- Base URL to use for all relative URLs contained within the document -->
 <base href="https://example.com/page.html">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="code-guide.css">
+
+<!-- In-document CSS -->
 <style>
-  body { color: red; }
+  /* ... */
 </style>
+
+<!-- JavaScript -->
 <script src="script.js"></script>
 ```
 

@@ -448,4 +448,6 @@ Please follow these steps for pull requests:
 
 ## License
 
-[MIT License](LICENSE)
+[CC0 License](LICENSE)
+
+![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png "CC0")

@@ -48,6 +48,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="googlebot" content="index,follow">
 <meta name="google" content="nositelinkssearchbox">
 <meta name="google-site-verification" content="verification_token">
+<meta name="generator" content="program">
 <meta name="abstract" content="">
 <meta name="topic" content="">
 <meta name="summary" content="">

@@ -23,7 +23,7 @@ Below are the essential tags for basic, minimalist websites:
 <base href="https://example.com/page.html">
 
 <!-- External CSS -->
-<link rel="stylesheet" href="code-guide.css">
+<link rel="stylesheet" href="styles.css">
 
 <!-- In-document CSS -->
 <style>

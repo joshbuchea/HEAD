@@ -269,13 +269,13 @@ Below are the link relations which are not recommended for use:
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons -->
 
 <!-- Startup Image -->
-<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="apple-touch-startup-image" href="path/to/startup.png">
 
 <!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
 ```
@@ -286,7 +286,7 @@ Below are the link relations which are not recommended for use:
 
 ```html
 <!-- Pinned Site -->
-<link rel="mask-icon" href="icon.svg" color="red">
+<link rel="mask-icon" href="path/to/icon.svg" color="red">
 ```
 
 ### Google Android
@@ -330,14 +330,14 @@ Below are the link relations which are not recommended for use:
 <meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
 <meta name="msapplication-navbutton-color" content="#FF3300">
 <meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile">
-<meta name="msapplication-square150x150logo" content="images/logo.png">
-<meta name="msapplication-square310x310logo" content="images/largelogo.png">
-<meta name="msapplication-square70x70logo" content="images/tinylogo.png">
-<meta name="msapplication-wide310x150logo" content="images/widelogo.png">
+<meta name="msapplication-square150x150logo" content="path/to/logo.png">
+<meta name="msapplication-square310x310logo" content="path/to/largelogo.png">
+<meta name="msapplication-square70x70logo" content="path/to/tinylogo.png">
+<meta name="msapplication-wide310x150logo" content="path/to/widelogo.png">
 <meta name="msapplication-task" content="name=Check Order Status;action-uri=./orderStatus.aspx?src=IE9;icon-uri=./favicon.ico">
 <meta name="msapplication-task-seperator" content="1">
 <meta name="msapplication-TileColor" content="#FF3300">
-<meta name="msapplication-TileImage" content="images/tileimage.jpg">
+<meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
 <meta name="msapplication-window" content="width=1024;height=768">
 ```
 

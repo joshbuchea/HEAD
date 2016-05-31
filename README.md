@@ -432,6 +432,10 @@ Example:
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
+## Related Projects
+
+- [head-it](https://github.com/hemanth/head-it) a simple interface to use `head`.
+
 ## Contributing
 
 Open an issue or a pull request to suggest changes or additions.
@@ -441,10 +445,6 @@ Please follow these steps for pull requests:
 - Use double quotes on attributes
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
-
-## Related Projects
-
-- [head-it](https://github.com/hemanth/head-it) a simple interface to use `head`.
 
 ## Author
 

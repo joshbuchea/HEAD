@@ -72,26 +72,68 @@ Below are the essential tags for basic, minimalist websites:
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
+
+<!-- Short 3 or 4 sentence description of website: included in search engine results -->
 <meta name="description" content="150 chars">
+
+<!-- Short description of your sites subject -->
 <meta name="subject" content="your website's subject">
+
+<!-- Controls what pages crawlers are allowed to index on your site -->
 <meta name="robots" content="index,follow,noodp">
+
+<!-- Works the same as the robots meta tag, but exclusively for Google -->
 <meta name="googlebot" content="index,follow">
+
+<!-- Tells the Google search engine to not show the sitelinks search box -->
 <meta name="google" content="nositelinkssearchbox">
+
+<!-- Verifies ownership of the Search Console for Google -->
 <meta name="google-site-verification" content="verification_token">
+
+<!-- Used to name software used to build the website (i.e. - Wordpress, Dreamweaver) -->
 <meta name="generator" content="program">
+
+<!-- Very short sentence describing the purpose of the website -->
 <meta name="abstract" content="">
+
+<!-- Describes the topic of the website -->
 <meta name="topic" content="">
+
+<!-- Brief summary of the company or purpose of the website -->
 <meta name="summary" content="">
+
+<!-- A deprecated tag that does the same as the keywords meta tag -->
 <meta name="classification" content="business">
+
+<!-- Full domain name or web address -->
 <meta name="url" content="https://example.com/">
+
+<!-- Does the same as URL, older and not supported -->
 <meta name="identifier-URL" content="https://example.com/">
+
+
 <meta name="directory" content="submission">
+
+<!-- Does the same function as the keywords tag -->
 <meta name="category" content="">
+
+<!-- Makes sure your website shows up in all countries and languages -->
 <meta name="coverage" content="Worldwide">
+
+<!-- Does the same as the coverage tag -->
 <meta name="distribution" content="Global">
+
+<!-- Gives a general age rating based on sites content -->
 <meta name="rating" content="General">
+
+<!-- Allows control over how referrer information is passed -->
 <meta name="referrer" content="never">
+
+<!-- Allows control over where resources are loaded from -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->

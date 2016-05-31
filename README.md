@@ -1,6 +1,6 @@
 # HEAD
 
-**Summary:** A collection of current &amp; deprecated HTML head elements for your reference in order to decide what your head needs.
+A list of everything that could go in the `<head>` of your document
 
 **Table of Contents:**
 - [Recommended Minimum](#recommended-minimum)

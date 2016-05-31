@@ -175,6 +175,11 @@ Below are the link relations which are not recommended for use:
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 
+<!--Android Chrome with App Name when add to homescreen-->
+<link rel="manifest" href="path/to/manifest.json">
+
+- [Read More Here](https://developer.chrome.com/multidevice/android/installtohomescreen)
+
 ## Social
 
 ### Facebook / Open Graph
@@ -272,6 +277,16 @@ Below are the link relations which are not recommended for use:
 <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="path/to/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="path/to/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="path/to/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="path/to/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="path/to/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="path/to/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="path/to/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="path/to/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="path/to/apple-touch-icon-180x180.png">
 <!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons -->
 
 <!-- Startup Image -->

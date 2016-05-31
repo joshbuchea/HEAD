@@ -7,9 +7,16 @@ A collection of HTML head elements.
 Below are the essential tags for basic, minimalist websites:
 
 ```html
+<!-- Use most common unicode format -->
 <meta charset="utf-8">
+
+<!-- Displays in highest standard accepted by internet explorer -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Makes the screen fit on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Document Title -->
 <title>Page Title</title>
 ```
 

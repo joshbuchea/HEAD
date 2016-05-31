@@ -30,6 +30,7 @@
 - [Notes](#notes)
   - [Performance](#performance)
 - [Other Resources](#other-resources)
+- [Related Projects](#related-projects)
 - [Contributing](#contributing)
 
 ## Recommended Minimum

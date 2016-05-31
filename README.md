@@ -442,7 +442,9 @@ Please follow these steps for pull requests:
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
 
-P.S: [head-it](https://github.com/hemanth/head-it) a simple interface to use `head`.
+## Related Projects
+
+- [head-it](https://github.com/hemanth/head-it) a simple interface to use `head`.
 
 ## Author
 

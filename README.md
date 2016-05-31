@@ -1,6 +1,36 @@
 # HEAD
 
-A collection of HTML head elements.
+**Summary:** A collection of current &amp; deprecated HTML head elements for your reference in order to decide what your head needs.
+
+**Table of Contents:**
+- [Recommended Minimum](#recommended-minimum)
+- [Elements](#elements)
+- [Meta Elements](#meta-elements)
+  - [Meta Elements: Not Recommended](#meta-elements-not-recommended)
+- [Link Elements](#link-elements)
+  - [Link Elements: Not Recommended](#link-elements-not-recommended)
+  - [Favicons](#favicons)
+- [Social](#social)
+  - [Facebook / Open Graph](#facebook--open-graph)
+  - [Facebook / Instant Articles](#facebook--instant-articles)
+  - [Twitter](#twitter)
+  - [Google+ / Schema.org](#google--schemaorg)
+  - [OEmbed](#oembed)
+- [Browser / Platform](#browser--platform)
+  - [Apple iOS](#apple-ios)
+  - [Apple Safari](#apple-safari)
+  - [Google Android](#google-android)
+  - [Google Chrome](#google-chrome)
+  - [Microsoft Internet Explorer](#microsoft-internet-explorer)
+  - [Microsoft Internet Explorer: Legacy, Do Not Use!](#microsoft-internet-explorer-legacy-do-not-use)
+  - [360 Browser](#360-browser)
+  - [UC Mobile Browser](#uc-mobile-browser)
+  - [QQ Mobile Browser](#qq-mobile-browser)
+- [App Links](#app-links)
+- [Notes](#notes)
+  - [Performance](#performance)
+- [Other Resources](#other-resources)
+- [Contributing](#contributing)
 
 ## Recommended Minimum
 
@@ -76,7 +106,7 @@ Below are the essential tags for basic, minimalist websites:
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-### Meta Elements Not Recommended
+### Meta Elements: Not Recommended
 Below are the meta attributes which are not recommended for use:
 
 ```html
@@ -151,7 +181,7 @@ Below are the meta attributes which are not recommended for use:
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-### Link Elements Not Recommended
+### Link Elements: Not Recommended
 Below are the link relations which are not recommended for use:
 
 ```html
@@ -251,7 +281,7 @@ Below are the link relations which are not recommended for use:
 
 - [oEmbed format](http://oembed.com/)
 
-## Browser/Platform
+## Browser / Platform
 
 
 ### Apple iOS
@@ -341,7 +371,7 @@ Below are the link relations which are not recommended for use:
 <meta name="msapplication-window" content="width=1024;height=768">
 ```
 
-### Microsoft Internet Explorer (LEGACY DO NOT USE)
+### Microsoft Internet Explorer: Legacy, Do Not Use!
 
 ``` html
 <!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->

@@ -11,12 +11,12 @@
   - [Link Elements: Not Recommended](#link-elements-not-recommended)
   - [Favicons](#favicons)
 - [Social](#social)
-  - [Facebook/ Open Graph](#facebook-open-graph)
-  - [Facebook/ Instant Articles](#facebook-instant-articles)
+  - [Facebook / Open Graph](#facebook-open-graph)
+  - [Facebook / Instant Articles](#facebook-instant-articles)
   - [Twitter](#twitter)
-  - [Google+/ Schema.org](#google-schemaorg)
+  - [Google+ / Schema.org](#google-schemaorg)
   - [OEmbed](#oembed)
-- [Browser/ Platform](#browserplatform)
+- [Browser / Platform](#browser-platform)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
@@ -207,7 +207,7 @@ Below are the link relations which are not recommended for use:
 
 ## Social
 
-### Facebook/ Open Graph
+### Facebook / Open Graph
 
 ``` html
 <meta property="fb:app_id" content="123456789">
@@ -226,7 +226,7 @@ Below are the link relations which are not recommended for use:
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
-### Facebook/ Instant Articles
+### Facebook / Instant Articles
 
 ``` html
 <meta charset="utf-8">
@@ -259,7 +259,7 @@ Below are the link relations which are not recommended for use:
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
 - [Twitter Card Validator](https://dev.twitter.com/docs/cards/validation/validator)
 
-### Google+/ Schema.org
+### Google+ / Schema.org
 
 ``` html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
@@ -281,7 +281,7 @@ Below are the link relations which are not recommended for use:
 
 - [oEmbed format](http://oembed.com/)
 
-## Browser/ Platform
+## Browser / Platform
 
 
 ### Apple iOS

@@ -2,7 +2,8 @@
 
 A list of everything that could go in the `<head>` of your document
 
-**Table of Contents:**
+## Table of Contents
+
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)
 - [Meta Elements](#meta-elements)

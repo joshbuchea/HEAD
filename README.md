@@ -249,6 +249,7 @@ Below are the link relations which are not recommended for use:
 ```
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
 ## Social
 

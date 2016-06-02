@@ -512,6 +512,10 @@ Example:
 - [html-head-snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 
+## Translations
+
+- [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+
 ## Contributing
 
 Open an issue or a pull request to suggest changes or additions.

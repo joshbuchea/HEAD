@@ -525,6 +525,10 @@ Please follow these steps for pull requests:
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
 
+### Contributors
+
+Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
+
 ## Author
 
 **[Josh Buchea](http://joshbuchea.com/)**

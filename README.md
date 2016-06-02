@@ -509,7 +509,8 @@ Example:
 
 ## Related Projects
 
-- [head-it](https://github.com/hemanth/head-it) a simple interface to use `head`.
+- [html-head-snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
+- [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 
 ## Contributing
 

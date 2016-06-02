@@ -499,7 +499,7 @@ Below are the link relations which are not recommended for use:
 Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
 
 Example:
-```
+``` html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 

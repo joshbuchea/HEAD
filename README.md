@@ -63,8 +63,13 @@ Below are the essential tags for basic, minimalist websites:
   /* ... */
 </style>
 
-<!-- JavaScript -->
+<!-- External JavaScript -->
 <script src="script.js"></script>
+
+<!-- In-document JavaScript -->
+<script>
+  // ...
+</script>
 ```
 
 ## Meta Elements
@@ -95,6 +100,12 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- Verifies ownership of the Search Console for Google -->
 <meta name="google-site-verification" content="verification_token">
+
+<!--  Used to verify ownership of Alexa Search -->
+<meta name="alexaverifyid" content="">
+
+<!--  MicroID Generator: http://www.xposition.co.uk/microID.asp -->
+<meta name="microid" content="mailto:http:sha1:7d245f0f5b4478098edfec8b99c6657119c92980">
 
 <!-- Used to name software used to build the website (i.e. - Wordpress, Dreamweaver) -->
 <meta name="generator" content="program">
@@ -141,6 +152,9 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
 
+<!--  A bitcoin-address -->
+<meta name="bitcoin" content="">
+
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude" />
 <meta name="geo.position" content="latitude;longitude" />
@@ -155,6 +169,11 @@ Below are the essential tags for basic, minimalist websites:
 Below are the meta attributes which are not recommended for use:
 
 ```html
+<!-- https://tools.ietf.org/html/rfc1866#section-5.2.3 -->
+<isindex prompt="Search Document... " />
+<!-- https://tools.ietf.org/html/rfc1866#section-5.2.6 -->
+<nextid n=Z27>
+
 <!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
 <meta name="language" content="en">
 

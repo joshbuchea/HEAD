@@ -78,26 +78,28 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
 
-<!-- Short 3 or 4 sentence description of website: included in search engine results -->
-<meta name="description" content="150 chars">
+<!-- Short description of the page (limit to 150 characters) -->
+<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
+<meta name="description" content="A description of the page">
 
-<!-- Short description of your sites subject -->
-<meta name="subject" content="your website's subject">
+<!-- Control the behavior of search engine crawling and indexing -->
+<meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
-<!-- Controls what pages crawlers are allowed to index on your site -->
-<meta name="robots" content="index,follow,noodp">
-
-<!-- Works the same as the robots meta tag, but exclusively for Google -->
-<meta name="googlebot" content="index,follow">
-
-<!-- Tells the Google search engine to not show the sitelinks search box -->
+<!-- Tells Google not to show the sitelinks search box -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Verifies ownership of the Search Console for Google -->
+<!-- Tells Google not to provide a translation for this page -->
+<meta name="google" content="notranslate">
+
+<!-- Verify ownership for Google Search Console -->
 <meta name="google-site-verification" content="verification_token">
 
 <!-- Used to name software used to build the website (i.e. - Wordpress, Dreamweaver) -->
 <meta name="generator" content="program">
+
+<!-- Short description of your sites subject -->
+<meta name="subject" content="your website's subject">
 
 <!-- Very short sentence describing the purpose of the website -->
 <meta name="abstract" content="">
@@ -116,7 +118,6 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- Does the same as URL, older and not supported -->
 <meta name="identifier-URL" content="https://example.com/">
-
 
 <meta name="directory" content="submission">
 
@@ -176,8 +177,9 @@ Below are the meta attributes which are not recommended for use:
 <!-- Tells search bots to revisit the page after a period. This is not supported because most Search Engines now use random intervals for re-crawling a webpage -->
 <meta name="revisit-after" content="7 days">
 
-<!-- Google strongly advises not to use this. Better to set up server-side (e.g. Apache, nginx) redirects instead -->
-<meta http-equiv="refresh" content="300;url=https://example.com/">
+<!-- Sends user to a new URL after a certain amount of time -->
+<!-- The W3C recommends that this tag not be used. Google recommends using a server-side 301 redirect instead. -->
+<meta http-equiv="refresh" content="300; url=https://example.com/">
 
 <!-- Cache Control -->
 <!-- Better to configure cache control server side -->

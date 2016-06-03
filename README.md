@@ -28,6 +28,8 @@ A list of everything that could go in the `<head>` of your document
   - [UC Mobile Browser](#uc-mobile-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
 - [App Links](#app-links)
+- [Common JavaScript libraries](#common-javascript-libraries)
+  - [jQuery](#jquery)
 - [Notes](#notes)
   - [Performance](#performance)
 - [Other Resources](#other-resources)
@@ -492,6 +494,15 @@ Below are the link relations which are not recommended for use:
 ```
 
 - [App Links Docs](http://applinks.org/documentation/)
+
+## Common JavaScript libraries
+
+### jQuery
+
+``` html
+<!-- Load jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+```
 
 ## Notes
 

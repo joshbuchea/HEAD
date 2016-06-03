@@ -148,6 +148,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
 ```
 
+- [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 

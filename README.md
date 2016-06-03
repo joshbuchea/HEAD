@@ -6,10 +6,10 @@ A list of everything that could go in the `<head>` of your document
 
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)
-- [Meta Elements](#meta-elements)
-  - [Meta Elements: Not Recommended](#meta-elements-not-recommended)
-- [Link Elements](#link-elements)
-  - [Link Elements: Not Recommended](#link-elements-not-recommended)
+- [Meta](#meta)
+  - [Meta: Not Recommended](#meta-not-recommended)
+- [Link](#link)
+  - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
 - [Social](#social)
   - [Facebook / Open Graph](#facebook--open-graph)
@@ -67,7 +67,7 @@ Below are the essential tags for basic, minimalist websites:
 <script src="script.js"></script>
 ```
 
-## Meta Elements
+## Meta
 
 ``` html
 <meta charset="utf-8">
@@ -152,7 +152,7 @@ Below are the essential tags for basic, minimalist websites:
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-### Meta Elements: Not Recommended
+### Meta: Not Recommended
 Below are the meta attributes which are not recommended for use:
 
 ```html
@@ -186,7 +186,7 @@ Below are the meta attributes which are not recommended for use:
 <meta http-equiv="Cache-Control" content="no-cache">
 ```
 
-## Link Elements
+## Link
 
 ``` html
 <link rel="copyright" href="copyright.html">
@@ -227,7 +227,7 @@ Below are the meta attributes which are not recommended for use:
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-### Link Elements: Not Recommended
+### Link: Not Recommended
 Below are the link relations which are not recommended for use:
 
 ```html

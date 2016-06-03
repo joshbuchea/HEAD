@@ -510,6 +510,7 @@ Example:
 
 ## Related Projects
 
+- [html-head-snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 
 ## Translations

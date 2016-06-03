@@ -17,16 +17,17 @@ A list of everything that could go in the `<head>` of your document
   - [Twitter](#twitter)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
-- [Browser / Platform](#browser--platform)
+- [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
   - [Microsoft Internet Explorer: Legacy, Do Not Use!](#microsoft-internet-explorer-legacy-do-not-use)
+- [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
-  - [UC Mobile Browser](#uc-mobile-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
+  - [UC Mobile Browser](#uc-mobile-browser)
 - [App Links](#app-links)
 - [Notes](#notes)
   - [Performance](#performance)
@@ -330,8 +331,7 @@ Below are the link relations which are not recommended for use:
 
 - [oEmbed format](http://oembed.com/)
 
-## Browser / Platform
-
+## Browsers / Platforms
 
 ### Apple iOS
 
@@ -439,11 +439,42 @@ Below are the link relations which are not recommended for use:
 <meta http-equiv="Site-Exit" content="revealtrans(duration=3,transition=12)">
 ```
 
+## App Links
+
+``` html
+<!-- iOS -->
+<meta property="al:ios:url" content="applinks://docs">
+<meta property="al:ios:app_store_id" content="12345">
+<meta property="al:ios:app_name" content="App Links">
+<!-- Android -->
+<meta property="al:android:url" content="applinks://docs">
+<meta property="al:android:app_name" content="App Links">
+<meta property="al:android:package" content="org.applinks">
+<!-- Web Fallback -->
+<meta property="al:web:url" content="http://applinks.org/documentation">
+<!-- More info: http://applinks.org/documentation/ -->
+```
+
+- [App Links Docs](http://applinks.org/documentation/)
+
+## Browsers (Chinese)
+
 ### 360 Browser
 
 ``` html
 <!-- select rendering engine in order -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
+```
+
+### QQ Mobile Browser
+
+``` html
+<!-- Locks the screen into the specified orientation -->
+<meta name="x5-orientation" content="landscape/portrait">
+<!-- Display this page in fullscreen -->
+<meta name="x5-fullscreen" content="true">
+<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
+<meta name="x5-page-mode" content="app">
 ```
 
 ### UC Mobile Browser
@@ -466,35 +497,6 @@ Below are the link relations which are not recommended for use:
 ```
 
 - [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
-
-### QQ Mobile Browser
-
-``` html
-<!-- Locks the screen into the specified orientation -->
-<meta name="x5-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
-<meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
-<meta name="x5-page-mode" content="app">
-```
-
-## App Links
-
-``` html
-<!-- iOS -->
-<meta property="al:ios:url" content="applinks://docs">
-<meta property="al:ios:app_store_id" content="12345">
-<meta property="al:ios:app_name" content="App Links">
-<!-- Android -->
-<meta property="al:android:url" content="applinks://docs">
-<meta property="al:android:app_name" content="App Links">
-<meta property="al:android:package" content="org.applinks">
-<!-- Web Fallback -->
-<meta property="al:web:url" content="http://applinks.org/documentation">
-<!-- More info: http://applinks.org/documentation/ -->
-```
-
-- [App Links Docs](http://applinks.org/documentation/)
 
 ## Notes
 

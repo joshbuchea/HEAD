@@ -201,6 +201,7 @@ Below are the meta attributes which are not recommended for use:
 <link rel="manifest" href="manifest.json">
 <link rel="author" href="humans.txt">
 <link rel="copyright" href="copyright.html">
+<link rel="alternate" href="https://es.example.com/" hreflang="es">
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
@@ -224,7 +225,6 @@ Below are the meta attributes which are not recommended for use:
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
 
 <!-- Prefetching, preloading, prebrowsing -->
 <link rel="dns-prefetch" href="//example.com/">

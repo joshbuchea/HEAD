@@ -194,11 +194,13 @@ Below are the meta attributes which are not recommended for use:
 ## Link
 
 ``` html
-<link rel="copyright" href="copyright.html">
+<link rel="canonical" href="https://example.com/page.html">
+<link rel="shortlink" href="https://example.com/?p=42">
+<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
 <link rel="stylesheet" href="https://example.com/styles.css">
-<link rel="alternate" href="https://feeds.feedburner.com/martini" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
+<link rel="manifest" href="manifest.json">
+<link rel="author" href="humans.txt">
+<link rel="copyright" href="copyright.html">
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
@@ -206,21 +208,23 @@ Below are the meta attributes which are not recommended for use:
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
 <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
 <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="previous" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
-<link rel="shortlink" href="https://example.com/?p=43625">
-<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
-<link rel="amphtml" href="https://www.example.com/url/to/amp-version.html">
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 <link rel="webmention" href="https://example.com/webmention">
-<link rel="manifest" href="manifest.json">
-<link rel="author" href="humans.txt">
 <link rel="import" href="component.html">
+
+<!-- Open Search -->
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+
+<!-- Feeds -->
+<link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
+<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+<link rel="alternate" href="https://es.example.com/" hreflang="es">
 
 <!-- Prefetching, preloading, prebrowsing -->
 <link rel="dns-prefetch" href="//example.com/">

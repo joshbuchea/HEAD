@@ -76,6 +76,11 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+<!-- Allows control over where resources are loaded from -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+<!-- Place as early in the document as possible -->
+<!-- Only applies to content below this tag -->
+
 <!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
 
@@ -136,9 +141,6 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- Allows control over how referrer information is passed -->
 <meta name="referrer" content="never">
-
-<!-- Allows control over where resources are loaded from -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">

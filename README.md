@@ -153,6 +153,7 @@ Below are the essential tags for basic, minimalist websites:
 ```
 
 - [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
+- [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 

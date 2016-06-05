@@ -33,6 +33,7 @@ A list of everything that could go in the `<head>` of your document
   - [Performance](#performance)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
+- [Translations](#translations)
 - [Contributing](#contributing)
 
 ## Recommended Minimum

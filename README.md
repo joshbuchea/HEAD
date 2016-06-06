@@ -35,6 +35,8 @@ A list of everything that could go in the `<head>` of your document
 - [Related Projects](#related-projects)
 - [Translations](#translations)
 - [Contributing](#contributing)
+- [Author](#author)
+- [License](#license)
 
 ## Recommended Minimum
 

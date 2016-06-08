@@ -565,7 +565,7 @@ Link-теги, которые не рекомендуется использов
 
 ## Схожие проекты
 
-- [html-head-snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Библиотека шаблонов тега `HEAD` для редактора Atom
+- [HTML HEAD шаблоны для Atom](https://github.com/joshbuchea/atom-html-head-snippets) - Библиотека шаблонов тега `HEAD` для редактора Atom
 - [HTML HEAD шаблоны для Sublime Text](https://github.com/marcobiedermann/sublime-head-snippets) - Плагин с шаблонами тега `HEAD` для Sublime Text
 - [head-it](https://github.com/hemanth/head-it) - CLI-утилита, генерирующая шаблоны тега `HEAD`
 - [vue-head](https://github.com/ktquez/vue-head) - Управление мета-информацией тега `HEAD` для Vue.js

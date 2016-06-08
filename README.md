@@ -199,33 +199,73 @@ Meta-теги, которые не рекомендуется использов
 ## Link
 
 ``` html
-<link rel="canonical" href="https://example.com/page.html">
+<!-- Позволяет избежать дублирование индексации контента -->
+<!-- http://www.searchengines.ru/kak_pravilno_is_rel_canonical.html -->
+<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+
+<!-- Короткая ссылка на документ. Не рекомендуется к использованию, т. к. может порождать дубли страниц при индексации -->
 <link rel="shortlink" href="https://example.com/?p=42">
+
+<!-- Ссылка на AMP-версию -->
+<!-- https://support.google.com/webmasters/answer/6340290?hl=ru -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+
+<!-- Ссылка на CSS-файл -->
 <link rel="stylesheet" href="https://example.com/styles.css">
+
+<!-- Ссылка на JSON-файл, который описывает установку веб-приложения -->
 <link rel="manifest" href="manifest.json">
+
+<!-- Ссылка на автора документа -->
 <link rel="author" href="humans.txt">
+
+<!-- Cсылка на страницу с авторскими правами, согласно которым предоставляется текущий документ -->
 <link rel="copyright" href="copyright.html">
+
+<!-- Ссылка на другую языковую версию документа -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
+
+<!-- Информация об авторе -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
+
+<!-- Ссылка на документ, который содержит архивную ссылку на текущий документ -->
 <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
-<link rel="index" href="https://example.com/" title="DeWitt Clinton">
-<link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
+
+<!-- Ссылка на документ выше (относительно иерархии сайта) -->
+<link rel="index" href="https://example.com/" title="Cassius Clay">
+
+<!-- Ссылка на начало текущего документа (например, на первую страницу статьи) -->
+<link rel="start" href="https://example.com/books/winnie_the_pooh/part1/" title="Pattern Recognition 1">
+
+<!-- Ссылка на предыдущую страницу текущего документа -->
 <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
+
+<!-- Ссылка на сам ресурс (ссылка "на себя"). Данная ссылка может, например, понадобиться для обращения к документу, если его описание было получено в составе коллекции -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
+
+<!-- Ссылка на первую, следующую, предыдущую и последнюю страницы документа -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="previous" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
+
+<!-- Используется когда используется сторонний сервис для редактирования блога -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+
+<!-- Указывает адрес пингбэк-сервера -->
+<!-- Как поясняется в спецификации, «пингбэк» это способ для блога автоматически оповещать сайты, ссылающиеся на него. Это создает обратную связь — способ пройти назад по цепочке ссылок вместо «прямого прохода». В блогах, частности WordPress, пингбэк-механизм используется для уведомления авторов, что вы ссылаетесь на кого-то при создании новой записи -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
+
+<!-- Уведомляет URL, когда вы ссылаетесь на него на вашем сайте -->
 <link rel="webmention" href="https://example.com/webmention">
+
+<!-- Загружает внешний HTML-файл в текущий файл -->
 <link rel="import" href="component.html">
 
 <!-- Open Search -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Поисковый запрос">
 
 <!-- Фиды -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
@@ -324,7 +364,7 @@ Link-теги, которые не рекомендуется использов
 
 ``` html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
+<meta itemprop="name" content="Заголовок">
 <meta itemprop="description" content="Описание страницы, лимит — 200 символов">
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
@@ -526,6 +566,7 @@ Link-теги, которые не рекомендуется использов
 ## Схожие проекты
 
 - [html-head-snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Библиотека шаблонов тега `HEAD` для редактора Atom
+- [HTML HEAD шаблоны для Sublime Text](https://github.com/marcobiedermann/sublime-head-snippets) - Плагин с шаблонами тега `HEAD` для Sublime Text
 - [head-it](https://github.com/hemanth/head-it) - CLI-утилита, генерирующая шаблоны тега `HEAD`
 - [vue-head](https://github.com/ktquez/vue-head) - Управление мета-информацией тега `HEAD` для Vue.js
 

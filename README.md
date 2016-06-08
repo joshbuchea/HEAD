@@ -562,7 +562,8 @@ Example:
 
 ## Related Projects
 
-- [html-head-snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
+- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
+- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 

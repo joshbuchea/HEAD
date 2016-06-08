@@ -198,29 +198,66 @@ Below are the meta attributes which are not recommended for use:
 ## Link
 
 ``` html
-<link rel="canonical" href="https://example.com/page.html">
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+
+<!-- Used to be included before the icon link, but is deprecated and no longer is used -->
 <link rel="shortlink" href="https://example.com/?p=42">
+
+<!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+
+<!-- Points to a CSS stylesheet -->
 <link rel="stylesheet" href="https://example.com/styles.css">
+
+<!-- Links to a JSON file that specifies "installation" credentials for web applications -->
 <link rel="manifest" href="manifest.json">
+
+<!-- Links to the author of the document -->
 <link rel="author" href="humans.txt">
+
+<!-- Refers to a copyright statement that applies to the links context -->
 <link rel="copyright" href="copyright.html">
+
+<!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
+
+<!-- Gives information about an author or another person -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
+
+<!-- Links to a document that contains an archive link to the current document -->
 <link rel="archives" href="https://example.com/2003/05/" title="May 2003">
+
+<!-- Links to top level resource in an hierarchical structure -->
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
+
+<!-- Gives the starting point of the document -->
 <link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
+
+<!-- Leads to the preceding resource of the sequence the current document is in -->
 <link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
+
+<!-- Gives a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
+
+<!-- The first, next, previous, and last documents in a series of documents, respectively -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
 <link rel="previous" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
+
+<!-- Used when using a 3rd party service to maintain a blog -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+
+<!-- Forms an automated comment when another wordpress blog links to your wordpress blog or post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
+
+<!-- Notifies a url when you link to it on your site -->
 <link rel="webmention" href="https://example.com/webmention">
+
+<!-- Loads in an external HTML file into the current HTML file -->
 <link rel="import" href="component.html">
 
 <!-- Open Search -->

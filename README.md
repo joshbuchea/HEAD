@@ -33,6 +33,7 @@ A list of everything that could go in the `<head>` of your document
   - [Performance](#performance)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
+- [Other Formats](#other-formats)
 - [Translations](#translations)
 - [Contributing](#contributing)
 - [Author](#author)
@@ -566,6 +567,10 @@ Example:
 - [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
+
+## Other Formats
+
+- [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
 ## Translations
 

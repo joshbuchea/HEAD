@@ -35,6 +35,7 @@
   - [Производительность](#Производительность)
 - [Дополнительные ссылки](#Дополнительные-ссылки)
 - [Схожие проекты](#Схожие-проекты)
+- [Другие форматы](#Другие-форматы)
 - [Переводы](#Переводы)
 - [Коммьюнити](#Коммьюнити)
 - [Авторы](#Авторы)
@@ -571,6 +572,10 @@ Link-теги, которые не рекомендуется использов
 - [HTML HEAD шаблоны для Sublime Text](https://github.com/marcobiedermann/sublime-head-snippets) - Плагин с шаблонами тега `HEAD` для Sublime Text
 - [head-it](https://github.com/hemanth/head-it) - CLI-утилита, генерирующая шаблоны тега `HEAD`
 - [vue-head](https://github.com/ktquez/vue-head) - Управление мета-информацией тега `HEAD` для Vue.js
+
+## Другие форматы
+
+- [PDF](https://gitprint.com/konfuze/HEAD/blob/master/README.md)
 
 ## Переводы
 

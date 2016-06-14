@@ -108,7 +108,7 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Used to name software used to build the website (i.e. - Wordpress, Dreamweaver) -->
 <meta name="generator" content="program">
 
-<!-- Short description of your sites subject -->
+<!-- Short description of your site's subject -->
 <meta name="subject" content="your website's subject">
 
 <!-- Very short sentence describing the purpose of the website -->

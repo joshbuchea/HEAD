@@ -93,7 +93,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="description" content="A description of the page">
 
 <!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+<meta name="robots" content="index,follow,noodp,noindex,nofollow,noarchive"><!-- All Search Engines -->
 <meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
 <!-- Tells Google not to show the sitelinks search box -->

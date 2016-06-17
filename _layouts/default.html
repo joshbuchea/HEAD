@@ -1,0 +1,36 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="site__main">
+        <h1 class="site__title">{{ site.title | xml_escape }}</h1>
+        {{ content }}
+      </div>
+    </div>
+  </body>
+
+  <!-- <script src="js/script.js"></script> -->
+  <script>
+
+    // highlight text in code blocks when clicked
+    var codeBlocks = document.querySelectorAll('.highlighter-rouge code');
+    for (var i = 0; i < codeBlocks.length; i++) {
+      codeBlocks[i].addEventListener('click', function() {
+        clip(this);
+      }, false);
+    }
+
+    var clip = function(el) {
+      var range = document.createRange();
+      range.selectNodeContents(el);
+      var sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+    };
+
+  </script>
+</html>

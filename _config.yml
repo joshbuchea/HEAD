@@ -1,0 +1,24 @@
+# Site settings
+title: <head> tags
+description: A list of everything that could go in the <head> of your document
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://headtags.info" # the base hostname & protocol for your site (no trailing slash)
+twitter_username: joshbuchea
+github_username:  joshbuchea
+exclude: [readme.md]
+sass:
+  #style: compressed
+
+# Build settings
+markdown: kramdown
+
+# Compress HTML
+compress_html:
+  clippings: all
+  comments: []
+  endings: [p, li, td]
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]

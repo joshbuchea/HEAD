@@ -1,0 +1,21 @@
+# OS or Editor folders
+*.esproj
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+.cache
+.idea
+.project
+.settings
+.tmproj
+Desktop.ini
+Thumb.db
+Thumbs.db
+nbproject
+
+_site
+.jekyll-metadata
+.sass-cache

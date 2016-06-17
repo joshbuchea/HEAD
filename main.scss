@@ -1,0 +1,108 @@
+---
+# Stylesheet
+---
+
+@import 'variables';
+@import 'github';
+@import 'syntax';
+
+body {
+  padding: 20px 10px;
+  font-family: $base-font-family, $base-font-family-fallback;
+  background-color: $base-bgcolor;
+  color: $base-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+h1#head {
+  display: none;
+}
+
+a {
+  color: #70B7FD;
+  color: #222;
+}
+
+a:hover,
+a:focus {
+  color: #70B7FD;
+  color: #000;
+}
+
+a {
+  transition: all .2s ease-in-out;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  border-bottom: 1px solid #70B7FD;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container {}
+
+.site__main {
+  margin: auto;
+  max-width: 800px;
+}
+
+.site__main p:first-of-type {
+  font-size: 1.5em;
+}
+
+pre {
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: pre;
+  background-color: #f5f5f5;
+
+  padding: 16px;
+  font-size: 85%;
+  line-height: 1.45;
+}
+
+code {
+  border-radius: 0;
+  background-color: #f5f5f5;
+  padding: 0.2em 0;
+}
+
+.highlight {
+  margin-left: 0;
+  margin-right: 0;
+  border-radius: 0;
+}
+
+// #facebook.pluginButton {
+//   transform: scale(3.5);
+//   -ms-transform: scale(3.5);
+//   -webkit-transform: scale(3.5);
+//   -o-transform: scale(3.5);
+//   -moz-transform: scale(3.5);
+//   transform-origin: top left;
+//   -ms-transform-origin: top left;
+//   -webkit-transform-origin: top left;
+//   -moz-transform-origin: top left;
+//   -webkit-transform-origin: top left;
+// }
+//
+// .pluginButtonIconSVG {
+//   height: 28px;
+//   width: 28px;
+// }
+//
+// .plugin, .plugin button, .plugin input, .plugin label, .plugin select, .plugin td, .plugin textarea {
+//   font-size: 22px;
+// }

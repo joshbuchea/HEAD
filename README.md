@@ -70,6 +70,7 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- JavaScript -->
 <script src="script.js"></script>
+<noscript><!--no JS alternative--></noscript>
 ```
 
 ## Meta

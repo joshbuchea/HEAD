@@ -39,6 +39,7 @@
 
     for (i = 0; i < linksLength; i++) {
       if (links[i].hostname != window.location.hostname) {
+        links[i].rel = 'noopener noreferrer';
         links[i].target = '_blank';
       }
     }

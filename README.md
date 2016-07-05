@@ -70,6 +70,7 @@
 
 <!-- JavaScript -->
 <script src="script.js"></script>
+<noscript><!-- Контент, который будет отображаться пользователям без javascript --></noscript>
 ```
 
 ## Meta

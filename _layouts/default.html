@@ -32,6 +32,18 @@
       sel.addRange(range);
     };
 
+    // open external links in new tab
+    var links       = document.links;
+    var linksLength = links.length;
+    var i           = 0;
+
+    for (i = 0; i < linksLength; i++) {
+      if (links[i].hostname != window.location.hostname) {
+        links[i].rel = 'noopener noreferrer';
+        links[i].target = '_blank';
+      }
+    }
+
   </script>
   {% include analytics.html %}
 </html>

@@ -576,6 +576,7 @@ Example:
 
 ## Translations
 
+- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
 - [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 - [Russian/Русский](https://github.com/Konfuze/HEAD)
 

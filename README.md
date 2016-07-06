@@ -150,6 +150,9 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
 
+<!-- Completely opt out of DNS prefetching by setting to 'off' -->
+<meta http-equiv="x-dns-prefetch-control" content="off">
+
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">

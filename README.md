@@ -132,6 +132,12 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Completely opt out of DNS prefetching by setting to 'off' -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
+<!-- Stores cookie on the client web browser for client identification -->
+<meta http-equiv='set-cookie' content='name=value; expires=date; path=url'>
+
+<!-- Specifies the page to appear in a specific frame -->
+<meta http-equiv="Window-Target" content="_value">
+
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">
@@ -191,6 +197,9 @@ Below are the meta attributes which are not recommended for use as they had low 
 
 <!-- Does the same as the coverage tag -->
 <meta name="distribution" content="Global">
+
+<!-- Controls what user can access on the internet -->
+<meta http-equiv="Pics-label" content="value"> 
 
 <!-- Cache Control -->
 <!-- Better to configure cache control server side -->

@@ -141,7 +141,7 @@
 <!-- Сохраняет cookie в веб-браузере для клиентской аутентификации -->
 <meta http-equiv='set-cookie' content='name=value; expires=date; path=url'>
 
-<!-- Specifies the page to appear in a specific frame -->
+<!-- Определяет, то, что страница должна грузиться в определённом фрейме -->
 <meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo-теги -->

@@ -110,36 +110,21 @@
 <meta name="generator" content="program">
 
 <!-- Короткое описание тематики вашего сайта -->
-<meta name="subject" content="your website's subject">
+<meta name="subject" content="тематика вашего сайта">
 
-<!-- Очень короткое предложение, описывающее назначение сайта -->
+<!-- 
+Очень короткое предложение (до 10 слов), описывающее назначение сайта. 
+Используется преимущественно для академических работ 
+-->
 <meta name="abstract" content="">
 
-<!-- Тематика вашего сайта -->
-<meta name="topic" content="">
-
-<!-- Краткое описание компании или предназначения сайта -->
-<meta name="summary" content="">
-
-<!-- Устаревший тег, который указывает на тоже самое, что и тег `keywords` -->
-<meta name="classification" content="business">
-
-<!-- Полное доменное имя или адрес -->
+<!-- Полный URL страницы -->
 <meta name="url" content="https://example.com/">
-
-<!-- Тоже самое, что и предыдущий meta-тег, устаревшее и не поддерживается -->
-<meta name="identifier-URL" content="https://example.com/">
 
 <meta name="directory" content="submission">
 
-<!-- Указывает на тоже самое, что и тег `keywords` -->
-<meta name="category" content="">
-
-<!-- Уточняет, что ваш сайт будет отображаться для всех стран и всех языков -->
-<meta name="coverage" content="Worldwide">
-
-<!-- Указывает на тоже, что и тег `coverage`-->
-<meta name="distribution" content="Global">
+<!-- Полное доменное имя или адрес -->
+<meta name="url" content="https://example.com/">
 
 <!-- Указывает что контент сайта соответствует возрастному рейтингу `General` -->
 <meta name="rating" content="General">
@@ -149,6 +134,15 @@
 
 <!-- Отключает автоматическое определение и форматирование телефонных номеров -->
 <meta name="format-detection" content="telephone=no">
+
+<!-- Полностью отключает предзагрузку DNS-адресов -->
+<meta http-equiv="x-dns-prefetch-control" content="off">
+
+<!-- Сохраняет cookie в веб-браузере для клиентской аутентификации -->
+<meta http-equiv='set-cookie' content='name=value; expires=date; path=url'>
+
+<!-- Specifies the page to appear in a specific frame -->
+<meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo-теги -->
 <meta name="ICBM" content="latitude, longitude">
@@ -164,7 +158,7 @@
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
 ### Meta: Не рекомендуется использовать
-Meta-теги, которые не рекомендуется использовать:
+Meta-теги, которые не рекомендуется использовать т. к. они или устарели или имеют малое применение:
 
 ```html
 <!-- Тег использовался для указания языка страницы, но не поддерживается в полной мере. Рекомендуется использование <html lang=""> -->
@@ -172,8 +166,8 @@ Meta-теги, которые не рекомендуется использов
 
 <!-- Google игнорирует это содержимое, а Bing расценивает это как признак спама -->
 <meta name="keywords" content="ключевые,слова,разделённые,запятыми,без,пробелов">
-
 <!-- Нет подтверждения, что хотя бы одна поисковая система использует этот тег -->
+
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
 
 <!-- Даёт простой способ спам-ботам собирать email-адреса -->
@@ -190,6 +184,21 @@ Meta-теги, которые не рекомендуется использов
 <!-- Указывает через сколько времени и на какой адрес браузер должен осуществить редирект -->
 <!-- W3C не рекомендует использование этого тега. Google рекомендует использовать 301 редирект на сервере -->
 <meta http-equiv="refresh" content="300; url=https://example.com/">
+
+<!-- Тематика вашего сайта -->
+<meta name="topic" content="">
+
+<!-- Краткое описание компании или предназначения сайта -->
+<meta name="summary" content="">
+
+<!-- Устаревший тег, т. к. он указывает на то же, что и meta-тег keywords -->
+<meta name="classification" content="business">
+
+<!-- Уточняет, что ваш сайт будет отображаться для всех стран и всех языков -->
+<meta name="coverage" content="Worldwide">
+
+<!-- Контролирует то, что пользователь может получить доступ в Интернете -->
+<meta http-equiv="Pics-label" content="value"> 
 
 <!-- Управление кешированием -->
 <!-- Будет лучше, если вы настроите управление кешем на стороне сервера  -->
@@ -579,8 +588,10 @@ Link-теги, которые не рекомендуется использов
 - [PDF](https://gitprint.com/konfuze/HEAD/blob/master/README.md)
 
 ## Переводы
-
 - [Английский](https://github.com/joshbuchea/HEAD) (оригинал)
+- [Японский](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [Русский](https://github.com/Konfuze/HEAD)
+- [Португальский](https://github.com/Webschool-io/HEAD)
 - [Японский](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 
 ## Коммьюнити

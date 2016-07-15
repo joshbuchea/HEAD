@@ -596,6 +596,7 @@ Example:
 Open an issue or a pull request to suggest changes or additions.
 
 Please follow these steps for pull requests:
+
 - Modify only one tag, or one related set of tags at a time
 - Use double quotes on attributes
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional

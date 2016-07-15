@@ -133,7 +133,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
 <!-- Stores cookie on the client web browser for client identification -->
-<meta http-equiv='set-cookie' content='name=value; expires=date; path=url'>
+<meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
 
 <!-- Specifies the page to appear in a specific frame -->
 <meta http-equiv="Window-Target" content="_value">

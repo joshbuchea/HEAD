@@ -286,7 +286,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="prefetch" href="https://www.example.com/">
 <link rel="prerender" href="https://example.com/">
 <link rel="subresource" href="styles.css">
-<link rel="preload" href="image.png">
+<link rel="preload" href="image.png" as="image">
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 

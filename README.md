@@ -285,7 +285,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
 <link rel="prerender" href="https://example.com/">
-<link rel="subresource" href="styles.css">
 <link rel="preload" href="image.png" as="image">
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
@@ -295,6 +294,9 @@ Below are the link relations which are not recommended for use:
 
 ```html
 <link rel="shortcut icon" href="path/to/favicon.ico">
+
+<!-- Not useful, proprietary and buggy, see https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ -->
+<link rel="subresource" href="styles.css">
 ```
 
 ### Favicons

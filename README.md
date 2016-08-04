@@ -590,6 +590,7 @@ Example:
 ## Translations
 
 - [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
+- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 - [Russian/Русский](https://github.com/Konfuze/HEAD)
 

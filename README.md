@@ -106,7 +106,7 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Verify ownership for Google Search Console -->
 <meta name="google-site-verification" content="verification_token">
 
-<!-- Used to name software used to build the website (i.e. - Wordpress, Dreamweaver) -->
+<!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
 
 <!-- Short description of your site's subject -->
@@ -264,7 +264,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <!-- Used when using a 3rd party service to maintain a blog -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
-<!-- Forms an automated comment when another wordpress blog links to your wordpress blog or post -->
+<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
 <!-- Notifies a url when you link to it on your site -->

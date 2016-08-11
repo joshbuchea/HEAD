@@ -476,7 +476,7 @@ Below are the link relations which are not recommended for use:
 <meta name="msapplication-square70x70logo" content="path/to/tinylogo.png">
 <meta name="msapplication-wide310x150logo" content="path/to/widelogo.png">
 <meta name="msapplication-task" content="name=Check Order Status;action-uri=./orderStatus.aspx?src=IE9;icon-uri=./favicon.ico">
-<meta name="msapplication-task-seperator" content="1">
+<meta name="msapplication-task-separator" content="1">
 <meta name="msapplication-TileColor" content="#FF3300">
 <meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
 <meta name="msapplication-window" content="width=1024;height=768">

@@ -412,10 +412,13 @@ Below are the link relations which are not recommended for use:
 <!-- Touch Icons -->
 <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
-<!-- The new version of iOS such as iOS 8, 9, 10 doesn't support precomposed anymore, so if you don't wanna make your app compatible with the old version of iOS. You should just use apple-touch-icon. -->
+<!-- The new version of iOS such as iOS 8, 9, 10 doesn't support precomposed anymore -->
+<!--  so if you don't wanna make your app compatible with the old version of iOS. -->
+<!-- You should just use apple-touch-icon. -->
 
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons. -->
+<!-- If you use art-direction and/or want to have different content for each device. -->
+<!-- you can add more touch icons. -->
 <!-- Just do it like this. -->
 <link rel="apple-touch-icon" sizes="57x57" href="/path/to/icon@57.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="/path/to/icon@72.png" />
@@ -460,7 +463,8 @@ Below are the link relations which are not recommended for use:
 Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 ``` html
-<!-- Link to a manifest and define the manifest metadata. The example of manifest.json could be found in the link below. -->
+<!-- Link to a manifest and define the manifest metadata. -->
+<!-- The example of manifest.json could be found in the link below. -->
 <link rel="manifest" href="manifest.json">
 
 <!-- Define your webpage as a webapp -->

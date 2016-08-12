@@ -455,8 +455,24 @@ Below are the link relations which are not recommended for use:
 <!-- Disable translation prompt -->
 <meta name="google" value="notranslate">
 ```
+### Google Chrome Mobile (Android Only)
 
-Since Chrome 31, you can set up your web app to "app mode" like Safari. See more info at this link below.
+Since Chrome 31, you can set up your web app to "app mode" like Safari.
+
+``` html
+<!-- Link to a manifest and define the manifest metadata. The example of manifest.json could be found in the link below. -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Define your webpage as a webapp -->
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- The first one is the offical recommended format.  -->
+<!-- All formats with apple prefix will be dropped soon, so don't use them. -->
+<link rel="icon" sizes="192x192" href="nice-highres.png">
+<link rel="icon" sizes="128x128" href="niceicon.png">
+<link rel="apple-touch-icon" sizes="128x128" href="niceicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
+```
 
 [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
 

@@ -456,9 +456,9 @@ Below are the link relations which are not recommended for use:
 <meta name="google" value="notranslate">
 ```
 
-Since Chrome 31, you can set up your web app to  "app mode" like Safari.
+Since Chrome 31, you can set up your web app to "app mode" like Safari. See more info at this link below.
 
-[More Info](https://developer.chrome.com/multidevice/android/installtohomescreen)
+[Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
 ### Microsoft Internet Explorer
 

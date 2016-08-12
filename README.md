@@ -420,10 +420,10 @@ Below are the link relations which are not recommended for use:
 <!-- If you use art-direction and/or want to have different content for each device. -->
 <!-- you can add more touch icons. -->
 <!-- Just do it like this. -->
-<link rel="apple-touch-icon" sizes="57x57" href="/path/to/icon@57.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="/path/to/icon@72.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="/path/to/icon@114.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="//path/to/icon@144.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="path/to/icon@57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="path/to/icon@72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="path/to/icon@114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="path/to/icon@144.png">
 
 <!-- Startup Image ( Bad News : This doesn't work in new version of iOS. ) -->
 <link rel="apple-touch-startup-image" href="path/to/startup.png">

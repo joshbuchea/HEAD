@@ -199,7 +199,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <meta name="distribution" content="Global">
 
 <!-- Controls what user can access on the internet -->
-<meta http-equiv="Pics-label" content="value"> 
+<meta http-equiv="Pics-label" content="value">
 
 <!-- Cache Control -->
 <!-- Better to configure cache control server side -->
@@ -412,10 +412,20 @@ Below are the link relations which are not recommended for use:
 <!-- Touch Icons -->
 <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- If you use art-direction and/or want to have different content for each device, you can add more touch icons -->
+<!-- The new version of iOS such as iOS 8, 9, 10 doesn't support precomposed anymore -->
+<!--  so if you don't wanna make your app compatible with the old version of iOS. -->
+<!-- You should just use apple-touch-icon. -->
 
-<!-- Startup Image -->
+<!-- In most cases, one 180×180px touch icon in the head is enough -->
+<!-- If you use art-direction and/or want to have different content for each device. -->
+<!-- you can add more touch icons. -->
+<!-- Just do it like this. -->
+<link rel="apple-touch-icon" sizes="57x57" href="path/to/icon@57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="path/to/icon@72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="path/to/icon@114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="path/to/icon@144.png">
+
+<!-- Startup Image ( Bad News : This doesn't work in new version of iOS. ) -->
 <link rel="apple-touch-startup-image" href="path/to/startup.png">
 
 <!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
@@ -448,6 +458,27 @@ Below are the link relations which are not recommended for use:
 <!-- Disable translation prompt -->
 <meta name="google" value="notranslate">
 ```
+### Google Chrome Mobile (Android Only)
+
+Since Chrome 31, you can set up your web app to "app mode" like Safari.
+
+``` html
+<!-- Link to a manifest and define the manifest metadata. -->
+<!-- The example of manifest.json could be found in the link below. -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Define your webpage as a webapp -->
+<meta name="mobile-web-app-capable" content="yes">
+
+<!-- The first one is the offical recommended format.  -->
+<!-- All formats with apple prefix will be dropped soon, so don't use them. -->
+<link rel="icon" sizes="192x192" href="nice-highres.png">
+<link rel="icon" sizes="128x128" href="niceicon.png">
+<link rel="apple-touch-icon" sizes="128x128" href="niceicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
+```
+
+[Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
 ### Microsoft Internet Explorer
 

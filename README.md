@@ -76,7 +76,7 @@ Below are the essential tags for basic, minimalist websites:
 ## Meta
 
 ``` html
-<meta charset="utf-8">
+<meta charset="utf-8"> <!-- set character encoding for the document -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -412,23 +412,18 @@ Below are the link relations which are not recommended for use:
 <!-- Touch Icons -->
 <link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
-<!-- The new version of iOS such as iOS 8, 9, 10 doesn't support precomposed anymore -->
-<!--  so if you don't wanna make your app compatible with the old version of iOS. -->
-<!-- You should just use apple-touch-icon. -->
+<!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
 
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- If you use art-direction and/or want to have different content for each device. -->
-<!-- you can add more touch icons. -->
-<!-- Just do it like this. -->
+<!-- Utilize the different icon sizes if you would want unique icons -->
+<!-- determined by device. -->
 <link rel="apple-touch-icon" sizes="57x57" href="path/to/icon@57.png">
 <link rel="apple-touch-icon" sizes="72x72" href="path/to/icon@72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="path/to/icon@114.png">
 <link rel="apple-touch-icon" sizes="144x144" href="path/to/icon@144.png">
 
-<!-- Startup Image ( Bad News : This doesn't work in new version of iOS. ) -->
+<!-- Startup Image ( Deprecated ) -->
 <link rel="apple-touch-startup-image" href="path/to/startup.png">
-
-<!-- More info: https://developer.apple.com/safari/library/documentation/appleapplications/reference/safarihtmlref/articles/metatags.html -->
 ```
 
 - [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
@@ -445,7 +440,7 @@ Below are the link relations which are not recommended for use:
 ``` html
 <meta name="theme-color" content="#E64545">
 
-<!-- Add to homescreen -->
+<!-- Add to home screen -->
 <meta name="mobile-web-app-capable" content="yes">
 <!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
 ```
@@ -467,13 +462,13 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- The example of manifest.json could be found in the link below. -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Define your webpage as a webapp -->
+<!-- Define your web page as a web app -->
 <meta name="mobile-web-app-capable" content="yes">
 
-<!-- The first one is the offical recommended format.  -->
-<!-- All formats with apple prefix will be dropped soon, so don't use them. -->
+<!-- The first one is the official recommended format.  -->
 <link rel="icon" sizes="192x192" href="nice-highres.png">
 <link rel="icon" sizes="128x128" href="niceicon.png">
+<!-- Formats with Apple prefix will be deprecated. -->
 <link rel="apple-touch-icon" sizes="128x128" href="niceicon.png">
 <link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
 ```

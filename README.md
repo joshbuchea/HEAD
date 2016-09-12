@@ -76,8 +76,8 @@ Below are the essential tags for basic, minimalist websites:
 ## Meta
 
 ``` html
-<meta charset="utf-8"> <!-- set character encoding for the document -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta charset="utf-8"> <!-- set character encoding for the document -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 

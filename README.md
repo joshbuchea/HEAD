@@ -424,6 +424,10 @@ Below are the link relations which are not recommended for use:
 
 <!-- Startup Image ( Deprecated ) -->
 <link rel="apple-touch-startup-image" href="path/to/startup.png">
+
+<!-- iOS app deep linking -->
+<meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
+<link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
 - [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
@@ -443,6 +447,10 @@ Below are the link relations which are not recommended for use:
 <!-- Add to home screen -->
 <meta name="mobile-web-app-capable" content="yes">
 <!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+
+<!-- Android app deep linking -->
+<meta name="google-play-app" content="app-id=package-name">
+<link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
 ### Google Chrome

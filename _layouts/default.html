@@ -12,43 +12,5 @@
       </div>
     </div>
   </body>
-
-  <!-- <script src="js/script.js"></script> -->
-  <script>
-
-    // highlight text in code blocks when clicked
-    var codeBlocks       = document.querySelectorAll('.highlighter-rouge code');
-    var codeBlocksLength = codeBlocks.length;
-    var i;
-
-    for (i = 0; i < codeBlocksLength; i++) {
-      codeBlocks[i].addEventListener('click', function() {
-        clip(this);
-      }, false);
-    }
-
-    var clip = function(el) {
-      var range = document.createRange();
-      var sel = window.getSelection();
-      
-      range.selectNodeContents(el);
-      
-      sel.removeAllRanges();
-      sel.addRange(range);
-    };
-
-    // open external links in new tab
-    var links       = document.links;
-    var linksLength = links.length;
-    var i;
-
-    for (i = 0; i < linksLength; i++) {
-      if (links[i].hostname != window.location.hostname) {
-        links[i].rel = 'noopener noreferrer';
-        links[i].target = '_blank';
-      }
-    }
-
-  </script>
   {% include analytics.html %}
 </html>

@@ -11,6 +11,21 @@
         {{ content }}
       </div>
     </div>
+    
+    
+    <script>
+      // open external links in new tab
+      var links = document.links;
+      var linksLength = links.length;
+      var i;
+
+      for (i = 0; i < linksLength; i++) {
+        if (links[i].hostname != window.location.hostname) {
+          links[i].rel = 'noopener noreferrer';
+          links[i].target = '_blank';
+        }
+      }
+    </script>
   </body>
   {% include analytics.html %}
 </html>

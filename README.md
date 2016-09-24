@@ -124,7 +124,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="rating" content="General">
 
 <!-- Allows control over how referrer information is passed -->
-<meta name="referrer" content="never">
+<meta name="referrer" content="no-referrer">
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">

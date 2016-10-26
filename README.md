@@ -208,6 +208,14 @@ Below are the meta attributes which are not recommended for use as they had low 
 <meta http-equiv="Cache-Control" content="no-cache">
 ```
 
+## Responsive Images
+
+``` html
+<!-- devicePixelRatio : Mentioning the device to send a header for responsive images -->
+<meta http-equiv="Accept-CH" content="DPR">
+<meta http-equiv="Accept-CH" content="DPR, Width">
+```
+
 ## Link
 
 ``` html

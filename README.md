@@ -380,6 +380,14 @@ Below are the link relations which are not recommended for use:
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
+### Pinterest
+
+Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
+
+``` html
+<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+```
+
 ### OEmbed
 
 ``` html

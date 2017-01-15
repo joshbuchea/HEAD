@@ -369,7 +369,7 @@ Below are the link relations which are not recommended for use:
 ```
 
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
-- [Twitter Card Validator](https://dev.twitter.com/docs/cards/validation/validator)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Google+ / Schema.org
 

@@ -636,6 +636,7 @@ Example:
 - [Italian](https://github.com/Fakkio/HEAD)
 - [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 - [Russian/Русский](https://github.com/Konfuze/HEAD)
+- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 
 ## Contributing
 

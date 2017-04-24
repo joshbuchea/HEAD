@@ -23,7 +23,6 @@ A list of everything that could go in the `<head>` of your document
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-  - [Microsoft Internet Explorer: Legacy, Do Not Use!](#microsoft-internet-explorer-legacy-do-not-use)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
@@ -511,25 +510,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-TileColor" content="#FF3300">
 <meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
 <meta name="msapplication-window" content="width=1024;height=768">
-```
-
-### Microsoft Internet Explorer: Legacy, Do Not Use!
-
-``` html
-<!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
-<meta http-equiv="imagetoolbar" content="no">
-
-<!-- Disable Windows theming to form inputs/buttons (https://support.microsoft.com/en-us/kb/322240) -->
-<meta name="MSThemeCompatible" content="no">
-
-<!-- Disable a feature that only appeared on IE 6 beta (https://stackoverflow.com/q/2167301) -->
-<meta name="MSSmartTagsPreventParsing" content="true">
-
-<!-- Interpage Transitions (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
-<meta http-equiv="Page-Enter" content="revealtrans(duration=2,transition=2)">
-<meta http-equiv="Page-Exit" content="revealtrans(duration=3,transition=12)">
-<meta http-equiv="Site-Enter" content="revealtrans(duration=2,transition=2)">
-<meta http-equiv="Site-Exit" content="revealtrans(duration=3,transition=12)">
 ```
 
 ## App Links

@@ -112,14 +112,6 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Short description of your site's subject -->
 <meta name="subject" content="your website's subject">
 
-<!-- Very short (10 words or less) description. Primarily for academic papers -->
-<meta name="abstract" content="">
-
-<!-- Full domain name or web address -->
-<meta name="url" content="https://example.com/">
-
-<meta name="directory" content="submission">
-
 <!-- Gives a general age rating based on sites content -->
 <meta name="rating" content="General">
 
@@ -154,9 +146,6 @@ Below are the essential tags for basic, minimalist websites:
 Below are the meta attributes which are not recommended for use as they had low adoption rate, or have been deprecated:
 
 ```html
-<!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
-<meta name="language" content="en">
-
 <!-- Google disregards & Bing considers it an indicator of spam -->
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <!-- No evidence of current use in any search engines -->

@@ -9,7 +9,6 @@ A list of everything that could go in the `<head>` of your document
 - [Meta](#meta)
   - [Meta: Not Recommended](#meta-not-recommended)
 - [Link](#link)
-  - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
@@ -276,16 +275,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="prerender" href="https://example.com/">
 <link rel="preload" href="image.png" as="image">
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
-```
-
-### Link: Not Recommended
-Below are the link relations which are not recommended for use:
-
-```html
-<link rel="shortcut icon" href="path/to/favicon.ico">
-
-<!-- Not useful, proprietary and buggy, see https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ -->
-<link rel="subresource" href="styles.css">
 ```
 
 ### Favicons

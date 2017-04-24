@@ -12,9 +12,9 @@ A list of everything that could go in the `<head>` of your document
   - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
 - [Social](#social)
-  - [Facebook / Open Graph](#facebook--open-graph)
-  - [Facebook / Instant Articles](#facebook--instant-articles)
-  - [Twitter](#twitter)
+  - [Facebook Open Graph](#facebook-open-graph)
+  - [Facebook Instant Articles](#facebook-instant-articles)
+  - [Twitter Cards](#twitter-cards)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
@@ -23,7 +23,6 @@ A list of everything that could go in the `<head>` of your document
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-  - [Microsoft Internet Explorer: Legacy, Do Not Use!](#microsoft-internet-explorer-legacy-do-not-use)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
@@ -36,6 +35,7 @@ A list of everything that could go in the `<head>` of your document
 - [Other Formats](#other-formats)
 - [Translations](#translations)
 - [Contributing](#contributing)
+- [Contributors](#contributors)
 - [Author](#author)
 - [License](#license)
 
@@ -112,14 +112,6 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Short description of your site's subject -->
 <meta name="subject" content="your website's subject">
 
-<!-- Very short (10 words or less) description. Primarily for academic papers -->
-<meta name="abstract" content="">
-
-<!-- Full domain name or web address -->
-<meta name="url" content="https://example.com/">
-
-<meta name="directory" content="submission">
-
 <!-- Gives a general age rating based on sites content -->
 <meta name="rating" content="General">
 
@@ -154,9 +146,6 @@ Below are the essential tags for basic, minimalist websites:
 Below are the meta attributes which are not recommended for use as they had low adoption rate, or have been deprecated:
 
 ```html
-<!-- Used to declare the document language, but not well supported. Better to use <html lang=""> -->
-<meta name="language" content="en">
-
 <!-- Google disregards & Bing considers it an indicator of spam -->
 <meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
 <!-- No evidence of current use in any search engines -->
@@ -319,7 +308,7 @@ Below are the link relations which are not recommended for use:
 
 ## Social
 
-### Facebook / Open Graph
+### Facebook Open Graph
 
 ``` html
 <meta property="fb:app_id" content="123456789">
@@ -338,7 +327,7 @@ Below are the link relations which are not recommended for use:
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
-### Facebook / Instant Articles
+### Facebook Instant Articles
 
 ``` html
 <meta charset="utf-8">
@@ -354,7 +343,7 @@ Below are the link relations which are not recommended for use:
 - [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
 
-### Twitter
+### Twitter Cards
 
 ``` html
 <meta name="twitter:card" content="summary">
@@ -481,12 +470,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- Define your web page as a web app -->
 <meta name="mobile-web-app-capable" content="yes">
 
-<!-- The first one is the official recommended format.  -->
-<link rel="icon" sizes="192x192" href="nice-highres.png">
-<link rel="icon" sizes="128x128" href="niceicon.png">
-<!-- Formats with Apple prefix will be deprecated. -->
-<link rel="apple-touch-icon" sizes="128x128" href="niceicon.png">
-<link rel="apple-touch-icon-precomposed" sizes="128x128" href="niceicon.png">
+<!-- Homescreen Icon  -->
+<link rel="icon" sizes="192x192" href="highres-icon.png">
 ```
 
 [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
@@ -522,25 +507,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-TileColor" content="#FF3300">
 <meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
 <meta name="msapplication-window" content="width=1024;height=768">
-```
-
-### Microsoft Internet Explorer: Legacy, Do Not Use!
-
-``` html
-<!-- Disable the image toolbar when you mouse over images in IE 6 (https://msdn.microsoft.com/en-us/library/ms532986(v=vs.85).aspx) -->
-<meta http-equiv="imagetoolbar" content="no">
-
-<!-- Disable Windows theming to form inputs/buttons (https://support.microsoft.com/en-us/kb/322240) -->
-<meta name="MSThemeCompatible" content="no">
-
-<!-- Disable a feature that only appeared on IE 6 beta (https://stackoverflow.com/q/2167301) -->
-<meta name="MSSmartTagsPreventParsing" content="true">
-
-<!-- Interpage Transitions (https://msdn.microsoft.com/en-us/library/ms532847(v=vs.85).aspx) -->
-<meta http-equiv="Page-Enter" content="revealtrans(duration=2,transition=2)">
-<meta http-equiv="Page-Exit" content="revealtrans(duration=3,transition=12)">
-<meta http-equiv="Site-Enter" content="revealtrans(duration=2,transition=2)">
-<meta http-equiv="Site-Exit" content="revealtrans(duration=3,transition=12)">
 ```
 
 ## App Links
@@ -649,7 +615,7 @@ Please follow these steps for pull requests:
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
 
-### Contributors
+## Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 

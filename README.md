@@ -199,6 +199,9 @@ Below are the meta attributes which are not recommended for use as they had low 
 ## Link
 
 ``` html
+<!-- Points to a CSS stylesheet -->
+<link rel="stylesheet" href="https://example.com/styles.css">
+
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
@@ -207,9 +210,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 
 <!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
-
-<!-- Points to a CSS stylesheet -->
-<link rel="stylesheet" href="https://example.com/styles.css">
 
 <!-- Links to a JSON file that specifies "installation" credentials for web applications -->
 <link rel="manifest" href="manifest.json">
@@ -228,8 +228,8 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that contains an archive link to the current document -->
-<link rel="archives" href="https://example.com/2003/05/" title="May 2003">
+<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
+<link rel="archives" href="https://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
 <link rel="index" href="https://example.com/" title="DeWitt Clinton">
@@ -259,7 +259,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="webmention" href="https://example.com/webmention">
 
 <!-- Loads in an external HTML file into the current HTML file -->
-<link rel="import" href="component.html">
+<link rel="import" href="/path/to/component.html">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">

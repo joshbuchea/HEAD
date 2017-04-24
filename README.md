@@ -12,9 +12,9 @@ A list of everything that could go in the `<head>` of your document
   - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
 - [Social](#social)
-  - [Facebook / Open Graph](#facebook--open-graph)
-  - [Facebook / Instant Articles](#facebook--instant-articles)
-  - [Twitter](#twitter)
+  - [Facebook Open Graph](#facebook-open-graph)
+  - [Facebook Instant Articles](#facebook-instant-articles)
+  - [Twitter Cards](#twitter-cards)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
@@ -35,6 +35,7 @@ A list of everything that could go in the `<head>` of your document
 - [Other Formats](#other-formats)
 - [Translations](#translations)
 - [Contributing](#contributing)
+- [Contributors](#contributors)
 - [Author](#author)
 - [License](#license)
 
@@ -307,7 +308,7 @@ Below are the link relations which are not recommended for use:
 
 ## Social
 
-### Facebook / Open Graph
+### Facebook Open Graph
 
 ``` html
 <meta property="fb:app_id" content="123456789">
@@ -326,7 +327,7 @@ Below are the link relations which are not recommended for use:
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
-### Facebook / Instant Articles
+### Facebook Instant Articles
 
 ``` html
 <meta charset="utf-8">
@@ -342,7 +343,7 @@ Below are the link relations which are not recommended for use:
 - [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
 
-### Twitter
+### Twitter Cards
 
 ``` html
 <meta name="twitter:card" content="summary">
@@ -618,7 +619,7 @@ Please follow these steps for pull requests:
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
 
-### Contributors
+## Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 

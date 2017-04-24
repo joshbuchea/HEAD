@@ -472,30 +472,26 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta http-equiv="cleartype" content="on">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- Disable link highlighting on IE 10 on Windows Phone (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+<!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
 <meta name="msapplication-tap-highlight" content="no">
 
 <!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
-<meta name="application-name" content="Contoso Pinned Site Caption">
-<meta name="msapplication-tooltip" content="Example Tooltip Text">
-<meta name="msapplication-starturl" content="/">
-
-<meta name="msapplication-config" content="http://example.com/browserconfig.xml">
-
-<meta name="msapplication-allowDomainApiCalls" content="true">
-<meta name="msapplication-allowDomainMetaTags" content="true">
-<meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
+<meta name="application-name" content="Sample Title">
+<meta name="msapplication-tooltip" content="A description of what this site does.">
+<meta name="msapplication-starturl" content="http://example.com/index.html?pinned=true">
 <meta name="msapplication-navbutton-color" content="#FF3300">
-<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile">
-<meta name="msapplication-square150x150logo" content="path/to/logo.png">
-<meta name="msapplication-square310x310logo" content="path/to/largelogo.png">
-<meta name="msapplication-square70x70logo" content="path/to/tinylogo.png">
-<meta name="msapplication-wide310x150logo" content="path/to/widelogo.png">
-<meta name="msapplication-task" content="name=Check Order Status;action-uri=./orderStatus.aspx?src=IE9;icon-uri=./favicon.ico">
-<meta name="msapplication-task-separator" content="1">
+<meta name="msapplication-window" content="width=800;height=600">
+<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
+<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
+<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://example.com/path/to/file.xml">
 <meta name="msapplication-TileColor" content="#FF3300">
 <meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
-<meta name="msapplication-window" content="width=1024;height=768">
+
+<meta name="msapplication-config" content="http://example.com/browserconfig.xml">
+<meta name="msapplication-allowDomainApiCalls" content="true">
+<meta name="msapplication-allowDomainMetaTags" content="true">
+<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
+<meta name="msapplication-task-separator" content="1">
 ```
 
 ## App Links

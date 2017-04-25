@@ -284,12 +284,9 @@ Below are the meta attributes which are not recommended for use as they had low 
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
-<link rel="icon" href="/path/to/favicon-16.png" sizes="16x16" type="image/png">
-<link rel="icon" href="/path/to/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/path/to/favicon-48.png" sizes="48x48" type="image/png">
-<link rel="icon" href="/path/to/favicon-62.png" sizes="62x62" type="image/png">
-<link rel="icon" href="/path/to/favicon-192.png" sizes="192x192" type="image/png">
-<!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
+<link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
 ```
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)

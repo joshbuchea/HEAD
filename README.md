@@ -281,7 +281,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 
 ``` html
 <!-- For IE 10 and below -->
-<!-- No link, just place a file called favicon.ico in the root directory -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
 <link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">

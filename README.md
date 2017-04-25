@@ -284,11 +284,11 @@ Below are the meta attributes which are not recommended for use as they had low 
 <!-- No link, just place a file called favicon.ico in the root directory -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
-<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
-<link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
-<link rel="icon" href="path/to/favicon-192.png" sizes="192x192" type="image/png">
+<link rel="icon" href="/path/to/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="/path/to/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/path/to/favicon-48.png" sizes="48x48" type="image/png">
+<link rel="icon" href="/path/to/favicon-62.png" sizes="62x62" type="image/png">
+<link rel="icon" href="/path/to/favicon-192.png" sizes="192x192" type="image/png">
 <!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
 ```
 
@@ -396,20 +396,20 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/path/to/apple-touch-icon-precomposed.png">
 <!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
 
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <!-- Utilize the different icon sizes if you would want unique icons -->
 <!-- determined by device. -->
-<link rel="apple-touch-icon" sizes="57x57" href="path/to/icon@57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="path/to/icon@72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="path/to/icon@114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="path/to/icon@144.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/path/to/icon@57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/path/to/icon@72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/path/to/icon@114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/path/to/icon@144.png">
 
 <!-- Startup Image ( Deprecated ) -->
-<link rel="apple-touch-startup-image" href="path/to/startup.png">
+<link rel="apple-touch-startup-image" href="/path/to/startup.png">
 
 <!-- iOS app deep linking -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
@@ -422,7 +422,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ```html
 <!-- Pinned Site -->
-<link rel="mask-icon" href="path/to/icon.svg" color="red">
+<link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
 
 ### Google Android
@@ -484,7 +484,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
 <meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://example.com/path/to/file.xml">
 <meta name="msapplication-TileColor" content="#FF3300">
-<meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
+<meta name="msapplication-TileImage" content="/path/to/tileimage.jpg">
 
 <meta name="msapplication-config" content="http://example.com/browserconfig.xml">
 <meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">

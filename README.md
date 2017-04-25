@@ -469,7 +469,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 ``` html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta http-equiv="cleartype" content="on">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
 <!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
@@ -488,8 +487,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
 
 <meta name="msapplication-config" content="http://example.com/browserconfig.xml">
-<meta name="msapplication-allowDomainApiCalls" content="true">
-<meta name="msapplication-allowDomainMetaTags" content="true">
 <meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
 <meta name="msapplication-task-separator" content="1">
 ```

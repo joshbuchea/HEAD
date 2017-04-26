@@ -9,7 +9,6 @@ A list of everything that could go in the `<head>` of your document
 - [Meta](#meta)
   - [Meta: Not Recommended](#meta-not-recommended)
 - [Link](#link)
-  - [Link: Not Recommended](#link-not-recommended)
   - [Favicons](#favicons)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
@@ -46,7 +45,7 @@ Below are the essential tags for basic, minimalist websites:
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 <title>Page Title</title>
 ```
@@ -200,6 +199,9 @@ Below are the meta attributes which are not recommended for use as they had low 
 ## Link
 
 ``` html
+<!-- Points to a CSS stylesheet -->
+<link rel="stylesheet" href="https://example.com/styles.css">
+
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
@@ -208,9 +210,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 
 <!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
-
-<!-- Points to a CSS stylesheet -->
-<link rel="stylesheet" href="https://example.com/styles.css">
 
 <!-- Links to a JSON file that specifies "installation" credentials for web applications -->
 <link rel="manifest" href="manifest.json">
@@ -229,17 +228,11 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that contains an archive link to the current document -->
-<link rel="archives" href="https://example.com/2003/05/" title="May 2003">
+<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
+<link rel="archives" href="https://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="https://example.com/" title="DeWitt Clinton">
-
-<!-- Gives the starting point of the document -->
-<link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
-
-<!-- Leads to the preceding resource of the sequence the current document is in -->
-<link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
+<link rel="index" href="https://example.com/">
 
 <!-- Gives a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
@@ -247,7 +240,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <!-- The first, next, previous, and last documents in a series of documents, respectively -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="previous" href="https://example.com/atomFeed.php?page=2">
+<link rel="prev" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
 
 <!-- Used when using a 3rd party service to maintain a blog -->
@@ -260,7 +253,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="webmention" href="https://example.com/webmention">
 
 <!-- Loads in an external HTML file into the current HTML file -->
-<link rel="import" href="component.html">
+<link rel="import" href="/path/to/component.html">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
@@ -278,29 +271,16 @@ Below are the meta attributes which are not recommended for use as they had low 
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-### Link: Not Recommended
-Below are the link relations which are not recommended for use:
-
-```html
-<link rel="shortcut icon" href="path/to/favicon.ico">
-
-<!-- Not useful, proprietary and buggy, see https://groups.google.com/a/chromium.org/forum/#!msg/blink-dev/Y_2eFRh9BOs/gULYapoRBwAJ -->
-<link rel="subresource" href="styles.css">
-```
-
 ### Favicons
 
 ``` html
 <!-- For IE 10 and below -->
-<!-- No link, just place a file called favicon.ico in the root directory -->
+<!-- Place favicon.ico in the root directory - no tag necessary -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->
-<link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">
-<link rel="icon" href="path/to/favicon-32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="path/to/favicon-48.png" sizes="48x48" type="image/png">
-<link rel="icon" href="path/to/favicon-62.png" sizes="62x62" type="image/png">
-<link rel="icon" href="path/to/favicon-192.png" sizes="192x192" type="image/png">
-<!-- More info: https://bitsofco.de/all-about-favicons-and-touch-icons/ -->
+<link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
 ```
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
@@ -407,20 +387,20 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="path/to/apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="path/to/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="/path/to/apple-touch-icon-precomposed.png">
 <!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
 
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <!-- Utilize the different icon sizes if you would want unique icons -->
 <!-- determined by device. -->
-<link rel="apple-touch-icon" sizes="57x57" href="path/to/icon@57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="path/to/icon@72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="path/to/icon@114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="path/to/icon@144.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/path/to/icon@57.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/path/to/icon@72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/path/to/icon@114.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/path/to/icon@144.png">
 
 <!-- Startup Image ( Deprecated ) -->
-<link rel="apple-touch-startup-image" href="path/to/startup.png">
+<link rel="apple-touch-startup-image" href="/path/to/startup.png">
 
 <!-- iOS app deep linking -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
@@ -433,7 +413,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ```html
 <!-- Pinned Site -->
-<link rel="mask-icon" href="path/to/icon.svg" color="red">
+<link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
 
 ### Google Android
@@ -474,39 +454,32 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <link rel="icon" sizes="192x192" href="highres-icon.png">
 ```
 
-[Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
+- [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
 ### Microsoft Internet Explorer
 
 ``` html
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta http-equiv="cleartype" content="on">
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- Disable link highlighting on IE 10 on Windows Phone (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
+<!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
 <meta name="msapplication-tap-highlight" content="no">
 
 <!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
-<meta name="application-name" content="Contoso Pinned Site Caption">
-<meta name="msapplication-tooltip" content="Example Tooltip Text">
-<meta name="msapplication-starturl" content="/">
+<meta name="application-name" content="Sample Title">
+<meta name="msapplication-tooltip" content="A description of what this site does.">
+<meta name="msapplication-starturl" content="http://example.com/index.html?pinned=true">
+<meta name="msapplication-navbutton-color" content="#FF3300">
+<meta name="msapplication-window" content="width=800;height=600">
+<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
+<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
+<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://example.com/path/to/file.xml">
+<meta name="msapplication-TileColor" content="#FF3300">
+<meta name="msapplication-TileImage" content="/path/to/tileimage.jpg">
 
 <meta name="msapplication-config" content="http://example.com/browserconfig.xml">
-
-<meta name="msapplication-allowDomainApiCalls" content="true">
-<meta name="msapplication-allowDomainMetaTags" content="true">
-<meta name="msapplication-badge" content="frequency=30; polling-uri=http://example.com/id45453245/polling.xml">
-<meta name="msapplication-navbutton-color" content="#FF3300">
-<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile">
-<meta name="msapplication-square150x150logo" content="path/to/logo.png">
-<meta name="msapplication-square310x310logo" content="path/to/largelogo.png">
-<meta name="msapplication-square70x70logo" content="path/to/tinylogo.png">
-<meta name="msapplication-wide310x150logo" content="path/to/widelogo.png">
-<meta name="msapplication-task" content="name=Check Order Status;action-uri=./orderStatus.aspx?src=IE9;icon-uri=./favicon.ico">
+<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
 <meta name="msapplication-task-separator" content="1">
-<meta name="msapplication-TileColor" content="#FF3300">
-<meta name="msapplication-TileImage" content="path/to/tileimage.jpg">
-<meta name="msapplication-window" content="width=1024;height=768">
 ```
 
 ## App Links

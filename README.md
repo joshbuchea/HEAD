@@ -232,13 +232,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="archives" href="https://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="https://example.com/" title="DeWitt Clinton">
-
-<!-- Gives the starting point of the document -->
-<link rel="start" href="https://example.com/photos/pattern_recognition_1_about/" title="Pattern Recognition 1">
-
-<!-- Leads to the preceding resource of the sequence the current document is in -->
-<link rel="prev" href="https://example.com/opensearch/opensearch-and-openid-a-sure-way-to-get-my-attention/" title="OpenSearch and OpenID? A sure way to get my attention.">
+<link rel="index" href="https://example.com/">
 
 <!-- Gives a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
@@ -246,7 +240,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <!-- The first, next, previous, and last documents in a series of documents, respectively -->
 <link rel="first" href="https://example.com/atomFeed.php">
 <link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="previous" href="https://example.com/atomFeed.php?page=2">
+<link rel="prev" href="https://example.com/atomFeed.php?page=2">
 <link rel="last" href="https://example.com/atomFeed.php?page=147">
 
 <!-- Used when using a 3rd party service to maintain a blog -->

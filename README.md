@@ -315,8 +315,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="">
-<!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<!-- Open Graph: http://ogp.me/ -->
 ```
 
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
@@ -348,8 +346,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
 <meta name="twitter:image" content="https://example.com/image.jpg">
-<!-- More info: https://dev.twitter.com/cards/getting-started -->
-<!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
 ```
 
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)

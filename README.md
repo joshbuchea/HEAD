@@ -528,7 +528,15 @@ Example:
 
 ## Contributing
 
-Open an issue or a pull request to suggest changes or additions.
+**Open an issue or a pull request to suggest changes or additions.**
+
+### Guide
+
+The **HEAD** repository consists of two branches:
+
+#### 1. `master`
+
+This branch consists of the `README.md` file that is automatically reflected on the [\<head> Cheat Sheet](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
 
 Please follow these steps for pull requests:
 
@@ -537,7 +545,13 @@ Please follow these steps for pull requests:
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
 
-## Contributors
+#### 2. `gh-pages`
+
+This branch is responsible for the [\<head> Cheat Sheet](http://gethead.info/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
+
+You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
+
+### Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 

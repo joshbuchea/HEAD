@@ -343,17 +343,10 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="/path/to/apple-touch-icon-precomposed.png">
-<!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
-
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- Utilize the different icon sizes if you would want unique icons -->
-<!-- determined by device. -->
-<link rel="apple-touch-icon" sizes="57x57" href="/path/to/icon@57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/path/to/icon@72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/path/to/icon@114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/path/to/icon@144.png">
+<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+<!-- Note: Safari on iOS 7 doesn’t add effects to icons. -->
+<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix. -->
 
 <!-- Startup Image ( Deprecated ) -->
 <link rel="apple-touch-startup-image" href="/path/to/startup.png">

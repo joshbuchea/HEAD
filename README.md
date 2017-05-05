@@ -251,6 +251,9 @@ Below are the essential tags for basic, minimalist websites:
 ### Facebook Open Graph
 
 ``` html
+<meta property="fb:app_id" content="your_app_id" />
+<meta property="fb:admins" content="user_id" />
+<meta property="fb:page_id" content="your_page_id" />
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">

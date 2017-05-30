@@ -178,7 +178,7 @@ Below are the essential tags for basic, minimalist websites:
 <link rel="author" href="humans.txt">
 
 <!-- Refers to a copyright statement that applies to the links context -->
-<link rel="copyright" href="copyright.html">
+<link rel="license" href="copyright.html">
 
 <!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">

@@ -385,7 +385,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
 <!-- Disable translation prompt -->
-<meta name="google" value="notranslate">
+<meta name="google" content="notranslate">
 ```
 ### Google Chrome Mobile (Android Only)
 

@@ -1,0 +1,48 @@
+<div class="share-page">
+
+  <!-- Share via Facebook -->
+  <iframe
+    src="https://www.facebook.com/plugins/share_button.php?href={{ site.url }}{{ page.url }}&layout=button&mobile_iframe=true&width=58&height=20&appId"
+    width="58"
+    height="20"
+    style="border:none;overflow:hidden"
+    scrolling="no"
+    frameborder="0"
+    allowTransparency="true">
+  </iframe>
+  <!-- End Share via Facebook -->
+
+  <!-- Share via Twitter -->
+  <a
+    class="twitter-share-button"
+    href="https://twitter.com/share"
+    data-url="{{ site.url }}{{ page.url }}"
+    data-text="{{ site.description }}"
+    data-via="joshbuchea"
+    data-size="small">
+    Tweet
+  </a>
+  <script>
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+    if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
+    fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+  </script>
+  <!-- End Share via Twitter -->
+
+  <!-- <a href="https://twitter.com/joshbuchea" class="twitter-follow-button" data-show-count="false">Follow @joshbuchea</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
+
+  <!-- Star on GitHub -->
+  <a
+    class="github-button"
+    href="https://github.com/joshbuchea/HEAD"
+    data-icon="octicon-star"
+    data-count-href="/joshbuchea/HEAD/stargazers"
+    data-count-api="/repos/joshbuchea/HEAD#stargazers_count"
+    data-count-aria-label="# stargazers on GitHub"
+    aria-label="Star joshbuchea/HEAD on GitHub">
+    Star
+  </a>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- End Star on GitHub -->
+</div>

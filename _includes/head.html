@@ -1,0 +1,17 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="apple-mobile-web-app-title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="application-name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <!-- <meta name="theme-color" content="#2980b9"> -->
+  <!-- <meta name="google-site-verification" content=""> -->
+
+  <title>{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}</title>
+
+  <link rel="stylesheet" href="main.css">
+  <!-- <link rel="mask-icon" href="favicon.svg" color="#2980b9"> -->
+  <!-- <link rel="icon" href="apple-touch-icon-precomposed.png"> -->
+  <!-- <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png"> -->
+</head>

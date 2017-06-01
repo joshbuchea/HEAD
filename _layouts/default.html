@@ -1,0 +1,31 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="site__main">
+        <h1 class="site__title">{{ site.title | xml_escape }}</h1>
+        {{ content }}
+      </div>
+    </div>
+    
+    
+    <script>
+      // open external links in new tab
+      var links = document.links;
+      var linksLength = links.length;
+      var i;
+
+      for (i = 0; i < linksLength; i++) {
+        if (links[i].hostname != window.location.hostname) {
+          links[i].rel = 'noopener noreferrer';
+          links[i].target = '_blank';
+        }
+      }
+    </script>
+    {% include analytics.html %}
+  </body>
+</html>

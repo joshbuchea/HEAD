@@ -1,5 +1,8 @@
 # HEAD
 
+[![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Amazon Referral](https://img.shields.io/badge/referral-amazon-yellow.svg)](https://amazon.com/?tag=buchea-20)
+
 A list of everything that could go in the `<head>` of your document
 
 ## Table of Contents
@@ -7,7 +10,6 @@ A list of everything that could go in the `<head>` of your document
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)
 - [Meta](#meta)
-  - [Meta: Not Recommended](#meta-not-recommended)
 - [Link](#link)
   - [Favicons](#favicons)
 - [Social](#social)
@@ -93,7 +95,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="description" content="A description of the page">
 
 <!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow,noodp"><!-- All Search Engines -->
+<meta name="robots" content="index,follow"><!-- All Search Engines -->
 <meta name="googlebot" content="index,follow"><!-- Google Specific -->
 
 <!-- Tells Google not to show the sitelinks search box -->
@@ -104,6 +106,21 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- Verify ownership for Google Search Console -->
 <meta name="google-site-verification" content="verification_token">
+
+<!-- Verify ownership for Yandex Webmasters -->
+<meta name="yandex-verification" content="verification_token">
+
+<!-- Verify ownership for Bing Webmaster Center -->
+<meta name="msvalidate.01" content="verification_token">
+
+<!-- Verify ownership for Alexa Console -->
+<meta name="alexaVerifyID" content="verification_token">
+
+<!-- Verify ownership for Pinterest Console-->
+<meta name="p:domain_verify" content="code from pinterest">
+
+<!-- Verify ownership for Norton Safe Web -->
+<meta name="norton-safeweb-site-verification" content="norton code">
 
 <!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
@@ -141,60 +158,6 @@ Below are the essential tags for basic, minimalist websites:
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-### Meta: Not Recommended
-Below are the meta attributes which are not recommended for use as they had low adoption rate, or have been deprecated:
-
-```html
-<!-- Google disregards & Bing considers it an indicator of spam -->
-<meta name="keywords" content="your,keywords,here,comma,separated,no,spaces">
-<!-- No evidence of current use in any search engines -->
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm">
-
-<!-- Provides an easy way for spam bots to harvest email addresses -->
-<meta name="reply-to" content="email@example.com">
-
-<!-- Better to use <link rel="author"> or humans.txt file -->
-<meta name="author" content="name, email@example.com">
-<meta name="designer" content="">
-<meta name="owner" content="">
-
-<!-- Tells search bots to revisit the page after a period. This is not supported because most Search Engines now use random intervals for re-crawling a webpage -->
-<meta name="revisit-after" content="7 days">
-
-<!-- Sends user to a new URL after a certain amount of time -->
-<!-- The W3C recommends that this tag not be used. Google recommends using a server-side 301 redirect instead. -->
-<meta http-equiv="refresh" content="300; url=https://example.com/">
-
-<!-- Describes the topic of the website -->
-<meta name="topic" content="">
-
-<!-- Brief summary of the company or purpose of the website -->
-<meta name="summary" content="">
-
-<!-- A deprecated tag that does the same as the keywords meta tag -->
-<meta name="classification" content="business">
-
-<!-- Does the same as URL, older and not supported -->
-<meta name="identifier-URL" content="https://example.com/">
-
-<!-- Similar function to the keywords tag -->
-<meta name="category" content="">
-
-<!-- Makes sure your website shows up in all countries and languages -->
-<meta name="coverage" content="Worldwide">
-
-<!-- Does the same as the coverage tag -->
-<meta name="distribution" content="Global">
-
-<!-- Controls what user can access on the internet -->
-<meta http-equiv="Pics-label" content="value">
-
-<!-- Cache Control -->
-<!-- Better to configure cache control server side -->
-<meta http-equiv="Expires" content="0">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Cache-Control" content="no-cache">
-```
 
 ## Link
 
@@ -218,7 +181,7 @@ Below are the meta attributes which are not recommended for use as they had low 
 <link rel="author" href="humans.txt">
 
 <!-- Refers to a copyright statement that applies to the links context -->
-<link rel="copyright" href="copyright.html">
+<link rel="license" href="copyright.html">
 
 <!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
@@ -300,8 +263,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="">
-<!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters#markup -->
-<!-- Open Graph: http://ogp.me/ -->
 ```
 
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
@@ -333,8 +294,6 @@ Below are the meta attributes which are not recommended for use as they had low 
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
 <meta name="twitter:image" content="https://example.com/image.jpg">
-<!-- More info: https://dev.twitter.com/cards/getting-started -->
-<!-- Validate: https://dev.twitter.com/docs/cards/validation/validator -->
 ```
 
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
@@ -387,17 +346,10 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Touch Icons -->
-<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-<link rel="apple-touch-icon-precomposed" href="/path/to/apple-touch-icon-precomposed.png">
-<!-- iOS 8+ no longer support precomposed, only apple-touch-icon is required -->
-
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
-<!-- Utilize the different icon sizes if you would want unique icons -->
-<!-- determined by device. -->
-<link rel="apple-touch-icon" sizes="57x57" href="/path/to/icon@57.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/path/to/icon@72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/path/to/icon@114.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/path/to/icon@144.png">
+<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+<!-- Note: Safari on iOS 7 doesn’t add effects to icons. -->
+<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix. -->
 
 <!-- Startup Image ( Deprecated ) -->
 <link rel="apple-touch-startup-image" href="/path/to/startup.png">
@@ -436,7 +388,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
 <!-- Disable translation prompt -->
-<meta name="google" value="notranslate">
+<meta name="google" content="notranslate">
 ```
 ### Google Chrome Mobile (Android Only)
 
@@ -579,7 +531,15 @@ Example:
 
 ## Contributing
 
-Open an issue or a pull request to suggest changes or additions.
+**Open an issue or a pull request to suggest changes or additions.**
+
+### Guide
+
+The **HEAD** repository consists of two branches:
+
+#### 1. `master`
+
+This branch consists of the `README.md` file that is automatically reflected on the [\<head> Cheat Sheet](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
 
 Please follow these steps for pull requests:
 
@@ -588,7 +548,13 @@ Please follow these steps for pull requests:
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
 - Consider including a link to documentation that supports your change
 
-## Contributors
+#### 2. `gh-pages`
+
+This branch is responsible for the [\<head> Cheat Sheet](http://gethead.info/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
+
+You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
+
+### Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
@@ -598,6 +564,6 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 ## License
 
-[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Josh Buchea](http://joshbuchea.com) has waived all copyright and related or neighboring rights to this work.

@@ -1,18 +1,17 @@
 ---
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="container">
-      {% include header.html %}
-      <div class="site__main">
-        <h1 class="site__title">{{ site.title | xml_escape }}</h1>
+    {% include header.html %}
+    <div class="site__main">
+      <div class="container">
         {{ content }}
       </div>
     </div>
-    
-    
+
+
     <script>
       // open external links in new tab
       var links = document.links;

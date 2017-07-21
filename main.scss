@@ -7,7 +7,8 @@
 @import 'syntax';
 
 body {
-  padding: 20px 10px;
+  margin: 0;
+  padding: 0;
   font-family: $base-font-family, $base-font-family-fallback;
   background-color: $base-bgcolor;
   color: $base-color;
@@ -38,11 +39,11 @@ a {
   transition: all .2s ease-in-out;
   border-bottom: 1px solid #ddd;
   text-decoration: none;
-}
 
-a:hover,
-a:focus {
-  border-bottom: 1px solid #70B7FD;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid #70B7FD;
+  }
 }
 
 img {
@@ -51,7 +52,21 @@ img {
   vertical-align: middle;
 }
 
-.container {}
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 8px 16px;
+}
+
+.site__header {
+  padding: 80px 0 40px;
+  background-color: #F2F2F2;
+}
+
+.site__title {
+  margin-top: 0;
+  font-size: 48px;
+}
 
 .site__main {
   margin: auto;

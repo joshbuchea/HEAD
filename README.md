@@ -2,7 +2,6 @@
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
-[![Amazon Referral](https://img.shields.io/badge/referral-amazon-yellow.svg)](https://amazon.com/?tag=buchea-20)
 
 A list of everything that could go in the `<head>` of your document
 

@@ -8,7 +8,7 @@
   <!-- <meta name="theme-color" content="#2980b9"> -->
   <!-- <meta name="google-site-verification" content=""> -->
 
-  <title>{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | xml_escape }}{% else %}{{ site.title | xml_escape }} - {{ site.description | xml_escape }} {% endif %}</title>
 
   <link rel="stylesheet" href="main.css">
   <!-- <link rel="mask-icon" href="favicon.svg" color="#2980b9"> -->

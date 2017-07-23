@@ -1,12 +1,30 @@
 <header class="site__header">
   <div class="container">
 
-    <h1 class="site__title">{{ site.title | xml_escape }}</h1>
+    <h1 class="site__title">
+      <!-- {{ site.title | xml_escape }} -->
+      <!-- <span>get</span>head<span>.info</span> -->
+      &lt;head&gt; cheatsheet
+    </h1>
 
-    {% include share-page.html %}
+    <div class="header-content">
+      <div class="header-ad">
+        <a target="_blank" href="https://amazon.com/?tag=buchea-20">
+          <img src="/img/amazon-logo-large.jpg" width="100%" height="auto">
+          <p>Please use this affiliate link when you shop at Amazon.</p>
+          <p>Thank You! 🤗</p>
+        </a>
+      </div>
 
-    <div>
-      By <a href="http://joshbuchea.com/">Josh Buchea</a> / <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
+      <div class="header-text">
+        <h2>A free guide to &lt;head&gt; elements</h2>
+
+        {% include share-page.html %}
+
+        <div>
+          By <a href="http://joshbuchea.com/">Josh Buchea</a> / <a href="https://twitter.com/{{ site.twitter_username }}">@{{ site.twitter_username }}</a>
+        </div>
+      </div>
     </div>
 
     <a href="//github.com/joshbuchea/head" class="github" target="_blank">

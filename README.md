@@ -1,4 +1,4 @@
-# \<head>
+# \<head> cheatsheet
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
@@ -52,6 +52,8 @@ Below are the essential tags for basic, minimalist websites:
 <title>Page Title</title>
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Elements
 
 ``` html
@@ -73,6 +75,8 @@ Below are the essential tags for basic, minimalist websites:
 <script src="script.js"></script>
 <noscript><!--no JS alternative--></noscript>
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Meta
 
@@ -158,6 +162,7 @@ Below are the essential tags for basic, minimalist websites:
 - [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
+**[⬆ back to top](#table-of-contents)**
 
 ## Link
 
@@ -234,6 +239,8 @@ Below are the essential tags for basic, minimalist websites:
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Favicons
 
 ``` html
@@ -248,6 +255,8 @@ Below are the essential tags for basic, minimalist websites:
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Social
 
@@ -268,6 +277,8 @@ Below are the essential tags for basic, minimalist websites:
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Facebook Instant Articles
 
 ``` html
@@ -284,6 +295,8 @@ Below are the essential tags for basic, minimalist websites:
 - [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Twitter Cards
 
 ``` html
@@ -299,6 +312,8 @@ Below are the essential tags for basic, minimalist websites:
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Google+ / Schema.org
 
 ``` html
@@ -308,6 +323,8 @@ Below are the essential tags for basic, minimalist websites:
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
@@ -315,6 +332,8 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ``` html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ### OEmbed
 
@@ -328,6 +347,8 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```
 
 - [oEmbed format](http://oembed.com/)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Browsers / Platforms
 
@@ -361,12 +382,16 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 - [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Apple Safari
 
 ```html
 <!-- Pinned Site -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ### Google Android
 
@@ -382,6 +407,8 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Google Chrome
 
 ``` html
@@ -390,6 +417,9 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Disable translation prompt -->
 <meta name="google" content="notranslate">
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
 ### Google Chrome Mobile (Android Only)
 
 Since Chrome 31, you can set up your web app to "app mode" like Safari.
@@ -407,6 +437,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ```
 
 - [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
+
+**[⬆ back to top](#table-of-contents)**
 
 ### Microsoft Internet Explorer
 
@@ -434,6 +466,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-task-separator" content="1">
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## App Links
 
 ``` html
@@ -452,6 +486,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - [App Links Docs](http://applinks.org/documentation/)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Browsers (Chinese)
 
 ### 360 Browser
@@ -460,6 +496,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- select rendering engine in order -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ### QQ Mobile Browser
 
@@ -471,6 +509,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ### UC Mobile Browser
 
@@ -493,6 +533,8 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Notes
 
 ### Performance
@@ -504,10 +546,14 @@ Example:
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Other Resources
 
 - [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Related Projects
 
@@ -516,9 +562,13 @@ Example:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Other Formats
 
 - [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Translations
 
@@ -528,6 +578,8 @@ Example:
 - [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 - [Russian/Русский](https://github.com/Konfuze/HEAD)
 - [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Contributing
 
@@ -554,16 +606,24 @@ This branch is responsible for the [\<head> Cheat Sheet](http://gethead.info/) w
 
 You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Author
 
 **[Josh Buchea](http://joshbuchea.com/)**
+
+**[⬆ back to top](#table-of-contents)**
 
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
 To the extent possible under law, [Josh Buchea](http://joshbuchea.com) has waived all copyright and related or neighboring rights to this work.
+
+**[⬆ back to top](#table-of-contents)**

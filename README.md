@@ -150,6 +150,9 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Specifies the page to appear in a specific frame -->
 <meta http-equiv="Window-Target" content="_value">
 
+<!-- Instruct the browser to refresh every three seconds -->
+<meta http-equiv="refresh" content="3">
+
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude">
 <meta name="geo.position" content="latitude;longitude">

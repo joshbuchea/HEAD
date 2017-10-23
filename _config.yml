@@ -1,5 +1,5 @@
 # Site settings
-title: <head> cheatsheet
+title: HEAD
 description: "A free guide to <head> elements"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://gethead.info" # the base hostname & protocol for your site (no trailing slash)

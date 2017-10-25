@@ -220,6 +220,9 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Notifies a url when you link to it on your site -->
 <link rel="webmention" href="https://example.com/webmention">
 
+<!-- Enables posting to your own domain using a Micropub client -->
+<link rel="micropub" href="https://example.com/micropub">
+
 <!-- Loads in an external HTML file into the current HTML file -->
 <link rel="import" href="/path/to/component.html">
 

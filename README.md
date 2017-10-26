@@ -541,7 +541,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ## Notes
 
 ### Performance
-Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base` and `link` tags.
+Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base`, and `link` tags.
 
 Example:
 

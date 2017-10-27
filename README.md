@@ -259,8 +259,6 @@ Below are the essential tags for basic, minimalist websites:
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Social
 
 ### Facebook Open Graph
@@ -280,8 +278,6 @@ Below are the essential tags for basic, minimalist websites:
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Facebook Instant Articles
 
 ``` html
@@ -298,8 +294,6 @@ Below are the essential tags for basic, minimalist websites:
 - [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Twitter Cards
 
 ``` html
@@ -315,8 +309,6 @@ Below are the essential tags for basic, minimalist websites:
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Google+ / Schema.org
 
 ``` html
@@ -326,8 +318,6 @@ Below are the essential tags for basic, minimalist websites:
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
@@ -335,8 +325,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ``` html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
-
-**[⬆ back to top](#table-of-contents)**
 
 ### OEmbed
 
@@ -385,16 +373,12 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 - [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Apple Safari
 
 ```html
 <!-- Pinned Site -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
-
-**[⬆ back to top](#table-of-contents)**
 
 ### Google Android
 
@@ -410,8 +394,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Google Chrome
 
 ``` html
@@ -420,8 +402,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Disable translation prompt -->
 <meta name="google" content="notranslate">
 ```
-
-**[⬆ back to top](#table-of-contents)**
 
 ### Google Chrome Mobile (Android Only)
 
@@ -440,8 +420,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ```
 
 - [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
-
-**[⬆ back to top](#table-of-contents)**
 
 ### Microsoft Internet Explorer
 
@@ -500,8 +478,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
-**[⬆ back to top](#table-of-contents)**
-
 ### QQ Mobile Browser
 
 ``` html
@@ -512,8 +488,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
-
-**[⬆ back to top](#table-of-contents)**
 
 ### UC Mobile Browser
 

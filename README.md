@@ -326,6 +326,29 @@ Below are the essential tags for basic, minimalist websites:
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
+### Google JSON Ltd Schema
+
+The following is used by Google to help provide your site with a knowledge graph result when someone Googles you. (this is the pane to the right of the search results that typically appears for larger brands.
+```
+<script type="application/ld+json">
+	{  
+   		"@context":"http://schema.org",
+   		"@type":"Organization",
+   		"name":"yourbrand.com",
+   		"url":"https://www.yourbrand.com/",
+   		"logo":"https://www.yourbrand.com/logo.png",
+   		"sameAs":[  
+      		"https://www.facebook.com/yourbrand",
+      		"https://twitter.com/yourbrand",
+      		"https://uk.pinterest.com/yourbrand/",
+	  		 "https://www.instagram.com/yourbrand/",
+	  		 "https://www.linkedin.com/company/yourbrand-com",
+   		]
+	}
+	</script>
+```
+
+
 **[⬆ back to top](#table-of-contents)**
 
 ### Pinterest

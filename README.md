@@ -574,13 +574,9 @@ This branch is responsible for the [gethead.info](http://gethead.info/) website.
 
 You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
 
-**[⬆ back to top](#table-of-contents)**
-
 ### Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Author
 

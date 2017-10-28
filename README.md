@@ -253,6 +253,22 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 ## Social
 
+### Facebook Instant Articles
+
+``` html
+<meta charset="utf-8">
+<meta property="op:markup_version" content="v1.0">
+
+<!-- The URL of the web version of your article -->
+<link rel="canonical" href="http://example.com/article.html">
+
+<!-- The style to be used for this article -->
+<meta property="fb:article_style" content="myarticlestyle">
+```
+
+- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
+
 ### Facebook Open Graph
 
 ``` html
@@ -269,22 +285,6 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
-
-### Facebook Instant Articles
-
-``` html
-<meta charset="utf-8">
-<meta property="op:markup_version" content="v1.0">
-
-<!-- The URL of the web version of your article -->
-<link rel="canonical" href="http://example.com/article.html">
-
-<!-- The style to be used for this article -->
-<meta property="fb:article_style" content="myarticlestyle">
-```
-
-- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### Twitter Cards
 

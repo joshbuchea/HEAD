@@ -108,23 +108,13 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Tells Google not to provide a translation for this page -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership for Google Search Console -->
-<meta name="google-site-verification" content="verification_token">
-
-<!-- Verify ownership for Yandex Webmasters -->
-<meta name="yandex-verification" content="verification_token">
-
-<!-- Verify ownership for Bing Webmaster Center -->
-<meta name="msvalidate.01" content="verification_token">
-
-<!-- Verify ownership for Alexa Console -->
-<meta name="alexaVerifyID" content="verification_token">
-
-<!-- Verify ownership for Pinterest Console-->
-<meta name="p:domain_verify" content="code from pinterest">
-
-<!-- Verify ownership for Norton Safe Web -->
-<meta name="norton-safeweb-site-verification" content="norton code">
+<!-- Verify ownership -->
+<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
 <!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
 <meta name="generator" content="program">

@@ -36,7 +36,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Other Formats](#other-formats)
 - [Translations](#translations)
 - [Contributing](#contributing)
-- [Contributors](#contributors)
+  - [Contributors](#contributors)
 - [Author](#author)
 - [License](#license)
 

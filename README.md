@@ -61,7 +61,7 @@ Below are the essential tags for basic, minimalist websites:
 <title>Page Title</title>
 
 <!-- Base URL to use for all relative URLs contained within the document -->
-<base href="https://example.com/page.html">
+<base href="http://example.com/page.html">
 
 <!-- External CSS -->
 <link rel="stylesheet" href="styles.css">
@@ -168,16 +168,16 @@ Below are the essential tags for basic, minimalist websites:
 
 ``` html
 <!-- Points to a CSS stylesheet -->
-<link rel="stylesheet" href="https://example.com/styles.css">
+<link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+<link rel="canonical" href="http://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
 <!-- Used to be included before the icon link, but is deprecated and no longer is used -->
-<link rel="shortlink" href="https://example.com/?p=42">
+<link rel="shortlink" href="http://example.com/?p=42">
 
 <!-- Links to an AMP HTML version of the current document -->
-<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+<link rel="amphtml" href="http://example.com/path/to/amp-version.html">
 
 <!-- Links to a JSON file that specifies "installation" credentials for web applications -->
 <link rel="manifest" href="manifest.json">
@@ -197,31 +197,31 @@ Below are the essential tags for basic, minimalist websites:
 <link rel="me" href="sms:+15035550125">
 
 <!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
-<link rel="archives" href="https://example.com/archives/">
+<link rel="archives" href="http://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="https://example.com/">
+<link rel="index" href="http://example.com/">
 
 <!-- Gives a self reference - useful when the document has multiple possible references -->
-<link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
+<link rel="self" type="application/atom+xml" href="http://example.com/atomFeed.php?page=3">
 
 <!-- The first, next, previous, and last documents in a series of documents, respectively -->
-<link rel="first" href="https://example.com/atomFeed.php">
-<link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="prev" href="https://example.com/atomFeed.php?page=2">
-<link rel="last" href="https://example.com/atomFeed.php?page=147">
+<link rel="first" href="http://example.com/atomFeed.php">
+<link rel="next" href="http://example.com/atomFeed.php?page=4">
+<link rel="prev" href="http://example.com/atomFeed.php?page=2">
+<link rel="last" href="http://example.com/atomFeed.php?page=147">
 
 <!-- Used when using a 3rd party service to maintain a blog -->
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+<link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
-<link rel="pingback" href="https://example.com/xmlrpc.php">
+<link rel="pingback" href="http://example.com/xmlrpc.php">
 
 <!-- Notifies a url when you link to it on your site -->
-<link rel="webmention" href="https://example.com/webmention">
+<link rel="webmention" href="http://example.com/webmention">
 
 <!-- Enables posting to your own domain using a Micropub client -->
-<link rel="micropub" href="https://example.com/micropub">
+<link rel="micropub" href="http://example.com/micropub">
 
 <!-- Loads in an external HTML file into the current HTML file -->
 <link rel="import" href="/path/to/component.html">
@@ -231,13 +231,13 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+<link rel="alternate" href="http://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
+<link rel="prerender" href="http://example.com/">
 <link rel="preload" href="image.png" as="image">
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
@@ -265,10 +265,10 @@ Below are the essential tags for basic, minimalist websites:
 
 ``` html
 <meta property="fb:app_id" content="123456789">
-<meta property="og:url" content="https://example.com/page.html">
+<meta property="og:url" content="http://example.com/page.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:image" content="http://example.com/image.jpg">
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
@@ -300,10 +300,10 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="https://example.com/page.html">
+<meta name="twitter:url" content="http://example.com/page.html">
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="https://example.com/image.jpg">
+<meta name="twitter:image" content="http://example.com/image.jpg">
 ```
 
 - [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
@@ -315,7 +315,7 @@ Below are the essential tags for basic, minimalist websites:
 <link href="https://plus.google.com/+YourPage" rel="publisher">
 <meta itemprop="name" content="Content Title">
 <meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="https://example.com/image.jpg">
+<meta itemprop="image" content="http://example.com/image.jpg">
 ```
 
 ### Pinterest

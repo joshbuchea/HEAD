@@ -546,9 +546,9 @@ Example:
 - 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
 - 🇯🇵 [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
-- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
 
 **[⬆ back to top](#table-of-contents)**
 

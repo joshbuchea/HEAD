@@ -281,8 +281,8 @@ Below are the essential tags for basic, minimalist websites:
 <meta property="fb:article_style" content="myarticlestyle">
 ```
 
-- [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
+- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### Twitter Cards
 
@@ -296,7 +296,7 @@ Below are the essential tags for basic, minimalist websites:
 <meta name="twitter:image" content="http://example.com/image.jpg">
 ```
 
-- [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
+- [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Google+ / Schema.org

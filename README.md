@@ -56,6 +56,8 @@ Below are the essential tags for basic, minimalist websites:
 
 ## Elements
 
+Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+
 ``` html
 <!-- Document Title -->
 <title>Page Title</title>

@@ -464,7 +464,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ### 360 Browser
 
 ``` html
-<!-- select rendering engine in order -->
+<!-- Select rendering engine order -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
@@ -475,7 +475,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="x5-orientation" content="landscape/portrait">
 <!-- Display this page in fullscreen -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
+<!-- Page will be displayed in "application mode" (full screen, etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
@@ -488,7 +488,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="full-screen" content="yes">
 <!-- UC browser will display images even if in "text mode" -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(fullscreen,forbiding gesture, etc.) -->
+<!-- Page will be displayed in "application mode"(full screen, forbidding gesture, etc.) -->
 <meta name="browsermode" content="application">
 <!-- Disabled the UC browser's "night mode" in this page -->
 <meta name="nightmode" content="disable">

@@ -355,8 +355,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Touch Icons -->
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-<!-- Note: Safari on iOS 7 doesn’t add effects to icons. -->
-<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix. -->
 
 <!-- Startup Image ( Deprecated ) -->
 <link rel="apple-touch-startup-image" href="/path/to/startup.png">

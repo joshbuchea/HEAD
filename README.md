@@ -586,8 +586,6 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-**[⬆ back to top](#table-of-contents)**
-
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)

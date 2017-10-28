@@ -406,7 +406,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- Homescreen Icon  -->
-<link rel="icon" sizes="192x192" href="highres-icon.png">
+<link rel="icon" sizes="192x192" href="/path/to/highres-icon.png">
 ```
 
 - [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)

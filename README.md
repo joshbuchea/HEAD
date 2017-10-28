@@ -559,7 +559,7 @@ The **HEAD** repository consists of two branches:
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [\<head> Cheat Sheet](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
+This branch consists of the `README.md` file that is automatically reflected on the [gethead.info](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
 
 Please follow these steps for pull requests:
 

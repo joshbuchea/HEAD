@@ -15,7 +15,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Social](#social)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [Facebook Open Graph](#facebook-open-graph)
-  - [Twitter Cards](#twitter-cards)
+  - [Twitter Card](#twitter-card)
   - [Google+ / Schema.org](#google--schemaorg)
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
@@ -289,7 +289,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
 
-### Twitter Cards
+### Twitter Card
 
 ``` html
 <meta name="twitter:card" content="summary">

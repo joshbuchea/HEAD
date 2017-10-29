@@ -11,12 +11,12 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Elements](#elements)
 - [Meta](#meta)
 - [Link](#link)
-  - [Favicons](#favicons)
+- [Favicons](#favicons)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
-  - [Facebook Instant Articles](#facebook-instant-articles)
-  - [Twitter Cards](#twitter-cards)
+  - [Twitter Card](#twitter-card)
   - [Google+ / Schema.org](#google--schemaorg)
+  - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
@@ -36,7 +36,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Other Formats](#other-formats)
 - [Translations](#translations)
 - [Contributing](#contributing)
-- [Contributors](#contributors)
+  - [Contributors](#contributors)
 - [Author](#author)
 - [License](#license)
 
@@ -56,12 +56,17 @@ Below are the essential tags for basic, minimalist websites:
 
 ## Elements
 
+Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+
 ``` html
+<!-- Charset -->
+<meta charset="utf-8">
+
 <!-- Document Title -->
 <title>Page Title</title>
 
 <!-- Base URL to use for all relative URLs contained within the document -->
-<base href="https://example.com/page.html">
+<base href="http://example.com/page.html">
 
 <!-- External CSS -->
 <link rel="stylesheet" href="styles.css">
@@ -108,23 +113,13 @@ Below are the essential tags for basic, minimalist websites:
 <!-- Tells Google not to provide a translation for this page -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership for Google Search Console -->
-<meta name="google-site-verification" content="verification_token">
-
-<!-- Verify ownership for Yandex Webmasters -->
-<meta name="yandex-verification" content="verification_token">
-
-<!-- Verify ownership for Bing Webmaster Center -->
-<meta name="msvalidate.01" content="verification_token">
-
-<!-- Verify ownership for Alexa Console -->
-<meta name="alexaVerifyID" content="verification_token">
-
-<!-- Verify ownership for Pinterest Console-->
-<meta name="p:domain_verify" content="code from pinterest">
-
-<!-- Verify ownership for Norton Safe Web -->
-<meta name="norton-safeweb-site-verification" content="norton code">
+<!-- Verify ownership -->
+<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
 <!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
@@ -168,16 +163,16 @@ Below are the essential tags for basic, minimalist websites:
 
 ``` html
 <!-- Points to a CSS stylesheet -->
-<link rel="stylesheet" href="https://example.com/styles.css">
+<link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="https://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+<link rel="canonical" href="http://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
 <!-- Used to be included before the icon link, but is deprecated and no longer is used -->
-<link rel="shortlink" href="https://example.com/?p=42">
+<link rel="shortlink" href="http://example.com/?p=42">
 
 <!-- Links to an AMP HTML version of the current document -->
-<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
+<link rel="amphtml" href="http://example.com/path/to/amp-version.html">
 
 <!-- Links to a JSON file that specifies "installation" credentials for web applications -->
 <link rel="manifest" href="manifest.json">
@@ -197,31 +192,31 @@ Below are the essential tags for basic, minimalist websites:
 <link rel="me" href="sms:+15035550125">
 
 <!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
-<link rel="archives" href="https://example.com/archives/">
+<link rel="archives" href="http://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="https://example.com/">
+<link rel="index" href="http://example.com/">
 
 <!-- Gives a self reference - useful when the document has multiple possible references -->
-<link rel="self" type="application/atom+xml" href="https://example.com/atomFeed.php?page=3">
+<link rel="self" type="application/atom+xml" href="http://example.com/atomFeed.php?page=3">
 
 <!-- The first, next, previous, and last documents in a series of documents, respectively -->
-<link rel="first" href="https://example.com/atomFeed.php">
-<link rel="next" href="https://example.com/atomFeed.php?page=4">
-<link rel="prev" href="https://example.com/atomFeed.php?page=2">
-<link rel="last" href="https://example.com/atomFeed.php?page=147">
+<link rel="first" href="http://example.com/atomFeed.php">
+<link rel="next" href="http://example.com/atomFeed.php?page=4">
+<link rel="prev" href="http://example.com/atomFeed.php?page=2">
+<link rel="last" href="http://example.com/atomFeed.php?page=147">
 
 <!-- Used when using a 3rd party service to maintain a blog -->
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+<link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
-<link rel="pingback" href="https://example.com/xmlrpc.php">
+<link rel="pingback" href="http://example.com/xmlrpc.php">
 
 <!-- Notifies a url when you link to it on your site -->
-<link rel="webmention" href="https://example.com/webmention">
+<link rel="webmention" href="http://example.com/webmention">
 
 <!-- Enables posting to your own domain using a Micropub client -->
-<link rel="micropub" href="https://example.com/micropub">
+<link rel="micropub" href="http://example.com/micropub">
 
 <!-- Loads in an external HTML file into the current HTML file -->
 <link rel="import" href="/path/to/component.html">
@@ -231,20 +226,20 @@ Below are the essential tags for basic, minimalist websites:
 
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+<link rel="alternate" href="http://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
+<link rel="prerender" href="http://example.com/">
 <link rel="preload" href="image.png" as="image">
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
 **[⬆ back to top](#table-of-contents)**
 
-### Favicons
+## Favicons
 
 ``` html
 <!-- For IE 10 and below -->
@@ -259,16 +254,18 @@ Below are the essential tags for basic, minimalist websites:
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Social
 
 ### Facebook Open Graph
 
 ``` html
 <meta property="fb:app_id" content="123456789">
-<meta property="og:url" content="https://example.com/page.html">
+<meta property="og:url" content="http://example.com/page.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Content Title">
-<meta property="og:image" content="https://example.com/image.jpg">
+<meta property="og:image" content="http://example.com/image.jpg">
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
@@ -277,6 +274,34 @@ Below are the essential tags for basic, minimalist websites:
 
 - [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - [Open Graph protocol](http://ogp.me/)
+
+### Twitter Card
+
+``` html
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@site_account">
+<meta name="twitter:creator" content="@individual_account">
+<meta name="twitter:url" content="http://example.com/page.html">
+<meta name="twitter:title" content="Content Title">
+<meta name="twitter:description" content="Content description less than 200 characters">
+<meta name="twitter:image" content="http://example.com/image.jpg">
+```
+
+- [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+
+### Google+ / Schema.org
+
+``` html
+<link href="https://plus.google.com/+YourPage" rel="publisher">
+<meta itemprop="name" content="Content Title">
+<meta itemprop="description" content="Content description less than 200 characters">
+<meta itemprop="image" content="http://example.com/image.jpg">
+```
+
+### Pinterest
+
+Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
 
 ### Facebook Instant Articles
 
@@ -291,36 +316,8 @@ Below are the essential tags for basic, minimalist websites:
 <meta property="fb:article_style" content="myarticlestyle">
 ```
 
-- [Facebook Instant Articles: Creating Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Instant Articles: Format Reference](https://developers.facebook.com/docs/instant-articles/reference)
-
-### Twitter Cards
-
-``` html
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@site_account">
-<meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
-<meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="https://example.com/image.jpg">
-```
-
-- [Twitter Cards: Getting Started Guide](https://dev.twitter.com/cards/getting-started)
-- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
-
-### Google+ / Schema.org
-
-``` html
-<link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="https://example.com/image.jpg">
-```
-
-### Pinterest
-
-Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
+- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ``` html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
@@ -360,8 +357,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Touch Icons -->
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-<!-- Note: Safari on iOS 7 doesn’t add effects to icons. -->
-<!-- Older versions of Safari will not add effects for icon files named with the -precomposed.png suffix. -->
 
 <!-- Startup Image ( Deprecated ) -->
 <link rel="apple-touch-startup-image" href="/path/to/startup.png">
@@ -416,7 +411,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- Homescreen Icon  -->
-<link rel="icon" sizes="192x192" href="highres-icon.png">
+<link rel="icon" sizes="192x192" href="/path/to/highres-icon.png">
 ```
 
 - [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
@@ -474,7 +469,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ### 360 Browser
 
 ``` html
-<!-- select rendering engine in order -->
+<!-- Select rendering engine order -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
@@ -485,7 +480,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="x5-orientation" content="landscape/portrait">
 <!-- Display this page in fullscreen -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode"(fullscreen,etc.) -->
+<!-- Page will be displayed in "application mode" (full screen, etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
@@ -498,7 +493,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="full-screen" content="yes">
 <!-- UC browser will display images even if in "text mode" -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(fullscreen,forbiding gesture, etc.) -->
+<!-- Page will be displayed in "application mode"(full screen, forbidding gesture, etc.) -->
 <meta name="browsermode" content="application">
 <!-- Disabled the UC browser's "night mode" in this page -->
 <meta name="nightmode" content="disable">
@@ -549,13 +544,13 @@ Example:
 
 ## Translations
 
-- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- [Italian](https://github.com/Fakkio/HEAD)
-- [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- [Russian/Русский](https://github.com/Konfuze/HEAD)
-- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
-- [Korean](https://github.com/Lutece/HEAD)
+- 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
+- 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
+- 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
+- 🇯🇵 [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
+- 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
+- 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -569,7 +564,7 @@ The **HEAD** repository consists of two branches:
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [\<head> Cheat Sheet](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
+This branch consists of the `README.md` file that is automatically reflected on the [gethead.info](http://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
 
 Please follow these steps for pull requests:
 
@@ -582,26 +577,18 @@ Please follow these steps for pull requests:
 
 This branch is responsible for the [gethead.info](http://gethead.info/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
 
-You might want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
-
-**[⬆ back to top](#table-of-contents)**
+You may want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
 
 ### Contributors
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Author
 
 **[Josh Buchea](http://joshbuchea.com/)**
 
-**[⬆ back to top](#table-of-contents)**
-
 ## License
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-To the extent possible under law, [Josh Buchea](http://joshbuchea.com) has waived all copyright and related or neighboring rights to this work.
 
 **[⬆ back to top](#table-of-contents)**

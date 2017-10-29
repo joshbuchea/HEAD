@@ -303,6 +303,10 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
 
+``` html
+<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+```
+
 ### Facebook Instant Articles
 
 ``` html
@@ -318,10 +322,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 - 📖 [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
 - 📖 [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
-
-``` html
-<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
-```
 
 ### OEmbed
 

@@ -152,10 +152,10 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
 ```
 
-- [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
-- [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
-- [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-- [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+- 📖 [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
+- 📖 [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
+- 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
+- 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -251,8 +251,8 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
 ```
 
-- [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-- [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+- 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -272,8 +272,8 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <meta property="article:author" content="">
 ```
 
-- [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-- [Open Graph protocol](http://ogp.me/)
+- 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
+- 📖 [Open Graph protocol](http://ogp.me/)
 
 ### Twitter Card
 
@@ -287,8 +287,8 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <meta name="twitter:image" content="http://example.com/image.jpg">
 ```
 
-- [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
-- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
+- 🛠 [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Google+ / Schema.org
 
@@ -316,8 +316,8 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta property="fb:article_style" content="myarticlestyle">
 ```
 
-- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
+- 📖 [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- 📖 [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ``` html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
@@ -334,7 +334,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
   title="oEmbed Profile: XML">
 ```
 
-- [oEmbed format](http://oembed.com/)
+- 📖 [oEmbed format](http://oembed.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -366,7 +366,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
-- [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- 📖 [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
 ### Apple Safari
 
@@ -414,7 +414,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <link rel="icon" sizes="192x192" href="/path/to/highres-icon.png">
 ```
 
-- [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
+- 📖 [Add to Homescreen - Google Chrome](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
 ### Microsoft Internet Explorer
 
@@ -459,7 +459,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta property="al:web:url" content="http://applinks.org/documentation">
 ```
 
-- [App Links Docs](http://applinks.org/documentation/)
+- 📖 [App Links](http://applinks.org/documentation/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -502,7 +502,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="wap-font-scale" content="no">
 ```
 
-- [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+- 📖 [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -521,8 +521,8 @@ Example:
 
 ## Other Resources
 
-- [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
-- [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+- 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
+- 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -537,7 +537,7 @@ Example:
 
 ## Other Formats
 
-- [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
+- 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
 **[⬆ back to top](#table-of-contents)**
 

@@ -13,10 +13,10 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Link](#link)
 - [Favicons](#favicons)
 - [Social](#social)
-  - [Facebook Instant Articles](#facebook-instant-articles)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Google+ / Schema.org](#google--schemaorg)
+  - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
@@ -258,22 +258,6 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 ## Social
 
-### Facebook Instant Articles
-
-``` html
-<meta charset="utf-8">
-<meta property="op:markup_version" content="v1.0">
-
-<!-- The URL of the web version of your article -->
-<link rel="canonical" href="http://example.com/article.html">
-
-<!-- The style to be used for this article -->
-<meta property="fb:article_style" content="myarticlestyle">
-```
-
-- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
-
 ### Facebook Open Graph
 
 ``` html
@@ -318,6 +302,22 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
+
+### Facebook Instant Articles
+
+``` html
+<meta charset="utf-8">
+<meta property="op:markup_version" content="v1.0">
+
+<!-- The URL of the web version of your article -->
+<link rel="canonical" href="http://example.com/article.html">
+
+<!-- The style to be used for this article -->
+<meta property="fb:article_style" content="myarticlestyle">
+```
+
+- [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ``` html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">

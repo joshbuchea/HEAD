@@ -11,7 +11,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Elements](#elements)
 - [Meta](#meta)
 - [Link](#link)
-  - [Favicons](#favicons)
+- [Favicons](#favicons)
 - [Social](#social)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [Facebook Open Graph](#facebook-open-graph)
@@ -239,7 +239,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 **[⬆ back to top](#table-of-contents)**
 
-### Favicons
+## Favicons
 
 ``` html
 <!-- For IE 10 and below -->
@@ -253,6 +253,8 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 - [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Social
 

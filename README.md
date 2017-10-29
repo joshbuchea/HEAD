@@ -457,7 +457,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta property="al:android:package" content="org.applinks">
 <!-- Web Fallback -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
-<!-- More info: http://applinks.org/documentation/ -->
 ```
 
 - [App Links Docs](http://applinks.org/documentation/)

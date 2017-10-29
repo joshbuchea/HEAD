@@ -46,9 +46,14 @@ Below are the essential tags for basic, minimalist websites:
 
 ```html
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- 
+  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags.
+
+  † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
+  
+ -->
 <title>Page Title</title>
 ```
 
@@ -59,26 +64,31 @@ Below are the essential tags for basic, minimalist websites:
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
 
 ``` html
-<!-- Charset -->
+<!-- Meta tags provide information for how a document should be perceived, and rendered, by other technologies. e.g. bots, search engines, browsers, etc. -->
 <meta charset="utf-8">
 
-<!-- Document Title -->
+<!-- Set the document's title -->
 <title>Page Title</title>
 
 <!-- Base URL to use for all relative URLs contained within the document -->
 <base href="http://example.com/page.html">
 
-<!-- External CSS -->
+<!-- Link to external CSS file -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- In-document CSS -->
+<!-- Used for adding in-document CSS -->
 <style>
   /* ... */
 </style>
 
-<!-- JavaScript -->
+<!-- JavaScript & No-JavaScript tags -->
 <script src="script.js"></script>
-<noscript><!--no JS alternative--></noscript>
+<script>
+  // function(s) go here
+</script>
+<noscript>
+  <!-- No JS alternative -->
+</noscript>
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -86,7 +96,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ## Meta
 
 ``` html
-<meta charset="utf-8"> <!-- set character encoding for the document -->
+<meta charset="utf-8"> <!-- Set character encoding for the document -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -94,12 +104,12 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <!-- Allows control over where resources are loaded from -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 <!-- Place as early in the document as possible -->
-<!-- Only applies to content below this tag -->
+<!-- Only applies to resources below this tag -->
 
 <!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
 
-<!-- Short description of the page (limit to 150 characters) -->
+<!-- Short description of the document (limit to 150 characters) -->
 <!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
 <meta name="description" content="A description of the page">
 
@@ -110,10 +120,10 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <!-- Tells Google not to show the sitelinks search box -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Tells Google not to provide a translation for this page -->
+<!-- Tells Google not to provide a translation for this document -->
 <meta name="google" content="notranslate">
 
-<!-- Verify ownership -->
+<!-- Verify website ownership -->
 <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
 <meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
 <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
@@ -121,13 +131,13 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
 <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
-<!-- Used to name software used to build the website (i.e. - WordPress, Dreamweaver) -->
+<!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
 
-<!-- Short description of your site's subject -->
-<meta name="subject" content="your website's subject">
+<!-- Short description of your document's subject -->
+<meta name="subject" content="your document's subject">
 
-<!-- Gives a general age rating based on sites content -->
+<!-- Gives a general age rating based on the document's content -->
 <meta name="rating" content="General">
 
 <!-- Allows control over how referrer information is passed -->
@@ -136,13 +146,13 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Completely opt out of DNS prefetching by setting to 'off' -->
+<!-- Completely opt out of DNS prefetching by setting to "off" -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
-<!-- Stores cookie on the client web browser for client identification -->
+<!-- Stores a cookie on the client web browser for identification purposes -->
 <meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
 
-<!-- Specifies the page to appear in a specific frame -->
+<!-- Specifies the document to appear in a specific frame -->
 <meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo tags -->
@@ -162,42 +172,42 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ## Link
 
 ``` html
-<!-- Points to a CSS stylesheet -->
+<!-- Points to an external CSS style sheet -->
 <link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="http://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
-<!-- Used to be included before the icon link, but is deprecated and no longer is used -->
+<!-- Used to be included before the icon link, but it has been deprecated -->
 <link rel="shortlink" href="http://example.com/?p=42">
 
 <!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="http://example.com/path/to/amp-version.html">
 
-<!-- Links to a JSON file that specifies "installation" credentials for web applications -->
+<!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
 <link rel="manifest" href="manifest.json">
 
-<!-- Links to the author of the document -->
+<!-- Links to information about the author(s) of the document -->
 <link rel="author" href="humans.txt">
 
-<!-- Refers to a copyright statement that applies to the links context -->
+<!-- Refers to a copyright statement that applies to the link's context -->
 <link rel="license" href="copyright.html">
 
 <!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Gives information about an author or another person -->
+<!-- Provides information about an author or another person -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest. -->
+<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
 <link rel="archives" href="http://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
 <link rel="index" href="http://example.com/">
 
-<!-- Gives a self reference - useful when the document has multiple possible references -->
+<!-- Provides a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="http://example.com/atomFeed.php?page=3">
 
 <!-- The first, next, previous, and last documents in a series of documents, respectively -->
@@ -206,19 +216,19 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <link rel="prev" href="http://example.com/atomFeed.php?page=2">
 <link rel="last" href="http://example.com/atomFeed.php?page=147">
 
-<!-- Used when using a 3rd party service to maintain a blog -->
+<!-- Used when a 3rd party service is utilized to maintain a blog -->
 <link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
 <link rel="pingback" href="http://example.com/xmlrpc.php">
 
-<!-- Notifies a url when you link to it on your site -->
+<!-- Notifies a URL when you link to it on your document -->
 <link rel="webmention" href="http://example.com/webmention">
 
 <!-- Enables posting to your own domain using a Micropub client -->
 <link rel="micropub" href="http://example.com/micropub">
 
-<!-- Loads in an external HTML file into the current HTML file -->
+<!-- Loads in an external HTML file into the current document -->
 <link rel="import" href="/path/to/component.html">
 
 <!-- Open Search -->
@@ -403,14 +413,14 @@ Pinterest lets you prevent people from saving things from your website, accordin
 Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 ``` html
-<!-- Link to a manifest and define the manifest metadata. -->
-<!-- The example of manifest.json could be found in the link below. -->
+<!-- Link to a manifest and define the manifest metadata -->
+<!-- The example of manifest.json could be found in the link below -->
 <link rel="manifest" href="manifest.json">
 
 <!-- Define your web page as a web app -->
 <meta name="mobile-web-app-capable" content="yes">
 
-<!-- Homescreen Icon  -->
+<!-- Homescreen Icon -->
 <link rel="icon" sizes="192x192" href="/path/to/highres-icon.png">
 ```
 
@@ -451,10 +461,12 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta property="al:ios:url" content="applinks://docs">
 <meta property="al:ios:app_store_id" content="12345">
 <meta property="al:ios:app_name" content="App Links">
+
 <!-- Android -->
 <meta property="al:android:url" content="applinks://docs">
 <meta property="al:android:app_name" content="App Links">
 <meta property="al:android:package" content="org.applinks">
+
 <!-- Web Fallback -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
 ```
@@ -477,9 +489,11 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ``` html
 <!-- Locks the screen into the specified orientation -->
 <meta name="x5-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+
+<!-- Display this document in fullscreen -->
 <meta name="x5-fullscreen" content="true">
-<!-- Page will be displayed in "application mode" (full screen, etc.) -->
+
+<!-- Document will be displayed in "application mode" (full screen, etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
@@ -488,17 +502,23 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ``` html
 <!-- Locks the screen into the specified orientation -->
 <meta name="screen-orientation" content="landscape/portrait">
-<!-- Display this page in fullscreen -->
+
+<!-- Display this document in fullscreen -->
 <meta name="full-screen" content="yes">
+
 <!-- UC browser will display images even if in "text mode" -->
 <meta name="imagemode" content="force">
-<!-- Page will be displayed in "application mode"(full screen, forbidding gesture, etc.) -->
+
+<!-- Document will be displayed in "application mode"(full screen, forbidding gesture, etc.) -->
 <meta name="browsermode" content="application">
-<!-- Disabled the UC browser's "night mode" in this page -->
+
+<!-- Disabled the UC browser's "night mode" for this document -->
 <meta name="nightmode" content="disable">
-<!-- Simplify the page to reduce data transfer -->
+
+<!-- Simplify the document to reduce data transfer -->
 <meta name="layoutmode" content="fitscreen">
-<!-- Disable the UC browser's feature of "scaling font up when there are many words in this page" -->
+
+<!-- Disable the UC browser's feature of "scaling font up when there are many words in this document" -->
 <meta name="wap-font-scale" content="no">
 ```
 

@@ -48,11 +48,11 @@ Below are the essential tags for basic, minimalist websites:
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- 
+<!--
   The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags.
 
   † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
-  
+
  -->
 <title>Page Title</title>
 ```
@@ -160,6 +160,11 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <meta name="geo.position" content="latitude;longitude">
 <meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
 <meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+
+<!-- Browser Cache-Control meta tags -->
+<meta http-equiv="Cache-Control" content="description" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 ```
 
 - 📖 [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)

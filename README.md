@@ -23,6 +23,7 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
+  - [Google Chrome Mobile (Android Only)](#google-chrome-mobile-android-only)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
@@ -529,6 +530,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ## Notes
 
 ### Performance
+
 Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base`, and `link` tags.
 
 Example:

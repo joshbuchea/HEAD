@@ -16,6 +16,7 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Google+ / Schema.org](#google--schemaorg)
+  - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
@@ -455,27 +456,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 **[⬆ back to top](#table-of-contents)**
 
-## App Links
-
-``` html
-<!-- iOS -->
-<meta property="al:ios:url" content="applinks://docs">
-<meta property="al:ios:app_store_id" content="12345">
-<meta property="al:ios:app_name" content="App Links">
-
-<!-- Android -->
-<meta property="al:android:url" content="applinks://docs">
-<meta property="al:android:app_name" content="App Links">
-<meta property="al:android:package" content="org.applinks">
-
-<!-- Web Fallback -->
-<meta property="al:web:url" content="http://applinks.org/documentation">
-```
-
-- 📖 [App Links](http://applinks.org/documentation/)
-
-**[⬆ back to top](#table-of-contents)**
-
 ## Browsers (Chinese)
 
 ### 360 Browser
@@ -524,6 +504,27 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ```
 
 - 📖 [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+
+**[⬆ back to top](#table-of-contents)**
+
+## App Links
+
+``` html
+<!-- iOS -->
+<meta property="al:ios:url" content="applinks://docs">
+<meta property="al:ios:app_store_id" content="12345">
+<meta property="al:ios:app_name" content="App Links">
+
+<!-- Android -->
+<meta property="al:android:url" content="applinks://docs">
+<meta property="al:android:app_name" content="App Links">
+<meta property="al:android:package" content="org.applinks">
+
+<!-- Web Fallback -->
+<meta property="al:web:url" content="http://applinks.org/documentation">
+```
+
+- 📖 [App Links](http://applinks.org/documentation/)
 
 **[⬆ back to top](#table-of-contents)**
 

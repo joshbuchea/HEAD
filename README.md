@@ -9,7 +9,7 @@
 
 ## فهرست محتوا
 
-- [حداقل توصیه](#recommended-minimum)
+- [حداقل توصیه](#حداقل-توصیه)
 - [Elements](#elements)
 - [Meta](#meta)
 - [Link](#link)
@@ -52,7 +52,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- 
-  ۳ برچسب متا * باید * در ابتدای هد باشد؛ و هر هد دیگر باید * بعد از * این برچسب ها قرار بگیرد.
+  ۳ برچسب متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد.
 
   † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
   

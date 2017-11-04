@@ -54,13 +54,13 @@
 <!-- 
   ۳ برچسب متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد.
 
-  † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
+  † اگر پروژه شما از اینترنت اکسپلورر نسخه 11 به قبل را پشتیبانی می‌کند از برچسب content="ie-edge" استفاده کنید.
   
  -->
 <title>عنوان صفحه</title>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Elements
 
@@ -94,7 +94,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 </noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#فهرست-محتوا)**
 
 ## Meta
 
@@ -170,7 +170,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#فهرست-محتوا)**
 
 ## Link
 
@@ -250,7 +250,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ back to top](#فهرست-محتوا)**
 
 ## Favicons
 

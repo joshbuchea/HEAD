@@ -10,7 +10,7 @@
 ## فهرست محتوا
 
 - [حداقل توصیه](#حداقل-توصیه)
-- [عناصر / Elements](#elements)
+- [عناصر / Elements](#عناصر--elements)
 - [Meta](#meta)
 - [Link](#link)
 - [Favicons](#favicons)
@@ -64,7 +64,7 @@
 
 ## عناصر / Elements
 
-Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+عناصر معتبر که می‌توان در `<head>` استفاده کرد `meta`، `link`، `title`، `style`, `script`، `noscript` و `base`.
 
 ``` html
 <!-- Meta tags provide information for how a document should be perceived, and rendered, by other technologies. e.g. bots, search engines, browsers, etc. -->

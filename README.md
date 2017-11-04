@@ -99,10 +99,10 @@
 ## متا / Meta
 
 ``` html
-<meta charset="utf-8"> <!-- Set character encoding for the document -->
+<meta charset="utf-8"> <!-- تعیین رمزگذاری کاراکتر برای صفحه وب -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- ۳ برچسب‌های متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد. -->
 
 <!-- Allows control over where resources are loaded from -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
@@ -170,7 +170,7 @@
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#فهرست-محتوا)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Link
 

@@ -12,9 +12,9 @@
 - [حداقل توصیه](#حداقل-توصیه)
 - [عناصر / Elements](#عناصر--elements)
 - [متا / Meta](#متا--meta)
-- [Link](#link)
-- [Favicons](#favicons)
-- [Social](#social)
+- [پیوند / Link](#پیوند--link)
+- [فاوآیکن / Favicons](#فاوآیکن--favicons)
+- [شبکه‌های اجتماعی / Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Google+ / Schema.org](#google--schemaorg)
@@ -574,6 +574,7 @@ Example:
 - 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- :iran: [Persian/فارسی](https://github.com/Goudarz/HEAD)
 
 **[⬆ back to top](#table-of-contents)**
 

@@ -1,6 +1,6 @@
 <div dir="rtl" lang="fa">
   
-# HEAD / هِد
+# هِد / HEAD
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![مشارکت کنندگان](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)

@@ -67,7 +67,7 @@
 عناصر معتبر که می‌توان در `<head>` استفاده کرد `meta`، `link`، `title`، `style`, `script`، `noscript` و `base`.
 
 ``` html
-<!-- تگ‌های متا اطلاعاتی برای چگونگی نحوه درک و رندر یک صفحه وب را ارائه می‌کند. به عنوان مثال: ربات‌ها، موتور‌های جستجو، مرورگرها و غیره. -->
+<!-- تگ‌های متا اطلاعاتی برای چگونگی نحوه درک و رندر یک صفحه وب را ارائه می‌کند. برای: ربات‌ها، موتور‌های جستجو، مرورگرها و غیره. -->
 <meta charset="utf-8">
 
 <!-- عنوان صفحه را تنظیم می‌کند -->
@@ -76,7 +76,7 @@
 <!-- Base URL to use for all relative URLs contained within the document -->
 <base href="http://example.com/page.html">
 
-<!-- Link to external CSS file -->
+<!-- لینک به فایل‌های خارجی CSS -->
 <link rel="stylesheet" href="styles.css">
 
 <!-- Used for adding in-document CSS -->

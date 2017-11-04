@@ -1,3 +1,4 @@
+<div dir="rtl" lang="fa">
 # HEAD
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -5,7 +6,7 @@
 
 A list of everything that \*could\* go in the `<head>` of your document
 
-## Table of Contents
+## فهرست محتوا
 
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)

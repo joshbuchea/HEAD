@@ -9,7 +9,7 @@
 
 ## فهرست محتوا
 
-- [Recommended Minimum](#recommended-minimum)
+- [حداقل توصیه](#recommended-minimum)
 - [Elements](#elements)
 - [Meta](#meta)
 - [Link](#link)
@@ -43,21 +43,21 @@
 - [Author](#author)
 - [License](#license)
 
-## Recommended Minimum
+## حداقل توصیه
 
-Below are the essential tags for basic, minimalist websites:
+در زیر برچسب‌های ضروری پایه وجود دارد، وب‌سایت‌های ساده‌گرا:
 
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- 
-  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags.
+  ۳ برچسب متا * باید * در ابتدای هد باشد؛ و هر هد دیگر باید * بعد از * این برچسب ها قرار بگیرد.
 
   † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
   
  -->
-<title>Page Title</title>
+<title>عنوان صفحه</title>
 ```
 
 **[⬆ back to top](#table-of-contents)**

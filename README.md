@@ -11,7 +11,7 @@
 
 - [حداقل توصیه](#حداقل-توصیه)
 - [عناصر / Elements](#عناصر--elements)
-- [Meta](#meta)
+- [متا / Meta](#متا--meta)
 - [Link](#link)
 - [Favicons](#favicons)
 - [Social](#social)
@@ -52,7 +52,7 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- 
-  ۳ برچسب متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد.
+  ۳ برچسب‌های متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد.
 
   † اگر پروژه شما از اینترنت اکسپلورر نسخه 11 به قبل را پشتیبانی می‌کند از برچسب content="ie-edge" استفاده کنید.
   
@@ -67,7 +67,7 @@
 عناصر معتبر که می‌توان در `<head>` استفاده کرد `meta`، `link`، `title`، `style`, `script`، `noscript` و `base`.
 
 ``` html
-<!-- تگ‌های متا اطلاعاتی برای چگونگی نحوه درک و رندر یک صفحه وب را ارائه می‌کند. برای: ربات‌ها، موتور‌های جستجو، مرورگرها و غیره. -->
+<!-- برچسب‌های متا اطلاعاتی برای چگونگی نحوه درک و رندر یک صفحه وب را ارائه می‌کند. برای: ربات‌ها، موتور‌های جستجو، مرورگرها و غیره. -->
 <meta charset="utf-8">
 
 <!-- عنوان صفحه را تنظیم می‌کند -->
@@ -79,24 +79,24 @@
 <!-- لینک به فایل‌های خارجی CSS -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- Used for adding in-document CSS -->
+<!-- برای اضافه کردن CSS درون صفحه وب استفاده می‌شود -->
 <style>
   /* ... */
 </style>
 
-<!-- JavaScript & No-JavaScript tags -->
+<!-- برچسب‌های JavaScript و No-JavaScript -->
 <script src="script.js"></script>
 <script>
-  // function(s) go here
+  // تابع(ها) در اینجا
 </script>
 <noscript>
-  <!-- No JS alternative -->
+  <!-- جایگزین No JS -->
 </noscript>
 ```
 
-**[⬆ back to top](#فهرست-محتوا)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
-## Meta
+## متا / Meta
 
 ``` html
 <meta charset="utf-8"> <!-- Set character encoding for the document -->

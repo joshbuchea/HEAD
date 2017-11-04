@@ -10,7 +10,7 @@
 ## فهرست محتوا
 
 - [حداقل توصیه](#حداقل-توصیه)
-- [Elements / عناصر](#elements)
+- [عناصر / Elements](#elements)
 - [Meta](#meta)
 - [Link](#link)
 - [Favicons](#favicons)
@@ -62,7 +62,7 @@
 
 **[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
-## Elements / عناصر
+## عناصر / Elements
 
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
 

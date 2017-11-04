@@ -5,7 +5,7 @@
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![مشارکت کنندگان](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 
-A list of everything that \*could\* go in the `<head>` of your document
+فهرستی از تمام چیز‌هایی که *می‌توانید* در `<head>` استفاده کنید
 
 ## فهرست محتوا
 

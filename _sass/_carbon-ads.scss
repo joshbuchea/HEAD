@@ -1,0 +1,44 @@
+///////////////////////////////////////////////////////////////////////////////
+// Carbon Ads
+///////////////////////////////////////////////////////////////////////////////
+
+#carbonads {
+  display: block;
+  overflow: hidden;
+  padding: 1em;
+  text-align: center;
+  font-family: Verdana, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+#carbonads a {
+  color: inherit;
+  border: none;
+}
+
+#carbonads a:hover {
+  color: inherit;
+}
+
+#carbonads span {
+  display: block;
+  overflow: hidden;
+}
+
+.carbon-img {
+  display: block;
+  margin: 0 auto 1em;
+}
+
+.carbon-text {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.carbon-poweredby {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .8em;
+  line-height: 1;
+}

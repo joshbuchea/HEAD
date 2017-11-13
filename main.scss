@@ -137,6 +137,10 @@ ul ul {
 
 .site__main p:first-of-type {
   font-size: 1.5em;
+
+  a {
+    border: none;
+  }
 }
 
 .site__main p:nth-of-type(2) {

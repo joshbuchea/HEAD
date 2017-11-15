@@ -300,7 +300,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ```
 
 - 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
-- 🛠 [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Google+ / Schema.org
 

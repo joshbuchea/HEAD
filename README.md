@@ -1,18 +1,20 @@
-# HEAD
+<div dir="rtl" lang="fa">
+  
+# هِد / HEAD
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
+[![مشارکت کنندگان](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 
-A list of everything that \*could\* go in the `<head>` of your document
+فهرستی از تمام چیز‌هایی که * می‌توانید * در `<head>` استفاده کنید
 
-## Table of Contents
+## فهرست محتوا
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
-- [Meta](#meta)
-- [Link](#link)
-- [Favicons](#favicons)
-- [Social](#social)
+- [حداقل توصیه](#حداقل-توصیه)
+- [عناصر / Elements](#عناصر--elements)
+- [متا / Meta](#متا--meta)
+- [پیوند / Link](#پیوند--link)
+- [فاوآیکن / Favicons](#فاوآیکن--favicons)
+- [شبکه‌های اجتماعی / Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Google+ / Schema.org](#google--schemaorg)
@@ -21,86 +23,86 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Apple Safari](#apple-safari)
-  - [Google Android](#google-android)
-  - [Google Chrome](#google-chrome)
+  - [گوگل اندروید](#google-android)
+  - [گوگل کروم](#google-chrome)
   - [Google Chrome Mobile (Android Only)](#google-chrome-mobile-android-only)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
-- [Notes](#notes)
+- [پیوند‌های برنامه / App Links](#app-links)
+- [یادداشت‌ها](#notes)
   - [Performance](#performance)
-- [Other Resources](#other-resources)
-- [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
-- [Translations](#translations)
-- [Contributing](#contributing)
-  - [Contributors](#contributors)
-- [Author](#author)
-- [License](#license)
+- [دیگر منابع](#other-resources)
+- [پروژه‌های مرتبط](#related-projects)
+- [فرمت‌های دیگر](#other-formats)
+- [ترجمه‌ها](#translations)
+- [مشارکت](#contributing)
+  - [مشارکت کنندگان](#contributors)
+- [نویسنده](#author)
+- [مجوز](#license)
 
-## Recommended Minimum
+## حداقل توصیه
 
-Below are the essential tags for basic, minimalist websites:
+در زیر برچسب‌های ضروری پایه وجود دارد، وب‌سایت‌های ساده‌گرا:
 
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- 
-  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags.
+  ۳ برچس متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد.
 
-  † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
+  † اگر پروژه شما از اینترنت اکسپلورر نسخه 11 به قبل را پشتیبانی می‌کند از برچسب content="ie-edge" استفاده کنید.
   
  -->
-<title>Page Title</title>
+<title>عنوان صفحه</title>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
-## Elements
+## عناصر / Elements
 
-Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+عناصر معتبر که می‌توان در `<head>` استفاده کرد `meta`، `link`، `title`، `style`, `script`، `noscript` و `base`.
 
 ``` html
-<!-- Meta tags provide information for how a document should be perceived, and rendered, by other technologies. e.g. bots, search engines, browsers, etc. -->
+<!-- برچسب‌های متا اطلاعاتی برای چگونگی نحوه درک و رندر یک صفحه وب را ارائه می‌کند. برای: ربات‌ها، موتور‌های جستجو، مرورگرها و غیره. -->
 <meta charset="utf-8">
 
-<!-- Set the document's title -->
+<!-- عنوان صفحه را تنظیم می‌کند -->
 <title>Page Title</title>
 
 <!-- Base URL to use for all relative URLs contained within the document -->
 <base href="http://example.com/page.html">
 
-<!-- Link to external CSS file -->
+<!-- لینک به فایل‌های خارجی CSS -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- Used for adding in-document CSS -->
+<!-- برای اضافه کردن CSS درون صفحه وب استفاده می‌شود -->
 <style>
   /* ... */
 </style>
 
-<!-- JavaScript & No-JavaScript tags -->
+<!-- برچسب‌های JavaScript و No-JavaScript -->
 <script src="script.js"></script>
 <script>
-  // function(s) go here
+  // تابع(ها) در اینجا
 </script>
 <noscript>
-  <!-- No JS alternative -->
+  <!-- جایگزین No JS -->
 </noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
-## Meta
+## متا / Meta
 
 ``` html
-<meta charset="utf-8"> <!-- Set character encoding for the document -->
+<meta charset="utf-8"> <!-- تعیین رمزگذاری کاراکتر برای صفحه وب -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- ۳ برچس متا بالا * باید * در ابتدای هِد باشد؛ و هر هِد دیگر باید * بعد از * این برچسب‌ها قرار بگیرد. -->
 
 <!-- Allows control over where resources are loaded from -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
@@ -168,9 +170,9 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
-## Link
+## پیوند / Link
 
 ``` html
 <!-- Points to an external CSS style sheet -->
@@ -248,7 +250,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Favicons
 
@@ -265,7 +267,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Social
 
@@ -348,7 +350,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 - 📖 [oEmbed format](http://oembed.com/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Browsers / Platforms
 
@@ -454,7 +456,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="msapplication-task-separator" content="1">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## App Links
 
@@ -475,7 +477,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - 📖 [App Links](http://applinks.org/documentation/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Browsers (Chinese)
 
@@ -526,7 +528,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 
 - 📖 [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Notes
 
@@ -540,14 +542,14 @@ Example:
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Other Resources
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Related Projects
 
@@ -556,13 +558,13 @@ Example:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Other Formats
 
 - 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Translations
 
@@ -573,8 +575,9 @@ Example:
 - 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- :iran: [Persian/فارسی](https://github.com/Goudarz/HEAD)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**
 
 ## Contributing
 
@@ -613,4 +616,4 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ بازگشت به بالا](#فهرست-محتوا)**

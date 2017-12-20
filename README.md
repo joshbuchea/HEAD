@@ -82,11 +82,13 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
   /* ... */
 </style>
 
-<!-- JavaScript & No-JavaScript tags -->
-<script src="script.js"></script>
+<!-- JavaScript files -->
+<script src="script.js" defer></script>
+<!-- Inline JavaScript (attention: causes render blocking) -->
 <script>
   // function(s) go here
 </script>
+<!-- No-JavaScript tag -->
 <noscript>
   <!-- No JS alternative -->
 </noscript>

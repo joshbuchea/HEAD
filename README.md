@@ -65,7 +65,7 @@ Below are the essential tags for basic, minimalist websites:
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
 
 ``` html
-<!-- Meta tags provide information for how a document should be perceived, and rendered, by other technologies. e.g. bots, search engines, browsers, etc. -->
+<!-- Set the character encoding for this document (if not set already), so that all characters within the UTF-8 space (such as emoji) are rendered correctly -->
 <meta charset="utf-8">
 
 <!-- Set the document's title -->
@@ -96,8 +96,10 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 ## Meta
 
+`<meta>` elements provide information for how a document should be perceived, and rendered, by other technologies. e.g. bots, search engines, browsers, etc.
+
 ``` html
-<meta charset="utf-8"> <!-- Set character encoding for the document -->
+<meta charset="utf-8"> <!-- Set the character encoding for this document (if not set already), so that all characters within the UTF-8 space (such as emoji) are rendered correctly -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->

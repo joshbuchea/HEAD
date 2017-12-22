@@ -15,6 +15,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
+  - [Twitter Privacy](#twitter-privacy)
   - [Google+ / Schema.org](#google--schemaorg)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
@@ -303,6 +304,13 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 - 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
 - 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+
+### Twitter Privacy
+If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
+``` html
+<!-- disallow Twitter from using your site's info for personalization purposes -->
+<meta name="twitter:dnt" content="on">
+```
 
 ### Google+ / Schema.org
 

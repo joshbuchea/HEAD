@@ -31,8 +31,6 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
 - [App Links](#app-links)
-- [Notes](#notes)
-  - [Performance](#performance)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
 - [Other Formats](#other-formats)
@@ -548,20 +546,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ```
 
 - 📖 [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Notes
-
-### Performance
-
-Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base`, and `link` tags.
-
-Example:
-
-``` html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-```
 
 **[⬆ back to top](#table-of-contents)**
 

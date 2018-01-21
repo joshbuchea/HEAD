@@ -15,6 +15,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
+  - [Twitter Privacy](#twitter-privacy)
   - [Google+ / Schema.org](#google--schemaorg)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
@@ -30,8 +31,6 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
 - [App Links](#app-links)
-- [Notes](#notes)
-  - [Performance](#performance)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
 - [Other Formats](#other-formats)
@@ -43,16 +42,19 @@ A list of everything that \*could\* go in the `<head>` of your document
 
 ## Recommended Minimum
 
-Below are the essential tags for basic, minimalist websites:
+Below are the essential elements for any web document (websites/apps):
 
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--
-  The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags.
+  The above 3 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
 
-  † Use the content="ie-edge" tag if your project must support Internet Explorer prior to version 11.
+  † Use the content="ie-edge" tag if your project
+    supports Internet Explorer prior to version 11.
 
  -->
 <title>Page Title</title>
@@ -64,17 +66,23 @@ Below are the essential tags for basic, minimalist websites:
 
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
 
+These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.
+
 ``` html
-<!-- Meta tags provide information for how a document should be perceived, and rendered, by other technologies. e.g. bots, search engines, browsers, etc. -->
+<!--
+  Set the character encoding for this document, so that
+  all characters within the UTF-8 space (such as emoji)
+  are rendered correctly.
+-->
 <meta charset="utf-8">
 
 <!-- Set the document's title -->
 <title>Page Title</title>
 
-<!-- Base URL to use for all relative URLs contained within the document -->
+<!-- Set the base URL for all relative URLs within the document -->
 <base href="http://example.com/page.html">
 
-<!-- Link to external CSS file -->
+<!-- Link to an external CSS file -->
 <link rel="stylesheet" href="styles.css">
 
 <!-- Used for adding in-document CSS -->
@@ -97,21 +105,27 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ## Meta
 
 ``` html
-<meta charset="utf-8"> <!-- Set character encoding for the document -->
+<!--
+  The following 3 meta tags *must* come first in the <head>
+  to consistently ensure proper document rendering.
+  Any other head element should come *after* these tags.
+-->
+<meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<!-- Allows control over where resources are loaded from -->
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
-<!-- Place as early in the document as possible -->
-<!-- Only applies to resources below this tag -->
 
 <!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
 
 <!-- Short description of the document (limit to 150 characters) -->
-<!-- In *some* situations this description is used as a part of the snippet shown in the search results. -->
+<!-- This content *may* be used as a part of search engine results. -->
 <meta name="description" content="A description of the page">
 
 <!-- Control the behavior of search engine crawling and indexing -->
@@ -173,7 +187,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ## Link
 
 ``` html
-<!-- Points to an external CSS style sheet -->
+<!-- Points to an external stylesheet -->
 <link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
@@ -240,12 +254,12 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <link rel="alternate" href="http://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
+<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
 <link rel="prerender" href="http://example.com/">
 <link rel="preload" href="image.png" as="image">
-<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
 
 **[⬆ back to top](#table-of-contents)**
@@ -256,7 +270,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 <!-- For IE 10 and below -->
 <!-- Place favicon.ico in the root directory - no tag necessary -->
 
-<!-- For IE 11, Chrome, Firefox, Safari, Opera -->
+<!-- For IE 11, Edge, Chrome, Firefox, Safari, Opera -->
 <link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
@@ -285,6 +299,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 - 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - 📖 [Open Graph protocol](http://ogp.me/)
+- 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
 
@@ -299,7 +314,14 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 ```
 
 - 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
-- 🛠 [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+
+### Twitter Privacy
+If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
+``` html
+<!-- disallow Twitter from using your site's info for personalization purposes -->
+<meta name="twitter:dnt" content="on">
+```
 
 ### Google+ / Schema.org
 
@@ -468,7 +490,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta property="al:android:app_name" content="App Links">
 <meta property="al:android:package" content="org.applinks">
 
-<!-- Web Fallback -->
+<!-- Web fall back -->
 <meta property="al:web:url" content="http://applinks.org/documentation">
 ```
 
@@ -494,7 +516,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- Display this document in fullscreen -->
 <meta name="x5-fullscreen" content="true">
 
-<!-- Document will be displayed in "application mode" (full screen, etc.) -->
+<!-- Document will be displayed in "application mode" (fullscreen, etc.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
@@ -510,7 +532,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <!-- UC browser will display images even if in "text mode" -->
 <meta name="imagemode" content="force">
 
-<!-- Document will be displayed in "application mode"(full screen, forbidding gesture, etc.) -->
+<!-- Document will be displayed in "application mode"(fullscreen, forbidding gesture, etc.) -->
 <meta name="browsermode" content="application">
 
 <!-- Disabled the UC browser's "night mode" for this document -->
@@ -524,20 +546,6 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 ```
 
 - 📖 [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
-
-**[⬆ back to top](#table-of-contents)**
-
-## Notes
-
-### Performance
-
-Moving the `href` attribute to the beginning of an element improves compression when GZIP is enabled, because the `href` attribute is used in `a`, `base`, and `link` tags.
-
-Example:
-
-``` html
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-```
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -606,7 +614,7 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 ## Author
 
-**[Josh Buchea](http://joshbuchea.com/)**
+**[Josh Buchea](https://joshbuchea.com/)**
 
 ## License
 

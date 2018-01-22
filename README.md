@@ -125,6 +125,9 @@ These elements provide information for how a document should be perceived, and r
 <!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
 
+<!-- Theme Color for Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#4285f4">
+
 <!-- Short description of the document (limit to 150 characters) -->
 <!-- This content *may* be used as a part of search engine results. -->
 <meta name="description" content="A description of the page">

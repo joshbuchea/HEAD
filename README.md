@@ -91,11 +91,13 @@ These elements provide information for how a document should be perceived, and r
   /* ... */
 </style>
 
-<!-- JavaScript & No-JavaScript tags -->
-<script src="script.js"></script>
+<!-- JavaScript files -->
+<script src="script.js" defer></script>
+<!-- Inline JavaScript (attention: causes render blocking) -->
 <script>
   // function(s) go here
 </script>
+<!-- No-JavaScript tag -->
 <noscript>
   <!-- No JS alternative -->
 </noscript>

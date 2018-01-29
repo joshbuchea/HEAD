@@ -11,7 +11,7 @@ A list of everything that \*could\* go in the `<head>` of your document
 - [Elements](#elements)
 - [Meta](#meta)
 - [Link](#link)
-- [Favicons](#favicons)
+- [Icons](#icons)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
@@ -268,20 +268,25 @@ These elements provide information for how a document should be perceived, and r
 
 **[⬆ back to top](#table-of-contents)**
 
-## Favicons
+## Icons
 
 ``` html
 <!-- For IE 10 and below -->
 <!-- Place favicon.ico in the root directory - no tag necessary -->
 
-<!-- For IE 11, Edge, Chrome, Firefox, Safari, Opera -->
-<link rel="icon" type="image/png" sizes="16x16" href="/path/to/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
+<!-- Icon in the highest resolution we need it for -->
+<link rel="icon" sizes="192x192" href="/path/to/icon.png">
+
+<!-- Apple Touch Icon (reuse 192px icon.png) -->
+<link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
+
+<!-- Safari Pinned Site -->
+<link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+- 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -409,7 +414,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ```html
 <!-- Pinned Site -->
-<link rel="mask-icon" href="/path/to/icon.svg" color="red">
+<link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
 ### Google Android
@@ -448,7 +453,7 @@ Since Chrome 31, you can set up your web app to "app mode" like Safari.
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- Homescreen Icon -->
-<link rel="icon" sizes="192x192" href="/path/to/highres-icon.png">
+<link rel="icon" sizes="192x192" href="/path/to/icon.png">
 ```
 
 - 📖 [Add to Homescreen - Google Chrome](https://developer.chrome.com/multidevice/android/installtohomescreen)

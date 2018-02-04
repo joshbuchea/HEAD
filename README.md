@@ -245,9 +245,6 @@ These elements provide information for how a document should be perceived, and r
 <!-- Enables posting to your own domain using a Micropub client -->
 <link rel="micropub" href="http://example.com/micropub">
 
-<!-- Loads in an external HTML file into the current document -->
-<link rel="import" href="/path/to/component.html">
-
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 

@@ -22,10 +22,8 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
-  - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
-  - [Google Chrome Mobile (Android Only)](#google-chrome-mobile-android-only)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
@@ -49,7 +47,7 @@ Below are the essential elements for any web document (websites/apps):
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- 
+<!--
   The above 3 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
@@ -195,10 +193,7 @@ These elements provide information for how a document should be perceived, and r
 <link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="http://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
-
-<!-- Used to be included before the icon link, but it has been deprecated -->
-<link rel="shortlink" href="http://example.com/?p=42">
+<link rel="canonical" href="http://example.com/article/?page=2">
 
 <!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="http://example.com/path/to/amp-version.html">
@@ -224,16 +219,16 @@ These elements provide information for how a document should be perceived, and r
 <link rel="archives" href="http://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="http://example.com/">
+<link rel="index" href="http://example.com/article/">
 
 <!-- Provides a self reference - useful when the document has multiple possible references -->
-<link rel="self" type="application/atom+xml" href="http://example.com/atomFeed.php?page=3">
+<link rel="self" type="application/atom+xml" href="http://example.com/atom.xml">
 
-<!-- The first, next, previous, and last documents in a series of documents, respectively -->
-<link rel="first" href="http://example.com/atomFeed.php">
-<link rel="next" href="http://example.com/atomFeed.php?page=4">
-<link rel="prev" href="http://example.com/atomFeed.php?page=2">
-<link rel="last" href="http://example.com/atomFeed.php?page=147">
+<!-- The first, last, previous, and next documents in a series of documents, respectively -->
+<link rel="first" href="http://example.com/article/">
+<link rel="last" href="http://example.com/article/?page=42">
+<link rel="prev" href="http://example.com/article/?page=1">
+<link rel="next" href="http://example.com/article/?page=3">
 
 <!-- Used when a 3rd party service is utilized to maintain a blog -->
 <link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
@@ -246,9 +241,6 @@ These elements provide information for how a document should be perceived, and r
 
 <!-- Enables posting to your own domain using a Micropub client -->
 <link rel="micropub" href="http://example.com/micropub">
-
-<!-- Loads in an external HTML file into the current document -->
-<link rel="import" href="/path/to/component.html">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
@@ -266,6 +258,8 @@ These elements provide information for how a document should be perceived, and r
 <link rel="preload" href="image.png" as="image">
 ```
 
+- 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Icons
@@ -280,11 +274,12 @@ These elements provide information for how a document should be perceived, and r
 <!-- Apple Touch Icon (reuse 192px icon.png) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Safari Pinned Site -->
+<!-- Safari Pinned Tab Icon -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- 📖 [Creating Pinned Tab Icons](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
@@ -391,31 +386,27 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Add to Home Screen -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="App Title">
-
-<!-- Touch Icons -->
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
+<!-- Launch Icon (180x180px or larger) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Startup Image ( Deprecated ) -->
-<link rel="apple-touch-startup-image" href="/path/to/startup.png">
+<!-- Launch Screen Image -->
+<link rel="apple-touch-startup-image" href="/path/to/launch.png">
+
+<!-- Launch Icon Title -->
+<meta name="apple-mobile-web-app-title" content="App Title">
+
+<!-- Enable standalone (full-screen) mode -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <!-- iOS app deep linking -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
-- 📖 [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
-
-### Apple Safari
-
-```html
-<!-- Pinned Site -->
-<link rel="mask-icon" href="/path/to/icon.svg" color="blue">
-```
+- 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
 ### Google Android
 
@@ -440,28 +431,13 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="google" content="notranslate">
 ```
 
-### Google Chrome Mobile (Android Only)
-
-Since Chrome 31, you can set up your web app to "app mode" like Safari.
-
-``` html
-<!-- Link to a manifest and define the manifest metadata -->
-<!-- The example of manifest.json could be found in the link below -->
-<link rel="manifest" href="manifest.json">
-
-<!-- Define your web page as a web app -->
-<meta name="mobile-web-app-capable" content="yes">
-
-<!-- Homescreen Icon -->
-<link rel="icon" sizes="192x192" href="/path/to/icon.png">
-```
-
-- 📖 [Add to Homescreen - Google Chrome](https://developer.chrome.com/multidevice/android/installtohomescreen)
-
 ### Microsoft Internet Explorer
 
 ``` html
+<!-- Force IE 8/9/10 to use its latest rendering engine -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension -->
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
 <!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->

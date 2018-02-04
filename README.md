@@ -432,7 +432,10 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ### Microsoft Internet Explorer
 
 ``` html
+<!-- Force IE 8/9/10 to use its latest rendering engine -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension -->
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
 <!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->

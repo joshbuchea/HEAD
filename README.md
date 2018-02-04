@@ -47,7 +47,7 @@ Below are the essential elements for any web document (websites/apps):
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!-- 
+<!--
   The above 3 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
@@ -390,24 +390,27 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Add to Home Screen -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="App Title">
-
-<!-- Touch Icons -->
-<!-- In most cases, one 180×180px touch icon in the head is enough -->
+<!-- Launch Icon (180x180px or larger) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Startup Image -->
-<link rel="apple-touch-startup-image" href="/path/to/startup.png">
+<!-- Launch Screen Image -->
+<link rel="apple-touch-startup-image" href="/path/to/launch.png">
+
+<!-- Launch Icon Title -->
+<meta name="apple-mobile-web-app-title" content="App Title">
+
+<!-- Enable standalone (full-screen) mode -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <!-- iOS app deep linking -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
-- 📖 [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
 ### Google Android
 

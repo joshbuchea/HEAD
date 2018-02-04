@@ -25,7 +25,6 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
-  - [Google Chrome Mobile (Android Only)](#google-chrome-mobile-android-only)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
@@ -439,24 +438,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Disable translation prompt -->
 <meta name="google" content="notranslate">
 ```
-
-### Google Chrome Mobile (Android Only)
-
-Since Chrome 31, you can set up your web app to "app mode" like Safari.
-
-``` html
-<!-- Link to a manifest and define the manifest metadata -->
-<!-- The example of manifest.json could be found in the link below -->
-<link rel="manifest" href="manifest.json">
-
-<!-- Define your web page as a web app -->
-<meta name="mobile-web-app-capable" content="yes">
-
-<!-- Homescreen Icon -->
-<link rel="icon" sizes="192x192" href="/path/to/icon.png">
-```
-
-- 📖 [Add to Homescreen - Google Chrome](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
 ### Microsoft Internet Explorer
 

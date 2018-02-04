@@ -67,7 +67,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.
 
-``` html
+```html
 <!--
   Set the character encoding for this document, so that
   all characters within the UTF-8 space (such as emoji)
@@ -103,7 +103,7 @@ These elements provide information for how a document should be perceived, and r
 
 ## Meta
 
-``` html
+```html
 <!--
   The following 3 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
@@ -188,7 +188,7 @@ These elements provide information for how a document should be perceived, and r
 
 ## Link
 
-``` html
+```html
 <!-- Points to an external stylesheet -->
 <link rel="stylesheet" href="http://example.com/styles.css">
 
@@ -264,7 +264,7 @@ These elements provide information for how a document should be perceived, and r
 
 ## Icons
 
-``` html
+```html
 <!-- For IE 10 and below -->
 <!-- Place favicon.ico in the root directory - no tag necessary -->
 
@@ -289,7 +289,7 @@ These elements provide information for how a document should be perceived, and r
 
 ### Facebook Open Graph
 
-``` html
+```html
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="http://example.com/page.html">
 <meta property="og:type" content="website">
@@ -307,7 +307,7 @@ These elements provide information for how a document should be perceived, and r
 
 ### Twitter Card
 
-``` html
+```html
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
@@ -322,31 +322,31 @@ These elements provide information for how a document should be perceived, and r
 
 ### Twitter Privacy
 If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
-``` html
+```html
 <!-- disallow Twitter from using your site's info for personalization purposes -->
 <meta name="twitter:dnt" content="on">
 ```
 
 ### Google+ / Schema.org
 
-``` html
 <link href="https://plus.google.com/+YourPage" rel="publisher">
 <meta itemprop="name" content="Content Title">
 <meta itemprop="description" content="Content description less than 200 characters">
 <meta itemprop="image" content="http://example.com/image.jpg">
+```html
 ```
 
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
 
-``` html
+```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
 
 ### Facebook Instant Articles
 
-``` html
+```html
 <meta charset="utf-8">
 <meta property="op:markup_version" content="v1.0">
 
@@ -362,7 +362,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### OEmbed
 
-``` html
+```html
 <link rel="alternate" type="application/json+oembed"
   href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
   title="oEmbed Profile: JSON">
@@ -379,7 +379,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Apple iOS
 
-``` html
+```html
 <!-- Smart App Banner -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
@@ -410,7 +410,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Google Android
 
-``` html
+```html
 <meta name="theme-color" content="#E64545">
 
 <!-- Add to home screen -->
@@ -424,7 +424,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Google Chrome
 
-``` html
+```html
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
 <!-- Disable translation prompt -->
@@ -433,7 +433,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Microsoft Internet Explorer
 
-``` html
+```html
 <!-- Force IE 8/9/10 to use its latest rendering engine -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -466,14 +466,14 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### 360 Browser
 
-``` html
+```html
 <!-- Select rendering engine order -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
 ### QQ Mobile Browser
 
-``` html
+```html
 <!-- Locks the screen into the specified orientation -->
 <meta name="x5-orientation" content="landscape/portrait">
 
@@ -486,7 +486,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### UC Mobile Browser
 
-``` html
+```html
 <!-- Locks the screen into the specified orientation -->
 <meta name="screen-orientation" content="landscape/portrait">
 
@@ -515,7 +515,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ## App Links
 
-``` html
+```html
 <!-- iOS -->
 <meta property="al:ios:url" content="applinks://docs">
 <meta property="al:ios:app_store_id" content="12345">

@@ -219,7 +219,7 @@ These elements provide information for how a document should be perceived, and r
 <link rel="archives" href="http://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="http://example.com/">
+<link rel="index" href="http://example.com/article/">
 
 <!-- Provides a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="http://example.com/atom.xml">

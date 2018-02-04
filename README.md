@@ -22,7 +22,6 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [OEmbed](#oembed)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
-  - [Apple Safari](#apple-safari)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
@@ -279,11 +278,12 @@ These elements provide information for how a document should be perceived, and r
 <!-- Apple Touch Icon (reuse 192px icon.png) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Safari Pinned Site -->
+<!-- Safari Pinned Tab Icon -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- 📖 [Creating Pinned Tab Icons](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
@@ -408,13 +408,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```
 
 - 📖 [Apple Meta Tags](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
-
-### Apple Safari
-
-```html
-<!-- Pinned Site -->
-<link rel="mask-icon" href="/path/to/icon.svg" color="blue">
-```
 
 ### Google Android
 

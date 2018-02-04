@@ -329,12 +329,19 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 ### Google+ / Schema.org
 
-<link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="http://example.com/image.jpg">
 ```html
+<html lang="" itemscope itemtype="http://schema.org/Article">
+    <head>
+      <link rel="author" href="">
+      <link rel="publisher" href="">
+      <meta itemprop="name" content="Content Title">
+      <meta itemprop="description" content="Content description less than 200 characters">
+      <meta itemprop="image" content="http://example.com/image.jpg">
 ```
+
+**Note:** This markup requires attributes to be added to your top html tag
+
+- 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
 
 ### Pinterest
 

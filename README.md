@@ -258,6 +258,8 @@ These elements provide information for how a document should be perceived, and r
 <link rel="preload" href="image.png" as="image">
 ```
 
+- 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Icons

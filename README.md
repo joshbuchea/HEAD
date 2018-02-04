@@ -193,7 +193,7 @@ These elements provide information for how a document should be perceived, and r
 <link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="http://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
+<link rel="canonical" href="http://example.com/article/?page=2">
 
 <!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="http://example.com/path/to/amp-version.html">

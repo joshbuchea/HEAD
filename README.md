@@ -195,9 +195,6 @@ These elements provide information for how a document should be perceived, and r
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="http://example.com/2010/06/9-things-to-do-before-entering-social-media.html">
 
-<!-- Used to be included before the icon link, but it has been deprecated -->
-<link rel="shortlink" href="http://example.com/?p=42">
-
 <!-- Links to an AMP HTML version of the current document -->
 <link rel="amphtml" href="http://example.com/path/to/amp-version.html">
 

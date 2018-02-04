@@ -399,7 +399,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- In most cases, one 180×180px touch icon in the head is enough -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Startup Image ( Deprecated ) -->
+<!-- Startup Image -->
 <link rel="apple-touch-startup-image" href="/path/to/startup.png">
 
 <!-- iOS app deep linking -->

@@ -227,11 +227,11 @@ These elements provide information for how a document should be perceived, and r
 <!-- Provides a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="http://example.com/atomFeed.php?page=3">
 
-<!-- The first, next, previous, and last documents in a series of documents, respectively -->
-<link rel="first" href="http://example.com/atomFeed.php">
-<link rel="next" href="http://example.com/atomFeed.php?page=4">
-<link rel="prev" href="http://example.com/atomFeed.php?page=2">
-<link rel="last" href="http://example.com/atomFeed.php?page=147">
+<!-- The first, previous, next, and last documents in a series of documents, respectively -->
+<link rel="first" href="http://example.com/article/">
+<link rel="prev" href="http://example.com/article/?page=1">
+<link rel="next" href="http://example.com/article/?page=3">
+<link rel="last" href="http://example.com/article/?page=42">
 
 <!-- Used when a 3rd party service is utilized to maintain a blog -->
 <link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">

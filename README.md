@@ -445,7 +445,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta name="msapplication-config" content="/browserconfig.xml">
 ```
 
-Minimum required xml markup for the `browserconfig.xml`:
+Minimum required xml markup for `browserconfig.xml`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -460,6 +460,8 @@ Minimum required xml markup for the `browserconfig.xml`:
    </msapplication>
 </browserconfig>
 ```
+
+- 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
 **[⬆ back to top](#table-of-contents)**
 

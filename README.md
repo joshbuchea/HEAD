@@ -45,16 +45,11 @@ Below are the essential elements for any web document (websites/apps):
 
 ```html
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--
-  The above 3 meta tags *must* come first in the <head>
+  The above 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
-
-  † Use the content="ie-edge" tag if your project
-    supports Internet Explorer prior to version 11.
-
  -->
 <title>Page Title</title>
 ```
@@ -105,12 +100,11 @@ These elements provide information for how a document should be perceived, and r
 
 ```html
 <!--
-  The following 3 meta tags *must* come first in the <head>
+  The following 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!--

@@ -441,24 +441,24 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension -->
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
-<meta name="msapplication-tap-highlight" content="no">
+<!-- Windows Tiles -->
+<meta name="msapplication-config" content="/browserconfig.xml">
+```
 
-<!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
-<meta name="application-name" content="Sample Title">
-<meta name="msapplication-tooltip" content="A description of what this site does.">
-<meta name="msapplication-starturl" content="http://example.com/index.html?pinned=true">
-<meta name="msapplication-navbutton-color" content="#FF3300">
-<meta name="msapplication-window" content="width=800;height=600">
-<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
-<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
-<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://example.com/path/to/file.xml">
-<meta name="msapplication-TileColor" content="#FF3300">
-<meta name="msapplication-TileImage" content="/path/to/tileimage.jpg">
+Minimum required xml markup for the `browserconfig.xml`:
 
-<meta name="msapplication-config" content="http://example.com/browserconfig.xml">
-<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
-<meta name="msapplication-task-separator" content="1">
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+   <msapplication>
+     <tile>
+        <square70x70logo src="small.png"/>
+        <square150x150logo src="medium.png"/>
+        <wide310x150logo src="wide.png"/>
+        <square310x310logo src="large.png"/>
+     </tile>
+   </msapplication>
+</browserconfig>
 ```
 
 **[⬆ back to top](#table-of-contents)**

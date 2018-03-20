@@ -45,16 +45,11 @@ Below are the essential elements for any web document (websites/apps):
 
 ```html
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- † -->
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--
-  The above 3 meta tags *must* come first in the <head>
+  The above 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
-
-  † Use the content="ie-edge" tag if your project
-    supports Internet Explorer prior to version 11.
-
  -->
 <title>Page Title</title>
 ```
@@ -67,7 +62,7 @@ Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `nos
 
 These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.
 
-``` html
+```html
 <!--
   Set the character encoding for this document, so that
   all characters within the UTF-8 space (such as emoji)
@@ -103,14 +98,13 @@ These elements provide information for how a document should be perceived, and r
 
 ## Meta
 
-``` html
+```html
 <!--
-  The following 3 meta tags *must* come first in the <head>
+  The following 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!--
@@ -188,7 +182,7 @@ These elements provide information for how a document should be perceived, and r
 
 ## Link
 
-``` html
+```html
 <!-- Points to an external stylesheet -->
 <link rel="stylesheet" href="http://example.com/styles.css">
 
@@ -264,7 +258,7 @@ These elements provide information for how a document should be perceived, and r
 
 ## Icons
 
-``` html
+```html
 <!-- For IE 10 and below -->
 <!-- Place favicon.ico in the root directory - no tag necessary -->
 
@@ -289,7 +283,7 @@ These elements provide information for how a document should be perceived, and r
 
 ### Facebook Open Graph
 
-``` html
+```html
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="http://example.com/page.html">
 <meta property="og:type" content="website">
@@ -307,7 +301,7 @@ These elements provide information for how a document should be perceived, and r
 
 ### Twitter Card
 
-``` html
+```html
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
@@ -322,31 +316,38 @@ These elements provide information for how a document should be perceived, and r
 
 ### Twitter Privacy
 If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
-``` html
+```html
 <!-- disallow Twitter from using your site's info for personalization purposes -->
 <meta name="twitter:dnt" content="on">
 ```
 
 ### Google+ / Schema.org
 
-``` html
-<link href="https://plus.google.com/+YourPage" rel="publisher">
-<meta itemprop="name" content="Content Title">
-<meta itemprop="description" content="Content description less than 200 characters">
-<meta itemprop="image" content="http://example.com/image.jpg">
+```html
+<html lang="" itemscope itemtype="http://schema.org/Article">
+    <head>
+      <link rel="author" href="">
+      <link rel="publisher" href="">
+      <meta itemprop="name" content="Content Title">
+      <meta itemprop="description" content="Content description less than 200 characters">
+      <meta itemprop="image" content="http://example.com/image.jpg">
 ```
+
+**Note:** This markup requires attributes to be added to your top html tag
+
+- 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
 
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
 
-``` html
+```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
 
 ### Facebook Instant Articles
 
-``` html
+```html
 <meta charset="utf-8">
 <meta property="op:markup_version" content="v1.0">
 
@@ -362,7 +363,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### OEmbed
 
-``` html
+```html
 <link rel="alternate" type="application/json+oembed"
   href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
   title="oEmbed Profile: JSON">
@@ -379,7 +380,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Apple iOS
 
-``` html
+```html
 <!-- Smart App Banner -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
@@ -410,7 +411,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Google Android
 
-``` html
+```html
 <meta name="theme-color" content="#E64545">
 
 <!-- Add to home screen -->
@@ -424,7 +425,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Google Chrome
 
-``` html
+```html
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
 <!-- Disable translation prompt -->
@@ -433,32 +434,34 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### Microsoft Internet Explorer
 
-``` html
+```html
 <!-- Force IE 8/9/10 to use its latest rendering engine -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 <!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension -->
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- IE10: Disable link highlighting upon tap (https://blogs.windows.com/buildingapps/2012/11/15/adapting-your-webkit-optimized-site-for-internet-explorer-10/) -->
-<meta name="msapplication-tap-highlight" content="no">
-
-<!-- Pinned sites (https://msdn.microsoft.com/en-us/library/dn255024(v=vs.85).aspx) -->
-<meta name="application-name" content="Sample Title">
-<meta name="msapplication-tooltip" content="A description of what this site does.">
-<meta name="msapplication-starturl" content="http://example.com/index.html?pinned=true">
-<meta name="msapplication-navbutton-color" content="#FF3300">
-<meta name="msapplication-window" content="width=800;height=600">
-<meta name="msapplication-task" content="name=Task 1;action-uri=http://host/Page1.html;icon-uri=http://host/icon1.ico">
-<meta name="msapplication-task" content="name=Task 2;action-uri=http://microsoft.com/Page2.html;icon-uri=http://host/icon2.ico">
-<meta name="msapplication-badge" value="frequency=NUMBER_IN_MINUTES;polling-uri=http://example.com/path/to/file.xml">
-<meta name="msapplication-TileColor" content="#FF3300">
-<meta name="msapplication-TileImage" content="/path/to/tileimage.jpg">
-
-<meta name="msapplication-config" content="http://example.com/browserconfig.xml">
-<meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
-<meta name="msapplication-task-separator" content="1">
+<!-- Windows Tiles -->
+<meta name="msapplication-config" content="/browserconfig.xml">
 ```
+
+Minimum required xml markup for `browserconfig.xml`:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+   <msapplication>
+     <tile>
+        <square70x70logo src="small.png"/>
+        <square150x150logo src="medium.png"/>
+        <wide310x150logo src="wide.png"/>
+        <square310x310logo src="large.png"/>
+     </tile>
+   </msapplication>
+</browserconfig>
+```
+
+- 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -466,14 +469,14 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### 360 Browser
 
-``` html
+```html
 <!-- Select rendering engine order -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
 ### QQ Mobile Browser
 
-``` html
+```html
 <!-- Locks the screen into the specified orientation -->
 <meta name="x5-orientation" content="landscape/portrait">
 
@@ -486,7 +489,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ### UC Mobile Browser
 
-``` html
+```html
 <!-- Locks the screen into the specified orientation -->
 <meta name="screen-orientation" content="landscape/portrait">
 
@@ -515,7 +518,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ## App Links
 
-``` html
+```html
 <!-- iOS -->
 <meta property="al:ios:url" content="applinks://docs">
 <meta property="al:ios:app_store_id" content="12345">

@@ -584,6 +584,7 @@ Echa un vistazo a todos los geniales [colaboradores](https://github.com/joshbuch
 ## Autor
 
 **[Josh Buchea](https://joshbuchea.com/)**
+
 Traducido por: **[Álvaro Araoz](https://imalvaro.com/)**
 
 ## Licencia

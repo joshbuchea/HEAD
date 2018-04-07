@@ -2,6 +2,8 @@
 
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
+[![Translated by](https://img.shields.io/badge/Translated%20by-Álvaro%20Araoz-orange.svg)](http://imalvaro.com)
+
 
 Una lista de todo lo que \*podría\* entrar en el `<head>` de tu documento
 
@@ -585,7 +587,9 @@ Echa un vistazo a todos los geniales [colaboradores](https://github.com/joshbuch
 
 **[Josh Buchea](https://joshbuchea.com/)**
 
-Traducido por: **[Álvaro Araoz](https://imalvaro.com/)**
+Traducido por:
+
+**[Álvaro Araoz](https://imalvaro.com/)**
 
 ## Licencia
 

@@ -32,7 +32,7 @@ Una lista de todo lo que \*podría\* entrar en el `<head>` de tu documento
 - [Enlaces a una App](#enlaces-a-una-app)
 - [Otros Recursos](#otros-recursos)
 - [Proyectos Relacionados](#related-projects)
-- [Otros Formatos](#oros-formatos)
+- [Otros Formatos](#otros-formatos)
 - [Traducciones](#traducciones)
 - [Contribuye](#contribuye)
   - [Colaboradores](#colaboradores)

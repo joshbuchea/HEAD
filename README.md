@@ -3,6 +3,7 @@
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 [![Translated by](https://img.shields.io/badge/Translated%20by-Álvaro%20Araoz-orange.svg)](http://imalvaro.com)
+[![Translated by](https://img.shields.io/badge/Translated%20by-klujanrosas-blue.svg)](https://github.com/klujanrosas)
 
 
 Una lista de todo lo que \*podría\* entrar en el `<head>` de tu documento
@@ -27,7 +28,7 @@ Una lista de todo lo que \*podría\* entrar en el `<head>` de tu documento
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [Nevgadores (Chino)](#navegadores-chino)
+- [Nevgadores (Chinos)](#navegadores-chino)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
@@ -49,9 +50,9 @@ A continuación se muestran los elementos esenciales para cualquier página web 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!--
-  Las 2 meta etiquetas anteriores *deben* ser lo primerno en el <head>
+  Las 2 meta etiquetas anteriores *deben* ser lo primero en el <head>
   para garantizar de manera consistente la representación adecuada de documentos.
-  Cualquier otro elemento principal debe venir *despues* de estas etiquetas.
+  Cualquier otro elemento principal debe venir *después* de estas etiquetas.
  -->
 <title>Título de la Página</title>
 ```
@@ -60,15 +61,15 @@ A continuación se muestran los elementos esenciales para cualquier página web 
 
 ## Elementos
 
-Los elementos Validos `<head>` son: `meta`, `link`, `title`, `style`, `script`, `noscript`, y `base`.
+Los elementos válidos en el `<head>` son: `meta`, `link`, `title`, `style`, `script`, `noscript`, y `base`.
 
-Estos elementos proporcionan información sobre cómo un documento debe ser percibido y representado por las tecnologías web. p.ej. navegadores, motores de búsqueda, bots, etc.
+Estos elementos proporcionan información sobre cómo un documento debe ser interpretado y representado por las tecnologías web. p.ej. navegadores, motores de búsqueda, bots, etc.
 
 ```html
 <!--
   Establezca la codificación de caracteres para este documento, de modo que
-  todos los personajes dentro del espacio UTF-8 (como emoji)
-  se renderizan correctamente.
+  todos los caractéres dentro del espacio UTF-8 (como los emoji)
+  se rendericen correctamente.
 -->
 <meta charset="utf-8">
 
@@ -89,10 +90,10 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <!-- Etiquetas JavaScript y No-JavaScript -->
 <script src="script.js"></script>
 <script>
-  // function(s) go here
+  // La(s) funcion(es) van aquí
 </script>
 <noscript>
-  <!-- Alternativa No JS -->
+  <!-- No se puede usar JS -->
 </noscript>
 ```
 
@@ -102,32 +103,31 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 
 ```html
 <!--
-  Las 2 meta etiquetas anteriores *deben* ser lo primerno en el <head>
+  Las 2 siguientes meta etiquetas *deben* ser lo primero en el <head>
   para garantizar de manera consistente la representación adecuada de documentos.
-  Cualquier otro elemento principal debe venir *despues* de estas etiquetas.
+  Cualquier otro elemento principal debe venir *después* de estas etiquetas.
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!--
   Permite el control sobre dónde se cargan los recursos.
-  Colocalo lo más arriba posible en el <head>, ya que la etiqueta  
-  solo se aplica a los recursos declarados después.
+  Colocalo lo más arriba posible en el <head>, ya que la etiqueta solo se aplica a los recursos declarados después.
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
-<!-- Nombre de la aplicación web (solo debe usarse si página web se usa como una aplicación) -->
+<!-- Nombre de la aplicación web (solo debe usarse si la página web se usa como una aplicación) -->
 <meta name="application-name" content="Application Name">
 
-<!-- Tema de Color para Chrome, Firefox OS y Opera -->
+<!-- Color del tema para Chrome, Firefox OS y Opera -->
 <meta name="theme-color" content="#4285f4">
 
-<!-- Breve descripción del documento (límite de 150 caracteres) -->
-<!-- Este contenido *puede* usarse como parte de los resultados del motor de búsqueda. -->
+<!-- Breve descripción del documento (limitada a 150 caractéres) -->
+<!-- Este contenido *podría* usarse como parte de los resultados del motor de búsqueda. -->
 <meta name="description" content="A description of the page">
 
 <!-- Controla el comportamiento del rastreo e indexación del motor de búsqueda -->
-<meta name="robots" content="index,follow"><!-- Todos los Motores de Búsqueda -->
+<meta name="robots" content="index,follow"><!-- Todos los motores de búsqueda -->
 <meta name="googlebot" content="index,follow"><!-- Específico de Google -->
 
 <!-- Le dice a Google que no muestre el cuadro de búsqueda de enlaces de sitio -->
@@ -137,18 +137,18 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <meta name="google" content="notranslate">
 
 <!-- Verifica la propiedad del sitio web -->
-<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
-<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
-<meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
-<meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
-<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
-<meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
+<meta name="google-site-verification" content="token_verificacion"><!-- Google Search Console -->
+<meta name="yandex-verification" content="token_verificacion"><!-- Yandex Webmasters -->
+<meta name="msvalidate.01" content="token_verificacion"><!-- Bing Webmaster Center -->
+<meta name="alexaVerifyID" content="token_verificacion"><!-- Alexa Console -->
+<meta name="p:domain_verify" content="codigo_de_pinterest"><!-- Pinterest Console-->
+<meta name="norton-safeweb-site-verification" content="codigo_norton"><!-- Norton Safe Web -->
 
-<!-- Identifica el software utilizado para compilar el documento (es decir, WordPress, Dreamweaver) -->
-<meta name="generator" content="program">
+<!-- Identifica el software utilizado para compilar el documento (p. ej.: WordPress, Dreamweaver) -->
+<meta name="generator" content="programa">
 
 <!-- Breve descripción del asunto de su documento -->
-<meta name="subject" content="your document's subject">
+<meta name="subject" content="el asunto de su documento">
 
 <!-- Da una clasificación general de edad basada en el contenido del documento -->
 <meta name="rating" content="General">
@@ -169,10 +169,10 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo etiquetas -->
-<meta name="ICBM" content="latitude, longitude">
-<meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Código de país (ISO 3166-1): obligatorio, código de estado (ISO 3166-2): opcional; p.ej. content = "ES" / content = "ES-MAD" -->
-<meta name="geo.placename" content="city/town"><!-- p.ej. content="Madrid" -->
+<meta name="ICBM" content="latitud, longitud">
+<meta name="geo.position" content="latitud;longitud">
+<meta name="geo.region" content="pais[-estado]"><!-- Código de país (ISO 3166-1): obligatorio, código de estado (ISO 3166-2): opcional; p. ej. content = "ES" / content = "ES-MAD" -->
+<meta name="geo.placename" content="ciudad/distrito"><!-- p. ej. content="Madrid" -->
 ```
 
 - 📖 [Meta etiquetas que Google entiende](https://support.google.com/webmasters/answer/79812?hl=en)
@@ -189,10 +189,10 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <link rel="stylesheet" href="http://example.com/styles.css">
 
 <!-- Ayuda a prevenir problemas de contenido duplicado -->
-<link rel="canonical" href="http://example.com/article/?page=2">
+<link rel="canonical" href="http://ejemplo.com/articulo/?page=2">
 
 <!-- Enlaces a una versión AMP HTML del documento actual -->
-<link rel="amphtml" href="http://example.com/path/to/amp-version.html">
+<link rel="amphtml" href="http://ejemplo.com/enlace/a/version-amp.html">
 
 <!-- Enlaces a un archivo JSON que especifica las credenciales de "instalación" para las aplicaciones web -->
 <link rel="manifest" href="manifest.json">
@@ -204,42 +204,42 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <link rel="license" href="copyright.html">
 
 <!-- Da una referencia a una ubicación en su documento que puede estar en otro idioma -->
-<link rel="alternate" href="https://es.example.com/" hreflang="es">
+<link rel="alternate" href="https://en.ejemplo.com/" hreflang="en">
 
 <!-- Proporciona información sobre un autor u otra persona -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
-<link rel="me" href="mailto:nombre@example.com">
+<link rel="me" href="mailto:nombre@ejemplo.com">
 <link rel="me" href="sms:+34612345678">
 
 <!-- Enlaces a un documento que describe una colección de registros, documentos u otros materiales de interés histórico -->
-<link rel="archives" href="http://example.com/archives/">
+<link rel="archives" href="http://ejemplo.com/archivos/">
 
 <!-- Enlaces a recursos de nivel superior en una estructura jerárquica -->
-<link rel="index" href="http://example.com/article/">
+<link rel="index" href="http://ejemplo.com/articulo/">
 
 <!-- Proporciona una autorreferencia: útil cuando el documento tiene múltiples referencias posibles -->
-<link rel="self" type="application/atom+xml" href="http://example.com/atom.xml">
+<link rel="self" type="application/atom+xml" href="http://ejemplo.com/atom.xml">
 
 <!-- Los documentos primero, último, anterior y siguiente en una serie de documentos, respectivamente -->
-<link rel="first" href="http://example.com/article/">
-<link rel="last" href="http://example.com/article/?page=42">
-<link rel="prev" href="http://example.com/article/?page=1">
-<link rel="next" href="http://example.com/article/?page=3">
+<link rel="first" href="http://ejemplo.com/articulo/">
+<link rel="last" href="http://ejemplo.com/articulo/?pagina=42">
+<link rel="prev" href="http://example.com/articulo/?pagina=1">
+<link rel="next" href="http://example.com/articulo/?pagina=3">
 
 <!-- Se usa cuando se utiliza un servicio de terceros para mantener un blog -->
-<link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+<link rel="EditURI" href="http://ejemplo.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
 <!-- Forma un comentario automático cuando otro blog de WordPress se vincula a su blog o publicación de WordPress -->
-<link rel="pingback" href="http://example.com/xmlrpc.php">
+<link rel="pingback" href="http://ejemplo.com/xmlrpc.php">
 
 <!-- Notifica una URL cuando la vincula a su documento -->
-<link rel="webmention" href="http://example.com/webmention">
+<link rel="webmention" href="http://ejemplo.com/webmention">
 
 <!-- Permite publicar en su propio dominio usando un cliente Micropub -->
-<link rel="micropub" href="http://example.com/micropub">
+<link rel="micropub" href="http://ejemplo.com/micropub">
 
 <!-- Open Search -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Título de Búsqueda">
 
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
@@ -247,11 +247,11 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 
 <!-- Prefetching, preloading, prebrowsing -->
 <!-- Más info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
-<link rel="dns-prefetch" href="//example.com/">
-<link rel="preconnect" href="https://www.example.com/">
-<link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="http://example.com/">
-<link rel="preload" href="image.png" as="image">
+<link rel="dns-prefetch" href="//ejemplo.com/">
+<link rel="preconnect" href="https://www.ejemplo.com/">
+<link rel="prefetch" href="https://www.ejemplo.com/">
+<link rel="prerender" href="http://ejemplo.com/">
+<link rel="preload" href="imagen.png" as="image">
 ```
 
 - 📖 [Relaciones de Enlace](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
@@ -264,7 +264,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <!-- Para IE 10 y versiones inferiores -->
 <!-- Coloca el 'favicon.ico' en el directorio raíz; no es necesario etiquetar -->
 
-<!-- Ícono en la resolución más alta que necesitamos para -->
+<!-- Ícono en la más alta resolución que necesitemos -->
 <link rel="icon" sizes="192x192" href="/path/to/icon.png">
 
 <!-- Apple Touch Icon (reutilizar 192px icon.png) -->
@@ -274,7 +274,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
-- 📖 [Todo Sobre los Favicons (Y los Iconos Táctiles))](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- 📖 [Todo Sobre los Favicons (Y los Iconos Táctiles)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - 📖 [Cómo Crear Iconos de Pestañas Fijas](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Iconos y Colores del Navegador](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
@@ -287,10 +287,10 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 
 ```html
 <meta property="fb:app_id" content="123456789">
-<meta property="og:url" content="http://example.com/page.html">
+<meta property="og:url" content="http://ejemplo.com/pagina.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Título del Contenido">
-<meta property="og:image" content="http://example.com/image.jpg">
+<meta property="og:image" content="http://ejemplo.com/imagen.jpg">
 <meta property="og:description" content="Descripción Aquí">
 <meta property="og:site_name" content="Nombre del Sitio">
 <meta property="og:locale" content="es_ES">
@@ -307,13 +307,13 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@cuenta_de_la_web">
 <meta name="twitter:creator" content="@cuenta_individual">
-<meta name="twitter:url" content="http://example.com/page.html">
+<meta name="twitter:url" content="http://ejemplo.com/pagina.html">
 <meta name="twitter:title" content="Título del Contenido">
 <meta name="twitter:description" content="Descripción del contenido (menos de 200 caracteres)">
-<meta name="twitter:image" content="http://example.com/image.jpg">
+<meta name="twitter:image" content="http://ejemplo.com/imagen.jpg">
 ```
 
-- 📖 [Comenzar con las tarjetas — Twitter Developers](https://dev.twitter.com/cards/getting-started)
+- 📖 [Introducción a las tarjetas — Twitter Developers](https://dev.twitter.com/cards/getting-started)
 - 🛠 Pon a prueba tu página con el [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Privacidad de Twitter
@@ -332,7 +332,7 @@ Si incorpora los tweets en su sitio web, Twitter puede usar información de su s
       <link rel="publisher" href="">
       <meta itemprop="name" content="Título del Contenido">
       <meta itemprop="description" content="Descripción del contenido (menos de 200 caracteres)">
-      <meta itemprop="image" content="http://example.com/image.jpg">
+      <meta itemprop="image" content="http://ejemplo.com/imagen.jpg">
 ```
 
 **Nota:** Este marcado requiere que los atributos se agreguen a su etiqueta html superior
@@ -341,7 +341,7 @@ Si incorpora los tweets en su sitio web, Twitter puede usar información de su s
 
 ### Pinterest
 
-Pinterest le permite evitar que las personas guarden cosas de su sitio web, de acuerdo a [su centro de ayuda](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). La `description` es opcional.
+Pinterest le permite evitar que las personas guarden cosas de su sitio web, de acuerdo a [su centro de ayuda](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). El atributo `description` es opcional.
 
 ```html
 <meta name="pinterest" content="nopin" description="Lo siento, ¡no puedes guardar desde mi sitio web!">
@@ -354,7 +354,7 @@ Pinterest le permite evitar que las personas guarden cosas de su sitio web, de a
 <meta property="op:markup_version" content="v1.0">
 
 <!-- La URL de la versión web de tu artículo -->
-<link rel="canonical" href="http://example.com/article.html">
+<link rel="canonical" href="http://ejemplo.com/articulo.html">
 
 <!-- El estilo que se utilizará para este artículo -->
 <meta property="fb:article_style" content="myarticlestyle">
@@ -386,10 +386,10 @@ Pinterest le permite evitar que las personas guarden cosas de su sitio web, de a
 <!-- Smart App Banner -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- Deshabilita la detección automática y el formateo de posibles números de teléfono -->
 <meta name="format-detection" content="telephone=no">
 
-<!-- Launch Icon (180x180px or larger) -->
+<!-- Launch Icon (180x180px o más largo) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
 <!-- Launch Screen Image -->
@@ -398,10 +398,10 @@ Pinterest le permite evitar que las personas guarden cosas de su sitio web, de a
 <!-- Launch Icon Title -->
 <meta name="apple-mobile-web-app-title" content="App Title">
 
-<!-- Enable standalone (full-screen) mode -->
+<!-- Habilitar modo standalone(pantalla-completa) -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+<!-- Apariencia de la barra de estado (no tiene efecto si el modo standalone no esta activado) -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <!-- iOS app deep linking -->
@@ -437,10 +437,10 @@ Pinterest le permite evitar que las personas guarden cosas de su sitio web, de a
 ### Microsoft Internet Explorer
 
 ```html
-<!-- Fuerza a IE 8/9/10 a utilizar su último motor de renderizado -->
+<!-- Fuerza a IE 8/9/10 a utilizar la última versión del motor de renderizado -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<!-- Deshabilite la detección automática y el formateo de posibles números de teléfono mediante la extensión del navegador Skype Toolbar -->
+<!-- Deshabilita la detección automática y el formateo de posibles números de teléfono mediante la extensión del navegador Skype Toolbar -->
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
 <!-- Windows Tiles -->
@@ -504,13 +504,13 @@ Marcado XML mínimo requerido para `browserconfig.xml`:
 <!-- El documento se mostrará en "modo aplicación" (pantalla completa, gesto prohibido, etc.) -->
 <meta name="browsermode" content="application">
 
-<!-- Desactivado el "modo nocturno" de UC Browser para este documento -->
+<!-- Desactiva "modo nocturno" de UC Browser para este documento -->
 <meta name="nightmode" content="disable">
 
 <!-- Simplifica el documento para reducir la transferencia de datos -->
 <meta name="layoutmode" content="fitscreen">
 
-<!-- Desactive la función de UC Browser de "escalar la fuente cuando hay muchas palabras en este documento" -->
+<!-- Desactiva la función de UC Browser de "escalar la fuente cuando hay muchas palabras en este documento" -->
 <meta name="wap-font-scale" content="no">
 ```
 
@@ -587,9 +587,11 @@ Echa un vistazo a todos los geniales [colaboradores](https://github.com/joshbuch
 
 **[Josh Buchea](https://joshbuchea.com/)**
 
-Traducido por:
+## Traduccciones:
 
-**[Álvaro Araoz](https://imalvaro.com/)**
+- **[Álvaro Araoz](https://imalvaro.com/)**
+
+- **[Kenneth Luján](https://kennethlujan.com)**
 
 ## Licencia
 

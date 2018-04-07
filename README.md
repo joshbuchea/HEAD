@@ -567,6 +567,7 @@ Minimum required xml markup for `browserconfig.xml`:
 - 🇯🇵 [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 - 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
+- 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 
 **[⬆ back to top](#table-of-contents)**

@@ -7,37 +7,37 @@ Una lista de todo lo que \*podría\* entrar en el `<head>` de tu documento
 
 ## Tabla de Contenidos
 
-- [Mínimos Recomendados](#recommended-minimum)
-- [Elementos](#elements)
+- [Mínimos Recomendados](#minimos-recomendados)
+- [Elementos](#elementos)
 - [Meta](#meta)
-- [Enlaces](#link)
-- [Iconos](#icons)
+- [Enlaces](#enlaces)
+- [Iconos](#iconos)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
-  - [Twitter Privacy](#twitter-privacy)
+  - [Privacidad de Twitter](#privacidad-de-twitter)
   - [Google+ / Schema.org](#google--schemaorg)
   - [Pinterest](#pinterest)
-  - [Facebook Instant Articles](#facebook-instant-articles)
+  - [Artículos Instantaneos de Facebook](#articulos-instantaneos-de-facebook)
   - [OEmbed](#oembed)
-- [Navegadores / Plataformas](#browsers--platforms)
+- [Navegadores / Plataformas](#navegadores--plataformas)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [Nevgadores (Chino)](#browsers-chinese)
+- [Nevgadores (Chino)](#navegadores-chino)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
-- [Enlace a una App](#app-links)
-- [Otros Recursos](#other-resources)
+- [Enlaces a una App](#enlaces-a-una-app)
+- [Otros Recursos](#otros-recursos)
 - [Proyectos Relacionados](#related-projects)
-- [Otros Formatos](#other-formats)
-- [Traducciones](#translations)
-- [Contribuye](#contributing)
-  - [Colaboradores](#contributors)
-- [Autor](#author)
-- [Licencia](#license)
+- [Otros Formatos](#oros-formatos)
+- [Traducciones](#traducciones)
+- [Contribuye](#contribuye)
+  - [Colaboradores](#colaboradores)
+- [Autor](#autor)
+- [Licencia](#licencia)
 
 ## Mínimos Recomendados
 
@@ -516,7 +516,7 @@ Mínimo marcado XML requerido para `browserconfig.xml`:
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## App Links
+## Enlaces a una App
 
 ```html
 <!-- iOS -->

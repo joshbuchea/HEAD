@@ -555,7 +555,7 @@ Marcado XML mínimo requerido para `browserconfig.xml`:
 
 ## Otros Formatos
 
-- 📄 [PDF](https://gitprint.com/alvaroadlf/HEAD/edit/master/README.md)
+- 📄 [PDF](https://gitprint.com/alvaroadlf/HEAD/master/README.md)
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 

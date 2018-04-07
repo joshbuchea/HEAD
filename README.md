@@ -7,18 +7,18 @@ Una lista de todo lo que \*podría\* entrar en el `<head>` de tu documento
 
 ## Tabla de Contenidos
 
-- [Mínimos Recomendados](#minimos-recomendados)
+- [Mínimos Recomendados](#mínimos-recomendados)
 - [Elementos](#elementos)
 - [Meta](#meta)
 - [Enlaces](#enlaces)
 - [Iconos](#iconos)
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
-  - [Twitter Card](#twitter-card)
+  - [Tarjetas de Twitter](#tarjetas-de-twitter)
   - [Privacidad de Twitter](#privacidad-de-twitter)
   - [Google+ / Schema.org](#google--schemaorg)
   - [Pinterest](#pinterest)
-  - [Artículos Instantaneos de Facebook](#articulos-instantaneos-de-facebook)
+  - [Artículos Instantáneos de Facebook](#artículos-instantáneos-de-facebook)
   - [OEmbed](#oembed)
 - [Navegadores / Plataformas](#navegadores--plataformas)
   - [Apple iOS](#apple-ios)
@@ -180,7 +180,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 
 **[⬆ volver a arriba](#tabla-de-contenidos)**
 
-## Enlace
+## Enlaces
 
 ```html
 <!-- Apunta a una hoja de estilo externa -->
@@ -445,7 +445,7 @@ Pinterest le permite evitar que las personas guarden cosas de su sitio web, de a
 <meta name="msapplication-config" content="/browserconfig.xml">
 ```
 
-Mínimo marcado XML requerido para `browserconfig.xml`:
+Marcado XML mínimo requerido para `browserconfig.xml`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

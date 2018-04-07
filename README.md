@@ -54,7 +54,7 @@ A continuación se muestran los elementos esenciales para cualquier página web 
 <title>Título de la Página</title>
 ```
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Elementos
 
@@ -94,7 +94,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 </noscript>
 ```
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Meta
 
@@ -178,7 +178,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 - 📖 [ICBM en Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging en Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Enlace
 
@@ -254,7 +254,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 
 - 📖 [Relaciones de Enlace](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Iconos
 
@@ -277,7 +277,7 @@ Estos elementos proporcionan información sobre cómo un documento debe ser perc
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Iconos y Colores del Navegador](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Social
 
@@ -374,7 +374,7 @@ Pinterest le permite evitar que las personas guarden cosas de su sitio web, de a
 
 - 📖 [Formato oEmbed](http://oembed.com/)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Navegadores / Plataformas
 
@@ -463,7 +463,7 @@ Mínimo marcado XML requerido para `browserconfig.xml`:
 
 - 📖 [Referencia de esquema de configuración del navegador](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Navegadores (Chino)
 
@@ -514,7 +514,7 @@ Mínimo marcado XML requerido para `browserconfig.xml`:
 
 - 📖 [Documentación de UC Browser](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## App Links
 
@@ -535,14 +535,14 @@ Mínimo marcado XML requerido para `browserconfig.xml`:
 
 - 📖 [Enlaces de la Aplicación](http://applinks.org/documentation/)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Otros Recursos
 
 - 📖 [Documentación de HTML5 Boilerplate: El HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - 📖 [Documentación de HTML5 Boilerplate: Extender y personalizar](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Proyectos Relacionados
 
@@ -551,13 +551,13 @@ Mínimo marcado XML requerido para `browserconfig.xml`:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface para snippets del `HEAD`
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulando la metai nformación de la etiqueta `HEAD` para Vue.js
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Otros Formatos
 
 - 📄 [PDF](https://gitprint.com/alvaroadlf/HEAD/edit/master/README.md)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Traducciones
 
@@ -571,7 +571,7 @@ Mínimo marcado XML requerido para `browserconfig.xml`:
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**
 
 ## Contribuye
 
@@ -590,4 +590,4 @@ Traducido por: **[Álvaro Araoz](https://imalvaro.com/)**
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ volver a arriba](#table-of-contents)**
+**[⬆ volver a arriba](#tabla-de-contenidos)**

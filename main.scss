@@ -95,29 +95,30 @@ ul ul {
 }
 
 .header-link {
-  display: flex;
-  align-items: center;
-  margin: 0 auto 40px;
-  box-shadow: 0 0 1rem rgba(0,0,0,0.2);
-  border-radius: 5px;
-  background-color: #fff;
-  min-width: 240px;
-  width: 240px;
-  height: 218px;
-  font-size: .8em;
+  // display: flex;
+  // align-items: center;
+  // margin: 0 auto 40px;
+  margin-bottom: 40px;
+  // box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+  // border-radius: 5px;
+  // background-color: #fff;
+  // min-width: 240px;
+  // width: 240px;
+  // height: 218px;
+  // font-size: .8em;
 
-  & > a {
-    display: block;
-    padding: 1rem 2rem;
-    border-bottom: none;
-  }
-
-  p:last-of-type {
-    margin-bottom: 0;
-  }
+  // & > a {
+  //   display: block;
+  //   padding: 1rem 2rem;
+  //   border-bottom: none;
+  // }
+  //
+  // p:last-of-type {
+  //   margin-bottom: 0;
+  // }
 
   @media(min-width: 700px) {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 

@@ -74,7 +74,7 @@ These elements provide information for how a document should be perceived, and r
 <title>Page Title</title>
 
 <!-- Set the base URL for all relative URLs within the document -->
-<base href="http://example.com/page.html">
+<base href="https://example.com/page.html">
 
 <!-- Link to an external CSS file -->
 <link rel="stylesheet" href="styles.css">
@@ -222,7 +222,7 @@ These elements provide information for how a document should be perceived, and r
 <link rel="first" href="https://example.com/article/">
 <link rel="last" href="https://example.com/article/?page=42">
 <link rel="prev" href="https://example.com/article/?page=1">
-<link rel="next" href="http://example.com/article/?page=3">
+<link rel="next" href="https://example.com/article/?page=3">
 
 <!-- Used when a 3rd party service is utilized to maintain a blog -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">

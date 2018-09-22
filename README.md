@@ -74,7 +74,7 @@ These elements provide information for how a document should be perceived, and r
 <title>Page Title</title>
 
 <!-- Set the base URL for all relative URLs within the document -->
-<base href="http://example.com/page.html">
+<base href="https://example.com/page.html">
 
 <!-- Link to an external CSS file -->
 <link rel="stylesheet" href="styles.css">
@@ -184,13 +184,13 @@ These elements provide information for how a document should be perceived, and r
 
 ```html
 <!-- Points to an external stylesheet -->
-<link rel="stylesheet" href="http://example.com/styles.css">
+<link rel="stylesheet" href="https://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
-<link rel="canonical" href="http://example.com/article/?page=2">
+<link rel="canonical" href="https://example.com/article/?page=2">
 
 <!-- Links to an AMP HTML version of the current document -->
-<link rel="amphtml" href="http://example.com/path/to/amp-version.html">
+<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
 
 <!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
 <link rel="manifest" href="manifest.json">
@@ -210,45 +210,45 @@ These elements provide information for how a document should be perceived, and r
 <link rel="me" href="sms:+15035550125">
 
 <!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
-<link rel="archives" href="http://example.com/archives/">
+<link rel="archives" href="https://example.com/archives/">
 
 <!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="http://example.com/article/">
+<link rel="index" href="https://example.com/article/">
 
 <!-- Provides a self reference - useful when the document has multiple possible references -->
-<link rel="self" type="application/atom+xml" href="http://example.com/atom.xml">
+<link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
 <!-- The first, last, previous, and next documents in a series of documents, respectively -->
-<link rel="first" href="http://example.com/article/">
-<link rel="last" href="http://example.com/article/?page=42">
-<link rel="prev" href="http://example.com/article/?page=1">
-<link rel="next" href="http://example.com/article/?page=3">
+<link rel="first" href="https://example.com/article/">
+<link rel="last" href="https://example.com/article/?page=42">
+<link rel="prev" href="https://example.com/article/?page=1">
+<link rel="next" href="https://example.com/article/?page=3">
 
 <!-- Used when a 3rd party service is utilized to maintain a blog -->
-<link rel="EditURI" href="http://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
-<link rel="pingback" href="http://example.com/xmlrpc.php">
+<link rel="pingback" href="https://example.com/xmlrpc.php">
 
 <!-- Notifies a URL when you link to it on your document -->
-<link rel="webmention" href="http://example.com/webmention">
+<link rel="webmention" href="https://example.com/webmention">
 
 <!-- Enables posting to your own domain using a Micropub client -->
-<link rel="micropub" href="http://example.com/micropub">
+<link rel="micropub" href="https://example.com/micropub">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 
 <!-- Feeds -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
-<link rel="alternate" href="http://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
+<link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="http://example.com/">
+<link rel="prerender" href="https://example.com/">
 <link rel="preload" href="image.png" as="image">
 ```
 
@@ -285,10 +285,10 @@ These elements provide information for how a document should be perceived, and r
 
 ```html
 <meta property="fb:app_id" content="123456789">
-<meta property="og:url" content="http://example.com/page.html">
+<meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Content Title">
-<meta property="og:image" content="http://example.com/image.jpg">
+<meta property="og:image" content="https://example.com/image.jpg">
 <meta property="og:description" content="Description Here">
 <meta property="og:site_name" content="Site Name">
 <meta property="og:locale" content="en_US">
@@ -296,7 +296,7 @@ These elements provide information for how a document should be perceived, and r
 ```
 
 - 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-- 📖 [Open Graph protocol](http://ogp.me/)
+- 📖 [Open Graph protocol](https://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
@@ -305,10 +305,10 @@ These elements provide information for how a document should be perceived, and r
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
-<meta name="twitter:url" content="http://example.com/page.html">
+<meta name="twitter:url" content="https://example.com/page.html">
 <meta name="twitter:title" content="Content Title">
 <meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="http://example.com/image.jpg">
+<meta name="twitter:image" content="https://example.com/image.jpg">
 ```
 
 - 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
@@ -324,13 +324,13 @@ If you embed tweets in your website, Twitter can use information from your site 
 ### Google+ / Schema.org
 
 ```html
-<html lang="" itemscope itemtype="http://schema.org/Article">
+<html lang="" itemscope itemtype="https://schema.org/Article">
     <head>
       <link rel="author" href="">
       <link rel="publisher" href="">
       <meta itemprop="name" content="Content Title">
       <meta itemprop="description" content="Content description less than 200 characters">
-      <meta itemprop="image" content="http://example.com/image.jpg">
+      <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
 **Note:** This markup requires attributes to be added to your top html tag
@@ -352,7 +352,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta property="op:markup_version" content="v1.0">
 
 <!-- The URL of the web version of your article -->
-<link rel="canonical" href="http://example.com/article.html">
+<link rel="canonical" href="https://example.com/article.html">
 
 <!-- The style to be used for this article -->
 <meta property="fb:article_style" content="myarticlestyle">
@@ -365,14 +365,14 @@ Pinterest lets you prevent people from saving things from your website, accordin
 
 ```html
 <link rel="alternate" type="application/json+oembed"
-  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
+  href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
   title="oEmbed Profile: JSON">
 <link rel="alternate" type="text/xml+oembed"
-  href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
+  href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
   title="oEmbed Profile: XML">
 ```
 
-- 📖 [oEmbed format](http://oembed.com/)
+- 📖 [oEmbed format](https://oembed.com/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -512,7 +512,7 @@ Minimum required xml markup for `browserconfig.xml`:
 <meta name="wap-font-scale" content="no">
 ```
 
-- 📖 [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
+- 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -530,10 +530,10 @@ Minimum required xml markup for `browserconfig.xml`:
 <meta property="al:android:package" content="org.applinks">
 
 <!-- Web fall back -->
-<meta property="al:web:url" content="http://applinks.org/documentation">
+<meta property="al:web:url" content="https://applinks.org/documentation">
 ```
 
-- 📖 [App Links](http://applinks.org/documentation/)
+- 📖 [App Links](https://applinks.org/documentation/)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -565,7 +565,7 @@ Minimum required xml markup for `browserconfig.xml`:
 - 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - 🇩🇪 [German](https://github.com/Shidigital/HEAD)
 - 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
-- 🇯🇵 [Japanese](http://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- 🇯🇵 [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
 - 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)

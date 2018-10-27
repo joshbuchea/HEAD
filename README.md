@@ -296,7 +296,7 @@ These elements provide information for how a document should be perceived, and r
 ```
 
 - 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
-- 📖 [Open Graph protocol](https://ogp.me/)
+- 📖 [Open Graph protocol](http://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card

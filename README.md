@@ -333,7 +333,7 @@ If you embed tweets in your website, Twitter can use information from your site 
       <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
-**Note:** This markup requires attributes to be added to your top html tag
+**Note:** These meta tags require the `itemscope` and `itemtype` attributes to be added to the `<html>` tag.
 
 - 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
 

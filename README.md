@@ -45,7 +45,7 @@ Below are the essential elements for any web document (websites/apps):
 
 ```html
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <!--
   The above 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
@@ -105,7 +105,7 @@ These elements provide information for how a document should be perceived, and r
   Any other head element should come *after* these tags.
 -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!--
   Allows control over where resources are loaded from.

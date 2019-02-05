@@ -45,7 +45,7 @@ Below are the essential elements for any web document (websites/apps):
 
 ```html
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
   The above 2 meta tags *must* come first in the <head>
   to consistently ensure proper document rendering.
@@ -105,7 +105,7 @@ These elements provide information for how a document should be perceived, and r
   Any other head element should come *after* these tags.
 -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--
   Allows control over where resources are loaded from.
@@ -339,7 +339,7 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 ### Pinterest
 
-Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/articles/prevent-people-saving-things-pinterest-your-site). The `description` is optional.
+Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site). The `description` is optional.
 
 ```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">

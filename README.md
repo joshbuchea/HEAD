@@ -20,6 +20,7 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
+  - [QQ/Wechat](#qqwechat)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
@@ -373,6 +374,17 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```
 
 - 📖 [oEmbed format](https://oembed.com/)
+
+### QQ/Wechat
+
+Users share web pages to qq wechat will have a formatted message
+
+```html
+<meta itemprop="name" content="share title">
+<meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
+<meta name="description" itemprop="description" content="share content">
+```
+- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
 **[⬆ back to top](#table-of-contents)**
 

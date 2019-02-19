@@ -16,7 +16,7 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
-  - [Google+ / Schema.org](#google--schemaorg)
+  - [Schema.org](#schemaorg)
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
@@ -321,7 +321,7 @@ If you embed tweets in your website, Twitter can use information from your site 
 <meta name="twitter:dnt" content="on">
 ```
 
-### Google+ / Schema.org
+### Schema.org
 
 ```html
 <html lang="" itemscope itemtype="https://schema.org/Article">

@@ -160,9 +160,6 @@ These elements provide information for how a document should be perceived, and r
 <!-- Completely opt out of DNS prefetching by setting to "off" -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
-<!-- Stores a cookie on the client web browser for identification purposes -->
-<meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
-
 <!-- Specifies the document to appear in a specific frame -->
 <meta http-equiv="Window-Target" content="_value">
 

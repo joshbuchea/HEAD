@@ -16,7 +16,7 @@ A list of everything that \*could\* go in the `<head>` of your document
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
-  - [Google+ / Schema.org](#google--schemaorg)
+  - [Schema.org](#schemaorg)
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
@@ -159,9 +159,6 @@ These elements provide information for how a document should be perceived, and r
 
 <!-- Completely opt out of DNS prefetching by setting to "off" -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
-
-<!-- Stores a cookie on the client web browser for identification purposes -->
-<meta http-equiv="set-cookie" content="name=value; expires=date; path=url">
 
 <!-- Specifies the document to appear in a specific frame -->
 <meta http-equiv="Window-Target" content="_value">
@@ -321,7 +318,7 @@ If you embed tweets in your website, Twitter can use information from your site 
 <meta name="twitter:dnt" content="on">
 ```
 
-### Google+ / Schema.org
+### Schema.org
 
 ```html
 <html lang="" itemscope itemtype="https://schema.org/Article">

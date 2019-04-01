@@ -601,7 +601,7 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 ## Author
 
-**[Josh Buchea](https://joshbuchea.com/)**
+**[Josh](https://twitter.com/joshbuchea)**
 
 ## License
 

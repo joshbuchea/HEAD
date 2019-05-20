@@ -582,7 +582,7 @@ The **HEAD** repository consists of two branches:
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [gethead.info](https://gethead.info/) website. All changes to the content of the cheat sheet as such should be directed to this file.
+This branch consists of the `README.md` file that is automatically reflected on the [htmlhead.dev](https://htmlhead.dev/) website. All changes to the content of the cheat sheet as such should be directed to this file.
 
 Please follow these steps for pull requests:
 
@@ -593,7 +593,7 @@ Please follow these steps for pull requests:
 
 #### 2. `gh-pages`
 
-This branch is responsible for the [gethead.info](https://gethead.info/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
+This branch is responsible for the [htmlhead.dev](https://htmlhead.dev/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
 
 You may want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
 

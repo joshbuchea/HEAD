@@ -2,7 +2,7 @@
 title: HEAD
 description: "A free guide to <head> elements"
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://gethead.info" # the base hostname & protocol for your site (no trailing slash)
+url: "https://htmlhead.dev" # the base hostname & protocol for your site (no trailing slash)
 twitter_username: joshbuchea
 github_username:  joshbuchea
 google_analytics: UA-79520097-1

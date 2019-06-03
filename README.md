@@ -1,9 +1,9 @@
 # HEAD
 
+> A list of everything that \*could\* go in the `<head>` of your document
+
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=flat-square)](https://github.com/joshbuchea/HEAD/graphs/contributors)
-
-A list of everything that \*could\* go in the `<head>` of your document
 
 ## Table of Contents
 

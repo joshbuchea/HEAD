@@ -105,7 +105,7 @@ These elements provide information for how a document should be perceived, and r
   Any other head element should come *after* these tags.
 -->
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!--
   Allows control over where resources are loaded from.

@@ -279,7 +279,7 @@ These elements provide information for how a document should be perceived, and r
 ## Social
 
 ### Facebook Open Graph
-Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook.
+> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook.
 
 ```html
 <meta property="fb:app_id" content="123456789">

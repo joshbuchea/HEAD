@@ -136,6 +136,7 @@ ul ul {
   max-width: 800px;
 }
 
+// TODO: use better selector
 .site__main p:first-of-type {
   font-size: 1.5em;
 
@@ -144,6 +145,7 @@ ul ul {
   }
 }
 
+// TODO: use better selector
 .site__main p:nth-of-type(1) {
   display: none;
 }

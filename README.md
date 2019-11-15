@@ -279,6 +279,7 @@ These elements provide information for how a document should be perceived, and r
 ## Social
 
 ### Facebook Open Graph
+> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup) 
 
 ```html
 <meta property="fb:app_id" content="123456789">
@@ -293,11 +294,11 @@ These elements provide information for how a document should be perceived, and r
 <meta property="article:author" content="">
 ```
 
-- 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - 📖 [Open Graph protocol](http://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
+> With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. [More about Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
 
 ```html
 <meta name="twitter:card" content="summary">

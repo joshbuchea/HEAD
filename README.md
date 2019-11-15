@@ -20,6 +20,7 @@
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
+  - [QQ/Wechat](#qqwechat)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
@@ -53,6 +54,15 @@ Below are the essential elements for any web document (websites/apps):
  -->
 <title>Page Title</title>
 ```
+
+**meta charset** - defines the encoding of the website, utf-8 is the standard
+
+**meta name="viewport"** - viewport settings related to mobile responsiveness
+
+**width=device-width** means that it will use the physical width of the device (instead of zooming out) which is good with mobile friendly pages
+
+**initial-scale=1** is the initial zoom, 1 means no zoom
+
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -279,6 +289,7 @@ These elements provide information for how a document should be perceived, and r
 ## Social
 
 ### Facebook Open Graph
+> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup) 
 
 ```html
 <meta property="fb:app_id" content="123456789">
@@ -293,11 +304,11 @@ These elements provide information for how a document should be perceived, and r
 <meta property="article:author" content="">
 ```
 
-- 📖 [Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 - 📖 [Open Graph protocol](http://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
+> With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. [More about Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
 
 ```html
 <meta name="twitter:card" content="summary">
@@ -372,6 +383,17 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```
 
 - 📖 [oEmbed format](https://oembed.com/)
+
+### QQ/Wechat
+
+Users share web pages to qq wechat will have a formatted message
+
+```html
+<meta itemprop="name" content="share title">
+<meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
+<meta name="description" itemprop="description" content="share content">
+```
+- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -560,6 +582,7 @@ Minimum required xml markup for `browserconfig.xml`:
 
 ## Translations
 
+- 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
 - 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
 - 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - 🇩🇪 [German](https://github.com/Shidigital/HEAD)

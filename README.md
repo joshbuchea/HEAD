@@ -55,6 +55,15 @@ Below are the essential elements for any web document (websites/apps):
 <title>Page Title</title>
 ```
 
+**meta charset** - defines the encoding of the website, utf-8 is the standard
+
+**meta name="viewport"** - viewport settings related to mobile responsiveness
+
+**width=device-width** means that it will use the physical width of the device (instead of zooming out) which is good with mobile friendly pages
+
+**initial-scale=1** is the initial zoom, 1 means no zoom
+
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Elements

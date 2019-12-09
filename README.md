@@ -1,9 +1,10 @@
-# HEAD
+# 🗿 HEAD
 
 > A list of everything that \*could\* go in the `<head>` of your document
 
-[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=flat-square)](https://github.com/joshbuchea/HEAD/graphs/contributors)
+[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Follow @joshbuchea on Twitter](https://img.shields.io/badge/Follow_@joshbuchea-blue?logo=twitter&logoColor=white&style=flat-square)](https://twitter.com/joshbuchea)
 
 ## Table of Contents
 
@@ -34,11 +35,11 @@
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
 - [Other Formats](#other-formats)
-- [Translations](#translations)
-- [Contributing](#contributing)
+- [Translations](#-translations)
+- [Contributing](#-contributing)
   - [Contributors](#contributors)
-- [Author](#author)
-- [License](#license)
+- [Author](#-author)
+- [License](#-license)
 
 ## Recommended Minimum
 
@@ -580,7 +581,7 @@ Minimum required xml markup for `browserconfig.xml`:
 
 **[⬆ back to top](#table-of-contents)**
 
-## Translations
+## 🌐 Translations
 
 - 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
 - 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
@@ -595,7 +596,7 @@ Minimum required xml markup for `browserconfig.xml`:
 
 **[⬆ back to top](#table-of-contents)**
 
-## Contributing
+## 🤝 Contributing
 
 **Open an issue or a pull request to suggest changes or additions.**
 
@@ -624,11 +625,14 @@ You may want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) an
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
 
-## Author
+## 👤 Author
 
-**[Josh](https://twitter.com/joshbuchea)**
+**Josh Buchea**
 
-## License
+- Twitter: [@joshbuchea](https://twitter.com/joshbuchea)
+- Github: [@joshbuchea](https://github.com/joshbuchea)
+
+## 📝 License
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 

@@ -632,6 +632,14 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 - Twitter: [@joshbuchea](https://twitter.com/joshbuchea)
 - Github: [@joshbuchea](https://github.com/joshbuchea)
 
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+<a href="https://www.patreon.com/joshbuchea">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
 ## 📝 License
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)

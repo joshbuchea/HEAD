@@ -1,0 +1,21 @@
+name: Publish to the web (merge dev to gh-pages)
+on:
+  # Trigger the workflow on push or pull request,
+  # but only for the dev branch
+  push:
+    branches:
+      - dev
+  # pull_request:
+  #   branches:
+  #     - dev
+
+jobs:
+  merge-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@dev
+      - uses: actions/checkout@gh-pages
+
+      # - run: git merge dev
+
+      - run: ls

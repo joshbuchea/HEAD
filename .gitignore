@@ -18,4 +18,5 @@ nbproject
 
 _site
 .jekyll-metadata
+.jekyll-cache
 .sass-cache

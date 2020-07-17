@@ -63,9 +63,29 @@ ul ul {
   padding: 8px 16px;
 }
 
+.announcement {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+
+  a {
+    border: none;
+    color: #fff;
+    padding: .8em 0;
+    text-decoration: none;
+    white-space: nowrap;
+
+    &:not(:first-child) {
+      margin-left: .8em;
+    }
+  }
+}
+
 .site__header {
-  padding: 60px 0 30px;
   background-color: #F2F2F2;
+  padding: 60px 0 30px;
+  position: relative;
 
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;

@@ -53,7 +53,7 @@ Below are the essential elements for any web document (websites/apps):
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
  -->
-<title>Page Title</title>
+<title>Readme</title>
 ```
 
 **meta charset** - defines the encoding of the website, utf-8 is the standard

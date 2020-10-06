@@ -2,9 +2,9 @@
 # Stylesheet
 ---
 
-@import 'variables';
-@import 'github';
-@import 'syntax';
+@import "variables";
+@import "github";
+@import "syntax";
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,12 @@ body {
   line-height: $base-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #333;
 }
 
@@ -35,14 +40,14 @@ h1#-head {
 a {
   border-bottom: 1px solid #ddd;
   text-decoration: none;
-  transition: all .2s ease-in-out;
-  color: #70B7FD;
+  transition: all 0.2s ease-in-out;
+  color: #70b7fd;
   color: #222;
 
   &:hover,
   &:focus {
-    border-bottom: 1px solid #70B7FD;
-    color: #70B7FD;
+    border-bottom: 1px solid #70b7fd;
+    color: #70b7fd;
     color: #000;
   }
 }
@@ -72,22 +77,27 @@ ul ul {
   a {
     border: none;
     color: #fff;
-    padding: .8em 0;
+    padding: 0.8em 0;
     text-decoration: none;
     white-space: nowrap;
 
     &:not(:first-child) {
-      margin-left: .8em;
+      margin-left: 0.8em;
     }
   }
 }
 
 .site__header {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 60px 0 30px;
   position: relative;
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-top: 0;
   }
 }
@@ -97,10 +107,10 @@ ul ul {
   text-align: center;
 
   & > span:last-child {
-    color: #ACACAC;
+    color: #acacac;
   }
 
-  @media(min-width: 700px) {
+  @media (min-width: 700px) {
     font-size: 72px;
     text-align: left;
   }
@@ -136,7 +146,7 @@ ul ul {
   //   margin-bottom: 0;
   // }
 
-  @media(min-width: 700px) {
+  @media (min-width: 700px) {
     margin-bottom: 0;
   }
 }
@@ -144,7 +154,7 @@ ul ul {
 .header-text {
   text-align: center;
 
-  @media(min-width: 700px) {
+  @media (min-width: 700px) {
     // margin-left: 40px;
     text-align: left;
   }

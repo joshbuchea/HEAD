@@ -347,7 +347,7 @@ If you embed tweets in your website, Twitter can use information from your site 
 **Note:** These meta tags require the `itemscope` and `itemtype` attributes to be added to the `<html>` tag.
 
 - 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
-- 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
+- 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### Pinterest
 

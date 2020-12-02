@@ -559,7 +559,7 @@ Minimum required xml markup for `browserconfig.xml`:
 <meta property="al:web:url" content="https://applinks.org/documentation">
 ```
 
-- 📖 [App Links](https://applinks.org/documentation/)
+- 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
 **[⬆ back to top](#table-of-contents)**
 

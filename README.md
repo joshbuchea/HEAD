@@ -379,6 +379,8 @@ If you embed tweets in your website, Twitter can use information from your site 
 ```
 
 - 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
+- 📖 [Google - Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
+- 📖 [Bing - Structured Data](https://www.bing.com/webmaster/help/marking-up-your-site-with-structured-data-3a93e731)
 - 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### Pinterest

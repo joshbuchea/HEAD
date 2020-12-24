@@ -2,44 +2,50 @@
 
 > A list of everything that \*could\* go in the `<head>` of your document
 
-[![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=flat-square)](https://github.com/joshbuchea/HEAD/graphs/contributors)
-[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Follow @joshbuchea on Twitter](https://img.shields.io/badge/Follow_@joshbuchea-blue?logo=twitter&logoColor=white&style=flat-square)](https://twitter.com/joshbuchea)
+[![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
+[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![Follow @joshbuchea on Twitter](https://img.shields.io/badge/Follow_@joshbuchea-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/joshbuchea)
 
 ## Table of Contents
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
-- [Meta](#meta)
-- [Link](#link)
-- [Icons](#icons)
-- [Social](#social)
-  - [Facebook Open Graph](#facebook-open-graph)
-  - [Twitter Card](#twitter-card)
-  - [Twitter Privacy](#twitter-privacy)
-  - [Schema.org](#schemaorg)
-  - [Pinterest](#pinterest)
-  - [Facebook Instant Articles](#facebook-instant-articles)
-  - [OEmbed](#oembed)
-  - [QQ/Wechat](#qqwechat)
-- [Browsers / Platforms](#browsers--platforms)
-  - [Apple iOS](#apple-ios)
-  - [Google Android](#google-android)
-  - [Google Chrome](#google-chrome)
-  - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [Browsers (Chinese)](#browsers-chinese)
-  - [360 Browser](#360-browser)
-  - [QQ Mobile Browser](#qq-mobile-browser)
-  - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
-- [Other Resources](#other-resources)
-- [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
-- [Translations](#-translations)
-- [Contributing](#-contributing)
-  - [Contributors](#contributors)
-- [Author](#-author)
-- [License](#-license)
+- [🗿 HEAD](#-head)
+  - [Table of Contents](#table-of-contents)
+  - [Recommended Minimum](#recommended-minimum)
+  - [Elements](#elements)
+  - [Meta](#meta)
+  - [Link](#link)
+  - [Icons](#icons)
+  - [Social](#social)
+    - [Facebook Open Graph](#facebook-open-graph)
+    - [Twitter Card](#twitter-card)
+    - [Twitter Privacy](#twitter-privacy)
+    - [Schema.org](#schemaorg)
+    - [Pinterest](#pinterest)
+    - [Facebook Instant Articles](#facebook-instant-articles)
+    - [OEmbed](#oembed)
+    - [QQ/Wechat](#qqwechat)
+  - [Browsers / Platforms](#browsers--platforms)
+    - [Apple iOS](#apple-ios)
+    - [Google Android](#google-android)
+    - [Google Chrome](#google-chrome)
+    - [Microsoft Internet Explorer](#microsoft-internet-explorer)
+  - [Browsers (Chinese)](#browsers-chinese)
+    - [360 Browser](#360-browser)
+    - [QQ Mobile Browser](#qq-mobile-browser)
+    - [UC Mobile Browser](#uc-mobile-browser)
+  - [App Links](#app-links)
+  - [Other Resources](#other-resources)
+  - [Related Projects](#related-projects)
+  - [Other Formats](#other-formats)
+  - [🌐 Translations](#-translations)
+  - [🤝 Contributing](#-contributing)
+    - [Guide](#guide)
+      - [1. `master`](#1-master)
+      - [2. `gh-pages`](#2-gh-pages)
+    - [Contributors](#contributors)
+  - [👤 Author](#-author)
+  - [Show your support](#show-your-support)
+  - [📝 License](#-license)
 
 ## Recommended Minimum
 
@@ -179,6 +185,9 @@ These elements provide information for how a document should be perceived, and r
 <meta name="geo.position" content="latitude;longitude">
 <meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
 <meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+
+<!-- Web Monetization https://webmonetization.org/docs/getting-started -->
+<meta name="monetization" content="$paymentpointer.example">
 ```
 
 - 📖 [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
@@ -346,7 +355,8 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 **Note:** These meta tags require the `itemscope` and `itemtype` attributes to be added to the `<html>` tag.
 
-- 🛠 Test your page with the [Structured Data Testing Tool](https://developers.google.com/structured-data/testing-tool/)
+- 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
+- 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### Pinterest
 
@@ -555,7 +565,7 @@ Minimum required xml markup for `browserconfig.xml`:
 <meta property="al:web:url" content="https://applinks.org/documentation">
 ```
 
-- 📖 [App Links](https://applinks.org/documentation/)
+- 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -631,6 +641,14 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 
 - Twitter: [@joshbuchea](https://twitter.com/joshbuchea)
 - Github: [@joshbuchea](https://github.com/joshbuchea)
+
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+<a href="https://www.patreon.com/joshbuchea">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
 
 ## 📝 License
 

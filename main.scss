@@ -201,6 +201,24 @@ code {
   border-radius: 0;
 }
 
+// // select all... then select some
+// // https://codersblock.com/blog/using-css-to-control-text-selection/#select-all-then-select-some
+// pre > code {
+//   -webkit-user-select: all;
+//   user-select: all;
+// }
+
+// pre > code:focus {
+//   animation: select 100ms step-end forwards;
+// }
+
+// @keyframes select {
+//   to {
+//     -webkit-user-select: text;
+//     user-select: text;
+//   }
+// }
+
 // #facebook.pluginButton {
 //   transform: scale(3.5);
 //   -ms-transform: scale(3.5);

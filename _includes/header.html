@@ -1,42 +1,42 @@
 <header class="site__header">
   <div class="container">
-    <h1 class="site__title">
-      {{ site.title | xml_escape }}
-      <!-- html<span>head</span>.dev -->
-      <!-- &lt;head&gt; cheatsheet -->
-    </h1>
+    <h1 class="site__title">{{ site.title | xml_escape }}</h1>
+    <!-- html<span>head</span>.dev -->
+    <!-- &lt;head&gt; cheatsheet -->
 
     <div class="header-content">
-      <div class="header-link">
+      <div class="header-text">
+        <h2>A simple guide to HTML &lt;head&gt; elements</h2>
+        <!-- <h2>What's in your &lt;head&gt;?</h2> -->
+
+        {% include share-page.html %}
+
         <p>
+          A project by
+          <a href="https://twitter.com/{{ site.twitter_username }}"
+            >Josh Buchea</a
+          >
+        </p>
+      </div>
+
+      <div class="header-link">
+        <!-- <p>
+          Try the free email newsletter I do with my wife — 
           <a
             href="https://smiledaily.us"
             rel="noopener noreferrer"
             target="_blank"
-            >Get the daily newsletter for a happy head 😊</a
-          >
-        </p>
-        <!-- <a target="_blank" href="https://amazon.com/?tag=buchea-20">
-          <img src="/img/amazon-logo-large.jpg" width="100%" height="auto">
-          <p>Please use this affiliate link when you shop at Amazon.</p>
-          <p>Thank You! 🤗</p>
-        </a> -->
-
-        <!-- Carbon Ads -->
-        <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIL537&placement=getheadinfo" id="_carbonads_js"></script> -->
-      </div>
-
-      <div class="header-text">
-        <h2>A free guide to HTML5 &lt;head&gt; elements</h2>
-
-        {% include share-page.html %}
-
-        <div>
-          a project by
-          <a href="https://twitter.com/{{ site.twitter_username }}"
-            >@joshbuchea</a
-          >
-        </div>
+          >Smile Daily 😊</a>
+        </p> -->
+        <!-- <p>
+          Please use my 
+          <a
+            href="https://amazon.com/?tag=buchea-20"
+            rel="noopener noreferrer"
+            target="_blank"
+          >affiliate link</a>
+          when you shop at Amazon — thank you 🙏
+        </p> -->
       </div>
     </div>
 

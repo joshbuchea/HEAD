@@ -1,12 +1,14 @@
 # Site settings
-title: HEAD
-description: "A free guide to <head> elements"
+title: 🤯 HEAD
+description: "A simple guide to HTML <head> elements"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://htmlhead.dev" # the base hostname & protocol for your site (no trailing slash)
 twitter_username: joshbuchea
-github_username:  joshbuchea
+github_username: joshbuchea
 google_analytics: UA-79520097-1
 exclude: [readme.md]
+include:
+  - .well-known
 sass:
   #style: compressed
 

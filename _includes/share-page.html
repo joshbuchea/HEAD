@@ -1,6 +1,19 @@
 <div class="share-page">
 
-  <!-- TODO: Measure performance difference after facebook share snippet is removed -->
+  <!-- PERF MEASUREMENTS ⚡️ -->
+
+  <!-- with facebook share button: 23 requests, 280 kb transferred, 793 kb resources -->
+  <!-- without facebook share button: 20 requests, 144 kb transferred, 268 kb resources -->
+  <!-- total facebook share button: 3 requests, 136 kB transferred, 525 kB resources -->
+
+  <!-- with twitter share button: 20 requests, 144 kb transferred, 267 kb resources -->
+  <!-- without twitter share button: 12 requests, 104 kb transferred, 113 kb resources -->
+  <!-- total twitter share button: 8 requests, 40 kb transferred, 154 kb resources -->
+
+  <!-- with github star button: 12 requests, 104 kb transferred, 114 kb resources -->
+  <!-- without github star button: 10 requests, 95.8 kb transferred, 93.1 kb resources -->
+  <!-- total github star button: 2 requests, 8.2 kb transferred, 20.9 kb resources -->
+
   <!-- Share via Facebook -->
   <!-- <iframe
     src="https://www.facebook.com/plugins/share_button.php?href={{ site.url }}{{ page.url }}&layout=button&mobile_iframe=true&width=58&height=20&appId"
@@ -14,7 +27,7 @@
   <!-- End Share via Facebook -->
 
   <!-- Share via Twitter -->
-  <a
+  <!-- <a
     class="twitter-share-button"
     href="https://twitter.com/share"
     data-url="{{ site.url }}{{ page.url }}"
@@ -27,7 +40,7 @@
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
     if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
     fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-  </script>
+  </script> -->
   <!-- End Share via Twitter -->
 
   <!-- <a href="https://twitter.com/joshbuchea" class="twitter-follow-button" data-show-count="false">Follow @joshbuchea</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
@@ -45,4 +58,11 @@
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <!-- End Star on GitHub -->
+
+  <!-- <p>
+    <a
+      href="#"
+      rel="noopener noreferrer"
+      target="_blank">Share HEAD on twitter</a>
+  </p> -->
 </div>

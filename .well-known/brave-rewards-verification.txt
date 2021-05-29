@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: htmlhead.dev
+Token: 6a7e3540aa1b995e824578024bab2e51a47105438015fac73db317f74278c01a

@@ -1,0 +1,699 @@
+:root {
+  --lightgray: #e0e0e0;
+  --gray: #c0c0c0;
+  --darkgray: #333;
+  --blue: #4484f7;
+  --blue-dark: #3d79e4;
+  --white: #fff;
+
+  --color-mode: "light";
+  --color-dark: #141414;
+  --color-dark-alpha: rgba(0, 0, 0, 0.1);
+  --color-light: #efefef;
+  --color-light-alpha: rgba(255, 255, 255, 0.9);
+  --color-primary: var(--blue-dark);
+
+  --background: var(--white);
+  --text-color: #141414;
+  --header-background: #f2f2f2;
+  --code-background: #f2f2f2;
+  --button-background: var(--color-dark);
+  --button-color: var(--color-light);
+  --border-color: var(--color-dark-alpha);
+  --section-border-color: var(--lightgray);
+  --headings: var(--text-color);
+  --footer-background-color: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+    --color-primary: var(--blue-dark);
+    --background: #111;
+    --background: #161617;
+    --background: #19191b;
+    --text-color: #d6d6de;
+    --text-color: #b5b5bb;
+    --text-color: #efefef;
+    --header-background: #222;
+    --code-background: #282c34;
+    --code-background: #262a31;
+    --button-background: var(--color-light);
+    --button-color: var(--color-dark);
+    --border-color: var(--color-light-alpha);
+    --section-border-color: #333333;
+    --headings: var(--white);
+    --footer-background-color: #1d1d1d;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--headings);
+  font-weight: 600;
+}
+
+h1#-head,
+h1#-head + blockquote,
+h1#-head + blockquote + p {
+  display: none;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul.list-style-default {
+  list-style: inherit;
+  padding-left: 20px;
+}
+ul ul {
+  padding-left: 20px;
+}
+
+blockquote {
+  border-left: 3px solid var(--darkgray);
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 8px 16px;
+}
+
+.announcement {
+  background-color: #000;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+.announcement a {
+  border: none;
+  color: #fff;
+  padding: 0.8em 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.announcement a:not(:first-child) {
+  margin-left: 0.8em;
+}
+.announcement a:hover {
+  color: var(--color-primary);
+}
+
+.site__header {
+  background-color: var(--header-background);
+  padding: 60px 0;
+  position: relative;
+}
+.site__header h1,
+.site__header h2,
+.site__header h3,
+.site__header h4,
+.site__header h5,
+.site__header h6 {
+  margin-top: 0;
+}
+
+.site__title {
+  font-size: 40px;
+  text-align: center;
+}
+.site__title > span:last-child {
+  color: #acacac;
+}
+@media (min-width: 700px) {
+  .site__title {
+    font-size: 72px;
+    text-align: left;
+  }
+}
+
+.header-content {
+  text-align: center;
+}
+@media (min-width: 700px) {
+  .header-content {
+    text-align: left;
+  }
+}
+.header-link p {
+  background-color: var(--background);
+  border-radius: 8px;
+  display: inline-block;
+  padding: 1em;
+}
+
+/* GitHub link */
+.github {
+  height: 80px;
+  width: 80px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateZ(0);
+  z-index: 1;
+}
+.github__arm {
+  transform-origin: 130px 106px;
+}
+@media (min-width: 320px) {
+  .github:hover .github__arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+a.github,
+a.github:hover,
+a.github:focus {
+  border-bottom: none;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+/* END GitHub link */
+
+.site__main {
+  margin: auto;
+  max-width: 800px;
+}
+
+/* .site__main p:first-of-type {
+  font-size: 1.5em;
+}
+.site__main p:first-of-type a {
+  border: none;
+} */
+
+/* .site__main p:nth-of-type(1) {
+  display: none;
+} */
+
+p code {
+  background-color: var(--code-background);
+  /* background-color: #1e2127; */
+  /* background-color: #262a31; */
+  border-radius: 0.2em;
+  padding: 0.15em 0.25em;
+}
+
+.highlight,
+pre,
+code {
+  border-radius: 8px;
+}
+
+pre {
+  overflow-x: auto;
+  word-wrap: normal;
+  white-space: pre;
+  background-color: #f5f5f5;
+
+  padding: 16px;
+  font-size: 90%;
+  line-height: 1.45;
+}
+
+code {
+  /* border-radius: 0; */
+  padding: 0.2em 0;
+}
+
+.highlight {
+  margin-left: 0;
+  margin-right: 0;
+  /* border-radius: 0; */
+}
+
+/* select all... then select some */
+/* https://codersblock.com/blog/using-css-to-control-text-selection/#select-all-then-select-some */
+/* pre > code {
+  -webkit-user-select: all;
+  user-select: all;
+}
+pre > code:focus {
+  animation: select 100ms step-end forwards;
+}
+@keyframes select {
+  to {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+} */
+
+/* #facebook.pluginButton {
+  transform: scale(3.5);
+  -ms-transform: scale(3.5);
+  -webkit-transform: scale(3.5);
+  -o-transform: scale(3.5);
+  -moz-transform: scale(3.5);
+  transform-origin: top left;
+  -ms-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+}
+.pluginButtonIconSVG {
+  height: 28px;
+  width: 28px;
+}
+.plugin,
+.plugin button,
+.plugin input,
+.plugin label,
+.plugin select,
+.plugin td,
+.plugin textarea {
+  font-size: 22px;
+} */
+
+/* Code */
+/* .highlight .hll { background-color: #ffc; 
+.highlight .c { color: #999; }
+.highlight .err { color: #a00; background-color: #faa }
+.highlight .k { color: #069; }
+.highlight .o { color: #555 }
+.highlight .cm { color: #09f; font-style: italic }
+.highlight .cp { color: #099 }
+.highlight .c1 { color: #999; }
+.highlight .cs { color: #999; }
+.highlight .gd { background-color: #fcc; border: 1px solid #c00 }
+.highlight .ge { font-style: italic }
+.highlight .gr { color: #f00 }
+.highlight .gh { color: #030; }
+.highlight .gi { background-color: #cfc; border: 1px solid #0c0 }
+.highlight .go { color: #aaa }
+.highlight .gp { color: #009; }
+.highlight .gs { }
+.highlight .gu { color: #030; }
+.highlight .gt { color: #9c6 }
+.highlight .kc { color: #069; }
+.highlight .kd { color: #069; }
+.highlight .kn { color: #069; }
+.highlight .kp { color: #069 }
+.highlight .kr { color: #069; }
+.highlight .kt { color: #078; }
+.highlight .m { color: #f60 }
+.highlight .s { color: #d44950 }
+.highlight .na { color: #4f9fcf }
+.highlight .nb { color: #366 }
+.highlight .nc { color: #0a8; }
+.highlight .no { color: #360 }
+.highlight .nd { color: #99f }
+.highlight .ni { color: #999; }
+.highlight .ne { color: #c00; }
+.highlight .nf { color: #c0f }
+.highlight .nl { color: #99f }
+.highlight .nn { color: #0cf; }
+.highlight .nt { color: #2f6f9f; }
+.highlight .nv { color: #033 }
+.highlight .ow { color: #000; }
+.highlight .w { color: #bbb }
+.highlight .mf { color: #f60 }
+.highlight .mh { color: #f60 }
+.highlight .mi { color: #f60 }
+.highlight .mo { color: #f60 }
+.highlight .sb { color: #c30 }
+.highlight .sc { color: #c30 }
+.highlight .sd { color: #c30; font-style: italic }
+.highlight .s2 { color: #c30 }
+.highlight .se { color: #c30; }
+.highlight .sh { color: #c30 }
+.highlight .si { color: #a00 }
+.highlight .sx { color: #c30 }
+.highlight .sr { color: #3aa }
+.highlight .s1 { color: #c30 }
+.highlight .ss { color: #fc3 }
+.highlight .bp { color: #366 }
+.highlight .vc { color: #033 }
+.highlight .vg { color: #033 }
+.highlight .vi { color: #033 }
+.highlight .il { color: #f60 } */
+
+/* .css .o,
+.css .o + .nt,
+.css .nt + .nt { color: #999; } */
+
+/*
+  Darkly Pygments Theme
+  (c) 2014 Sourcey
+  http://sourcey.com
+*/
+
+/* .highlight {
+  white-space: pre;
+  overflow: auto;
+  word-wrap: normal;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 20px;
+  background: #343642;
+  color: #C1C2C3;
+}
+.highlight .hll { background-color: #ffc; }
+.highlight .gd { color: #2e3436; background-color: #0e1416; }
+.highlight .gr { color: #eeeeec; background-color: #c00; }
+.highlight .gi { color: #babdb6; background-color: #1f2b2d; }
+.highlight .go { color: #2c3032; background-color: #2c3032; }
+.highlight .kt { color: #e3e7df; }
+.highlight .ni { color: #888a85; }
+.highlight .c,.highlight .cm,.highlight .c1,.highlight .cs { color: #8D9684; }
+.highlight .err,.highlight .g,.highlight .l,.highlight .n,.highlight .x,.highlight .p,.highlight .ge,
+.highlight .gp,.highlight .gs,.highlight .gt,.highlight .ld,.highlight .s,.highlight .nc,.highlight .nd,
+.highlight .ne,.highlight .nl,.highlight .nn,.highlight .nx,.highlight .py,.highlight .ow,.highlight .w,.highlight .sb,
+.highlight .sc,.highlight .sd,.highlight .s2,.highlight .se,.highlight .sh,.highlight .si,.highlight .sx,.highlight .sr,
+.highlight .s1,.highlight .ss,.highlight .bp { color: #C1C2C3; }
+.highlight .k,.highlight .kc,.highlight .kd,.highlight .kn,.highlight .kp,.highlight .kr,
+.highlight .nt { color: #729fcf; }
+.highlight .cp,.highlight .gh,.highlight .gu,.highlight .na,.highlight .nf { color: #E9A94B ; }
+.highlight .m,.highlight .nb,.highlight .no,.highlight .mf,.highlight .mh,.highlight .mi,.highlight .mo,
+.highlight .il { color: #8ae234; }
+.highlight .o { color: #989DAA; }
+.highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; } */
+
+/* code syntax theme background color is too light */
+.highlight,
+pre.highlight,
+.highlight pre,
+.highlight .hll {
+  background: #1e2127 !important;
+}
+
+/*
+  One Dark Syntax Pygments Theme
+  https://github.com/mgyongyosi/OneDarkJekyll
+*/
+
+.highlight,
+pre.highlight {
+  background: #282c34;
+  color: #abb2bf;
+}
+
+.highlight pre {
+  background: #282c34;
+}
+
+.highlight .hll {
+  background: #282c34;
+}
+
+.highlight .c {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+
+.highlight .k {
+  color: #c678dd;
+}
+
+.highlight .l {
+  color: #98c379;
+}
+
+.highlight .n {
+  color: #abb2bf;
+}
+
+.highlight .o {
+  color: #abb2bf;
+}
+
+.highlight .p {
+  color: #abb2bf;
+}
+
+.highlight .cm {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.highlight .cp {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.highlight .c1 {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.highlight .cs {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.highlight .ge {
+  font-style: italic;
+}
+
+.highlight .gs {
+  font-weight: 700;
+}
+
+.highlight .kc {
+  color: #c678dd;
+}
+
+.highlight .kd {
+  color: #c678dd;
+}
+
+.highlight .kn {
+  color: #c678dd;
+}
+
+.highlight .kp {
+  color: #c678dd;
+}
+
+.highlight .kr {
+  color: #c678dd;
+}
+
+.highlight .kt {
+  color: #c678dd;
+}
+
+.highlight .ld {
+  color: #98c379;
+}
+
+.highlight .m {
+  color: #d19a66;
+}
+
+.highlight .s {
+  color: #98c379;
+}
+
+.highlight .na {
+  color: #d19a66;
+}
+
+.highlight .nb {
+  color: #e5c07b;
+}
+
+.highlight .nc {
+  color: #e5c07b;
+}
+
+.highlight .no {
+  color: #e5c07b;
+}
+
+.highlight .nd {
+  color: #e5c07b;
+}
+
+.highlight .ni {
+  color: #e5c07b;
+}
+
+.highlight .ne {
+  color: #e5c07b;
+}
+
+.highlight .nf {
+  color: #abb2bf;
+}
+
+.highlight .nl {
+  color: #e5c07b;
+}
+
+.highlight .nn {
+  color: #abb2bf;
+}
+
+.highlight .nx {
+  color: #abb2bf;
+}
+
+.highlight .py {
+  color: #e5c07b;
+}
+
+.highlight .nt {
+  color: #e06c75;
+}
+
+.highlight .nv {
+  color: #e5c07b;
+}
+
+.highlight .ow {
+  font-weight: 700;
+}
+
+.highlight .w {
+  color: #f8f8f2;
+}
+
+.highlight .mf {
+  color: #d19a66;
+}
+
+.highlight .mh {
+  color: #d19a66;
+}
+
+.highlight .mi {
+  color: #d19a66;
+}
+
+.highlight .mo {
+  color: #d19a66;
+}
+
+.highlight .sb {
+  color: #98c379;
+}
+
+.highlight .sc {
+  color: #98c379;
+}
+
+.highlight .sd {
+  color: #98c379;
+}
+
+.highlight .s2 {
+  color: #98c379;
+}
+
+.highlight .se {
+  color: #98c379;
+}
+
+.highlight .sh {
+  color: #98c379;
+}
+
+.highlight .si {
+  color: #98c379;
+}
+
+.highlight .sx {
+  color: #98c379;
+}
+
+.highlight .sr {
+  color: #56b6c2;
+}
+
+.highlight .s1 {
+  color: #98c379;
+}
+
+.highlight .ss {
+  color: #56b6c2;
+}
+
+.highlight .bp {
+  color: #e5c07b;
+}
+
+.highlight .vc {
+  color: #e5c07b;
+}
+
+.highlight .vg {
+  color: #e5c07b;
+}
+
+.highlight .vi {
+  color: #e06c75;
+}
+
+.highlight .il {
+  color: #d19a66;
+}
+
+.highlight .gu {
+  color: #75715e;
+}
+
+.highlight .gd {
+  color: #f92672;
+}
+
+.highlight .gi {
+  color: #a6e22e;
+}

@@ -1,6 +1,6 @@
-# 🗿 HEAD
+# 🤯 HEAD
 
-> A list of everything that \*could\* go in the `<head>` of your document
+> A simple guide to HTML `<head>` elements
 
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
@@ -56,14 +56,13 @@ Below are the essential elements for any web document (websites/apps):
 <title>Page Title</title>
 ```
 
-**meta charset** - defines the encoding of the website, utf-8 is the standard
+`meta charset` - defines the encoding of the website, `utf-8` is the standard
 
-**meta name="viewport"** - viewport settings related to mobile responsiveness
+`meta name="viewport"` - viewport settings related to mobile responsiveness
 
-**width=device-width** means that it will use the physical width of the device (instead of zooming out) which is good with mobile friendly pages
+`width=device-width` - use the physical width of the device (great for mobile!)
 
-**initial-scale=1** is the initial zoom, 1 means no zoom
-
+`initial-scale=1` - the initial zoom, 1 means no zoom
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -610,10 +609,11 @@ The **HEAD** repository consists of two branches:
 
 #### 1. `master`
 
-This branch consists of the `README.md` file that is automatically reflected on the [htmlhead.dev](https://htmlhead.dev/) website. All changes to the content of the cheat sheet as such should be directed to this file.
+This branch consists of the `README.md` file that is reflected on the [htmlhead.dev](https://htmlhead.dev/) website. All changes to the content of the guide should be made in this file.
 
 Please follow these steps for pull requests:
 
+{:.list-style-default}
 - Modify only one tag, or one related set of tags at a time
 - Use double quotes on attributes
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
@@ -621,28 +621,33 @@ Please follow these steps for pull requests:
 
 #### 2. `gh-pages`
 
-This branch is responsible for the [htmlhead.dev](https://htmlhead.dev/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` Markdown file through [GitHub Pages](https://pages.github.com/). All website related modifications must be directed here.
+This branch is responsible for the [htmlhead.dev](https://htmlhead.dev/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` markdown file to [GitHub Pages](https://pages.github.com/). All website related modifications should be made in this branch.
 
-You may want to go through the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working on this branch.
+You may find it helpful to review the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working in this branch.
 
-### Contributors
+## 🌟 Contributors
 
-Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors).
+Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors) 🤩
 
 ## 👤 Author
 
 **Josh Buchea**
 
+- GitHub: [@joshbuchea](https://github.com/joshbuchea)
 - Twitter: [@joshbuchea](https://twitter.com/joshbuchea)
-- Github: [@joshbuchea](https://github.com/joshbuchea)
 
-## Show your support
+## 💛 Support
 
-Please ⭐️ this repository if this project helped you!
+If this project was helpful for you or your organization, please considering supporting my work directly:
 
-<a href="https://www.patreon.com/joshbuchea">
-  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
+- 💛 [Sponsor me on GitHub](https://github.com/sponsors/joshbuchea)
+- ⭐️ [Star this project on GitHub](https://github.com/joshbuchea/HEAD)
+- 🐙 [Follow me on GitHub](https://github.com/joshbuchea)
+- 🐦 [Follow me on Twitter](https://twitter.com/joshbuchea)
+
+Everything helps, thanks! 🙏
+
+— Josh
 
 ## 📝 License
 

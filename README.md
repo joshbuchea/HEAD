@@ -336,6 +336,8 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 ### Schema.org
 
+#### Microdata
+
 ```html
 <html lang="" itemscope itemtype="https://schema.org/Article">
     <head>
@@ -348,7 +350,36 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 **Note:** These meta tags require the `itemscope` and `itemtype` attributes to be added to the `<html>` tag.
 
+#### JSON-LD
+
+```html
+<!-- Modified example from https://developers.google.com/search/docs/data-types/article -->
+<html>
+  <head>
+    <title>Article Headline</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "author": {
+        "@type": "Person",
+        "name": "Your Name"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Your Organization"
+      },
+      "headline": "Article Headline",
+      "image": "https://example.com/image.jpg",
+      "datePublished": "2020-02-05T08:00:00+08:00",
+      "dateModified": "2020-03-05T09:20:00+08:00"
+    }
+    </script>
+```
+
 - 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
+- 📖 [Google - Structured Data](https://developers.google.com/search/docs/guides/intro-structured-data)
+- 📖 [Bing - Structured Data](https://www.bing.com/webmaster/help/marking-up-your-site-with-structured-data-3a93e731)
 - 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### Pinterest

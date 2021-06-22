@@ -1,19 +1,19 @@
 # 🤯 HEAD
 
-> A simple guide to HTML `<head>` elements
+> Простое руководство по HTML-элементов в `<head>`
 
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Follow @joshbuchea on Twitter](https://img.shields.io/badge/Follow_@joshbuchea-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/joshbuchea)
 
-## Table of Contents
+## Оглавление
 
-- [Recommended Minimum](#recommended-minimum)
-- [Elements](#elements)
-- [Meta](#meta)
-- [Link](#link)
-- [Icons](#icons)
-- [Social](#social)
+- [Рекомендуемый минимум](#рекомендуемый-минимум)
+- [Элементы](#элементы)
+- [Мета](#мета)
+- [Ссылки](#ссылки)
+- [Иконки](#иконки)
+- [Социальные сети](#социальные-сети)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
@@ -22,315 +22,322 @@
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
-- [Browsers / Platforms](#browsers--platforms)
+- [Браузеры / Платформы](#браузеры--платформы)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
   - [Microsoft Internet Explorer](#microsoft-internet-explorer)
-- [Browsers (Chinese)](#browsers-chinese)
+- [Браузеры (китайские)](#браузеры-китайские)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
-- [Other Resources](#other-resources)
-- [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
-- [Translations](#-translations)
+- [Ссылки на приложения](#ссылки-на-приложения)
+- [Другие ресурсы](#другие-ресурсы)
+- [Связанные проекты](#связанные-проекты)
+- [Другие форматы](#другие-форматы)
+- [Переводы](#-переводы)
 - [Contributing](#-contributing)
-  - [Contributors](#contributors)
-- [Author](#-author)
-- [License](#-license)
+  - [Contributors](#-contributors)
+- [Автор](#-автор)
+- [Лицензия](#-лицензия)
 
-## Recommended Minimum
+## Рекомендуемый минимум
 
-Below are the essential elements for any web document (websites/apps):
+Ниже приведены основные элементы для любого веб-документа (веб-сайта/приложения):
 
 ```html
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-  The above 2 meta tags *must* come first in the <head>
-  to consistently ensure proper document rendering.
-  Any other head element should come *after* these tags.
- -->
-<title>Page Title</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--
+   Вышеуказанные 2 мета-тега *должны* стоять на как можно раньше в <head>.
+   для обеспечения правильного отображения документов.
+   Любой другой элемент заголовка должен идти *после* этих тегов.
+  -->
+  <title>Заголовок страницы</title>
+</head>
 ```
 
-`meta charset` - defines the encoding of the website, `utf-8` is the standard
+`meta charset` - определяет кодировку веб-сайта, стандартом является `utf-8`.
 
-`meta name="viewport"` - viewport settings related to mobile responsiveness
+`meta name="viewport"` - настройки viewport, связанные с мобильной отзывчивостью
 
-`width=device-width` - use the physical width of the device (great for mobile!)
+`width=device-width` - физическая ширина устройства (отлично подходит для мобильных устройств!)
 
-`initial-scale=1` - the initial zoom, 1 means no zoom
+`initial-scale=1` - начальный масштаб, 1 означает отсутствие масштабирования
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Elements
+## Элементы
 
-Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+Допустимые элементы `<head>` включают `meta`, `link`, `title`, `style`, `script`, `noscript` и `base`.
 
-These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.
+Эти элементы предоставляют информацию о том, как документ должен восприниматься и отображаться веб-технологиями, например, браузерами, поисковыми системами, ботами и так далее.
 
 ```html
 <!--
-  Set the character encoding for this document, so that
-  all characters within the UTF-8 space (such as emoji)
-  are rendered correctly.
+ Установите кодировку символов для этого документа так, чтобы
+ все символы в пространстве UTF-8 (например, эмодзи)
+ отображались правильно.
 -->
 <meta charset="utf-8">
 
-<!-- Set the document's title -->
-<title>Page Title</title>
+<!-- Установите заголовок документа -->
+<title>Заголовок страницы</title>
 
-<!-- Set the base URL for all relative URLs within the document -->
+<!-- Установите базовый URL для всех относительных URL в документе -->
 <base href="https://example.com/page.html">
 
-<!-- Link to an external CSS file -->
+<!-- Ссылка на внешний файл CSS -->
 <link rel="stylesheet" href="styles.css">
 
-<!-- Used for adding in-document CSS -->
+<!-- Используется для добавления CSS в документ. Используется для важной стилизации -->
 <style>
-  /* ... */
+/* ... */
 </style>
 
-<!-- JavaScript & No-JavaScript tags -->
+<!-- Ссылка на внешний JavaScript файл -->
 <script src="script.js"></script>
+
+<!-- Используется для добавление JS в документ-->
 <script>
-  // function(s) go here
+ // функция(и) идут здесь
 </script>
+
+<!-- Используется на случай если JavaScript отключен в браузере -->
 <noscript>
-  <!-- No JS alternative -->
+ <!-- Альтернатива, когда JS отключен -->
 </noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Meta
+## Мета
 
 ```html
 <!--
-  The following 2 meta tags *must* come first in the <head>
-  to consistently ensure proper document rendering.
-  Any other head element should come *after* these tags.
+ Вышеуказанные 2 мета-тега *должны* стоять на как можно раньше в <head>.
+ для обеспечения правильного отображения документов.
+ Любой другой элемент заголовка должен идти *после* этих тегов.
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--
-  Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
-  only applies to resources that are declared after it.
+ Позволяет контролировать, откуда загружаются ресурсы.
+ Поместите как можно раньше в <head>, так как тег 
+ применяется только к ресурсам, которые объявлены после него.
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
-<!-- Name of web application (only should be used if the website is used as an app) -->
-<meta name="application-name" content="Application Name">
+<!-- Название веб-приложения (должно использоваться только в том случае, если веб-сайт используется как приложение) -->
+<meta name="application-name" content="Имя приложения">.
 
-<!-- Theme Color for Chrome, Firefox OS and Opera -->
+<!-- Цвет темы для Chrome, Firefox OS, Opera и Safari 15 -->
 <meta name="theme-color" content="#4285f4">
 
-<!-- Short description of the document (limit to 150 characters) -->
-<!-- This content *may* be used as a part of search engine results. -->
-<meta name="description" content="A description of the page">
+<!-- Краткое описание документа (ограничение до 150 символов) -->
+<!-- Это содержимое *может* использоваться в результатах поисковых систем. -->
+<meta name="description" content="Описание страницы">.
 
-<!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- Управление поведением поисковых машин при осмотре и индексации сайта -->
+<meta name="robots" content="index,follow"><!-- Все поисковые системы -->
+<meta name="googlebot" content="index,follow"><!-- Специфика Google -->
 
-<!-- Tells Google not to show the sitelinks search box -->
+<!-- Указывает Google не показывать поисковую строку sitelinks -->
 <meta name="google" content="nositelinkssearchbox">
 
-<!-- Tells Google not to provide a translation for this document -->
+<!-- Указывает Google не переводить документ -->
 <meta name="google" content="notranslate">
 
-<!-- Verify website ownership -->
+<!-- Проверить право собственности сайта -->
 <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
-<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+<meta name="yandex-verification" content="verification_token"><!-- Яндекс Вебмастерам -->
 <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
 <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
 <meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
 <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
-<!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
-<meta name="generator" content="program">
+<!-- Укажите программное обеспечение, использованное для создания документа (например, WordPress, Dreamweaver) -->
+<meta name="generator" content="название программного обеспечения">
 
-<!-- Short description of your document's subject -->
-<meta name="subject" content="your document's subject">
+<!-- Краткое описание темы вашего документа -->
+<meta name="subject" content="тема вашего документа">
 
-<!-- Gives a general age rating based on the document's content -->
+<!-- Дает общую возрастную оценку, основанную на содержании документа -->
 <meta name="rating" content="General">
 
-<!-- Allows control over how referrer information is passed -->
+<!-- Позволяет контролировать, как передается информация о реферере -->
 <meta name="referrer" content="no-referrer">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=no">
+<!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
+<meta name="format-detection" content="phone=no">
 
-<!-- Completely opt out of DNS prefetching by setting to "off" -->
+<!-- Полностью отказаться от предварительной выборки DNS, установив значение "off" -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
-<!-- Specifies the document to appear in a specific frame -->
+<!-- Указывает документ, который будет отображаться в определенном фрейме -->
 <meta http-equiv="Window-Target" content="_value">
 
-<!-- Geo tags -->
-<meta name="ICBM" content="latitude, longitude">
-<meta name="geo.position" content="latitude;longitude">
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+<!-- Гео-теги -->
+<meta name="ICBM" content="широта, долгота">.
+<meta name="geo.position" content="широта;долгота">
+<meta name="geo.region" content="country[-state]"><!-- Код страны (ISO 3166-1): обязательный, код штата (ISO 3166-2): необязательный; например, content="US" / content="US-NY" -->
+<meta name="geo.placename" content="city/town"><!-- например, content="New York City" -->
 
-<!-- Web Monetization https://webmonetization.org/docs/getting-started -->
+<!-- Монетизация веб-сайтов https://webmonetization.org/docs/getting-started -->
 <meta name="monetization" content="$paymentpointer.example">
 ```
 
-- 📖 [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
+- 📖 [Мета-теги, которые понимает Google](https://support.google.com/webmasters/answer/79812?hl=en)
 - 📖 [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
-- 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-- 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+- 📖 [ICBM в Википедии](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
+- 📖 [Геотеги в Википедии](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Link
+## Ссылки
 
 ```html
-<!-- Points to an external stylesheet -->
-<link rel="stylesheet" href="https://example.com/styles.css">
+<!-- Путь до внешней таблицы стилей -->
+<link rel="stylesheet" href="https://example.com/styles.css">.
 
-<!-- Helps prevent duplicate content issues -->
+<!-- Помогает предотвратить проблемы дублированного контента -->
 <link rel="canonical" href="https://example.com/article/?page=2">
 
-<!-- Links to an AMP HTML version of the current document -->
+<!-- Ссылки на AMP HTML версию текущего документа -->
 <link rel="amphtml" href="https://example.com/path/to/amp-version.html">
 
-<!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
+<!-- Ссылка на JSON-файл, в котором указаны данные для "установки" веб-приложения -->
 <link rel="manifest" href="manifest.json">
+<link rel="manifest" href="manifest.webmanifest">
 
-<!-- Links to information about the author(s) of the document -->
+<!-- Ссылки на информацию об авторе (авторах) документа -->
 <link rel="author" href="humans.txt">
 
-<!-- Refers to a copyright statement that applies to the link's context -->
+<!-- Ссылается на заявление об авторском праве, применимое к контексту ссылки -->
 <link rel="license" href="copyright.html">
 
-<!-- Gives a reference to a location in your document that may be in another language -->
+<!-- Дает ссылку на место в вашем документе, который может быть на другом языке -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Provides information about an author or another person -->
+<!-- Предоставляет информацию об авторе или другом человеке -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
-<link rel="me" href="mailto:name@example.com">
+<link rel="me" href="mailto:name@example.com">.
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
+<!-- Ссылки на документ, описывающий коллекцию записей, документов или других материалов, представляющих исторический интерес -->
 <link rel="archives" href="https://example.com/archives/">
 
-<!-- Links to top level resource in an hierarchical structure -->
+<!-- Ссылки на ресурс верхнего уровня в иерархической структуре -->
 <link rel="index" href="https://example.com/article/">
 
-<!-- Provides a self reference - useful when the document has multiple possible references -->
+<!-- Обеспечивает самостоятельную ссылку - полезно, когда документ имеет несколько возможных ссылок -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
-<!-- The first, last, previous, and next documents in a series of documents, respectively -->
+<!-- Первый, последний, предыдущий и следующий документы в серии документов, соответственно -->
 <link rel="first" href="https://example.com/article/">
 <link rel="last" href="https://example.com/article/?page=42">
 <link rel="prev" href="https://example.com/article/?page=1">
 <link rel="next" href="https://example.com/article/?page=3">
 
-<!-- Used when a 3rd party service is utilized to maintain a blog -->
+<!-- Используется, когда для ведения блога используется сторонний сервис -->
 <link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
 
-<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
+<!-- Формирует автоматический комментарий, когда другой блог WordPress ссылается на ваш блог WordPress или пост -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Notifies a URL when you link to it on your document -->
+<!-- Уведомляет URL, когда вы ссылаетесь на него в вашем документе -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Enables posting to your own domain using a Micropub client -->
+<!-- Позволяет размещать сообщения на вашем собственном домене с помощью клиента Micropub -->
 <link rel="micropub" href="https://example.com/micropub">
 
 <!-- Open Search -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
+<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Заголовок поиска">.
 
-<!-- Feeds -->
+<!-- Фиды -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
-<!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+<!-- Дополнительная информация: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
+<link rel="prerender" href="https://example.com/">.
 <link rel="preload" href="image.png" as="image">
 ```
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Icons
+## Иконки
 
 ```html
-<!-- For IE 10 and below -->
-<!-- Place favicon.ico in the root directory - no tag necessary -->
+<!-- Для IE 10 и ниже -->
+<!-- Поместите favicon.ico в корневой каталог - тег не нужен -->
 
-<!-- Icon in the highest resolution we need it for -->
+<!-- Иконка в максимальном разрешении, для которого она нам нужна -->
 <link rel="icon" sizes="192x192" href="/path/to/icon.png">
 
-<!-- Apple Touch Icon (reuse 192px icon.png) -->
+<!-- Иконка Apple Touch (повторное использование 192px icon.png) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Safari Pinned Tab Icon -->
+<!-- Значок прикрепленной вкладки Safari -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
-- 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-- 📖 [Creating Pinned Tab Icons](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
+- 📖 [Все о фавиконах (и сенсорных иконках)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
+- 📖 [Создание прикрепленных иконок вкладок](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
-- 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
+- 📖 [Иконки и цвета браузера](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Social
+## Социальные сети
 
 ### Facebook Open Graph
-> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup) 
+> Большинство материалов передается на Facebook в виде URL, поэтому важно, чтобы вы разметили свой сайт тегами Open Graph, чтобы взять под контроль то, как ваши материалы появляются на Facebook. [Подробнее о разметке Facebook Open Graph](https://developers.facebook.com/docs/sharing/webmasters#markup)
 
 ```html
 <meta property="fb:app_id" content="123456789">
 <meta property="og:url" content="https://example.com/page.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Content Title">
+<meta property="og:title" content="Заголовок содержимого">
 <meta property="og:image" content="https://example.com/image.jpg">
-<meta property="og:image:alt" content="A description of what is in the image (not a caption)">
-<meta property="og:description" content="Description Here">
-<meta property="og:site_name" content="Site Name">
-<meta property="og:locale" content="en_US">
+<meta property="og:image:alt" content="Описание того, что находится на изображении (не подпись)">
+<meta property="og:description" content="Описание">
+<meta property="og:site_name" content="Название сайта">
+<meta property="og:locale" content="ru_RU">
 <meta property="article:author" content="">
 ```
 
 - 📖 [Open Graph protocol](http://ogp.me/)
-- 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- 🛠 Протестируйте свою страницу с помощью [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
-> With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. [More about Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
+> С помощью Twitter Cards вы можете прикреплять к твитам фотографии, видео и мультимедийные файлы, тем самым способствуя привлечению трафика на ваш сайт. [Подробнее о Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
 
 ```html
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@site_account">
 <meta name="twitter:creator" content="@individual_account">
 <meta name="twitter:url" content="https://example.com/page.html">
-<meta name="twitter:title" content="Content Title">
-<meta name="twitter:description" content="Content description less than 200 characters">
-<meta name="twitter:image" content="https://example.com/image.jpg">
-<meta name="twitter:image:alt" content="A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters.">
+<meta name="twitter:title" content="Заголовок контента">.
+<meta name="twitter:description" content="Описание контента менее 200 символов">.
+<meta name="twitter:image" content="https://example.com/image.jpg">.
+<meta name="twitter:image:alt" content="Текстовое описание изображения, передающее его суть пользователям с ослабленным зрением. Максимум 420 символов.">
 ```
 
-- 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
-- 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+- 📖 [Начало работы с карточками - Twitter Developers](https://dev.twitter.com/cards/getting-started)
+- 🛠 Проверьте свою страницу с помощью [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Twitter Privacy
-If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
+Если вы встраиваете твиты в свой сайт, Twitter может использовать информацию с вашего сайта для адаптации контента и предложений для пользователей Twitter. [Подробнее о возможностях конфиденциальности Twitter](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
 ```html
-<!-- disallow Twitter from using your site's info for personalization purposes -->
+<!-- запретить Twitter использовать информацию о вашем сайте в целях персонализации -->
 <meta name="twitter:dnt" content="on">
 ```
 
@@ -338,25 +345,25 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 ```html
 <html lang="" itemscope itemtype="https://schema.org/Article">
-    <head>
-      <link rel="author" href="">
-      <link rel="publisher" href="">
-      <meta itemprop="name" content="Content Title">
-      <meta itemprop="description" content="Content description less than 200 characters">
-      <meta itemprop="image" content="https://example.com/image.jpg">
+   <head>
+     <link rel="author" href="">
+     <link rel="publisher" href="">
+     <meta itemprop="name" content="Заголовок контента">.
+     <meta itemprop="description" content="Описание содержимого менее 200 символов">.
+     <meta itemprop="image" content="https://example.com/image.jpg">
 ```
 
-**Note:** These meta tags require the `itemscope` and `itemtype` attributes to be added to the `<html>` tag.
+**Примечание:** Эти мета-теги требуют добавления атрибутов `itemscope` и `itemtype` к тегу `<html>`.
 
-- 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
-- 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
+- 📖 [Начало работы - schema.org](https://schema.org/docs/gs.html)
+- 🛠 Протестируйте свою страницу с помощью [Rich Results Test](https://search.google.com/test/rich-results)
 
 ### Pinterest
 
-Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site). The `description` is optional.
+Pinterest позволяет запретить людям сохранять страницы вашего сайта, согласно [их центру помощи](https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site). Описание `description` является необязательным.
 
 ```html
-<meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
+<meta name="pinterest" content="nopin" description="Извините, вы не можете сохранить с моего сайта!">.
 ```
 
 ### Facebook Instant Articles
@@ -365,69 +372,69 @@ Pinterest lets you prevent people from saving things from your website, accordin
 <meta charset="utf-8">
 <meta property="op:markup_version" content="v1.0">
 
-<!-- The URL of the web version of your article -->
+<!-- URL веб-версии вашей статьи -->
 <link rel="canonical" href="https://example.com/article.html">
 
-<!-- The style to be used for this article -->
+<!-- Стиль, который будет использоваться для этой статьи -->
 <meta property="fb:article_style" content="myarticlestyle">
 ```
 
-- 📖 [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- 📖 [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
+- 📖 [Создание статей - мгновенные статьи](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
+- 📖 [Образцы кода - мгновенные статьи](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### OEmbed
 
 ```html
 <link rel="alternate" type="application/json+oembed"
-  href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
-  title="oEmbed Profile: JSON">
+ href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=json"
+ title="Профиль oEmbed: JSON">
 <link rel="alternate" type="text/xml+oembed"
-  href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
-  title="oEmbed Profile: XML">
+ href="https://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
+ title="oEmbed Profile: XML">
 ```
 
 - 📖 [oEmbed format](https://oembed.com/)
 
 ### QQ/Wechat
 
-Users share web pages to qq wechat will have a formatted message
+Пользователи обмениваются веб-страницами в qq wechat с помощью форматированного сообщения
 
 ```html
-<meta itemprop="name" content="share title">
+<meta itemprop="name" content="название акции">
 <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
-<meta name="description" itemprop="description" content="share content">
+<meta name="description" itemprop="description" content="поделиться содержимым">
 ```
 - 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Browsers / Platforms
+## Браузеры / Платформы
 
 ### Apple iOS
 
 ```html
-<!-- Smart App Banner -->
+<!-- Баннер умного приложения -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
-<!-- Disable automatic detection and formatting of possible phone numbers -->
-<meta name="format-detection" content="telephone=no">
+<!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
+<meta name="format-detection" content="phone=no">
 
-<!-- Launch Icon (180x180px or larger) -->
+<!-- Иконка запуска (180x180px или больше) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
-<!-- Launch Screen Image -->
+<!-- Изображение экрана запуска -->
 <link rel="apple-touch-startup-image" href="/path/to/launch.png">
 
-<!-- Launch Icon Title -->
-<meta name="apple-mobile-web-app-title" content="App Title">
+<!-- Заголовок значка запуска -->
+<meta name="apple-mobile-web-app-title" content="Название приложения">.
 
-<!-- Enable standalone (full-screen) mode -->
+<!-- Включить автономный (полноэкранный) режим -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 
-<!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+<!-- Внешний вид строки состояния (не влияет, если не включен автономный режим) -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<!-- iOS app deep linking -->
+<!-- Глубокое связывание приложений iOS -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
@@ -437,13 +444,14 @@ Users share web pages to qq wechat will have a formatted message
 ### Google Android
 
 ```html
+<!-- Цветовая тем приложения -->
 <meta name="theme-color" content="#E64545">
 
-<!-- Add to home screen -->
+<!-- Добавить на главный экран -->
 <meta name="mobile-web-app-capable" content="yes">
-<!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+<!-- Дополнительная информация: https://developer.chrome.com/multidevice/android/installtohomescreen -->
 
-<!-- Android app deep linking -->
+<!-- Глубокое связывание приложений Android -->
 <meta name="google-play-app" content="app-id=package-name">
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
@@ -451,97 +459,97 @@ Users share web pages to qq wechat will have a formatted message
 ### Google Chrome
 
 ```html
-<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">.
 
-<!-- Disable translation prompt -->
+<!-- Отключить подсказку перевода -->
 <meta name="google" content="notranslate">
 ```
 
 ### Microsoft Internet Explorer
 
 ```html
-<!-- Force IE 8/9/10 to use its latest rendering engine -->
+<!-- Заставить IE 8/9/10 использовать свой последний движок рендеринга -->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension -->
+<!-- Отключить автоматическое определение и форматирование возможных телефонных номеров расширением для браузера Skype Toolbar-->
 <meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
 
-<!-- Windows Tiles -->
+<!-- Плитки Windows -->
 <meta name="msapplication-config" content="/browserconfig.xml">
 ```
 
-Minimum required xml markup for `browserconfig.xml`:
+Минимально необходимая разметка xml для `browserconfig.xml`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
-   <msapplication>
-     <tile>
-        <square70x70logo src="small.png"/>
-        <square150x150logo src="medium.png"/>
-        <wide310x150logo src="wide.png"/>
-        <square310x310logo src="large.png"/>
-     </tile>
-   </msapplication>
+    <msapplication>
+        <tile>
+            <square70x70logo src="small.png"/>
+            <square150x150logo src="medium.png"/>
+            <wide310x150logo src="wide.png"/>
+            <square310x310logo src="large.png"/>
+        </tile>
+    </msapplication>
 </browserconfig>
 ```
 
-- 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
+- 📖 [Ссылка на схему конфигурации браузера](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Browsers (Chinese)
+## Браузеры (китайские)
 
 ### 360 Browser
 
 ```html
-<!-- Select rendering engine order -->
+<!-- Выбор порядка движков рендеринга -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
 ### QQ Mobile Browser
 
 ```html
-<!-- Locks the screen into the specified orientation -->
+<!-- Фиксирует экран в заданной ориентации -->
 <meta name="x5-orientation" content="landscape/portrait">
 
-<!-- Display this document in fullscreen -->
+<!-- Отображение этого документа в полноэкранном режиме -->
 <meta name="x5-fullscreen" content="true">
 
-<!-- Document will be displayed in "application mode" (fullscreen, etc.) -->
+<!-- Документ будет отображаться в "режиме приложения" (полноэкранный режим и т.д.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
 ### UC Mobile Browser
 
 ```html
-<!-- Locks the screen into the specified orientation -->
+<!-- Фиксация экрана в заданной ориентации -->
 <meta name="screen-orientation" content="landscape/portrait">
 
-<!-- Display this document in fullscreen -->
+<!-- Отображение этого документа в полноэкранном режиме -->
 <meta name="full-screen" content="yes">
 
-<!-- UC browser will display images even if in "text mode" -->
+<!-- Браузер UC будет отображать изображения, даже если находится в "текстовом режиме" -->
 <meta name="imagemode" content="force">
 
-<!-- Document will be displayed in "application mode"(fullscreen, forbidding gesture, etc.) -->
+<!-- Документ будет отображаться в "режиме приложения" (полноэкранный режим, запрещающий жест и т.д.) -->
 <meta name="browsermode" content="application">
 
-<!-- Disabled the UC browser's "night mode" for this document -->
+<!-- Отключение "ночного режима" браузера UC для этого документа -->
 <meta name="nightmode" content="disable">
 
-<!-- Simplify the document to reduce data transfer -->
+<!-- Упростить документ, чтобы уменьшить передачу данных -->
 <meta name="layoutmode" content="fitscreen">
 
-<!-- Disable the UC browser's feature of "scaling font up when there are many words in this document" -->
+<!-- Отключить функцию браузера UC "увеличивать масштаб шрифта, когда в документе много слов" -->
 <meta name="wap-font-scale" content="no">
 ```
 
 - 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## App Links
+## Ссылки на приложения
 
 ```html
 <!-- iOS -->
@@ -558,99 +566,77 @@ Minimum required xml markup for `browserconfig.xml`:
 <meta property="al:web:url" content="https://applinks.org/documentation">
 ```
 
-- 📖 [App Links](https://developers.facebook.com/docs/applinks)
+- 📖 [Ссылки на приложения](https://developers.facebook.com/docs/applinks)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Other Resources
+## Другие ресурсы
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Related Projects
+## Связанные проекты
 
-- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
-- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
-- [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
-- [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
+- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom пакет для `HEAD` сниппетов
+- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - пакет Sublime Text для `HEAD` сниппетов
+- [head-it](https://github.com/hemanth/head-it) - CLI интерфейс для `HEAD` сниппетов
+- [vue-head](https://github.com/ktquez/vue-head) - Манипулирование метаинформацией тега `HEAD` для Vue.js
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## Other Formats
+## Другие форматы
 
-- 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
+- 📄 [PDF eng](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
-## 🌐 Translations
+## 🌐 Переводы
 
-- 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
-- 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- 🇩🇪 [German](https://github.com/Shidigital/HEAD)
-- 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
-- 🇯🇵 [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
-- 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
-- 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
-- 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- 🇮🇩 [Индонезийский](https://github.com/rijdz/HEAD)
+- 🇧🇷 [Бразильский португальский](https://github.com/Webschool-io/HEAD)
+- 🇨🇳 [Китайский (упрощенный)](https://github.com/Amery2010/HEAD)
+- 🇩🇪 [Немецкий](https://github.com/Shidigital/HEAD)
+- 🇮🇹 [Итальянский](https://github.com/Fakkio/HEAD)
+- 🇯🇵 [Японский](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- 🇰🇷 [Корейский](https://github.com/Lutece/HEAD)
+- 🇪🇸 [Испанский](https://github.com/alvaroadlf/HEAD)
+- 🇹🇷 [Турецкий](https://github.com/mkg0/HEAD)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.
 
 ## 🤝 Contributing
 
-**Open an issue or a pull request to suggest changes or additions.**
+**Откройте `issue` или `PR`, чтобы предложить изменения или дополнения.**
 
-### Guide
-
-The **HEAD** repository consists of two branches:
-
-#### 1. `master`
-
-This branch consists of the `README.md` file that is reflected on the [htmlhead.dev](https://htmlhead.dev/) website. All changes to the content of the guide should be made in this file.
-
-Please follow these steps for pull requests:
-
-{:.list-style-default}
-- Modify only one tag, or one related set of tags at a time
-- Use double quotes on attributes
-- Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
-- Consider including a link to documentation that supports your change
-
-#### 2. `gh-pages`
-
-This branch is responsible for the [htmlhead.dev](https://htmlhead.dev/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` markdown file to [GitHub Pages](https://pages.github.com/). All website related modifications should be made in this branch.
-
-You may find it helpful to review the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working in this branch.
 
 ## 🌟 Contributors
 
-Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors) 🤩
+Посмотрите на всех супер классных [авторов](https://github.com/joshbuchea/HEAD/graphs/contributors) 🤩
 
-## 👤 Author
+## 👤 Автор оригинального репозитория
 
 **Josh Buchea**
 
 - GitHub: [@joshbuchea](https://github.com/joshbuchea)
 - Twitter: [@joshbuchea](https://twitter.com/joshbuchea)
 
-## 💛 Support
+## 💛 Поддержка
 
-If this project was helpful for you or your organization, please considering supporting my work directly:
+Если этот проект был полезен для вас или вашей организации, пожалуйста, рассмотрите возможность прямой поддержки моей работы автора оригинального репозитория:
 
 - 💛 [Sponsor me on GitHub](https://github.com/sponsors/joshbuchea)
 - ⭐️ [Star this project on GitHub](https://github.com/joshbuchea/HEAD)
-- 🐙 [Follow me on GitHub](https://github.com/joshbuchea)
-- 🐦 [Follow me on Twitter](https://twitter.com/joshbuchea)
+- 🐙 [Следуйте за Джошем на GitHub](https://github.com/joshbuchea)
+- 🐦 [Следуйте за Джошем в Twitter](https://twitter.com/joshbuchea)
 
-Everything helps, thanks! 🙏
+Всем кто помогает, спасибо! 🙏
 
 — Josh
 
-## 📝 License
+## 📝 Лицензия
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ вернуться к началу](#оглавление)**.

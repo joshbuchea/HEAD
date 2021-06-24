@@ -598,7 +598,6 @@ Pinterest позволяет запретить людям сохранять с
 - Фавиконка  `<link rel="icon" href="favicon.png">`
 - Монограмма. Если никаких иконок нет, то значок создаётся из первой буквы заголовка страницы или имени домана верхнего уровня
 
-
 ### Значок плитки Windows
 
 ```html
@@ -608,6 +607,26 @@ Pinterest позволяет запретить людям сохранять с
 Браузер Edge раньше поддерживал такой формат значков для меню "Пуск". Для последних версий Windows это больше не требуется
 
 **[⬆ вернуться к началу](#оглавление)**.
+
+
+### Отображение документа в нужном режиме для IE
+
+В зависимости от переданного значения `content` заставляет различные версии IE отображать документ в том или ином режиме.
+
+```html
+<meta http-equiv="X-UA-Compatible" content="IE=5">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+<meta http-equiv="X-UA-Compatible" content="IE=9">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10">
+<meta http-equiv="X-UA-Compatible" content="IE=10">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
+
+Но начиная с IE11 режимы документов устарели. Режим `Edge` стал предпочтительным.
 
 ## Другие ресурсы
 

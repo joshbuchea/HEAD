@@ -1,5 +1,13 @@
 # Версии
 
+## 1.0.4
+- Добавили статью Злых марсиан про фавкионки
+- Уточили про `favicon.ico`
+- Добавили про баг с `ICO` и `SVG`
+- Добавили про webmanifest про фавиконки
+- Добавили устаревшие яндекс табло
+- Добавили устаревшие shortcut
+
 ## 1.0.3
 - Добавили устаревший `<meta name="msapplication-TileColor" content="#efefef">`
 - Добавили устаревший `<meta http-equiv="X-UA-Compatible" content="IE=5">`

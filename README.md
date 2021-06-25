@@ -463,25 +463,28 @@ _manifest.webmanifest_
 
 ```
 <script type="application/ld+json">
-	{  
-   		"@context": "http://schema.org",
-   		"@type": "Organization",
-   		"name": "comapanyname.com",
-   		"url": "https://www.comapanyname.com/",
-   		"logo": "https://www.comapanyname.com/logo.png",
-   		"sameAs":[  
-      		"https://www.facebook.com/comapanyname",
-      		"https://twitter.com/comapanyname",
-      		"https://uk.pinterest.com/comapanyname/",
-	  		 "https://www.instagram.com/comapanyname/",
-	  		 "https://www.linkedin.com/company/comapanyname-com",
-   		]
-	}
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "author": {
+      "@type": "Person",
+      "name": "Your Name"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Your Organization"
+    },
+    "headline": "Article Headline",
+    "image": "https://example.com/image.jpg",
+    "datePublished": "2020-02-05T08:00:00+08:00",
+    "dateModified": "2020-03-05T09:20:00+08:00"
+  }
 </script>
 ```
 
 - [Спецификация](https://www.w3.org/TR/json-ld11/)
 - [Официальный сайт](https://json-ld.org/)
+- [Документация от Google](https://developers.google.com/search/docs/data-types/article)
 
 **[⬆ вернуться к началу](#оглавление)**.
 

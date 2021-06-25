@@ -32,6 +32,7 @@
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
 - [CSRF](#csrf)
+- [Подсказки клиентов](#подсказки-клиентов)
 - [Ссылки на приложения](#ссылки-на-приложения)
 - [Устаревшее](#устаревшее)
 - [Другие ресурсы](#другие-ресурсы)
@@ -652,6 +653,20 @@ Pinterest позволяет запретить людям сохранять с
 ```
 
 Подробнее про [CSRF-атаки](https://habr.com/ru/post/274457/)
+
+**[⬆ вернуться к началу](#оглавление)**.
+
+## Подсказки клиентов
+
+``` html
+<!-- Включает подсказки клиентов -->
+<meta http-equiv="Accept-CH" content="DPR">
+<meta http-equiv="Accept-CH" content="DPR, Width">
+```
+
+[Подробнее про подсказки клиентов](https://developer.mozilla.org/en-US/docs/Glossary/Client_hints)
+
+**[⬆ вернуться к началу](#оглавление)**.
 
 ## Ссылки на приложения
 

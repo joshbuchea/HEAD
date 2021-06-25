@@ -33,6 +33,7 @@
   - [UC Mobile Browser](#uc-mobile-browser)
 - [CSRF](#csrf)
 - [Подсказки клиентов](#подсказки-клиентов)
+- []()
 - [Ссылки на приложения](#ссылки-на-приложения)
 - [Устаревшее](#устаревшее)
 - [Другие ресурсы](#другие-ресурсы)
@@ -454,6 +455,35 @@ _manifest.webmanifest_
 
 - 📖 [Начало работы - schema.org](https://schema.org/docs/gs.html)
 - 🛠 Протестируйте свою страницу с помощью [Rich Results Test](https://search.google.com/test/rich-results)
+
+
+### JSON-LD
+
+Может использоваться компанией для того, чтобы ваш сайт отображался в графе знаний, когда кто-то набирает ваш запрос. (это панель справа от результатов поиска, которая обычно появляется у крупных брендов.)
+
+```
+<script type="application/ld+json">
+	{  
+   		"@context": "http://schema.org",
+   		"@type": "Organization",
+   		"name": "comapanyname.com",
+   		"url": "https://www.comapanyname.com/",
+   		"logo": "https://www.comapanyname.com/logo.png",
+   		"sameAs":[  
+      		"https://www.facebook.com/comapanyname",
+      		"https://twitter.com/comapanyname",
+      		"https://uk.pinterest.com/comapanyname/",
+	  		 "https://www.instagram.com/comapanyname/",
+	  		 "https://www.linkedin.com/company/comapanyname-com",
+   		]
+	}
+</script>
+```
+
+- [Спецификация](https://www.w3.org/TR/json-ld11/)
+- [Официальный сайт](https://json-ld.org/)
+
+**[⬆ вернуться к началу](#оглавление)**.
 
 ### Pinterest
 

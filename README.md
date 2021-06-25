@@ -224,6 +224,9 @@
 
 <!-- Подсказывает, что сайт оптимизирован для мобильных устройств-->
 <meta name="HandheldFriendly" content="true">
+
+<!-- Указывает автора документа -->
+<meta name="author" content="Nikolai Shabalin">
 ```
 
 ```html
@@ -270,10 +273,16 @@
 <!-- Ссылка на JSON-файл, в котором указаны данные для "установки" веб-приложения -->
 <link rel="manifest" href="manifest.json">
 <link rel="manifest" href="manifest.webmanifest">
+```
 
+```html
 <!-- Ссылки на информацию об авторе (авторах) документа -->
 <link rel="author" href="humans.txt">
+```
 
+[О human.txt подробнее](https://humanstxt.org/RU)
+
+```html
 <!-- Ссылается на заявление об авторском праве, применимое к контексту ссылки -->
 <link rel="license" href="copyright.html">
 

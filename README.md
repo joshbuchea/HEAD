@@ -18,6 +18,7 @@
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
   - [Schema.org](#schemaorg)
+  - [JSON-LD](#json-ld)
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
@@ -340,9 +341,11 @@
 <link rel="prefetch" href="https://www.example.com/">
 <link rel="prerender" href="https://example.com/">.
 <link rel="preload" href="image.png" as="image">
+<link rel="modulepreload" href="super-critical-stuff.js"> <!-- Предзагрузка модулей -->
 ```
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
+- 📖 [Предзагрузка модулей](https://developers.google.com/web/updates/2017/12/modulepreload)
 
 **[⬆ вернуться к началу](#оглавление)**.
 

@@ -5,6 +5,7 @@
 - `keywords`
 - `copyright`
 - `creator`
+- `language`
 
 ## 1.0.11
 Добавили про `viewport-fit`

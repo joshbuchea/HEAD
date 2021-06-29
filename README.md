@@ -255,6 +255,9 @@
 <!-- Перезагружает страницу через указанное количество секунд -->
 <meta http-equiv="Refresh" content="20">
 <meta http-equiv="Refresh" content="20; URL=page4.html"> <!-- Перезагружает к указанной странице -->
+
+<!-- Язык документа -->
+<meta name="language" content="Russian">
 ```
 
 ```html

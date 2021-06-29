@@ -249,6 +249,9 @@
 <!-- Принадлежность авторских прав-->
 <meta name="copyright" content="Nikolai Shabalin">
 
+<!-- Создатель документа -->
+<meta name="creator" content="Nikolai Shabalin">
+
 <!-- Перезагружает страницу через указанное количество секунд -->
 <meta http-equiv="Refresh" content="20">
 <meta http-equiv="Refresh" content="20; URL=page4.html"> <!-- Перезагружает к указанной странице -->

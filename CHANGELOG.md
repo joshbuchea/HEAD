@@ -4,6 +4,7 @@
 Добавили про: 
 - `keywords`
 - `copyright`
+- `creator`
 
 ## 1.0.11
 Добавили про `viewport-fit`

@@ -1,7 +1,9 @@
 # Версии
 
 ## 1.0.12
-Добавили про keywords
+Добавили про: 
+- `keywords`
+- `copyright`
 
 ## 1.0.11
 Добавили про `viewport-fit`

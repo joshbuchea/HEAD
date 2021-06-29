@@ -6,6 +6,7 @@
 - `copyright`
 - `creator`
 - `language`
+- `revised`
 
 ## 1.0.11
 Добавили про `viewport-fit`

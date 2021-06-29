@@ -130,7 +130,20 @@
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
+```html
+<!-- viewport-fit для управления безопасной зоны -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+```
+
+- `contain`: вьюпорт должен полностью вмещать веб-контент. 
+- `cover`: веб-контент должен полностью покрывать вьюпорт. 
+- `auto`: значение по умолчанию, работает как `contain`.
+
+[Подробнее в блоке css-live](https://css-live.ru/articles/ponimanie-vyuporta-webview-v-ios-11.html)
+
+```html
 <!--
  Позволяет контролировать, откуда загружаются ресурсы.
  Поместите как можно раньше в <head>, так как тег 

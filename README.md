@@ -176,6 +176,14 @@
 
 <!-- Дата последнего изменения документа -->
 <meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
+
+<!-- Используется как description, но для научных статей-->
+<meta name="abstract" content="">
+<meta name="topic" content="">
+<meta name="summary" content="">
+
+<!-- Для обратной связи -->
+<meta name="reply-to" content="email@hotmail.com">
 ```
 
 Для роботов есть несколько значений:
@@ -254,6 +262,9 @@
 
 <!-- Создатель документа -->
 <meta name="creator" content="Nikolai Shabalin">
+
+<!-- Владелец -->
+<meta name="owner" content="">
 
 <!-- Перезагружает страницу через указанное количество секунд -->
 <meta http-equiv="Refresh" content="20">

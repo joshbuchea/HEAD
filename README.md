@@ -154,7 +154,7 @@
 <!-- Название веб-приложения (должно использоваться только в том случае, если веб-сайт используется как приложение) -->
 <meta name="application-name" content="Имя приложения">.
 
-<!-- Цвет темы для Chrome, Firefox OS, Opera и Safari 15 -->
+<!-- Цвет вкладки для Chrome на Android, Vivaldi, Safari 15 -->
 <meta name="theme-color" content="#4285f4">
 
 <!-- Список ключевых слов -->

@@ -127,7 +127,7 @@ These elements provide information for how a document should be perceived, and r
 <!-- Name of web application (only should be used if the website is used as an app) -->
 <meta name="application-name" content="Application Name">
 
-<!-- Theme Color for Chrome, Firefox OS and Opera -->
+<!-- Theme Color for Chrome on Android, Vivaldi and Safari 15 -->
 <meta name="theme-color" content="#4285f4">
 
 <!-- Short description of the document (limit to 150 characters) -->

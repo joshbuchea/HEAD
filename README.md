@@ -553,9 +553,6 @@ Minimum required xml markup for `browserconfig.xml`:
 <meta property="al:android:url" content="applinks://docs">
 <meta property="al:android:app_name" content="App Links">
 <meta property="al:android:package" content="org.applinks">
-
-<!-- Web fall back -->
-<meta property="al:web:url" content="https://applinks.org/documentation">
 ```
 
 - 📖 [App Links](https://developers.facebook.com/docs/applinks)

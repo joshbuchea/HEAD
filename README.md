@@ -31,7 +31,6 @@
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
-- [App Links](#app-links)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
 - [Other Formats](#other-formats)
@@ -538,27 +537,6 @@ Minimum required xml markup for `browserconfig.xml`:
 ```
 
 - 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
-
-**[⬆ back to top](#table-of-contents)**
-
-## App Links
-
-```html
-<!-- iOS -->
-<meta property="al:ios:url" content="applinks://docs">
-<meta property="al:ios:app_store_id" content="12345">
-<meta property="al:ios:app_name" content="App Links">
-
-<!-- Android -->
-<meta property="al:android:url" content="applinks://docs">
-<meta property="al:android:app_name" content="App Links">
-<meta property="al:android:package" content="org.applinks">
-
-<!-- Web fall back -->
-<meta property="al:web:url" content="https://applinks.org/documentation">
-```
-
-- 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
 **[⬆ back to top](#table-of-contents)**
 

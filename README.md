@@ -333,7 +333,8 @@
 <!-- Дает ссылку на место в вашем документе, который может быть на другом языке -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Предоставляет информацию об авторе или другом человеке -->
+<!-- Предоставляет информацию об авторе или другом человеке. 
+Используется для RelMeAuth, распределённой формы проверки личности. Смотри https://microformats.org/wiki/RelMeAuth, чтобы узнать больше -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">.
 <link rel="me" href="sms:+15035550125">
@@ -359,11 +360,18 @@
 <!-- Формирует автоматический комментарий, когда другой блог WordPress ссылается на ваш блог WordPress или пост -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Уведомляет URL, когда вы ссылаетесь на него в вашем документе -->
+<!-- Уведомляет URL, когда вы ссылаетесь на него в вашем документе. Дополнительная информация на https://webmention.net -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Позволяет размещать сообщения на вашем собственном домене с помощью клиента Micropub -->
+<!-- Позволяет размещать сообщения на вашем собственном домене с помощью клиента Micropub. Более подробная информация на https://indieweb.org/Micropub  -->
 <link rel="micropub" href="https://example.com/micropub">
+
+<!-- Позволяет использовать ваш сайт с [социальным ридером](https://indieweb.org/social_reader) на базе Microsub. Более подробная информация на https://indieweb.org/Microsub -->
+<link rel="microsub" href="https://example.com/microsub">
+
+<!-- Позволяет использовать ваш сайт с IndieAuth, для проверки личности с помощью вашего доменного имени. Подробнее на https://indieauth.net -->
+<link rel="token_endpoint" href="https://example.com/token">
+<link rel="authorization_endpoint" href="https://example.com/auth">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Заголовок поиска">.

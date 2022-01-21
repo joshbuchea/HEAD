@@ -92,6 +92,7 @@
 
 <!-- Ссылка на внешний файл CSS -->
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/assets/css/print.css" media="print">
 
 <!-- Используется для добавления CSS в документ. Используется для важной стилизации -->
 <style>

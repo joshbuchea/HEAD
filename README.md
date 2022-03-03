@@ -858,14 +858,15 @@ _manifest.jons_
 
 ### Первый и последний документы в серии документов
 
-[Поддержка прекращена](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types)
-[Отсутствует в спецификации](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
-[Обсуждение](https://stackoverflow.com/questions/42841618/what-is-the-alternative-to-rel-first)
+- [Поддержка прекращена](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types)
+- [Отсутствует в спецификации](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
+- [Обсуждение](https://stackoverflow.com/questions/42841618/what-is-the-alternative-to-rel-first)
 
+```html
 <!-- Первый и последний документы в серии документов, соответственно -->
 <link rel="first" href="https://example.com/article/">
 <link rel="last" href="https://example.com/article/?page=42">
-
+```
 
 ## Другие ресурсы
 

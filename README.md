@@ -349,9 +349,7 @@
 <!-- Обеспечивает самостоятельную ссылку - полезно, когда документ имеет несколько возможных ссылок -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
-<!-- Первый, последний, предыдущий и следующий документы в серии документов, соответственно -->
-<link rel="first" href="https://example.com/article/">
-<link rel="last" href="https://example.com/article/?page=42">
+<!-- Предыдущий и следующий документы в серии документов, соответственно -->
 <link rel="prev" href="https://example.com/article/?page=1">
 <link rel="next" href="https://example.com/article/?page=3">
 
@@ -785,7 +783,6 @@ Pinterest позволяет запретить людям сохранять с
 
 Браузер Edge раньше поддерживал такой формат значков для меню "Пуск". Для последних версий Windows это больше не требуется
 
-
 ### Отображение документа в нужном режиме для IE
 
 В зависимости от переданного значения `content` заставляет различные версии IE отображать документ в том или ином режиме.
@@ -805,7 +802,6 @@ Pinterest позволяет запретить людям сохранять с
 
 Но начиная с IE11 режимы документов устарели. Режим `Edge` стал предпочтительным.
 
-
 ### `shortcut` для фавиконок
 
 ```html
@@ -815,7 +811,6 @@ Pinterest позволяет запретить людям сохранять с
 `shortcut` - использовался исключительно IE.
 
 [Почему не стоит использовать shortcut](https://mathiasbynens.be/notes/rel-shortcut-icon)
-
 
 ### Яндекс табло
 
@@ -860,6 +855,17 @@ _manifest.jons_
 ```
 
 **[⬆ вернуться к началу](#оглавление)**.
+
+### Первый и последний документы в серии документов
+
+[Поддержка прекращена](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types)
+[Отсутствует в спецификации](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
+[Обсуждение](https://stackoverflow.com/questions/42841618/what-is-the-alternative-to-rel-first)
+
+<!-- Первый и последний документы в серии документов, соответственно -->
+<link rel="first" href="https://example.com/article/">
+<link rel="last" href="https://example.com/article/?page=42">
+
 
 ## Другие ресурсы
 

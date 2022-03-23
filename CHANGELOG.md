@@ -3,9 +3,9 @@
 ## 1.0.17
 Перенесли `rel="first"` и `rel="last"` в устаревшее
 
-[Поддержка прекращена](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types)
-[Отсутствует в спецификации](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
-[Обсуждение](https://stackoverflow.com/questions/42841618/what-is-the-alternative-to-rel-first)
+- [Поддержка прекращена](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types)
+- [Отсутствует в спецификации](https://html.spec.whatwg.org/multipage/links.html#linkTypes)
+- [Обсуждение](https://stackoverflow.com/questions/42841618/what-is-the-alternative-to-rel-first)
 
 ## 1.0.16
 Добавили пример для `stylesheet` с `media` 

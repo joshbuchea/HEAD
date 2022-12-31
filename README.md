@@ -4,7 +4,7 @@
 
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Follow @joshbuchea on Mastodon](https://img.shields.io/badge/Follow_@joshbuchea-purple?logo=mastodon&logoColor=white&style=for-the-badge)](https://hachyderm.io/joshbuchea)
+[![Follow @joshbuchea on Mastodon](https://img.shields.io/badge/Follow_@joshbuchea-purple?logo=mastodon&logoColor=white&style=for-the-badge)](https://hachyderm.io/@joshbuchea)
 
 ## Table of Contents
 
@@ -634,7 +634,7 @@ Check out all the super awesome [contributors](https://github.com/joshbuchea/HEA
 **Josh Buchea**
 
 - GitHub: [@joshbuchea](https://github.com/joshbuchea)
-- Mastodon: [@joshbuchea@hachyderm.io](https://hachyderm.io/joshbuchea)
+- Mastodon: [@joshbuchea@hachyderm.io](https://hachyderm.io/@joshbuchea)
 
 ## 💛 Support
 
@@ -643,7 +643,7 @@ If this project was helpful for you or your organization, please considering sup
 - 💛 [Sponsor me on GitHub](https://github.com/sponsors/joshbuchea)
 - ⭐️ [Star this project on GitHub](https://github.com/joshbuchea/HEAD)
 - 🐙 [Follow me on GitHub](https://github.com/joshbuchea)
-- 🐘 [Follow me on Mastodon](https://hachyderm.io/joshbuchea)
+- 🐘 [Follow me on Mastodon](https://hachyderm.io/@joshbuchea)
 
 Everything helps, thanks! 🙏
 

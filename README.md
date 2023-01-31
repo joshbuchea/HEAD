@@ -190,6 +190,15 @@ These elements provide information for how a document should be perceived, and r
 
 **[⬆ back to top](#table-of-contents)**
 
+## Client Hint
+
+``` html
+<!-- Accept Client Hint -->
+<!-- devicePixelRatio : Mentioning the device to send a header for responsive images -->
+<meta http-equiv="Accept-CH" content="DPR">
+<meta http-equiv="Accept-CH" content="DPR, Width">
+```
+
 ## Link
 
 ```html

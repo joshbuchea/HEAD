@@ -232,10 +232,27 @@
 
 <!-- Позволяет контролировать, как передается информация о реферере -->
 <meta name="referrer" content="no-referrer">
+```
 
+```html
 <!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
-<meta name="format-detection" content="phone=no">
+<meta name="format-detection" content="telephone=no">
 
+<!-- а также можно отключить дату, адрес, url и email -->
+<meta name="format-detection" content="date=no">
+<meta name="format-detection" content="address=no">
+<meta name="format-detection" content="url=no">
+<meta name="format-detection" content="email=no">
+
+<!-- можно комбинировать несколько значений-->
+<meta name="format-detection" content="telephone=no,date=no,address=no,email=no,url=no">
+```
+Подробнее в:
+- [Документации для разработчиков от Apple](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Гисте про комбинирование](https://gist.github.com/yuezk/15c5bb1370e30d0a2a60)
+
+
+```html
 <!-- Полностью отказаться от предварительной выборки DNS, установив значение "off" -->
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
@@ -594,7 +611,7 @@ Pinterest позволяет запретить людям сохранять с
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
 <!-- Отключить автоматическое определение и форматирование возможных телефонных номеров -->
-<meta name="format-detection" content="phone=no">
+<meta name="format-detection" content="telephone=no">
 
 <!-- Иконка запуска (180x180px или больше) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">

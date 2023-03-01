@@ -1,5 +1,13 @@
 # Версии
 
+## 1.0.19
+- Исправили опечатки
+- Уточнили про `format-detection`
+  - Заменили значение `phone` на `telephone`
+  
+- [Документации для разработчиков от Apple](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+- [Гисте про комбинирование](https://gist.github.com/yuezk/15c5bb1370e30d0a2a60)
+
 ## 1.0.18
 Починили устаревшие ссылки для HTML5 Boilerplate Docs
 

@@ -278,6 +278,12 @@
 ```
 
 ```html
+<!-- контролирует занесение страниц в кэш-память -->
+<meta http-equiv="pragma" content="no-cache">
+```
+[Подробнее про pragma](https://mpbox.ru/html/meta-tags/http-equiv/pragma/).
+
+```html
 <!-- Как часто посещать сайт роботу-->
 <meta name="revisit" content="10 day">
 

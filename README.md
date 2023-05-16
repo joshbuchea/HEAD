@@ -170,20 +170,6 @@
 <meta name="robots" content="index,follow"><!-- Все поисковые системы -->
 <meta name="googlebot" content="index,follow"><!-- Специфика Google -->
 <meta name="bingbot" content="index,follow"><!-- Специфика Bing -->
-
-<!-- Как часто посещать сайт роботу-->
-<meta content="10 day" name="revisit">
-
-<!-- Дата последнего изменения документа -->
-<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
-
-<!-- Используется как description, но для научных статей-->
-<meta name="abstract" content="">
-<meta name="topic" content="">
-<meta name="summary" content="">
-
-<!-- Для обратной связи -->
-<meta name="reply-to" content="email@hotmail.com">
 ```
 
 Для роботов есть несколько значений:
@@ -289,6 +275,28 @@
 
 <!-- Язык документа -->
 <meta name="language" content="Russian">
+```
+
+```html
+<!-- Как часто посещать сайт роботу-->
+<meta name="revisit" content="10 day">
+
+<!-- Дата последнего изменения документа -->
+<meta name="revised" content="Sunday, July 18th, 2010, 5:15 pm" />
+
+<!-- Как часто посещать сайт роботу-->
+<meta name="revisit-after" content="10 day">
+```
+`revisit-after` поисковыми роботами [чаще всего игнорируется](https://developers.google.com/search/blog/2007/12/answering-more-popular-picks-meta-tags).
+
+```html
+<!-- Используется как description, но для научных статей-->
+<meta name="abstract" content="">
+<meta name="topic" content="">
+<meta name="summary" content="">
+
+<!-- Для обратной связи -->
+<meta name="reply-to" content="email@hotmail.com">
 ```
 
 ```html

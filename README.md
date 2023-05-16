@@ -284,6 +284,12 @@
 [Подробнее про pragma](https://mpbox.ru/html/meta-tags/http-equiv/pragma/).
 
 ```html
+<!-- Сделать повторный сетевой запрос после указанной даты и времени -->
+<meta http-equiv="Expires" content="Sun, 01 Jan 2012 00:00:01 GMT" />
+```
+[Подробнее про expires](https://karashchuk.com/HTML/meta_Expires/).
+
+```html
 <!-- Как часто посещать сайт роботу-->
 <meta name="revisit" content="10 day">
 

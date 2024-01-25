@@ -281,7 +281,7 @@ These elements provide information for how a document should be perceived, and r
 <!-- Safari Pinned Tab Icon -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
-
+- 📖 BEST icons : https://boxicons.com/
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
 - 📖 [Creating Pinned Tab Icons](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)

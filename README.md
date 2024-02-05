@@ -896,7 +896,7 @@ Pinterest позволяет запретить людям сохранять с
 ### Яндекс табло
 
 ```html
-<link rel="yandex-tableau-widget" href="/manifest.json" />
+<link rel="yandex-tableau-widget" href="/manifest.json">
 ```
 
 _manifest.jons_

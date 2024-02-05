@@ -422,7 +422,7 @@
 <link rel="authorization_endpoint" href="https://example.com/auth">
 
 <!-- Open Search -->
-<link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Заголовок поиска">.
+<link rel="search" href="open-search.xml" type="application/opensearchdescription+xml" title="Заголовок поиска">
 
 <!-- Фиды -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">

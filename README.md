@@ -433,8 +433,36 @@
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">.
-<link rel="preload" href="image.png" as="image">
+<link rel="prerender" href="https://example.com/">
+```
+
+```html
+<link rel="preload" as="image" href="important.png">
+```
+
+Значений `as` может быть несколько:
+- `audio`: аудиофайл
+- `document`: HTML-документ
+- `embed`: внедренный ресурс
+- `fetch`: любой ресурс, который не подходит ни под одну из остальных категорий
+- `font`: шрифт
+- `image`: изображение
+- `object`: объект
+- `script`: JavaScript-файл
+- `style`: CSS-файл
+- `track`: файл субтитров
+- `video`: видеофайл
+- `worker`: воркер
+
+У `image` сть уникальная возможность указать адаптивную картинку:
+```html
+<link rel="preload" as="image" imagesrcset="wolf_400px.jpg 400w, wolf_800px.jpg 800w, wolf_1600px.jpg 1600w">
+```
+
+- 📖 [Предварительная загрузка адаптивных изображений](https://web.dev/articles/preload-responsive-images)
+
+
+```html
 <link rel="modulepreload" href="super-critical-stuff.js"> <!-- Предзагрузка модулей -->
 ```
 

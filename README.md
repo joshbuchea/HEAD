@@ -91,8 +91,8 @@
 <base href="https://example.com/page.html">
 
 <!-- Ссылка на внешний файл CSS -->
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="/assets/css/print.css" media="print">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/print.css" media="print">
 
 <!-- Используется для добавления CSS в документ. Используется для важной стилизации -->
 <style>
@@ -100,7 +100,7 @@
 </style>
 
 <!-- Ссылка на внешний JavaScript файл -->
-<script src="script.js"></script>
+<script src="scripts/scripts.js"></script>
 
 <!-- Используется для добавления JavaScript в документ-->
 <script>

@@ -243,8 +243,17 @@
 <meta http-equiv="x-dns-prefetch-control" content="off">
 
 <!-- Указывает документ, который будет отображаться в определенном фрейме -->
-<meta http-equiv="Window-Target" content="_value">
+<meta http-equiv="Window-Target" content="">
+```
 
+У `Window-Target` есть несколько значений значения:
+- `_self` - загружает документ в текущем окне
+- `_blank` - загружает документ в новом окне
+- `_parent` - загружает документ в родительском фрейме
+- `_top` - загружает документ в полном окне браузера
+- `имя_фрейма` - загружает документ в указанном фрейме
+
+```html
 <!-- Гео-теги -->
 <meta name="ICBM" content="широта, долгота">.
 <meta name="geo.position" content="широта;долгота">

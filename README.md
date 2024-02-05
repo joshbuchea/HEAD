@@ -573,6 +573,10 @@ _manifest.webmanifest_
      <meta itemprop="name" content="Заголовок контента">.
      <meta itemprop="description" content="Описание содержимого менее 200 символов">.
      <meta itemprop="image" content="https://example.com/image.jpg">
+     <meta itemprop="datePublished" content="2017-01-01">
+     <meta itemprop="datePublished" content="2017-01-01">  
+  </head>
+</html>
 ```
 
 **Примечание:** Эти мета-теги требуют добавления атрибутов `itemscope` и `itemtype` к тегу `<html>`.

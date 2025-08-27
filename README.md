@@ -606,6 +606,7 @@ Minimum required xml markup for `browserconfig.xml`:
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- 🇺🇦 [Ukrainian](https://github.com/Shramkoweb/HEAD)
 
 **[⬆ back to top](#table-of-contents)**
 

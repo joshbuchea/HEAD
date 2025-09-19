@@ -596,16 +596,16 @@ Minimum required xml markup for `browserconfig.xml`:
 
 ## 🌐 Translations
 
-- 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
-- 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- 🇩🇪 [German](https://github.com/Shidigital/HEAD)
-- 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
-- 🇯🇵 [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
-- 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
-- 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
-- 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- [Bahasa](https://github.com/rijdz/HEAD)
+- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
+- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
+- [German](https://github.com/Shidigital/HEAD)
+- [Italian](https://github.com/Fakkio/HEAD)
+- [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [Korean](https://github.com/Lutece/HEAD)
+- [Russian/Русский](https://github.com/Konfuze/HEAD)
+- [Spanish](https://github.com/alvaroadlf/HEAD)
+- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 
 **[⬆ back to top](#table-of-contents)**
 

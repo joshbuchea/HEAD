@@ -401,6 +401,16 @@ Users share web pages to qq wechat will have a formatted message
 
 **[⬆ back to top](#table-of-contents)**
 
+### Fediverse
+
+Some Fediverse software such as Mastodon allow you to put your Fediverse handle in a meta tag which will show up in embeds to your website. In addition to the tag you will also need to add your domain to the list of allowed websites in "Settings -> Public profile -> Verification -> Author attribution" (for Mastodon).
+
+```html
+<meta name="fediverse:creator" content="@handle@example.org">
+```
+
+**[⬆ back to top](#table-of-contents)**
+
 ## Browsers / Platforms
 
 ### Apple iOS

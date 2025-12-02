@@ -214,7 +214,9 @@ These elements provide information for how a document should be perceived, and r
 <!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Provides information about an author or another person -->
+<!-- Provides information about an author or another person
+     Used for RelMeAuth, a distributed form of identity verification.
+     See https://microformats.org/wiki/RelMeAuth to learn more -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
@@ -240,11 +242,23 @@ These elements provide information for how a document should be perceived, and r
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Notifies a URL when you link to it on your document -->
+<!-- Notifies a URL when you link to it on your document
+     More information at https://webmention.net -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Enables posting to your own domain using a Micropub client -->
+<!-- Enables posting to your own domain using a Micropub client 
+     More information at https://indieweb.org/Micropub -->
 <link rel="micropub" href="https://example.com/micropub">
+
+<!-- Enables you to use your site with a social reader powered by Microsub 
+     More information at https://indieweb.org/Microsub -->
+<link rel="microsub" href="https://example.com/microsub">
+
+<!-- Enables you to use your site with IndieAuth, an identity solution that
+     lets you authenticate with your domain name.
+     Read more at https://indieauth.net. -->
+<link rel="token_endpoint" href="https://example.com/token">
+<link rel="authorization_endpoint" href="https://example.com/auth">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">

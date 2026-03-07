@@ -461,7 +461,7 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 ### Google Chrome
 
 ```html
-<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
+<link rel="chrome-webstore-item" href="https://chromewebstore.google.com/detail/APP_ID">
 
 <!-- Disable translation prompt -->
 <meta name="google" content="notranslate">

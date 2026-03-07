@@ -597,6 +597,7 @@ Minimum required xml markup for `browserconfig.xml`:
 ## 🌐 Translations
 
 - 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
+- 🇧🇩 [Bengali](https://github.com/AveyBD/HEAD)
 - 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
 - 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - 🇩🇪 [German](https://github.com/Shidigital/HEAD)

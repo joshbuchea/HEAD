@@ -64,6 +64,8 @@ Below are the essential elements for any web document (websites/apps):
 
 `initial-scale=1` - the initial zoom, 1 means no zoom
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Elements
 
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
@@ -101,6 +103,8 @@ These elements provide information for how a document should be perceived, and r
   <!-- No JS alternative -->
 </noscript>
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Meta
 
@@ -184,6 +188,8 @@ These elements provide information for how a document should be perceived, and r
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Link
 
 ```html
@@ -258,6 +264,8 @@ These elements provide information for how a document should be perceived, and r
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Icons
 
 ```html
@@ -278,6 +286,8 @@ These elements provide information for how a document should be perceived, and r
 - 📖 [Creating Pinned Tab Icons](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Social
 
@@ -389,6 +399,8 @@ Users share web pages to qq wechat will have a formatted message
 ```
 - 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
+**[⬆ back to top](#table-of-contents)**
+
 ### Fediverse
 
 Some Fediverse software such as Mastodon allow you to put your Fediverse handle in a meta tag which will show up in embeds to your website. In addition to the tag you will also need to add your domain to the list of allowed websites in "Settings -> Public profile -> Verification -> Author attribution" (for Mastodon).
@@ -396,6 +408,8 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 ```html
 <meta name="fediverse:creator" content="@handle@example.org">
 ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Browsers / Platforms
 
@@ -484,6 +498,8 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Browsers (Chinese)
 
 ### 360 Browser
@@ -533,6 +549,8 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## App Links
 
 ```html
@@ -552,10 +570,14 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Other Resources
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Related Projects
 
@@ -564,13 +586,18 @@ Minimum required xml markup for `browserconfig.xml`:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Other Formats
 
 - 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
+**[⬆ back to top](#table-of-contents)**
+
 ## 🌐 Translations
 
 - 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
+- 🇧🇩 [Bengali](https://github.com/AveyBD/HEAD)
 - 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
 - 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
 - 🇩🇪 [German](https://github.com/Shidigital/HEAD)
@@ -580,6 +607,9 @@ Minimum required xml markup for `browserconfig.xml`:
 - 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
 - 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- 🇺🇦 [Ukrainian](https://github.com/Shramkoweb/HEAD)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## 🤝 Contributing
 
@@ -634,3 +664,5 @@ Everything helps, thanks! 🙏
 ## 📝 License
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+**[⬆ back to top](#table-of-contents)**

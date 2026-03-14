@@ -282,7 +282,8 @@ These elements provide information for how a document should be perceived, and r
 ## Social
 
 ### Facebook Open Graph
-> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup) 
+
+> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 
 ```html
 <meta property="fb:app_id" content="123456789">
@@ -301,6 +302,7 @@ These elements provide information for how a document should be perceived, and r
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
+
 > With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. [More about Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
 
 ```html
@@ -318,7 +320,9 @@ These elements provide information for how a document should be perceived, and r
 - 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Twitter Privacy
+
 If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
+
 ```html
 <!-- disallow Twitter from using your site's info for personalization purposes -->
 <meta name="twitter:dnt" content="on">
@@ -387,8 +391,8 @@ Users share web pages to qq wechat will have a formatted message
 <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
 <meta name="description" itemprop="description" content="share content">
 ```
-- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
+- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
 ### Fediverse
 
@@ -599,6 +603,7 @@ This branch consists of the `README.md` file that is reflected on the [htmlhead.
 Please follow these steps for pull requests:
 
 {:.list-style-default}
+
 - Modify only one tag, or one related set of tags at a time
 - Use double quotes on attributes
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional

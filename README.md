@@ -208,7 +208,9 @@ These elements provide information for how a document should be perceived, and r
 <!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Provides information about an author or another person -->
+<!-- Provides information about an author or another person
+     Used for RelMeAuth, a distributed form of identity verification.
+     See https://microformats.org/wiki/RelMeAuth to learn more -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">

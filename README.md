@@ -232,11 +232,25 @@ These elements provide information for how a document should be perceived, and r
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Notifies a URL when you link to it on your document -->
+<!-- Used when a 3rd party service is utilized to maintain a blog -->
+<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
+
+<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
+<link rel="pingback" href="https://example.com/xmlrpc.php">
+
+<!-- Notifies a URL when you link to it on your document
+     More information at https://webmention.net -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Enables posting to your own domain using a Micropub client -->
+<!-- Enables posting to your own domain using a Micropub client 
+     More information at https://indieweb.org/Micropub -->
 <link rel="micropub" href="https://example.com/micropub">
+
+<!-- Enables you to use your site with IndieAuth, an identity solution that
+     lets you authenticate with your domain name.
+     Read more at https://indieauth.net. -->
+<link rel="token_endpoint" href="https://example.com/token">
+<link rel="authorization_endpoint" href="https://example.com/auth">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">

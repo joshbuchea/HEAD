@@ -232,12 +232,6 @@ These elements provide information for how a document should be perceived, and r
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Used when a 3rd party service is utilized to maintain a blog -->
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
-
-<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
-<link rel="pingback" href="https://example.com/xmlrpc.php">
-
 <!-- Notifies a URL when you link to it on your document
      More information at https://webmention.net -->
 <link rel="webmention" href="https://example.com/webmention">

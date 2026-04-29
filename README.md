@@ -389,6 +389,29 @@ If you embed tweets in your website, Twitter can use information from your site 
 - 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
 - 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
 
+### Google JSON-LD Schema
+
+The following is used by Google to help provide your site with a knowledge graph result when someone Googles you (this is the pane to the right of the search results that typically appears for larger brands):
+
+```
+<script type="application/ld+json">
+  {  
+    "@context":"http://schema.org",
+    "@type":"Organization",
+    "name":"yourbrand.com",
+    "url":"https://www.yourbrand.com/",
+    "logo":"https://www.yourbrand.com/logo.png",
+    "sameAs":[  
+      "https://www.facebook.com/yourbrand",
+      "https://twitter.com/yourbrand",
+      "https://uk.pinterest.com/yourbrand/",
+      "https://www.instagram.com/yourbrand/",
+      "https://www.linkedin.com/company/yourbrand-com",
+    ]
+  }
+</script>
+```
+
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site). The `description` is optional.

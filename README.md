@@ -64,8 +64,6 @@ Below are the essential elements for any web document (websites/apps):
 
 `initial-scale=1` - the initial zoom, 1 means no zoom
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Elements
 
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
@@ -104,8 +102,6 @@ These elements provide information for how a document should be perceived, and r
 </noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Meta
 
 ```html
@@ -119,7 +115,7 @@ These elements provide information for how a document should be perceived, and r
 
 <!--
   Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
+  Place as early in the <head> as possible, as the tag
   only applies to resources that are declared after it.
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
@@ -188,8 +184,6 @@ These elements provide information for how a document should be perceived, and r
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Link
 
 ```html
@@ -214,7 +208,9 @@ These elements provide information for how a document should be perceived, and r
 <!-- Gives a reference to a location in your document that may be in another language -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
-<!-- Provides information about an author or another person -->
+<!-- Provides information about an author or another person
+     Used for RelMeAuth, a distributed form of identity verification.
+     See https://microformats.org/wiki/RelMeAuth to learn more -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
@@ -228,9 +224,7 @@ These elements provide information for how a document should be perceived, and r
 <!-- Provides a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
-<!-- The first, last, previous, and next documents in a series of documents, respectively -->
-<link rel="first" href="https://example.com/article/">
-<link rel="last" href="https://example.com/article/?page=42">
+<!-- The previous, and next documents in a series of documents, respectively -->
 <link rel="prev" href="https://example.com/article/?page=1">
 <link rel="next" href="https://example.com/article/?page=3">
 
@@ -240,11 +234,19 @@ These elements provide information for how a document should be perceived, and r
 <!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
 <link rel="pingback" href="https://example.com/xmlrpc.php">
 
-<!-- Notifies a URL when you link to it on your document -->
+<!-- Notifies a URL when you link to it on your document
+     More information at https://webmention.net -->
 <link rel="webmention" href="https://example.com/webmention">
 
-<!-- Enables posting to your own domain using a Micropub client -->
+<!-- Enables posting to your own domain using a Micropub client 
+     More information at https://indieweb.org/Micropub -->
 <link rel="micropub" href="https://example.com/micropub">
+
+<!-- Enables you to use your site with IndieAuth, an identity solution that
+     lets you authenticate with your domain name.
+     Read more at https://indieauth.net. -->
+<link rel="token_endpoint" href="https://example.com/token">
+<link rel="authorization_endpoint" href="https://example.com/auth">
 
 <!-- Open Search -->
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
@@ -263,8 +265,6 @@ These elements provide information for how a document should be perceived, and r
 ```
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Icons
 
@@ -287,12 +287,11 @@ These elements provide information for how a document should be perceived, and r
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Social
 
 ### Facebook Open Graph
-> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup) 
+
+> Most content is shared to Facebook as a URL, so it's important that you mark up your website with Open Graph tags to take control over how your content appears on Facebook. [More about Facebook Open Graph Markup](https://developers.facebook.com/docs/sharing/webmasters#markup)
 
 ```html
 <meta property="fb:app_id" content="123456789">
@@ -311,6 +310,7 @@ These elements provide information for how a document should be perceived, and r
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
 
 ### Twitter Card
+
 > With Twitter Cards, you can attach rich photos, videos and media experiences to Tweets, helping to drive traffic to your website. [More about Twitter Cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards)
 
 ```html
@@ -328,7 +328,9 @@ These elements provide information for how a document should be perceived, and r
 - 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 ### Twitter Privacy
+
 If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
+
 ```html
 <!-- disallow Twitter from using your site's info for personalization purposes -->
 <meta name="twitter:dnt" content="on">
@@ -397,9 +399,8 @@ Users share web pages to qq wechat will have a formatted message
 <meta itemprop="image" content="http://imgcache.qq.com/qqshow/ac/v4/global/logo.png">
 <meta name="description" itemprop="description" content="share content">
 ```
-- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
-**[⬆ back to top](#table-of-contents)**
+- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
 ### Fediverse
 
@@ -408,8 +409,6 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 ```html
 <meta name="fediverse:creator" content="@handle@example.org">
 ```
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Browsers / Platforms
 
@@ -498,8 +497,6 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Browsers (Chinese)
 
 ### 360 Browser
@@ -549,8 +546,6 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## App Links
 
 ```html
@@ -570,14 +565,10 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Other Resources
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
-
-**[⬆ back to top](#table-of-contents)**
 
 ## Related Projects
 
@@ -586,29 +577,25 @@ Minimum required xml markup for `browserconfig.xml`:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Other Formats
 
 - 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ back to top](#table-of-contents)**
-
 ## 🌐 Translations
 
-- 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
-- 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- 🇩🇪 [German](https://github.com/Shidigital/HEAD)
-- 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
-- 🇯🇵 [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
-- 🇲🇾🇧🇳🇸🇬 [Malay](https://github.com/shoen1x/HEAD)
-- 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
-- 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
-- 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
-
-**[⬆ back to top](#table-of-contents)**
+- [Bahasa](https://github.com/rijdz/HEAD)
+- [Bengali](https://github.com/AveyBD/HEAD)
+- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
+- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
+- [German](https://github.com/Shidigital/HEAD)
+- [Italian](https://github.com/Fakkio/HEAD)
+- [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [Korean](https://github.com/Lutece/HEAD)
+- [Malay](https://github.com/shoen1x/HEAD)
+- [Russian/Русский](https://github.com/Konfuze/HEAD)
+- [Spanish](https://github.com/alvaroadlf/HEAD)
+- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- [Ukrainian](https://github.com/Shramkoweb/HEAD)
 
 ## 🤝 Contributing
 
@@ -625,6 +612,7 @@ This branch consists of the `README.md` file that is reflected on the [htmlhead.
 Please follow these steps for pull requests:
 
 {:.list-style-default}
+
 - Modify only one tag, or one related set of tags at a time
 - Use double quotes on attributes
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
@@ -663,5 +651,3 @@ Everything helps, thanks! 🙏
 ## 📝 License
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-**[⬆ back to top](#table-of-contents)**

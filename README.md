@@ -92,11 +92,31 @@ These elements provide information for how a document should be perceived, and r
   /* ... */
 </style>
 
-<!-- JavaScript & No-JavaScript tags -->
+<!--
+  Scripts: place <script> tags at the end of <body> when possible.
+  The following attributes control loading behavior when placed in <head>:
+-->
+
+<!-- Blocks HTML parsing and content rendering until the script is fetched and executed -->
 <script src="script.js"></script>
+
+<!-- The script will be fetched in parallel with parsing and executed as soon as it is available (before parsing completes) -->
+<script async src="script.js"></script>
+
+<!-- The script will be fetched in parallel with parsing and executed when the page has finished parsing -->
+<script defer src="script.js"></script>
+
+<!-- async takes precedence in modern browsers; defer acts as a fallback for older browsers that don't support async -->
+<script async defer src="script.js"></script>
+
+<!-- Inline script -->
 <script>
   // function(s) go here
 </script>
+
+<!-- Subresource Integrity (SRI): use the integrity attribute to verify that the fetched resource has been delivered without unexpected manipulation -->
+<script src="https://example.com/script.js" integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"></script>
+
 <noscript>
   <!-- No JS alternative -->
 </noscript>

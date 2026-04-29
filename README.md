@@ -115,7 +115,7 @@ These elements provide information for how a document should be perceived, and r
 
 <!--
   Allows control over where resources are loaded from.
-  Place as early in the <head> as possible, as the tag  
+  Place as early in the <head> as possible, as the tag
   only applies to resources that are declared after it.
 -->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
@@ -583,18 +583,18 @@ Minimum required xml markup for `browserconfig.xml`:
 
 ## 🌐 Translations
 
-- 🇮🇩 [Bahasa](https://github.com/rijdz/HEAD)
-- 🇧🇩 [Bengali](https://github.com/AveyBD/HEAD)
-- 🇧🇷 [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
-- 🇨🇳 [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
-- 🇩🇪 [German](https://github.com/Shidigital/HEAD)
-- 🇮🇹 [Italian](https://github.com/Fakkio/HEAD)
-- 🇯🇵 [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
-- 🇰🇷 [Korean](https://github.com/Lutece/HEAD)
-- 🇷🇺 [Russian/Русский](https://github.com/Konfuze/HEAD)
-- 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
-- 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
-- 🇺🇦 [Ukrainian](https://github.com/Shramkoweb/HEAD)
+- [Bahasa](https://github.com/rijdz/HEAD)
+- [Bengali](https://github.com/AveyBD/HEAD)
+- [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
+- [Chinese (Simplified)](https://github.com/Amery2010/HEAD)
+- [German](https://github.com/Shidigital/HEAD)
+- [Italian](https://github.com/Fakkio/HEAD)
+- [Japanese](https://coliss.com/articles/build-websites/operation/work/collection-of-html-head-elements.html)
+- [Korean](https://github.com/Lutece/HEAD)
+- [Russian/Русский](https://github.com/Konfuze/HEAD)
+- [Spanish](https://github.com/alvaroadlf/HEAD)
+- [Turkish/Türkçe](https://github.com/mkg0/HEAD)
+- [Ukrainian](https://github.com/Shramkoweb/HEAD)
 
 ## 🤝 Contributing
 

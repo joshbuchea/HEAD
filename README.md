@@ -235,7 +235,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="https://example.com/article/?page=2">
 
-<!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
+<!-- Links to a Web App Manifest — the recommended way to define PWA metadata such as app name, icons, theme_color, and display mode -->
 <link rel="manifest" href="manifest.json">
 
 <!-- Links to information about the author(s) of the document -->
@@ -291,7 +291,10 @@ The following is the recommended order of elements in the `<head>` for best perf
 <link rel="preload" href="image.png" as="image">
 ```
 
+**Note:** The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (`manifest.json`) is the recommended, cross-platform way to declare installable web app properties — including `name`, `icons`, `theme_color`, and `display` mode — in a single file, instead of relying on multiple platform-specific `<meta>` tags.
+
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
+- 📖 [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Manifest)
 
 ## Scripts
 
@@ -508,6 +511,8 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 
 - 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
+**Note:** Properties such as app title (`apple-mobile-web-app-title`), standalone/display mode, and app icons (`apple-touch-icon`) are more reliably and portably configured using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (`<link rel="manifest">`), which is the recommended approach for Progressive Web Apps (PWAs). The Apple-specific meta tags remain useful as a fallback for older iOS versions.
+
 ### Google Android
 
 ```html
@@ -521,6 +526,8 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 <meta name="google-play-app" content="app-id=package-name">
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
+
+**Note:** `theme-color` and the "add to home screen" / standalone behavior are better defined using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (`<link rel="manifest">`). The `theme-color` meta tag can still serve as a fallback for browsers that do not yet support the manifest `theme_color` property.
 
 ### Google Chrome
 

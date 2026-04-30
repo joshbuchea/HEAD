@@ -20,8 +20,8 @@
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
   - [Schema.org](#schemaorg)
+  - [Google JSON-LD Schema](#google-json-ld-schema)
   - [Pinterest](#pinterest)
-  - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
 - [Browsers / Platforms](#browsers--platforms)
@@ -442,20 +442,20 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 The following is used by Google to help provide your site with a knowledge graph result when someone Googles you (this is the pane to the right of the search results that typically appears for larger brands):
 
-```
+```html
 <script type="application/ld+json">
-  {  
-    "@context":"http://schema.org",
-    "@type":"Organization",
-    "name":"yourbrand.com",
-    "url":"https://www.yourbrand.com/",
-    "logo":"https://www.yourbrand.com/logo.png",
-    "sameAs":[  
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "yourbrand.com",
+    "url": "https://www.yourbrand.com/",
+    "logo": "https://www.yourbrand.com/logo.png",
+    "sameAs": [
       "https://www.facebook.com/yourbrand",
       "https://twitter.com/yourbrand",
       "https://uk.pinterest.com/yourbrand/",
       "https://www.instagram.com/yourbrand/",
-      "https://www.linkedin.com/company/yourbrand-com",
+      "https://www.linkedin.com/company/yourbrand-com"
     ]
   }
 </script>
@@ -468,22 +468,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
-
-### Facebook Instant Articles
-
-```html
-<meta charset="utf-8">
-<meta property="op:markup_version" content="v1.0">
-
-<!-- The URL of the web version of your article -->
-<link rel="canonical" href="https://example.com/article.html">
-
-<!-- The style to be used for this article -->
-<meta property="fb:article_style" content="myarticlestyle">
-```
-
-- 📖 [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- 📖 [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### OEmbed
 

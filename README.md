@@ -497,6 +497,9 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 <!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+<!-- Viewport fit for notched phones (iPhone X and later); add viewport-fit=cover to your existing viewport meta tag -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
 <!-- iOS app deep linking -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">

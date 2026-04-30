@@ -98,8 +98,8 @@ img {
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+  /* list-style: none; */
+  padding-left: 20px;
 }
 ul.list-style-default {
   list-style: inherit;

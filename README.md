@@ -23,6 +23,8 @@
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
   - [Dublin Core](#dublin-core)
+  - [Fediverse](#fediverse)
+  - [Feedly](#feedly)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
@@ -471,6 +473,26 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 ```html
 <meta name="fediverse:creator" content="@handle@example.org">
 ```
+
+### Feedly
+
+Feedly supports the [webfeeds specification](https://webfeeds.org/) which allows you to customize how your publication appears in Feedly by adding meta tags to your HTML `<head>`.
+
+```html
+<!-- Logo: SVG preferred (displayed at min 64x64px) -->
+<link rel="webfeeds:logo" href="https://example.com/logo.svg">
+
+<!-- Cover image: ideally 2:1 ratio, min 2048px wide -->
+<meta name="webfeeds:cover" content="https://example.com/cover.jpg">
+
+<!-- Icon: 64x64px -->
+<meta name="webfeeds:icon" content="https://example.com/icon.png">
+
+<!-- Accent color used by Feedly to style your publication page -->
+<meta name="webfeeds:accentColor" content="#CE3F3F">
+```
+
+- 📖 [Webfeeds Specification](https://webfeeds.org/)
 
 ## Browsers / Platforms
 

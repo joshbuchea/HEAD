@@ -4,6 +4,8 @@
   --darkgray: #333;
   --blue: #4484f7;
   --blue-dark: #3d79e4;
+  --blue-darker: #356bcc;
+  --blue-lighter: #4485f9;
   --white: #fff;
 
   --color-mode: "light";
@@ -11,7 +13,7 @@
   --color-dark-alpha: rgba(0, 0, 0, 0.1);
   --color-light: #efefef;
   --color-light-alpha: rgba(255, 255, 255, 0.9);
-  --color-primary: var(--blue-dark);
+  --color-primary: var(--blue-darker);
 
   --background: var(--white);
   --text-color: #141414;
@@ -28,7 +30,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: "dark";
-    --color-primary: var(--blue-dark);
+    --color-primary: var(--blue-lighter);
     --background: #111;
     --background: #161617;
     --background: #19191b;
@@ -449,7 +451,7 @@ pre.highlight {
 }
 
 .highlight .c {
-  color: #5c6370;
+  color: #808898;
   font-style: italic;
 }
 

@@ -1,0 +1,2 @@
+# we prefer to avoid self-closing tags in HTML and prettier lacks an option to disable them, so we ignore markdown files to prevent prettier from converting them to self-closing tags
+*.md

@@ -18,7 +18,6 @@
 - [Social](#social)
   - [Facebook Open Graph](#facebook-open-graph)
   - [Twitter Card](#twitter-card)
-  - [Twitter Privacy](#twitter-privacy)
   - [Schema.org](#schemaorg)
   - [Google JSON-LD Schema](#google-json-ld-schema)
   - [Pinterest](#pinterest)

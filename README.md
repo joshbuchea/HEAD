@@ -20,6 +20,7 @@
   - [Twitter Card](#twitter-card)
   - [Twitter Privacy](#twitter-privacy)
   - [Schema.org](#schemaorg)
+  - [Google JSON-LD Schema](#google-json-ld-schema)
   - [Pinterest](#pinterest)
   - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
@@ -442,20 +443,20 @@ If you embed tweets in your website, Twitter can use information from your site 
 
 The following is used by Google to help provide your site with a knowledge graph result when someone Googles you (this is the pane to the right of the search results that typically appears for larger brands):
 
-```
+```html
 <script type="application/ld+json">
-  {  
-    "@context":"http://schema.org",
-    "@type":"Organization",
-    "name":"yourbrand.com",
-    "url":"https://www.yourbrand.com/",
-    "logo":"https://www.yourbrand.com/logo.png",
-    "sameAs":[  
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "yourbrand.com",
+    "url": "https://www.yourbrand.com/",
+    "logo": "https://www.yourbrand.com/logo.png",
+    "sameAs": [
       "https://www.facebook.com/yourbrand",
       "https://twitter.com/yourbrand",
       "https://uk.pinterest.com/yourbrand/",
       "https://www.instagram.com/yourbrand/",
-      "https://www.linkedin.com/company/yourbrand-com",
+      "https://www.linkedin.com/company/yourbrand-com"
     ]
   }
 </script>

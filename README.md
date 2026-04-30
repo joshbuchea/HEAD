@@ -22,6 +22,7 @@
   - [Pinterest](#pinterest)
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
+  - [Dublin Core](#dublin-core)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
@@ -434,6 +435,34 @@ Users share web pages to qq wechat will have a formatted message
 ```
 
 - 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
+
+### Dublin Core
+
+[Dublin Core](https://www.dublincore.org/) is a metadata vocabulary standardized as [ISO 15836](https://www.iso.org/standard/71339.html) and maintained by the Dublin Core Metadata Initiative (DCMI). It defines fifteen core elements for describing resources and is widely used in digital libraries, institutional repositories, academic publishing, and government portals. To use Dublin Core in HTML, declare the DC namespace and then add the desired elements as `<meta>` tags with a `DC.` prefix.
+
+```html
+<!-- Declare the Dublin Core namespace -->
+<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/">
+
+<meta name="DC.title" content="Page Title">
+<meta name="DC.creator" content="Author Name">
+<meta name="DC.subject" content="Keywords; Topics">
+<meta name="DC.description" content="A brief description of the page content">
+<meta name="DC.publisher" content="Publisher Name">
+<meta name="DC.contributor" content="Contributor Name">
+<meta name="DC.date" content="YYYY-MM-DD">
+<meta name="DC.type" content="Text">
+<meta name="DC.format" content="text/html">
+<meta name="DC.identifier" content="https://example.com/page.html">
+<meta name="DC.source" content="https://example.com/original-source">
+<meta name="DC.language" content="en">
+<meta name="DC.relation" content="https://example.com/related">
+<meta name="DC.coverage" content="Spatial or temporal coverage">
+<meta name="DC.rights" content="Copyright Owner Name">
+```
+
+- 📖 [Dublin Core Metadata Element Set](https://www.dublincore.org/specifications/dublin-core/dces/)
+- 📖 [Using Dublin Core in HTML](https://www.dublincore.org/specifications/dublin-core/dcq-html/)
 
 ### Fediverse
 

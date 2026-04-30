@@ -28,12 +28,12 @@
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
   - [Google Chrome](#google-chrome)
-  - [Microsoft Internet Explorer](#microsoft-internet-explorer)
 - [Browsers (Chinese)](#browsers-chinese)
   - [360 Browser](#360-browser)
   - [QQ Mobile Browser](#qq-mobile-browser)
   - [UC Mobile Browser](#uc-mobile-browser)
 - [App Links](#app-links)
+- [Deprecated](#deprecated)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
 - [Other Formats](#other-formats)
@@ -109,22 +109,19 @@ These elements provide information for how a document should be perceived, and r
 The following is the recommended order of elements in the `<head>` for best performance and correct document rendering:
 
 1. `<meta charset>` — Character encoding declaration; **must** appear within the first 1024 bytes of the document
-2. `<meta http-equiv="x-ua-compatible">` — IE compatibility mode (legacy; only include if needed)
-3. `<meta name="viewport">` — Viewport settings; declare early to ensure correct responsive rendering
-4. `<title>` — Document title; placed after encoding/viewport to prevent potential re-rendering
-5. Other `<meta>` tags (description, robots, etc.)
-6. Open Graph / Social meta tags
-7. `<link rel="canonical">` and other `<link>` tags (excluding stylesheets and resource hints)
-8. `<link rel="preconnect">` / `<link rel="dns-prefetch">` — Resource hints; early to maximize their value
-9. `<link rel="stylesheet">` — External CSS; stylesheets should come before scripts
-10. `<link rel="icon">` — Favicons
-11. `<script>` — Scripts; use `defer` or `async` where possible to avoid blocking rendering
+2. `<meta name="viewport">` — Viewport settings; declare early to ensure correct responsive rendering
+3. `<title>` — Document title; placed after encoding/viewport to prevent potential re-rendering
+4. Other `<meta>` tags (description, robots, etc.)
+5. Open Graph / Social meta tags
+6. `<link rel="canonical">` and other `<link>` tags (excluding stylesheets and resource hints)
+7. `<link rel="preconnect">` / `<link rel="dns-prefetch">` — Resource hints; early to maximize their value
+8. `<link rel="stylesheet">` — External CSS; stylesheets should come before scripts
+9. `<link rel="icon">` — Favicons
+10. `<script>` — Scripts; use `defer` or `async` where possible to avoid blocking rendering
 
 ```html
 <head>
   <meta charset="utf-8">
-  <!-- Only include if IE legacy support is required -->
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Page Title</title>
@@ -195,7 +192,6 @@ The following is the recommended order of elements in the `<head>` for best perf
 <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
 <meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
 <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
-<meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
 <meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
 <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
@@ -213,12 +209,6 @@ The following is the recommended order of elements in the `<head>` for best perf
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
 <meta name="format-detection" content="telephone=no">
-
-<!-- Completely opt out of DNS prefetching by setting to "off" -->
-<meta http-equiv="x-dns-prefetch-control" content="off">
-
-<!-- Specifies the document to appear in a specific frame -->
-<meta http-equiv="Window-Target" content="_value">
 
 <!-- Geo tags -->
 <meta name="ICBM" content="latitude, longitude"><!-- Geographic coordinates (latitude, longitude) in decimal degrees; eg. content="48.8566, 2.3522" -->
@@ -246,9 +236,6 @@ The following is the recommended order of elements in the `<head>` for best perf
 <!-- Helps prevent duplicate content issues -->
 <link rel="canonical" href="https://example.com/article/?page=2">
 
-<!-- Links to an AMP HTML version of the current document -->
-<link rel="amphtml" href="https://example.com/path/to/amp-version.html">
-
 <!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
 <link rel="manifest" href="manifest.json">
 
@@ -268,24 +255,12 @@ The following is the recommended order of elements in the `<head>` for best perf
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
-<!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
-<link rel="archives" href="https://example.com/archives/">
-
-<!-- Links to top level resource in an hierarchical structure -->
-<link rel="index" href="https://example.com/article/">
-
 <!-- Provides a self reference - useful when the document has multiple possible references -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
 <!-- The previous, and next documents in a series of documents, respectively -->
 <link rel="prev" href="https://example.com/article/?page=1">
 <link rel="next" href="https://example.com/article/?page=3">
-
-<!-- Used when a 3rd party service is utilized to maintain a blog -->
-<link rel="EditURI" href="https://example.com/xmlrpc.php?rsd" type="application/rsd+xml" title="RSD">
-
-<!-- Forms an automated comment when another WordPress blog links to your WordPress blog or post -->
-<link rel="pingback" href="https://example.com/xmlrpc.php">
 
 <!-- Notifies a URL when you link to it on your document
      More information at https://webmention.net -->
@@ -313,7 +288,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
-<link rel="prerender" href="https://example.com/">
+
 <link rel="preload" href="image.png" as="image">
 ```
 
@@ -362,13 +337,9 @@ The following is the recommended order of elements in the `<head>` for best perf
 
 <!-- Apple Touch Icon (reuse 192px icon.png) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
-
-<!-- Safari Pinned Tab Icon -->
-<link rel="mask-icon" href="/path/to/icon.svg" color="blue">
 ```
 
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-- 📖 [Creating Pinned Tab Icons](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/pinnedTabs/pinnedTabs.html)
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
@@ -411,15 +382,6 @@ The following is the recommended order of elements in the `<head>` for best perf
 
 - 📖 [Getting started with cards — Twitter Developers](https://dev.twitter.com/cards/getting-started)
 - 🛠 Test your page with the [Twitter Card Validator](https://cards-dev.twitter.com/validator)
-
-### Twitter Privacy
-
-If you embed tweets in your website, Twitter can use information from your site to tailor content and suggestions to Twitter users. [More about Twitter privacy options](https://dev.twitter.com/web/overview/privacy#what-privacy-options-do-website-publishers-have).
-
-```html
-<!-- disallow Twitter from using your site's info for personalization purposes -->
-<meta name="twitter:dnt" content="on">
-```
 
 ### Schema.org
 
@@ -523,7 +485,7 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Enable standalone (full-screen) mode -->
-<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
 
 <!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -560,37 +522,6 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 <!-- Disable translation prompt -->
 <meta name="google" content="notranslate">
 ```
-
-### Microsoft Internet Explorer
-
-```html
-<!-- Force IE 8/9/10 to use its latest rendering engine -->
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-<!-- Disable automatic detection and formatting of possible phone numbers by Skype Toolbar browser extension -->
-<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
-
-<!-- Windows Tiles -->
-<meta name="msapplication-config" content="/browserconfig.xml">
-```
-
-Minimum required xml markup for `browserconfig.xml`:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-   <msapplication>
-     <tile>
-        <square70x70logo src="small.png"/>
-        <square150x150logo src="medium.png"/>
-        <wide310x150logo src="wide.png"/>
-        <square310x310logo src="large.png"/>
-     </tile>
-   </msapplication>
-</browserconfig>
-```
-
-- 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
 ## Browsers (Chinese)
 
@@ -659,6 +590,10 @@ Minimum required xml markup for `browserconfig.xml`:
 ```
 
 - 📖 [App Links](https://developers.facebook.com/docs/applinks)
+
+## Deprecated
+
+For tags and elements that were once part of this guide but are no longer supported (Internet Explorer compatibility, Safari Pinned Tabs, Alexa verification, etc.), see [DEPRECATED.md](./DEPRECATED.md).
 
 ## Other Resources
 

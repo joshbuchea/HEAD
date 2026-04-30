@@ -126,11 +126,30 @@ Both `archives` and `index` were [removed from the HTML living standard](https:/
 ## Social
 
 ```html
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@site_account">
+<meta name="twitter:creator" content="@individual_account">
+<meta name="twitter:url" content="https://example.com/page.html">
+<meta name="twitter:title" content="Content Title">
+<meta name="twitter:description" content="Content description less than 200 characters">
+<meta name="twitter:image" content="https://example.com/image.jpg">
+<meta name="twitter:image:alt" content="A text description of the image conveying the essential nature of an image to users who are visually impaired. Maximum 420 characters.">
+```
+
+X (formerly Twitter) now falls back to [Open Graph](./README.md#open-graph) tags when `twitter:*` tags are absent, making the dedicated Twitter Card markup redundant for most use cases. The [Twitter Card Validator](https://cards-dev.twitter.com/validator) was retired and the original [Twitter Developers documentation](https://dev.twitter.com/cards/getting-started) is no longer accessible. The tags are still parsed if present, but there's no reason to maintain a separate set alongside Open Graph.
+
+```html
 <!-- disallow Twitter from using your site's info for personalization purposes -->
 <meta name="twitter:dnt" content="on">
 ```
 
 Twitter's Do Not Track support was effectively dropped following the platform's transition to X. The original [Twitter privacy options documentation](https://dev.twitter.com/web/overview/privacy) is no longer accessible, and the signal is not honored in practice.
+
+```html
+<meta property="fb:app_id" content="123456789">
+```
+
+`fb:app_id` was historically required for Facebook Insights/Domain Insights but is no longer needed for Open Graph sharing. Meta's [current Sharing documentation](https://developers.facebook.com/docs/sharing/webmasters/) does not list it as required, and most Open Graph parsers ignore it.
 
 ## Miscellaneous
 

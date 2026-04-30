@@ -150,8 +150,6 @@ The following is the recommended order of elements in the `<head>` for best perf
 </head>
 ```
 
-**[⬆ back to top](#table-of-contents)**
-
 ## Meta
 
 ```html

@@ -23,6 +23,7 @@
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
   - [Dublin Core](#dublin-core)
+  - [Fediverse](#fediverse)
 - [Browsers / Platforms](#browsers--platforms)
   - [Apple iOS](#apple-ios)
   - [Google Android](#google-android)
@@ -35,11 +36,12 @@
 - [Deprecated](#deprecated)
 - [Other Resources](#other-resources)
 - [Related Projects](#related-projects)
-- [Other Formats](#other-formats)
 - [Translations](#-translations)
 - [Contributing](#-contributing)
-  - [Contributors](#contributors)
+  - [Guide](#guide)
+- [Contributors](#-contributors)
 - [Author](#-author)
+- [Support](#-support)
 - [License](#-license)
 
 ## Recommended Minimum
@@ -221,7 +223,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 
 **Note:** Geo tags are **not** used by browsers directly — they are intended for search engines, web crawlers, and location-based services to understand the geographic relevance of a page's content. `ICBM` (named after the military ICBM address convention) and `geo.position` both express coordinates in decimal degrees; `ICBM` uses a comma separator while `geo.position` uses a semicolon. `geo.region` identifies the country (and optionally the state/region) using ISO codes, and `geo.placename` provides a human-readable place name.
 
-- 📖 [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
+- 📖 [Meta tags that Google understands](https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=en)
 - 📖 [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
@@ -291,10 +293,10 @@ The following is the recommended order of elements in the `<head>` for best perf
 <link rel="preload" href="image.png" as="image">
 ```
 
-**Note:** The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (`manifest.json`) is the recommended, cross-platform way to declare installable web app properties — including `name`, `icons`, `theme_color`, and `display` mode — in a single file, instead of relying on multiple platform-specific `<meta>` tags.
+**Note:** The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`manifest.json`) is the recommended, cross-platform way to declare installable web app properties — including `name`, `icons`, `theme_color`, and `display` mode — in a single file, instead of relying on multiple platform-specific `<meta>` tags.
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
-- 📖 [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+- 📖 [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest)
 
 ## Scripts
 
@@ -326,7 +328,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 ```
 
 - 📖 [async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
-- 📖 [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
+- 📖 [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity)
 
 ## Icons
 
@@ -342,8 +344,8 @@ The following is the recommended order of elements in the `<head>` for best perf
 ```
 
 - 📖 [All About Favicons (And Touch Icons)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-- 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
-- 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
+- 📖 [Favicon Cheat Sheet](https://github.com/audreyfeldroy/favicon-cheat-sheet)
+- 📖 [Icons & Browser Colors](https://web.dev/articles/icons-and-browser-colors)
 
 ## Social
 
@@ -437,7 +439,7 @@ Users share web pages to qq wechat will have a formatted message
 <meta name="description" itemprop="description" content="share content">
 ```
 
-- 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
+- 📖 [Code Format Docs](https://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
 ### Dublin Core
 
@@ -509,9 +511,9 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
 
-- 📖 [Configuring Web Applications](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
+- 📖 [Configuring Web Applications](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
-**Note:** Properties such as app title (`apple-mobile-web-app-title`), standalone/display mode, and app icons (`apple-touch-icon`) are more reliably and portably configured using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (`<link rel="manifest">`), which is the recommended approach for Progressive Web Apps (PWAs). The Apple-specific meta tags remain useful as a fallback for older iOS versions.
+**Note:** Properties such as app title (`apple-mobile-web-app-title`), standalone/display mode, and app icons (`apple-touch-icon`) are more reliably and portably configured using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`<link rel="manifest">`), which is the recommended approach for Progressive Web Apps (PWAs). The Apple-specific meta tags remain useful as a fallback for older iOS versions.
 
 ### Google Android
 
@@ -527,7 +529,7 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
-**Note:** `theme-color` and the "add to home screen" / standalone behavior are better defined using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (`<link rel="manifest">`). The `theme-color` meta tag can still serve as a fallback for browsers that do not yet support the manifest `theme_color` property.
+**Note:** `theme-color` and the "add to home screen" / standalone behavior are better defined using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`<link rel="manifest">`). The `theme-color` meta tag can still serve as a fallback for browsers that do not yet support the manifest `theme_color` property.
 
 ### Google Chrome
 
@@ -622,10 +624,6 @@ For tags and elements that were once part of this guide but are no longer suppor
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
-## Other Formats
-
-- 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
-
 ## 🌐 Translations
 
 - [Bahasa](https://github.com/rijdz/HEAD)
@@ -695,4 +693,4 @@ Everything helps, thanks! 🙏
 
 ## 📝 License
 
-[![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)

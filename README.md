@@ -10,6 +10,7 @@
 
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)
+- [Recommended Order](#recommended-order)
 - [Meta](#meta)
 - [Link](#link)
 - [Scripts](#scripts)
@@ -102,6 +103,54 @@ These elements provide information for how a document should be perceived, and r
   <!-- No JS alternative -->
 </noscript>
 ```
+
+## Recommended Order
+
+The following is the recommended order of elements in the `<head>` for best performance and correct document rendering:
+
+1. `<meta charset>` — Character encoding declaration; **must** appear within the first 1024 bytes of the document
+2. `<meta http-equiv="x-ua-compatible">` — IE compatibility mode (legacy; only include if needed)
+3. `<meta name="viewport">` — Viewport settings; declare early to ensure correct responsive rendering
+4. `<title>` — Document title; placed after encoding/viewport to prevent potential re-rendering
+5. Other `<meta>` tags (description, robots, etc.)
+6. Open Graph / Social meta tags
+7. `<link rel="canonical">` and other `<link>` tags (excluding stylesheets and resource hints)
+8. `<link rel="preconnect">` / `<link rel="dns-prefetch">` — Resource hints; early to maximize their value
+9. `<link rel="stylesheet">` — External CSS; stylesheets should come before scripts
+10. `<link rel="icon">` — Favicons
+11. `<script>` — Scripts; use `defer` or `async` where possible to avoid blocking rendering
+
+```html
+<head>
+  <meta charset="utf-8">
+  <!-- Only include if IE legacy support is required -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Page Title</title>
+
+  <meta name="description" content="Page description">
+  <!-- other meta tags -->
+
+  <!-- Open Graph / Social meta tags -->
+  <meta property="og:title" content="Page Title">
+  <!-- other social meta tags -->
+
+  <link rel="canonical" href="https://example.com/page.html">
+  <!-- other link tags (excluding stylesheets and resource hints) -->
+
+  <link rel="preconnect" href="https://example.com">
+  <link rel="dns-prefetch" href="https://example.com">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="icon" href="favicon.ico">
+
+  <script defer src="script.js"></script>
+</head>
+```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Meta
 

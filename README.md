@@ -22,7 +22,6 @@
   - [Schema.org](#schemaorg)
   - [Google JSON-LD Schema](#google-json-ld-schema)
   - [Pinterest](#pinterest)
-  - [Facebook Instant Articles](#facebook-instant-articles)
   - [OEmbed](#oembed)
   - [QQ/Wechat](#qqwechat)
 - [Browsers / Platforms](#browsers--platforms)
@@ -469,22 +468,6 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
-
-### Facebook Instant Articles
-
-```html
-<meta charset="utf-8">
-<meta property="op:markup_version" content="v1.0">
-
-<!-- The URL of the web version of your article -->
-<link rel="canonical" href="https://example.com/article.html">
-
-<!-- The style to be used for this article -->
-<meta property="fb:article_style" content="myarticlestyle">
-```
-
-- 📖 [Creating Articles - Instant Articles](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-- 📖 [Code Samples - Instant Articles](https://developers.facebook.com/docs/instant-articles/reference)
 
 ### OEmbed
 

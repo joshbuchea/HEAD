@@ -47,13 +47,13 @@
 Below are the essential elements for any web document (websites/apps):
 
 ```html
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--
-  The following 2 meta tags *must* come first in the <head>
+  The above 2 meta tags should come as early as possible in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Page Title</title>
 ```
 
@@ -107,7 +107,7 @@ These elements provide information for how a document should be perceived, and r
 
 ```html
 <!--
-  The following 2 meta tags *must* come first in the <head>
+  The following 2 meta tags should come as early as possible in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->

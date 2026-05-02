@@ -610,7 +610,7 @@ Some Fediverse software such as Mastodon allow you to put your Fediverse handle 
 
 ## Deprecated
 
-For tags and elements that were once part of this guide but are no longer supported (Internet Explorer compatibility, Safari Pinned Tabs, Alexa verification, etc.), see [DEPRECATED.md](./DEPRECATED.md).
+For tags and elements that were once part of this guide but are no longer supported (Internet Explorer compatibility, Safari Pinned Tabs, Alexa verification, etc.), see [DEPRECATED.md](https://github.com/joshbuchea/HEAD/blob/master/DEPRECATED.md).
 
 ## Other Resources
 

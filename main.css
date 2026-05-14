@@ -699,3 +699,35 @@ pre.highlight {
 .highlight .gi {
   color: #a6e22e;
 }
+
+/* Copy to clipboard button */
+pre {
+  position: relative;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-width: 60px;
+  padding: 4px 10px;
+  font-family: inherit;
+  font-size: 12px;
+  color: #abb2bf;
+  background: transparent;
+  border: 1px solid #abb2bf;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.15s ease-in-out;
+}
+
+pre:hover .copy-btn,
+.copy-btn:focus {
+  opacity: 1;
+}
+
+.copy-btn:hover {
+  background: rgba(171, 178, 191, 0.1);
+}

@@ -25,6 +25,35 @@
         }
       }
     </script>
+    <script>
+      // copy to clipboard button on code blocks
+      var preBlocks = document.querySelectorAll('pre');
+      var preBlocksLength = preBlocks.length;
+      var j;
+      for (j = 0; j < preBlocksLength; j++) {
+        (function (pre) {
+          var button = document.createElement('button');
+          button.className = 'copy-btn';
+          button.type = 'button';
+          button.textContent = 'Copy';
+          button.setAttribute('aria-label', 'Copy code to clipboard');
+    
+          button.addEventListener('click', function () {
+            var code = pre.querySelector('code');
+            var text = code ? code.innerText : pre.innerText;
+            navigator.clipboard.writeText(text).then(function () {
+              button.textContent = 'Copied';
+              setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+            }).catch(function () {
+              button.textContent = 'Failed';
+              setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+            });
+          });
+    
+          pre.appendChild(button);
+        })(preBlocks[j]);
+      }
+    </script>
     {% include analytics.html %}
   </body>
 </html>

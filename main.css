@@ -319,7 +319,7 @@ pre > code:focus {
 } */
 
 /* Code */
-/* .highlight .hll { background-color: #ffc; 
+/* .highlight .hll { background-color: #ffc;
 .highlight .c { color: #999; }
 .highlight .err { color: #a00; background-color: #faa }
 .highlight .k { color: #069; }
@@ -730,4 +730,10 @@ pre:hover .copy-btn,
 
 .copy-btn:hover {
   background: rgba(171, 178, 191, 0.1);
+}
+
+@media (hover: none) {
+  .copy-btn {
+    opacity: 1;
+  }
 }

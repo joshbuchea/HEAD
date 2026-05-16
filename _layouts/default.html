@@ -32,6 +32,7 @@
       var j;
       for (j = 0; j < preBlocksLength; j++) {
         (function (pre) {
+          if (!navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') return;
           var button = document.createElement('button');
           button.className = 'copy-btn';
           button.type = 'button';

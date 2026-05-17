@@ -27,6 +27,12 @@
     </script>
     <script>
       // copy to clipboard button on code blocks
+      var statusRegion = document.createElement('div');
+      statusRegion.className = 'visually-hidden';
+      statusRegion.setAttribute('aria-live', 'polite');
+      statusRegion.setAttribute('role', 'status');
+      document.body.appendChild(statusRegion);
+
       var preBlocks = document.querySelectorAll('pre');
       var preBlocksLength = preBlocks.length;
       var j;
@@ -37,16 +43,17 @@
           button.className = 'copy-btn';
           button.type = 'button';
           button.textContent = 'Copy';
-          button.setAttribute('aria-label', 'Copy code to clipboard');
     
           button.addEventListener('click', function () {
             var code = pre.querySelector('code');
             var text = code ? code.innerText : pre.innerText;
             navigator.clipboard.writeText(text).then(function () {
               button.textContent = 'Copied';
+              statusRegion.textContent = 'Copied to clipboard';
               setTimeout(function () { button.textContent = 'Copy'; }, 1500);
             }).catch(function () {
               button.textContent = 'Failed';
+              statusRegion.textContent = 'Copy to clipboard failed';
               setTimeout(function () { button.textContent = 'Copy'; }, 1500);
             });
           });

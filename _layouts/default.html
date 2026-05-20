@@ -11,7 +11,8 @@
         {{ content }}
       </div>
     </div>
-
+    <div class="visually-hidden" aria-live="polite" role="status"></div>
+    
     <script>
       // open external links in new tab
       var links = document.links;
@@ -27,39 +28,40 @@
     </script>
     <script>
       // copy to clipboard button on code blocks
-      var statusRegion = document.createElement('div');
-      statusRegion.className = 'visually-hidden';
-      statusRegion.setAttribute('aria-live', 'polite');
-      statusRegion.setAttribute('role', 'status');
-      document.body.appendChild(statusRegion);
+      if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+        var statusRegion = document.querySelector('[aria-live="polite"][role="status"]');
+        var preBlocks = document.querySelectorAll('pre');
+        var preBlocksLength = preBlocks.length;
+        var j;
+        for (j = 0; j < preBlocksLength; j++) {
+          (function (pre) {
+            var wrapper = document.createElement('div');
+            wrapper.className = 'pre-wrapper';
+            pre.parentNode.insertBefore(wrapper, pre);
+            wrapper.appendChild(pre);
 
-      var preBlocks = document.querySelectorAll('pre');
-      var preBlocksLength = preBlocks.length;
-      var j;
-      for (j = 0; j < preBlocksLength; j++) {
-        (function (pre) {
-          if (!navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') return;
-          var button = document.createElement('button');
-          button.className = 'copy-btn';
-          button.type = 'button';
-          button.textContent = 'Copy';
-    
-          button.addEventListener('click', function () {
-            var code = pre.querySelector('code');
-            var text = code ? code.innerText : pre.innerText;
-            navigator.clipboard.writeText(text).then(function () {
-              button.textContent = 'Copied';
-              statusRegion.textContent = 'Copied to clipboard';
-              setTimeout(function () { button.textContent = 'Copy'; }, 1500);
-            }).catch(function () {
-              button.textContent = 'Failed';
-              statusRegion.textContent = 'Copy to clipboard failed';
-              setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+            var button = document.createElement('button');
+            button.className = 'copy-btn';
+            button.type = 'button';
+            button.textContent = 'Copy';
+
+            button.addEventListener('click', function () {
+              var code = pre.querySelector('code');
+              var text = code ? (code.textContent || '') : (pre.textContent || '');
+              navigator.clipboard.writeText(text).then(function () {
+                button.textContent = 'Copied';
+                statusRegion.textContent = 'Copied to clipboard';
+                setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+              }).catch(function () {
+                button.textContent = 'Failed';
+                statusRegion.textContent = 'Copy to clipboard failed';
+                setTimeout(function () { button.textContent = 'Copy'; }, 1500);
+              });
             });
-          });
-    
-          pre.appendChild(button);
-        })(preBlocks[j]);
+
+            wrapper.appendChild(button);
+          })(preBlocks[j]);
+        }
       }
     </script>
     {% include analytics.html %}

@@ -701,7 +701,7 @@ pre.highlight {
 }
 
 /* Copy to clipboard button */
-pre {
+.pre-wrapper {
   position: relative;
 }
 
@@ -723,7 +723,7 @@ pre {
   transition: opacity 0.15s ease-in-out;
 }
 
-pre:hover .copy-btn,
+.pre-wrapper:hover .copy-btn,
 .copy-btn:focus {
   opacity: 1;
 }
@@ -746,4 +746,3 @@ pre:hover .copy-btn,
   position: absolute;
   white-space: nowrap;
 }
-

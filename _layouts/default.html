@@ -30,7 +30,7 @@
       // copy to clipboard button on code blocks
       if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
         var statusRegion = document.querySelector('[aria-live="polite"][role="status"]');
-        var preBlocks = document.querySelectorAll('pre');
+        var preBlocks = document.querySelectorAll('pre.highlight');
         var preBlocksLength = preBlocks.length;
         var j;
         for (j = 0; j < preBlocksLength; j++) {
@@ -50,10 +50,12 @@
               var text = code ? (code.textContent || '') : (pre.textContent || '');
               navigator.clipboard.writeText(text).then(function () {
                 button.textContent = 'Copied';
+                statusRegion.textContent = '';
                 statusRegion.textContent = 'Copied to clipboard';
                 setTimeout(function () { button.textContent = 'Copy'; }, 1500);
               }).catch(function () {
                 button.textContent = 'Failed';
+                statusRegion.textContent = '';
                 statusRegion.textContent = 'Copy to clipboard failed';
                 setTimeout(function () { button.textContent = 'Copy'; }, 1500);
               });

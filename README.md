@@ -367,6 +367,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 
 - 📖 [Open Graph protocol](https://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) or the [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+- 🛠 Check Open Graph tags and image URLs across page templates with [ShareScan](https://sharescan.io/scan) (up to 10 pages, free, no account required)
 
 ### Schema.org
 

@@ -616,6 +616,7 @@ For tags and elements that were once part of this guide but are no longer suppor
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/main/docs/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/main/docs/extend.md)
+- 🛠 Practice the essential tags in the [FrontendAtlas head metadata exercise](https://frontendatlas.com/html/coding/html-head-seo-basics)
 
 ## Related Projects
 
